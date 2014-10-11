@@ -28,7 +28,7 @@ class CSVWriter:
     def __init__(self, file, dialect=csv.excel, **kwargs):
         # Redirect output to a queue
         self.queue = cStringIO.StringIO()
-        self.writer = csv.writer(self.queue, dialect=dialect, delimiter=",", skipinitialspace=False, **kwargs)
+        self.writer = csv.writer(self.queue, dialect=dialect, **kwargs)
         self.stream = file
 
     def write_row(self, row):
