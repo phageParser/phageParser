@@ -12,3 +12,34 @@ The basic problem of understanding how this immune system works is to understand
 ##Data Challenge
 
 Happily, much of the existing data needed to understand bacteria / phage interaction has been released openly to the public and is available over the web; the current challenge is to help extract the relevant parts of that huge database, and automate the production of targeted datasets for these studies.  More details are in the issue tracker!
+
+##Installation
+
+This package depends on Biopython:
+
+```
+sudo pip install Biopython
+```
+
+Also, make yourself a directory `phageParser/output` - some data cleaning scripts will dump their results there.
+
+##Usage
+
+ - To get a phage dataset, take a fasta-formatted list of genes (example in `data/velvet-distinct-spacers.fasta`) and upload to http://phagesdb.org/blast/ - example result in `data/blast-phagesdb.txt`
+
+ - To clean up the results returned from phagesdb.org, change the raw filename in `getAccession.py` from `data/PhagesDB_Data.txt` to whatever file contains the results from the BLAST search, then do
+
+ `python filterByExpect.py`
+
+ The result will be written to a file in `phageParser/output`, in a CSV formatted as
+```
+ Query, Name, Length, Score, Expect, QueryStart, QueryEnd, SubjectStart, SubjectEnd
+```
+
+ with one header row (see #1 for discussion and details)
+
+ - To query NCBI for full genomes, do
+```
+ cat accessionNumber.txt | python acc2gb.py youremail@yourinstitution.org > NCBIresults.txt
+```
+ where `accessionNumber.txt` contains a list of accession numbers of interest; results will be dumped to `NCBIresults.txt`
