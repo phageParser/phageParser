@@ -36,10 +36,10 @@ Also, make yourself a directory `phageParser/output` - some data cleaning script
  Query, Name, Length, Score, Expect, QueryStart, QueryEnd, SubjectStart, SubjectEnd
 ```
 
- with one header row (see #1 for discussion and details)
+ with one header row (see [#1](https://github.com/goyalsid/phageParser/issues/1) for discussion and details)
 
  - To query NCBI for full genomes, do
 ```
  cat accessionNumber.txt | python acc2gb.py youremail@yourinstitution.org > NCBIresults.txt
 ```
- where `accessionNumber.txt` contains a list of accession numbers of interest; results will be dumped to `NCBIresults.txt`
+ where `accessionNumber.txt` contains a list of accession numbers of interest; results will be dumped to `NCBIresults.txt` - see [#2](https://github.com/goyalsid/phageParser/issues/2) for ongoing development here. 
