@@ -27,7 +27,7 @@ Also, make yourself a directory `phageParser/output` - some data cleaning script
 
  - To get a phage dataset, take a fasta-formatted list of genes (example in `data/velvet-distinct-spacers.fasta`) and upload to http://phagesdb.org/blast/ - example result in `data/blast-phagesdb.txt`
 
- - To clean up the results returned from phagesdb.org, change the raw filename in `getAccession.py` from `data/PhagesDB_Data.txt` to whatever file contains the results from the BLAST search, then do
+ - To clean up the results returned from phagesdb.org, change the raw filename in `filterByExpect.py` from `data/blast-phagesdb.txt` to whatever file contains the results from the BLAST search, then do
 
  `python filterByExpect.py`
 
