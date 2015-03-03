@@ -1,0 +1,280 @@
+<html>
+  <head>
+    <title>My first Three.js app</title>
+      <style>
+        body { margin: 0; }
+        canvas { width: 100%; height: 100% }
+      </style>
+  </head>
+
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r70/three.js"></script>
+    <script src="view-source:http://threejs.org/examples/js/controls/TrackballControls.js"></script>
+    <script>
+      var scene, camera, renderer,
+          bacteria = {},
+          phages, phageName,
+          bacteriaGeometry = new THREE.SphereGeometry( 1, 32, 32 ),
+          phageGeometry = new THREE.SphereGeometry( 1, 32, 32 ),
+          lineGeometry, line,
+          bacteriaMaterial = new THREE.MeshLambertMaterial( { color: 0xff0000 } ),
+          phageMaterial = new THREE.MeshLambertMaterial( { color: 0x00ff00 } ),
+          lineMaterial = new THREE.LineBasicMaterial( { color: 0x0000ff } ),
+          directionalLightA, directionalLightB,
+          raycaster = new THREE.Raycaster(),
+          mouse = new THREE.Vector2(),
+          intersects, INTERSECTED, targetKey,
+          pointCloud = new THREE.Object3D(),
+          i, key;
+
+      //set up scene
+      scene = new THREE.Scene();
+      camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+      renderer = new THREE.WebGLRenderer();
+      renderer.setSize( window.innerWidth, window.innerHeight );
+      document.body.appendChild( renderer.domElement );
+
+      //some dummy primary info; will need to read this from somewhere eventually
+      bacteria = {
+        'Bacteria 0001': {'phages': ['Phage A', 'Phage C', 'Phage K']},
+        'Bacteria 0002': {'phages': ['Phage B', 'Phage D', 'Phage J', 'Phage G']},
+        'Bacteria 0003': {'phages': ['Phage E', 'Phage C', 'Phage F']}
+      }
+
+      //invert map
+      phages = idPhages(bacteria)
+
+      //choose coordinates for every point
+      distributeOnGrid(bacteria, -10);
+      distributeOnGrid(phages, 10);
+
+      //set bacteria up for rendering
+      for(key in bacteria){
+        bacteria[key].mesh = new THREE.Mesh(bacteriaGeometry, bacteriaMaterial);
+        bacteria[key].mesh.position.x = bacteria[key].x;
+        bacteria[key].mesh.position.y = bacteria[key].y;
+        bacteria[key].mesh.position.z = bacteria[key].z;
+
+        bacteria[key].mesh.name = key;
+
+        bacteria[key].label = makeTextSprite( key,
+          { backgroundColor: {r:255, g:255, b:255, a:0.5} } );
+        bacteria[key].label.position.set(bacteria[key].x,bacteria[key].y,bacteria[key].z);
+        bacteria[key].label.visible = false;
+        scene.add( bacteria[key].label );
+
+        pointCloud.add(bacteria[key].mesh)
+      }
+
+      //set phages up for rendering
+      for(key in phages){
+        phages[key].mesh = new THREE.Mesh(phageGeometry, phageMaterial);
+        phages[key].mesh.position.x = phages[key].x;
+        phages[key].mesh.position.y = phages[key].y;
+        phages[key].mesh.position.z = phages[key].z;
+
+        phages[key].mesh.name = key;
+
+        phages[key].label = makeTextSprite( key,
+          { backgroundColor: {r:255, g:255, b:255, a:0.5} } );
+        phages[key].label.position.set(phages[key].x,phages[key].y,phages[key].z);
+        phages[key].label.visible = false;
+        scene.add( phages[key].label );
+
+        pointCloud.add(phages[key].mesh)
+      }
+
+      //collect bacteria and phages into pointCloud for mouseover raytracing
+      scene.add(pointCloud)
+
+      //draw all connecting lines between bacteria and phages
+      for(key in bacteria){
+          for(i=0; i<bacteria[key].phages.length; i++){
+              phageName = bacteria[key].phages[i];
+
+              lineGeometry = new THREE.Geometry()
+              lineGeometry.vertices.push( new THREE.Vector3( bacteria[key].x, bacteria[key].y, bacteria[key].z ),
+                                          new THREE.Vector3( phages[phageName].x, phages[phageName].y, phages[phageName].z ) );
+
+              line = new THREE.Line( lineGeometry, lineMaterial );
+              scene.add( line );
+          }
+      }
+
+      //configure lighting
+      directionalLightA = new THREE.DirectionalLight( 0xffffff, 1 );
+      directionalLightA.position.set( 0, 1, 0 );
+      scene.add( directionalLightA );
+      directionalLightB = new THREE.DirectionalLight( 0xffffff, 1 );
+      directionalLightB.position.set( 0.5, 0, 0.5 );
+      scene.add( directionalLightB );
+
+      //set initial position of camera
+      camera.position.z = 50;
+      //set up drag & zoom camera controls
+      controls = new THREE.TrackballControls( camera, renderer.domElement );
+      controls.minDistance = 0;
+      controls.maxDistance = 500;
+
+      //set up hit detection
+      document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+
+      animate();
+
+
+
+
+
+
+      //handle animation & rendering
+      function animate() {
+        //handle animation smoothly
+        requestAnimationFrame( animate );
+
+        //deal with camera motion
+        controls.update();
+
+        //detect some hits
+
+        raycaster.setFromCamera( mouse, camera );
+        intersects = raycaster.intersectObjects( pointCloud.children, true );
+
+        if ( intersects.length > 0 ) {
+            if ( INTERSECTED != intersects[ 0 ].object ) {
+                targetKey = intersects[0].object.name;
+                if(bacteria[targetKey])
+                  bacteria[targetKey].label.visible = true
+                else if(phages[targetKey])
+                  phages[targetKey].label.visible = true
+                INTERSECTED = intersects[ 0 ].object;
+            }
+        //handle mouse out
+        } else {
+            if ( INTERSECTED ) {
+                targetKey = INTERSECTED.name;
+                if(bacteria[targetKey])
+                  bacteria[targetKey].label.visible = false
+                else if(phages[targetKey])
+                  phages[targetKey].label.visible = false
+
+                INTERSECTED = null;
+            }
+        }
+
+        renderer.render( scene, camera );
+
+      }
+
+      //take the primary bacteria information that lists phages per bacterium, and invert it to list bacteria per phage.
+      function idPhages(bacteria){
+         var phages = {},
+             bacteriaKey, phageKey,
+             i;
+
+             for(bacteriaKey in bacteria){
+                 for(i=0; i<bacteria[bacteriaKey].phages.length; i++){
+                   phageKey = bacteria[bacteriaKey].phages[i];
+
+                   if(phages[phageKey])
+                     phages[phageKey].bacteria.push(bacteriaKey);
+                   else{
+                     phages[phageKey] = {'bacteria':[bacteriaKey]}
+                   }
+
+                 }
+
+             }
+
+            return phages;
+      }
+
+      //distribute points on a grid in a y-z plane at x=<x>
+      function distributeOnGrid(objects, x){
+          var key,
+              y, z,
+              i = 0,
+              grid = Math.round(Math.sqrt(Object.keys(objects).length)),
+              latticeSpacing = 10;
+
+          for(key in objects){
+              y = latticeSpacing*(i%grid) - grid*latticeSpacing/2;
+              z = latticeSpacing*(Math.floor(i/grid)); - grid*latticeSpacing/2;
+
+              objects[key].x = x;
+              objects[key].y = y;
+              objects[key].z = z;
+
+              i++;
+          }
+      }
+
+      function onDocumentMouseMove( event ) {
+
+        event.preventDefault();
+
+        mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+        mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+
+      }
+
+      //shamelessly borrowed from http://stemkoski.github.io/Three.js/Sprite-Text-Labels.html
+      function makeTextSprite( message, parameters )
+      {
+        if ( parameters === undefined ) parameters = {};
+
+        var fontface = parameters.hasOwnProperty("fontface") ?
+          parameters["fontface"] : "Arial";
+
+        var fontsize = parameters.hasOwnProperty("fontsize") ?
+          parameters["fontsize"] : 18;
+
+        var borderThickness = parameters.hasOwnProperty("borderThickness") ?
+          parameters["borderThickness"] : 4;
+
+        var borderColor = parameters.hasOwnProperty("borderColor") ?
+          parameters["borderColor"] : { r:0, g:0, b:0, a:1.0 };
+
+        var backgroundColor = parameters.hasOwnProperty("backgroundColor") ?
+          parameters["backgroundColor"] : { r:255, g:255, b:255, a:1.0 };
+
+        //var spriteAlignment = THREE.SpriteAlignment.topLeft;
+
+        var canvas = document.createElement('canvas');
+        var context = canvas.getContext('2d');
+        context.font = "Bold " + fontsize + "px " + fontface;
+
+        // get size data (height depends only on font size)
+        var metrics = context.measureText( message );
+        var textWidth = metrics.width;
+
+        // background color
+        context.fillStyle   = "rgba(" + backgroundColor.r + "," + backgroundColor.g + ","
+                        + backgroundColor.b + "," + backgroundColor.a + ")";
+        // border color
+        context.strokeStyle = "rgba(" + borderColor.r + "," + borderColor.g + ","
+                        + borderColor.b + "," + borderColor.a + ")";
+
+        context.lineWidth = borderThickness;
+        context.fillStyle = 'rgba(255,255,255,0.5)';
+        context.fillRect(150, 75, textWidth, fontsize*1.4)
+        // 1.4 is extra height factor for text below baseline: g,j,p,q.
+
+        // text color
+        context.fillStyle = "rgba(0, 0, 0, 1.0)";
+
+        context.fillText( message, 150, fontsize + 75);
+
+        // canvas contents will be used for a texture
+        var texture = new THREE.Texture(canvas)
+        texture.needsUpdate = true;
+
+        var spriteMaterial = new THREE.SpriteMaterial(
+          { map: texture, useScreenCoordinates: false} );
+        var sprite = new THREE.Sprite( spriteMaterial );
+        sprite.scale.set(30,15,1.0);
+        return sprite;
+      }
+
+    </script>
+  </body>
+</html>
