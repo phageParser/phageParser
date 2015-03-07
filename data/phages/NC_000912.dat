@@ -1,0 +1,2244 @@
+
+
+BLASTN 2.2.26 [Sep-21-2011]
+
+
+Reference:
+Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schäffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+Database: Mycobacteriophages as of Mar 04, 2015 
+           829 sequences; 55,558,299 total letters
+
+
+Query= NC_000912_2_1
+         (50 letters)
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+ZoeJ complete sequence, 57315 bp including 11 bp 3' overhang (CC...    30   1.5   
+TM4                                                                    30   1.5   
+Mufasa complete sequence, 58065 bp including 10 bp 3' overhang (...    30   1.5   
+Milly complete sequence, 58211 bp including 10 bp 3' overhang (C...    30   1.5   
+Findley complete sequence, 58150 bp including 10 bp 3' overhang ...    30   1.5   
+Wile Complete Sequence, 51308 bp including 10 bp 3' overhang (CG...    28   5.9   
+Velveteen complete sequence, 54314 bp including 10 bp 3' overhan...    28   5.9   
+UnionJack complete sequence, 49158 bp including 10 bp 3' overhan...    28   5.9   
+Trike complete sequence, 44716 bp including 10 bp 3' overhang (C...    28   5.9   
+Theia Complete Sequence, 51543 bp including 10 bp 3' overhang (C...    28   5.9   
+Swirley complete sequence, 49717 bp including 10 bp 3' overhang ...    28   5.9   
+Spartacus Complete Sequence, 61164 bp including 10 bp 3' overhan...    28   5.9   
+Sparkdehlily complete sequence, 56255 bp including 10 bp 3' over...    28   5.9   
+ShiLan Complete Sequence, 59794 bp including 10 bp 3' overhang (...    28   5.9   
+Severus Complete Sequence, 49894 bp including 10 bp 3' overhang ...    28   5.9   
+Scorpia complete genome, 50693 bp including 10 bp 3' overhang (C...    28   5.9   
+Ruby complete sequence, 57726 bp including 10 bp 3' overhang (CG...    28   5.9   
+RockyHorror Complete Sequence, 56719 bp including 10 bp 3' overh...    28   5.9   
+Rey Final Sequence, 83724 bp, 11 bp 3' overhang (ACCCCATGCAA), S...    28   5.9   
+Ramsey                                                                 28   5.9   
+PMC                                                                    28   5.9   
+PegLeg complete sequence, 80955 bp including 11 bp 3' overhang (...    28   5.9   
+Pacc40                                                                 28   5.9   
+OwlsT2W complete sequence, 56515 bp including 10 bp 3' overhang ...    28   5.9   
+Ovechkin complete sequence, 58338 bp including 10 bp 3' overhang...    28   5.9   
+Naca complete sequence, 51594 bp including 10 bp 3' overhang (CG...    28   5.9   
+Mutaforma13 Complete Sequence, 57701 bp including 10 bp 3' overh...    28   5.9   
+MisterCuddles complete sequence, 57754 bp including 10 bp 3' ove...    28   5.9   
+MilleniumForce complete sequence, 58106 bp including 10 bp 3' ov...    28   5.9   
+Midas2 complete sequence, 51215 bp including 3' overhang (CGGGAG...    28   5.9   
+Mantra Complete Sequence, 57001 bp including 10 bp 3' overhang (...    28   5.9   
+LittleCherry Complete Sequence, 50690 bp including 10 bp 3' over...    28   5.9   
+Krakatau complete sequence, 53058 bp including 10 bp 3' overhang...    28   5.9   
+KittenMittens complete sequence, 49894 bp including 10 bp 3' ove...    28   5.9   
+Job42 Complete Sequence, 59626 bp including 10 bp 3' overhang (C...    28   5.9   
+Jabiru complete sequence, 50530 bp including 10 bp 3' overhang (...    28   5.9   
+Hegedechwinu complete sequence, 57346 bp including 10 bp 3' over...    28   5.9   
+Hades complete sequence, 54986 bp including 10 bp 3' overhang (C...    28   5.9   
+Girr Complete Sequence, 57754 bp including 10 bp 3' overhang (CG...    28   5.9   
+George Final Sequence, 51578 bp including 10 bp 3' overhang, Clu...    28   5.9   
+Estave1 complete sequence, 60727 bp including 10 bp 3' overhang ...    28   5.9   
+ElTiger69 Complete Sequence, 51505 bp including 10 bp 3' overhan...    28   5.9   
+Cuco Complete Sequence, 50965 bp including 10 bp 3' overhang (CG...    28   5.9   
+Coog complete sequence, 51215 bp including 10 bp 3' overhang (CG...    28   5.9   
+Che9d                                                                  28   5.9   
+Che8                                                                   28   5.9   
+Chadwick Complete Sequence, 49421 bp including 10 bp 3' overhang...    28   5.9   
+CaptainTrips complete sequence, 57328 bp including 10 bp 3' over...    28   5.9   
+BuzzLyseyear complete sequence, 59419 bp including 10 bp 3' over...    28   5.9   
+Bricole complete sequence, 81128 bp including 11 bp 3' overhang ...    28   5.9   
+Boomer                                                                 28   5.9   
+Bongo Complete Sequence, 80228 bp including 11 bp 3' overhang (A...    28   5.9   
+Benedict Complete Sequence, 51083 bp including 10 bp 3' overhang...    28   5.9   
+Badger complete sequence, 51274 bp including 10 bp 3'overhang (C...    28   5.9   
+Backyardigan Final Sequence, 51308 bp, including 10 bp 3' overha...    28   5.9   
+AvatarAhPeg complete sequence, 51637 bp including 10 bp 3' overh...    28   5.9   
+Airmid Complete Sequence, 51241 bp including 10 bp 3' overhang (...    28   5.9   
+Achebe complete sequence, 51433 bp including 10 bp 3' overhang (...    28   5.9   
+
+
+>ZoeJ complete sequence, 57315 bp including 11 bp 3' overhang
+             (CCTCGCGGCAT), Cluster K2
+          Length = 57315
+
+ Score = 30.2 bits (15), Expect = 1.5
+ Identities = 15/15 (100%)
+ Strand = Plus / Minus
+
+                            
+Query: 3     atttcagcttgaact 17
+             |||||||||||||||
+Sbjct: 10491 atttcagcttgaact 10477
+
+
+
+
+>TM4
+          Length = 52797
+
+ Score = 30.2 bits (15), Expect = 1.5
+ Identities = 15/15 (100%)
+ Strand = Plus / Minus
+
+                            
+Query: 3     atttcagcttgaact 17
+             |||||||||||||||
+Sbjct: 10598 atttcagcttgaact 10584
+
+
+
+
+>Mufasa complete sequence, 58065 bp including 10 bp 3' overhang
+             (CTCGCGGCAT), Cluster K2
+          Length = 58065
+
+ Score = 30.2 bits (15), Expect = 1.5
+ Identities = 15/15 (100%)
+ Strand = Plus / Minus
+
+                            
+Query: 3     atttcagcttgaact 17
+             |||||||||||||||
+Sbjct: 10552 atttcagcttgaact 10538
+
+
+
+
+>Milly complete sequence, 58211 bp including 10 bp 3' overhang
+             (CTCGCGGCAT), Cluster K2
+          Length = 58211
+
+ Score = 30.2 bits (15), Expect = 1.5
+ Identities = 15/15 (100%)
+ Strand = Plus / Minus
+
+                            
+Query: 3     atttcagcttgaact 17
+             |||||||||||||||
+Sbjct: 10530 atttcagcttgaact 10516
+
+
+
+
+>Findley complete sequence, 58150 bp including 10 bp 3' overhang
+             (CTCGCGGCAT), Cluster K2
+          Length = 58150
+
+ Score = 30.2 bits (15), Expect = 1.5
+ Identities = 15/15 (100%)
+ Strand = Plus / Minus
+
+                            
+Query: 3     atttcagcttgaact 17
+             |||||||||||||||
+Sbjct: 10530 atttcagcttgaact 10516
+
+
+
+
+>Wile Complete Sequence, 51308 bp including 10 bp 3' overhang
+             (CGGCCGGTTA), Cluster A4
+          Length = 51308
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 7     cagcttgaacttcc 20
+             ||||||||||||||
+Sbjct: 16167 cagcttgaacttcc 16154
+
+
+
+
+>Velveteen complete sequence, 54314 bp including 10 bp 3' overhang
+             (CCGATGGCAT), Cluster F1
+          Length = 54314
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 44068 ttgaacttccacag 44055
+
+
+
+
+>UnionJack complete sequence, 49158 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 49158
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 37953 atttcggcttgaacttcc 37970
+
+
+
+
+>Trike complete sequence, 44716 bp including 10 bp 3' overhang
+             (CGGCCGGTAA), Cluster A10
+          Length = 44716
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Plus
+
+                           
+Query: 4     tttcagcttgaact 17
+             ||||||||||||||
+Sbjct: 34424 tttcagcttgaact 34437
+
+
+
+
+>Theia Complete Sequence, 51543 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 51543
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38623 atttcggcttgaacttcc 38640
+
+
+
+
+>Swirley complete sequence, 49717 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 49717
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38504 atttcggcttgaacttcc 38521
+
+
+
+
+>Spartacus Complete Sequence, 61164 bp including 10 bp 3' overhang
+             (CGGAAGGCGC), Cluster F1
+          Length = 61164
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 49621 ttgaacttccacag 49608
+
+
+
+
+>Sparkdehlily complete sequence, 56255 bp including 10 bp 3' overhang
+             (CGGAAGGCGC), Cluster F1
+          Length = 56255
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 45969 ttgaacttccacag 45956
+
+
+
+
+>ShiLan Complete Sequence, 59794 bp including 10 bp 3' overhang
+             (CGGAAGGCGC), Cluster F1
+          Length = 59794
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 50046 ttgaacttccacag 50033
+
+
+
+
+>Severus Complete Sequence, 49894 bp including 10 bp 3' overhang
+             (CGGCCGGTAA), Cluster A4
+          Length = 49894
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Plus
+
+                           
+Query: 4     tttcagcttgaact 17
+             ||||||||||||||
+Sbjct: 34415 tttcagcttgaact 34428
+
+
+
+
+>Scorpia complete genome, 50693 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 50693
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38448 atttcggcttgaacttcc 38465
+
+
+
+
+>Ruby complete sequence, 57726 bp including 10 bp 3' overhang
+             (CGGAAGGCGC), Cluster F1
+          Length = 57726
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 47205 ttgaacttccacag 47192
+
+
+
+
+>RockyHorror Complete Sequence, 56719 bp including 10 bp 3' overhang
+             (CCGATGGCAT), Cluster F1
+          Length = 56719
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 46494 ttgaacttccacag 46481
+
+
+
+
+>Rey Final Sequence, 83724 bp, 11 bp 3' overhang (ACCCCATGCAA),
+             Singleton, GPCL454, 19 Primers
+          Length = 83724
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 19    ccacaggttgttct 32
+             ||||||||||||||
+Sbjct: 16461 ccacaggttgttct 16448
+
+
+
+
+>Ramsey
+          Length = 58578
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 49410 ttgaacttccacag 49397
+
+
+
+
+>PMC
+          Length = 56692
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 45923 ttgaacttccacag 45910
+
+
+
+
+>PegLeg complete sequence, 80955 bp including 11 bp 3' overhang
+             (ACCTCCTGCAA), Cluster M
+          Length = 80955
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 19    ccacaggttgttct 32
+             ||||||||||||||
+Sbjct: 15672 ccacaggttgttct 15659
+
+
+
+
+>Pacc40
+          Length = 58554
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 47168 ttgaacttccacag 47155
+
+
+
+
+>OwlsT2W complete sequence, 56515 bp including 10 bp 3' overhang
+             (CCGAAGGCAT), Cluster F1
+          Length = 56515
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 47434 ttgaacttccacag 47421
+
+
+
+
+>Ovechkin complete sequence, 58338 bp including 10 bp 3' overhang
+             (CGGAAGGCGC), Cluster F1
+          Length = 58338
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 47903 ttgaacttccacag 47890
+
+
+
+
+>Naca complete sequence, 51594 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 51594
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38774 atttcggcttgaacttcc 38791
+
+
+
+
+>Mutaforma13 Complete Sequence, 57701 bp including 10 bp 3' overhang
+             (CGGTAGGCGC), Cluster F1
+          Length = 57701
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 48322 ttgaacttccacag 48309
+
+
+
+
+>MisterCuddles complete sequence, 57754 bp including 10 bp 3' overhang
+             (CGGACGGCGC), Cluster F1
+          Length = 57754
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 47204 ttgaacttccacag 47191
+
+
+
+
+>MilleniumForce complete sequence, 58106 bp including 10 bp 3' overhang
+             (CGGACGGCGC), Cluster F1
+          Length = 58106
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 47573 ttgaacttccacag 47560
+
+
+
+
+>Midas2 complete sequence, 51215 bp including 3' overhang (CGGGAGGTAA),
+             Cluster A5
+          Length = 51215
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38424 atttcggcttgaacttcc 38441
+
+
+
+
+>Mantra Complete Sequence, 57001 bp including 10 bp 3' overhang
+             (CGGAAGGCGC), Cluster F1
+          Length = 57001
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 46902 ttgaacttccacag 46889
+
+
+
+
+>LittleCherry Complete Sequence, 50690 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 50690
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38351 atttcggcttgaacttcc 38368
+
+
+
+
+>Krakatau complete sequence, 53058 bp including 10 bp 3' overhang
+             (CGGTAGGCGC), Cluster F1
+          Length = 53058
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 43584 ttgaacttccacag 43571
+
+
+
+
+>KittenMittens complete sequence, 49894 bp including 10 bp 3' overhang
+             (CGGCCGGTAA), Cluster A10
+          Length = 49894
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Plus
+
+                           
+Query: 4     tttcagcttgaact 17
+             ||||||||||||||
+Sbjct: 34416 tttcagcttgaact 34429
+
+
+
+
+>Job42 Complete Sequence, 59626 bp including 10 bp 3' overhang
+             (CCGACGGCAT), Cluster F1
+          Length = 59626
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 50271 ttgaacttccacag 50258
+
+
+
+
+>Jabiru complete sequence, 50530 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 50530
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38235 atttcggcttgaacttcc 38252
+
+
+
+
+>Hegedechwinu complete sequence, 57346 bp including 10 bp 3' overhang
+             (CCGATGGCAT), Cluster F1
+          Length = 57346
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 46079 ttgaacttccacag 46066
+
+
+
+
+>Hades complete sequence, 54986 bp including 10 bp 3' overhang
+             (CGGAAGGCGC), Cluster F1
+          Length = 54986
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 45689 ttgaacttccacag 45676
+
+
+
+
+>Girr Complete Sequence, 57754 bp including 10 bp 3' overhang
+             (CGGACGGCGC), Cluster F1
+          Length = 57754
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 47204 ttgaacttccacag 47191
+
+
+
+
+>George Final Sequence, 51578 bp including 10 bp 3' overhang, Cluster A5
+          Length = 51578
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38331 atttcggcttgaacttcc 38348
+
+
+
+
+>Estave1 complete sequence, 60727 bp including 10 bp 3' overhang
+             (CGGATGGCGC), Cluster F1
+          Length = 60727
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 50628 ttgaacttccacag 50615
+
+
+
+
+>ElTiger69 Complete Sequence, 51505 bp including 10 bp 3' overhang
+             (CGGGAGGTAA)
+          Length = 51505
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38356 atttcggcttgaacttcc 38373
+
+
+
+
+>Cuco Complete Sequence, 50965 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 50965
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38284 atttcggcttgaacttcc 38301
+
+
+
+
+>Coog complete sequence, 51215 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 51215
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38424 atttcggcttgaacttcc 38441
+
+
+
+
+>Che9d
+          Length = 56276
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 47439 ttgaacttccacag 47426
+
+
+
+
+>Che8
+          Length = 59471
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 47713 ttgaacttccacag 47700
+
+
+
+
+>Chadwick Complete Sequence, 49421 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 49421
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38221 atttcggcttgaacttcc 38238
+
+
+
+
+>CaptainTrips complete sequence, 57328 bp including 10 bp 3' overhang
+             (CGGAAGGCGC), Cluster F1
+          Length = 57328
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 46905 ttgaacttccacag 46892
+
+
+
+
+>BuzzLyseyear complete sequence, 59419 bp including 10 bp 3' overhang
+             (CCGAAGGCAT), Cluster F1
+          Length = 59419
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 49649 ttgaacttccacag 49636
+
+
+
+
+>Bricole complete sequence, 81128 bp including 11 bp 3' overhang
+             (ACCTCCTGCAA), Cluster M1
+          Length = 81128
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 19    ccacaggttgttct 32
+             ||||||||||||||
+Sbjct: 15659 ccacaggttgttct 15646
+
+
+
+
+>Boomer
+          Length = 58037
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 47699 ttgaacttccacag 47686
+
+
+
+
+>Bongo Complete Sequence, 80228 bp including 11 bp 3' overhang
+             (ACCTCCTGCAA), Cluster M
+          Length = 80228
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 19    ccacaggttgttct 32
+             ||||||||||||||
+Sbjct: 15673 ccacaggttgttct 15660
+
+
+
+
+>Benedict Complete Sequence, 51083 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 51083
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38380 atttcggcttgaacttcc 38397
+
+
+
+
+>Badger complete sequence, 51274 bp including 10 bp 3'overhang
+             (CGGCCGGTTA), Cluster A4
+          Length = 51274
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 7     cagcttgaacttcc 20
+             ||||||||||||||
+Sbjct: 16155 cagcttgaacttcc 16142
+
+
+
+
+>Backyardigan Final Sequence, 51308 bp, including 10 bp 3' overhang
+             (CGGCCGGTTA), Cluster A4
+          Length = 51308
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 7     cagcttgaacttcc 20
+             ||||||||||||||
+Sbjct: 16166 cagcttgaacttcc 16153
+
+
+
+
+>AvatarAhPeg complete sequence, 51637 bp including 10 bp 3' overhang
+             (CGGCCGGTAA), Cluster A4
+          Length = 51637
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 7     cagcttgaacttcc 20
+             ||||||||||||||
+Sbjct: 16439 cagcttgaacttcc 16426
+
+
+
+
+>Airmid Complete Sequence, 51241 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 51241
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38132 atttcggcttgaacttcc 38149
+
+
+
+
+>Achebe complete sequence, 51433 bp including 10 bp 3' overhang
+             (CGGCCGGTTA), Cluster A4
+          Length = 51433
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 7     cagcttgaacttcc 20
+             ||||||||||||||
+Sbjct: 16154 cagcttgaacttcc 16141
+
+
+
+
+
+  Database: Mycobacteriophages as of Mar 04, 2015
+    Posted date:  Mar 4, 2015  3:12 AM
+  Number of letters in database: 55,558,299
+  Number of sequences in database:  829
+  
+Lambda     K      H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda     K      H
+    1.37    0.711     1.31 
+
+
+Matrix: blastn matrix:1 -3
+Gap Penalties: Existence: 5, Extension: 2
+Number of Hits to DB: 562
+Number of Sequences: 829
+Number of extensions: 562
+Number of successful extensions: 58
+Number of sequences better than 10.0: 58
+Number of HSP's better than 10.0 without gapping: 58
+Number of HSP's successfully gapped in prelim test: 0
+Number of HSP's that attempted gapping in prelim test: 0
+Number of HSP's gapped (non-prelim): 58
+length of query: 50
+length of database: 55,558,299
+effective HSP length: 16
+effective length of query: 34
+effective length of database: 55,545,035
+effective search space: 1888531190
+effective search space used: 1888531190
+T: 0
+A: 0
+X1: 11 (21.8 bits)
+X2: 15 (29.7 bits)
+S1: 12 (24.3 bits)
+S2: 14 (28.2 bits)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Query= NC_000912_2_1
+         (50 letters)
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+ZoeJ complete sequence, 57315 bp including 11 bp 3' overhang (CC...    30   1.5   
+TM4                                                                    30   1.5   
+Mufasa complete sequence, 58065 bp including 10 bp 3' overhang (...    30   1.5   
+Milly complete sequence, 58211 bp including 10 bp 3' overhang (C...    30   1.5   
+Findley complete sequence, 58150 bp including 10 bp 3' overhang ...    30   1.5   
+Wile Complete Sequence, 51308 bp including 10 bp 3' overhang (CG...    28   5.9   
+Velveteen complete sequence, 54314 bp including 10 bp 3' overhan...    28   5.9   
+UnionJack complete sequence, 49158 bp including 10 bp 3' overhan...    28   5.9   
+Trike complete sequence, 44716 bp including 10 bp 3' overhang (C...    28   5.9   
+Theia Complete Sequence, 51543 bp including 10 bp 3' overhang (C...    28   5.9   
+Swirley complete sequence, 49717 bp including 10 bp 3' overhang ...    28   5.9   
+Spartacus Complete Sequence, 61164 bp including 10 bp 3' overhan...    28   5.9   
+Sparkdehlily complete sequence, 56255 bp including 10 bp 3' over...    28   5.9   
+ShiLan Complete Sequence, 59794 bp including 10 bp 3' overhang (...    28   5.9   
+Severus Complete Sequence, 49894 bp including 10 bp 3' overhang ...    28   5.9   
+Scorpia complete genome, 50693 bp including 10 bp 3' overhang (C...    28   5.9   
+Ruby complete sequence, 57726 bp including 10 bp 3' overhang (CG...    28   5.9   
+RockyHorror Complete Sequence, 56719 bp including 10 bp 3' overh...    28   5.9   
+Rey Final Sequence, 83724 bp, 11 bp 3' overhang (ACCCCATGCAA), S...    28   5.9   
+Ramsey                                                                 28   5.9   
+PMC                                                                    28   5.9   
+PegLeg complete sequence, 80955 bp including 11 bp 3' overhang (...    28   5.9   
+Pacc40                                                                 28   5.9   
+OwlsT2W complete sequence, 56515 bp including 10 bp 3' overhang ...    28   5.9   
+Ovechkin complete sequence, 58338 bp including 10 bp 3' overhang...    28   5.9   
+Naca complete sequence, 51594 bp including 10 bp 3' overhang (CG...    28   5.9   
+Mutaforma13 Complete Sequence, 57701 bp including 10 bp 3' overh...    28   5.9   
+MisterCuddles complete sequence, 57754 bp including 10 bp 3' ove...    28   5.9   
+MilleniumForce complete sequence, 58106 bp including 10 bp 3' ov...    28   5.9   
+Midas2 complete sequence, 51215 bp including 3' overhang (CGGGAG...    28   5.9   
+Mantra Complete Sequence, 57001 bp including 10 bp 3' overhang (...    28   5.9   
+LittleCherry Complete Sequence, 50690 bp including 10 bp 3' over...    28   5.9   
+Krakatau complete sequence, 53058 bp including 10 bp 3' overhang...    28   5.9   
+KittenMittens complete sequence, 49894 bp including 10 bp 3' ove...    28   5.9   
+Job42 Complete Sequence, 59626 bp including 10 bp 3' overhang (C...    28   5.9   
+Jabiru complete sequence, 50530 bp including 10 bp 3' overhang (...    28   5.9   
+Hegedechwinu complete sequence, 57346 bp including 10 bp 3' over...    28   5.9   
+Hades complete sequence, 54986 bp including 10 bp 3' overhang (C...    28   5.9   
+Girr Complete Sequence, 57754 bp including 10 bp 3' overhang (CG...    28   5.9   
+George Final Sequence, 51578 bp including 10 bp 3' overhang, Clu...    28   5.9   
+Estave1 complete sequence, 60727 bp including 10 bp 3' overhang ...    28   5.9   
+ElTiger69 Complete Sequence, 51505 bp including 10 bp 3' overhan...    28   5.9   
+Cuco Complete Sequence, 50965 bp including 10 bp 3' overhang (CG...    28   5.9   
+Coog complete sequence, 51215 bp including 10 bp 3' overhang (CG...    28   5.9   
+Che9d                                                                  28   5.9   
+Che8                                                                   28   5.9   
+Chadwick Complete Sequence, 49421 bp including 10 bp 3' overhang...    28   5.9   
+CaptainTrips complete sequence, 57328 bp including 10 bp 3' over...    28   5.9   
+BuzzLyseyear complete sequence, 59419 bp including 10 bp 3' over...    28   5.9   
+Bricole complete sequence, 81128 bp including 11 bp 3' overhang ...    28   5.9   
+Boomer                                                                 28   5.9   
+Bongo Complete Sequence, 80228 bp including 11 bp 3' overhang (A...    28   5.9   
+Benedict Complete Sequence, 51083 bp including 10 bp 3' overhang...    28   5.9   
+Badger complete sequence, 51274 bp including 10 bp 3'overhang (C...    28   5.9   
+Backyardigan Final Sequence, 51308 bp, including 10 bp 3' overha...    28   5.9   
+AvatarAhPeg complete sequence, 51637 bp including 10 bp 3' overh...    28   5.9   
+Airmid Complete Sequence, 51241 bp including 10 bp 3' overhang (...    28   5.9   
+Achebe complete sequence, 51433 bp including 10 bp 3' overhang (...    28   5.9   
+
+
+>ZoeJ complete sequence, 57315 bp including 11 bp 3' overhang
+             (CCTCGCGGCAT), Cluster K2
+          Length = 57315
+
+ Score = 30.2 bits (15), Expect = 1.5
+ Identities = 15/15 (100%)
+ Strand = Plus / Minus
+
+                            
+Query: 3     atttcagcttgaact 17
+             |||||||||||||||
+Sbjct: 10491 atttcagcttgaact 10477
+
+
+
+
+>TM4
+          Length = 52797
+
+ Score = 30.2 bits (15), Expect = 1.5
+ Identities = 15/15 (100%)
+ Strand = Plus / Minus
+
+                            
+Query: 3     atttcagcttgaact 17
+             |||||||||||||||
+Sbjct: 10598 atttcagcttgaact 10584
+
+
+
+
+>Mufasa complete sequence, 58065 bp including 10 bp 3' overhang
+             (CTCGCGGCAT), Cluster K2
+          Length = 58065
+
+ Score = 30.2 bits (15), Expect = 1.5
+ Identities = 15/15 (100%)
+ Strand = Plus / Minus
+
+                            
+Query: 3     atttcagcttgaact 17
+             |||||||||||||||
+Sbjct: 10552 atttcagcttgaact 10538
+
+
+
+
+>Milly complete sequence, 58211 bp including 10 bp 3' overhang
+             (CTCGCGGCAT), Cluster K2
+          Length = 58211
+
+ Score = 30.2 bits (15), Expect = 1.5
+ Identities = 15/15 (100%)
+ Strand = Plus / Minus
+
+                            
+Query: 3     atttcagcttgaact 17
+             |||||||||||||||
+Sbjct: 10530 atttcagcttgaact 10516
+
+
+
+
+>Findley complete sequence, 58150 bp including 10 bp 3' overhang
+             (CTCGCGGCAT), Cluster K2
+          Length = 58150
+
+ Score = 30.2 bits (15), Expect = 1.5
+ Identities = 15/15 (100%)
+ Strand = Plus / Minus
+
+                            
+Query: 3     atttcagcttgaact 17
+             |||||||||||||||
+Sbjct: 10530 atttcagcttgaact 10516
+
+
+
+
+>Wile Complete Sequence, 51308 bp including 10 bp 3' overhang
+             (CGGCCGGTTA), Cluster A4
+          Length = 51308
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 7     cagcttgaacttcc 20
+             ||||||||||||||
+Sbjct: 16167 cagcttgaacttcc 16154
+
+
+
+
+>Velveteen complete sequence, 54314 bp including 10 bp 3' overhang
+             (CCGATGGCAT), Cluster F1
+          Length = 54314
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 44068 ttgaacttccacag 44055
+
+
+
+
+>UnionJack complete sequence, 49158 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 49158
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 37953 atttcggcttgaacttcc 37970
+
+
+
+
+>Trike complete sequence, 44716 bp including 10 bp 3' overhang
+             (CGGCCGGTAA), Cluster A10
+          Length = 44716
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Plus
+
+                           
+Query: 4     tttcagcttgaact 17
+             ||||||||||||||
+Sbjct: 34424 tttcagcttgaact 34437
+
+
+
+
+>Theia Complete Sequence, 51543 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 51543
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38623 atttcggcttgaacttcc 38640
+
+
+
+
+>Swirley complete sequence, 49717 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 49717
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38504 atttcggcttgaacttcc 38521
+
+
+
+
+>Spartacus Complete Sequence, 61164 bp including 10 bp 3' overhang
+             (CGGAAGGCGC), Cluster F1
+          Length = 61164
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 49621 ttgaacttccacag 49608
+
+
+
+
+>Sparkdehlily complete sequence, 56255 bp including 10 bp 3' overhang
+             (CGGAAGGCGC), Cluster F1
+          Length = 56255
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 45969 ttgaacttccacag 45956
+
+
+
+
+>ShiLan Complete Sequence, 59794 bp including 10 bp 3' overhang
+             (CGGAAGGCGC), Cluster F1
+          Length = 59794
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 50046 ttgaacttccacag 50033
+
+
+
+
+>Severus Complete Sequence, 49894 bp including 10 bp 3' overhang
+             (CGGCCGGTAA), Cluster A4
+          Length = 49894
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Plus
+
+                           
+Query: 4     tttcagcttgaact 17
+             ||||||||||||||
+Sbjct: 34415 tttcagcttgaact 34428
+
+
+
+
+>Scorpia complete genome, 50693 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 50693
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38448 atttcggcttgaacttcc 38465
+
+
+
+
+>Ruby complete sequence, 57726 bp including 10 bp 3' overhang
+             (CGGAAGGCGC), Cluster F1
+          Length = 57726
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 47205 ttgaacttccacag 47192
+
+
+
+
+>RockyHorror Complete Sequence, 56719 bp including 10 bp 3' overhang
+             (CCGATGGCAT), Cluster F1
+          Length = 56719
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 46494 ttgaacttccacag 46481
+
+
+
+
+>Rey Final Sequence, 83724 bp, 11 bp 3' overhang (ACCCCATGCAA),
+             Singleton, GPCL454, 19 Primers
+          Length = 83724
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 19    ccacaggttgttct 32
+             ||||||||||||||
+Sbjct: 16461 ccacaggttgttct 16448
+
+
+
+
+>Ramsey
+          Length = 58578
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 49410 ttgaacttccacag 49397
+
+
+
+
+>PMC
+          Length = 56692
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 45923 ttgaacttccacag 45910
+
+
+
+
+>PegLeg complete sequence, 80955 bp including 11 bp 3' overhang
+             (ACCTCCTGCAA), Cluster M
+          Length = 80955
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 19    ccacaggttgttct 32
+             ||||||||||||||
+Sbjct: 15672 ccacaggttgttct 15659
+
+
+
+
+>Pacc40
+          Length = 58554
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 47168 ttgaacttccacag 47155
+
+
+
+
+>OwlsT2W complete sequence, 56515 bp including 10 bp 3' overhang
+             (CCGAAGGCAT), Cluster F1
+          Length = 56515
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 47434 ttgaacttccacag 47421
+
+
+
+
+>Ovechkin complete sequence, 58338 bp including 10 bp 3' overhang
+             (CGGAAGGCGC), Cluster F1
+          Length = 58338
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 47903 ttgaacttccacag 47890
+
+
+
+
+>Naca complete sequence, 51594 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 51594
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38774 atttcggcttgaacttcc 38791
+
+
+
+
+>Mutaforma13 Complete Sequence, 57701 bp including 10 bp 3' overhang
+             (CGGTAGGCGC), Cluster F1
+          Length = 57701
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 48322 ttgaacttccacag 48309
+
+
+
+
+>MisterCuddles complete sequence, 57754 bp including 10 bp 3' overhang
+             (CGGACGGCGC), Cluster F1
+          Length = 57754
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 47204 ttgaacttccacag 47191
+
+
+
+
+>MilleniumForce complete sequence, 58106 bp including 10 bp 3' overhang
+             (CGGACGGCGC), Cluster F1
+          Length = 58106
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 47573 ttgaacttccacag 47560
+
+
+
+
+>Midas2 complete sequence, 51215 bp including 3' overhang (CGGGAGGTAA),
+             Cluster A5
+          Length = 51215
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38424 atttcggcttgaacttcc 38441
+
+
+
+
+>Mantra Complete Sequence, 57001 bp including 10 bp 3' overhang
+             (CGGAAGGCGC), Cluster F1
+          Length = 57001
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 46902 ttgaacttccacag 46889
+
+
+
+
+>LittleCherry Complete Sequence, 50690 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 50690
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38351 atttcggcttgaacttcc 38368
+
+
+
+
+>Krakatau complete sequence, 53058 bp including 10 bp 3' overhang
+             (CGGTAGGCGC), Cluster F1
+          Length = 53058
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 43584 ttgaacttccacag 43571
+
+
+
+
+>KittenMittens complete sequence, 49894 bp including 10 bp 3' overhang
+             (CGGCCGGTAA), Cluster A10
+          Length = 49894
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Plus
+
+                           
+Query: 4     tttcagcttgaact 17
+             ||||||||||||||
+Sbjct: 34416 tttcagcttgaact 34429
+
+
+
+
+>Job42 Complete Sequence, 59626 bp including 10 bp 3' overhang
+             (CCGACGGCAT), Cluster F1
+          Length = 59626
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 50271 ttgaacttccacag 50258
+
+
+
+
+>Jabiru complete sequence, 50530 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 50530
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38235 atttcggcttgaacttcc 38252
+
+
+
+
+>Hegedechwinu complete sequence, 57346 bp including 10 bp 3' overhang
+             (CCGATGGCAT), Cluster F1
+          Length = 57346
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 46079 ttgaacttccacag 46066
+
+
+
+
+>Hades complete sequence, 54986 bp including 10 bp 3' overhang
+             (CGGAAGGCGC), Cluster F1
+          Length = 54986
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 45689 ttgaacttccacag 45676
+
+
+
+
+>Girr Complete Sequence, 57754 bp including 10 bp 3' overhang
+             (CGGACGGCGC), Cluster F1
+          Length = 57754
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 47204 ttgaacttccacag 47191
+
+
+
+
+>George Final Sequence, 51578 bp including 10 bp 3' overhang, Cluster A5
+          Length = 51578
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38331 atttcggcttgaacttcc 38348
+
+
+
+
+>Estave1 complete sequence, 60727 bp including 10 bp 3' overhang
+             (CGGATGGCGC), Cluster F1
+          Length = 60727
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 50628 ttgaacttccacag 50615
+
+
+
+
+>ElTiger69 Complete Sequence, 51505 bp including 10 bp 3' overhang
+             (CGGGAGGTAA)
+          Length = 51505
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38356 atttcggcttgaacttcc 38373
+
+
+
+
+>Cuco Complete Sequence, 50965 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 50965
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38284 atttcggcttgaacttcc 38301
+
+
+
+
+>Coog complete sequence, 51215 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 51215
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38424 atttcggcttgaacttcc 38441
+
+
+
+
+>Che9d
+          Length = 56276
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 47439 ttgaacttccacag 47426
+
+
+
+
+>Che8
+          Length = 59471
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 47713 ttgaacttccacag 47700
+
+
+
+
+>Chadwick Complete Sequence, 49421 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 49421
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38221 atttcggcttgaacttcc 38238
+
+
+
+
+>CaptainTrips complete sequence, 57328 bp including 10 bp 3' overhang
+             (CGGAAGGCGC), Cluster F1
+          Length = 57328
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 46905 ttgaacttccacag 46892
+
+
+
+
+>BuzzLyseyear complete sequence, 59419 bp including 10 bp 3' overhang
+             (CCGAAGGCAT), Cluster F1
+          Length = 59419
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 49649 ttgaacttccacag 49636
+
+
+
+
+>Bricole complete sequence, 81128 bp including 11 bp 3' overhang
+             (ACCTCCTGCAA), Cluster M1
+          Length = 81128
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 19    ccacaggttgttct 32
+             ||||||||||||||
+Sbjct: 15659 ccacaggttgttct 15646
+
+
+
+
+>Boomer
+          Length = 58037
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 11    ttgaacttccacag 24
+             ||||||||||||||
+Sbjct: 47699 ttgaacttccacag 47686
+
+
+
+
+>Bongo Complete Sequence, 80228 bp including 11 bp 3' overhang
+             (ACCTCCTGCAA), Cluster M
+          Length = 80228
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 19    ccacaggttgttct 32
+             ||||||||||||||
+Sbjct: 15673 ccacaggttgttct 15660
+
+
+
+
+>Benedict Complete Sequence, 51083 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 51083
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38380 atttcggcttgaacttcc 38397
+
+
+
+
+>Badger complete sequence, 51274 bp including 10 bp 3'overhang
+             (CGGCCGGTTA), Cluster A4
+          Length = 51274
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 7     cagcttgaacttcc 20
+             ||||||||||||||
+Sbjct: 16155 cagcttgaacttcc 16142
+
+
+
+
+>Backyardigan Final Sequence, 51308 bp, including 10 bp 3' overhang
+             (CGGCCGGTTA), Cluster A4
+          Length = 51308
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 7     cagcttgaacttcc 20
+             ||||||||||||||
+Sbjct: 16166 cagcttgaacttcc 16153
+
+
+
+
+>AvatarAhPeg complete sequence, 51637 bp including 10 bp 3' overhang
+             (CGGCCGGTAA), Cluster A4
+          Length = 51637
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 7     cagcttgaacttcc 20
+             ||||||||||||||
+Sbjct: 16439 cagcttgaacttcc 16426
+
+
+
+
+>Airmid Complete Sequence, 51241 bp including 10 bp 3' overhang
+             (CGGGAGGTAA), Cluster A5
+          Length = 51241
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                               
+Query: 3     atttcagcttgaacttcc 20
+             ||||| ||||||||||||
+Sbjct: 38132 atttcggcttgaacttcc 38149
+
+
+
+
+>Achebe complete sequence, 51433 bp including 10 bp 3' overhang
+             (CGGCCGGTTA), Cluster A4
+          Length = 51433
+
+ Score = 28.2 bits (14), Expect = 5.9
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 7     cagcttgaacttcc 20
+             ||||||||||||||
+Sbjct: 16154 cagcttgaacttcc 16141
+
+
+
+
+
+  Database: Mycobacteriophages as of Mar 04, 2015
+    Posted date:  Mar 4, 2015  3:12 AM
+  Number of letters in database: 55,558,299
+  Number of sequences in database:  829
+  
+Lambda     K      H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda     K      H
+    1.37    0.711     1.31 
+
+
+Matrix: blastn matrix:1 -3
+Gap Penalties: Existence: 5, Extension: 2
+Number of Hits to DB: 562
+Number of Sequences: 829
+Number of extensions: 562
+Number of successful extensions: 58
+Number of sequences better than 10.0: 58
+Number of HSP's better than 10.0 without gapping: 58
+Number of HSP's successfully gapped in prelim test: 0
+Number of HSP's that attempted gapping in prelim test: 0
+Number of HSP's gapped (non-prelim): 58
+length of query: 50
+length of database: 55,558,299
+effective HSP length: 16
+effective length of query: 34
+effective length of database: 55,545,035
+effective search space: 1888531190
+effective search space used: 1888531190
+T: 0
+A: 0
+X1: 11 (21.8 bits)
+X2: 15 (29.7 bits)
+S1: 12 (24.3 bits)
+S2: 14 (28.2 bits)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Query= NC_000912_2_2
+         (44 letters)
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+gi|29425700|gb|AY129339.1| Mycobacteriophage Barnyard, complete ...    28   5.1   
+
+
+>gi|29425700|gb|AY129339.1| Mycobacteriophage Barnyard, complete
+            genome
+          Length = 70797
+
+ Score = 28.2 bits (14), Expect = 5.1
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                          
+Query: 5    tactgcttgtggtt 18
+            ||||||||||||||
+Sbjct: 4436 tactgcttgtggtt 4423
+
+
+
+
+
+  Database: Mycobacteriophages as of Mar 04, 2015
+    Posted date:  Mar 4, 2015  3:12 AM
+  Number of letters in database: 55,558,299
+  Number of sequences in database:  829
+  
+Lambda     K      H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda     K      H
+    1.37    0.711     1.31 
+
+
+Matrix: blastn matrix:1 -3
+Gap Penalties: Existence: 5, Extension: 2
+Number of Hits to DB: 326
+Number of Sequences: 829
+Number of extensions: 326
+Number of successful extensions: 1
+Number of sequences better than 10.0: 1
+Number of HSP's better than 10.0 without gapping: 1
+Number of HSP's successfully gapped in prelim test: 0
+Number of HSP's that attempted gapping in prelim test: 0
+Number of HSP's gapped (non-prelim): 1
+length of query: 44
+length of database: 55,558,299
+effective HSP length: 15
+effective length of query: 29
+effective length of database: 55,545,864
+effective search space: 1610830056
+effective search space used: 1610830056
+T: 0
+A: 0
+X1: 11 (21.8 bits)
+X2: 15 (29.7 bits)
+S1: 12 (24.3 bits)
+S2: 14 (28.2 bits)
+
+
+
+
