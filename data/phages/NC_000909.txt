@@ -1,0 +1,8037 @@
+BLASTN 2.2.30+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: PhageDatabase
+           829 sequences; 55,558,299 total letters
+
+
+
+Query= 10.1
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 10.1
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 10.2
+
+Length=42
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1499738328
+
+
+Query= 10.3
+
+Length=36
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1166463144
+
+
+Query= 10.4
+
+Length=29
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Lumos complete sequence, 75586 bp including 10 bp 3' overhang (...  32.2    0.16 
+  Loser complete sequence, 53486 bp including 10 bp 3' overhang (...  32.2    0.16 
+  DarthPhader complete sequence, 53432 bp including 10 bp 3' over...  32.2    0.16 
+  Veracruz complete sequence, 50062 bp including 10 bp 3' overhan...  30.2    0.62 
+  Texage complete sequence, 50081 bp including 10 bp 3' overhang ...  30.2    0.62 
+  QuinnKiro complete sequence, 50066 bp including 10 bp 3' overha...  30.2    0.62 
+  Popcicle complete sequence, 50075 bp including 10 bp 3' overhan...  30.2    0.62 
+  Pocahontas complete sequence, 50077 bp including 10 bp 3' overh...  30.2    0.62 
+  Panamaxus complete sequence, 50080 bp including 10 bp 3' overha...  30.2    0.62 
+  Norbert Complete Sequence, 50078 bp including 10 bp 3' overhang...  30.2    0.62 
+  Lambert1 complete sequence, 50042 bp including 10 bp 3' overhan...  30.2    0.62 
+  ZygoTaiga complete sequence, 157204 bp, circularly permuted, Cl...  28.2    2.4  
+  Zeenon complete sequence, 155292 bp, circularly permuted, Clust...  28.2    2.4  
+  Willis complete sequence, 155476 bp, circularly permuted, Clust...  28.2    2.4  
+  Wally Complete Sequence, 155299 bp, Circularly Permuted, Cluste...  28.2    2.4  
+  Tyke Complete Sequence, 156679 bp, Circularly Permuted, Cluster C1  28.2    2.4  
+  Tortoise16 complete sequence, 154584 bp, circularly permuted, C...  28.2    2.4  
+  TinyTim Complete Sequence, 153817 bp, circularly permuted, Clus...  28.2    2.4  
+  Teardrop complete sequence, 155389 bp, circularly permuted, Clu...  28.2    2.4  
+  Spud                                                                28.2    2.4  
+  Sprinklers complete sequence, 156060 bp, circularly permuted, C...  28.2    2.4  
+  Specks complete sequence, 156374 bp, circularly permuted, Clust...  28.2    2.4  
+  SmallFry complete sequence, 155433 bp, circularly permuted, Clu...  28.2    2.4  
+  Shrimp Complete Sequence, 155714 bp, Circularly permuted, Clust...  28.2    2.4  
+  Sebata                                                              28.2    2.4  
+  ScottMcG                                                            28.2    2.4  
+  Rizal                                                               28.2    2.4  
+  QBert complete sequence, 153772 bp, circularly permuted, Cluste...  28.2    2.4  
+  Pleione Complete Sequence, 155586 bp, Circularly Permuted, Clus...  28.2    2.4  
+  Pio                                                                 28.2    2.4  
+  Pier complete sequence, 156471 bp, circularly permuted, Cluster C1  28.2    2.4  
+  NuevoMundo Complete Sequence, 155943 bp, Circularly permuted, C...  28.2    2.4  
+  Nicolasphaqe complete sequence, 155784 bp, circularly permuted,...  28.2    2.4  
+  Nappy                                                               28.2    2.4  
+  Morizzled23 complete sequence, 155131 bp, circularly permuted, ...  28.2    2.4  
+  MoMoMixon Complete Sequence, 154573 bp, Circularly Permuted, Cl...  28.2    2.4  
+  Momo complete sequence, 154553 bp, circularly permuted, Cluster C1  28.2    2.4  
+  MikeLiesIn complete sequence, 155916 bp, circularly permuted, C...  28.2    2.4  
+  Melpomini complete sequence, 154855 bp, circularly permuted, Cl...  28.2    2.4  
+  Lysocool complete sequence, 154462 bp, circularly permuted, Clu...  28.2    2.4  
+  LRRHood                                                             28.2    2.4  
+  Lolly9 complete sequence, 75816 bp including 10 bp 3' overhang ...  28.2    2.4  
+  Littleton complete sequence, 155800 bp, circularly permuted, Cl...  28.2    2.4  
+  LinStu                                                              28.2    2.4  
+  Koguma complete sequence, 155759 bp, circularly permuted, Clust...  28.2    2.4  
+  Khaleesi complete sequence, 155251 bp, circularly permuted, Clu...  28.2    2.4  
+  InterFolia complete genome, 156221 bp, circularly permuted, Clu...  28.2    2.4  
+  Gizmo complete sequence, 157482 bp, circularly permuted, Cluste...  28.2    2.4  
+  Gabriel complete sequence, 154474 bp, circularly permuted, Clus...  28.2    2.4  
+  ET08                                                                28.2    2.4  
+  ErnieJ complete sequence, 153243 bp, circularly permuted, Clust...  28.2    2.4  
+  EmToTheThree complete sequence, 155601 bp, circularly permuted,...  28.2    2.4  
+  DTDevon complete sequence, 156754 bp, circularly permuted, Clus...  28.2    2.4  
+  Drazdys Final Sequence, 156281 bp, Circularly Permuted, Cluster C1  28.2    2.4  
+  Delilah complete sequence, 155127 bp, circularly permuted, Clus...  28.2    2.4  
+  Dandelion Complete Sequence, 157568 bp, Circularly Permuted, Cl...  28.2    2.4  
+  ChickenPhender complete sequence, 154397 bp, circularly permute...  28.2    2.4  
+  CharlieB complete sequence, 155886 bp, circularly permuted, Clu...  28.2    2.4  
+  Catera                                                              28.2    2.4  
+  Cali                                                                28.2    2.4  
+  Bxz1                                                                28.2    2.4  
+  Bigswole complete sequence, 156514 bp, circularly permuted, Clu...  28.2    2.4  
+  BeanWater complete sequence, 154061 bp, circularly permuted, Cl...  28.2    2.4  
+  Bangla1971 complete sequence, 154722 bp, circularly permuted, C...  28.2    2.4  
+  Ava3 complete sequence, 154466 bp, circularly permuted, Cluster C1  28.2    2.4  
+  Astraea Complete Sequence, 154872 bp, Circularly permuted, Clus...  28.2    2.4  
+  ArcherS7 Complete Sequence, 156558 bp, Circularly permuted, Clu...  28.2    2.4  
+  Alice Complete Sequence, 153401 bp, Circularly Permuted, Cluste...  28.2    2.4  
+  L5                                                                  26.3    9.7  
+  Kratio Complete Sequence, 62738 bp including 11 bp 3' overhang ...  26.3    9.7  
+  Jsquared complete sequence, 52967 bp including 10 bp 3' overhan...  26.3    9.7  
+  Echild complete sequence, 53159 bp including 10bp overhang (CGG...  26.3    9.7  
+  ChipMunk complete sequence, 53932 bp including 10 bp 3' overhan...  26.3    9.7  
+  Changeling complete sequence, 52991 bp including 10 bp 3' overh...  26.3    9.7  
+  Breeniome Complete Sequence, 154434 bp, Circularly permuted, Cl...  26.3    9.7  
+
+
+> Lumos complete sequence, 75586 bp including 10 bp 3' overhang 
+(TCGATCAGCC), Cluster L3
+Length=75586
+
+ Score = 32.2 bits (16),  Expect = 0.16
+ Identities = 16/16 (100%), Gaps = 0/16 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGTGT  17
+              ||||||||||||||||
+Sbjct  74909  GTGTGTGTGCGTGTGT  74894
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5      TGTGTGCGTGTGT  17
+              |||||||||||||
+Sbjct  75020  TGTGTGCGTGTGT  75008
+
+
+> Loser complete sequence, 53486 bp including 10 bp 3' overhang 
+(CGGTCGGTAA), Cluster A2
+Length=53486
+
+ Score = 32.2 bits (16),  Expect = 0.16
+ Identities = 16/16 (100%), Gaps = 0/16 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGTGT  17
+              ||||||||||||||||
+Sbjct  53265  GTGTGTGTGCGTGTGT  53250
+
+
+> DarthPhader complete sequence, 53432 bp including 10 bp 3' overhang 
+(CGGGCCGTAA), Cluster A12
+Length=53432
+
+ Score = 32.2 bits (16),  Expect = 0.16
+ Identities = 16/16 (100%), Gaps = 0/16 (0%)
+ Strand=Plus/Plus
+
+Query  2      GTGTGTGTGCGTGTGT  17
+              ||||||||||||||||
+Sbjct  53227  GTGTGTGTGCGTGTGT  53242
+
+
+> Veracruz complete sequence, 50062 bp including 10 bp 3' overhang 
+(CGGCCGGTAA), Cluster A3
+Length=50062
+
+ Score = 30.2 bits (15),  Expect = 0.62
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Minus
+
+Query  8      GTGCGTGTGTTGGGG  22
+              |||||||||||||||
+Sbjct  27229  GTGCGTGTGTTGGGG  27215
+
+
+> Texage complete sequence, 50081 bp including 10 bp 3' overhang 
+(CGGCCGGTAA), Cluster A3
+Length=50081
+
+ Score = 30.2 bits (15),  Expect = 0.62
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Minus
+
+Query  8      GTGCGTGTGTTGGGG  22
+              |||||||||||||||
+Sbjct  27230  GTGCGTGTGTTGGGG  27216
+
+
+> QuinnKiro complete sequence, 50066 bp including 10 bp 3' overhang 
+(CGGCCGGTAA), Cluster A3
+Length=50066
+
+ Score = 30.2 bits (15),  Expect = 0.62
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Minus
+
+Query  8      GTGCGTGTGTTGGGG  22
+              |||||||||||||||
+Sbjct  27229  GTGCGTGTGTTGGGG  27215
+
+
+> Popcicle complete sequence, 50075 bp including 10 bp 3' overhang 
+(CGGCCGGTAA), Cluster A3
+Length=50075
+
+ Score = 30.2 bits (15),  Expect = 0.62
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Minus
+
+Query  8      GTGCGTGTGTTGGGG  22
+              |||||||||||||||
+Sbjct  27226  GTGCGTGTGTTGGGG  27212
+
+
+> Pocahontas complete sequence, 50077 bp including 10 bp 3' overhang 
+(CGGCCGGTAA), Cluster A3
+Length=50077
+
+ Score = 30.2 bits (15),  Expect = 0.62
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Minus
+
+Query  8      GTGCGTGTGTTGGGG  22
+              |||||||||||||||
+Sbjct  27226  GTGCGTGTGTTGGGG  27212
+
+
+> Panamaxus complete sequence, 50080 bp including 10 bp 3' overhang 
+(CGGCCGGTAA), Cluster A3
+Length=50080
+
+ Score = 30.2 bits (15),  Expect = 0.62
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Minus
+
+Query  8      GTGCGTGTGTTGGGG  22
+              |||||||||||||||
+Sbjct  27229  GTGCGTGTGTTGGGG  27215
+
+
+> Norbert Complete Sequence, 50078 bp including 10 bp 3' overhang 
+(CGGCCGGTAA), Cluster A3
+Length=50078
+
+ Score = 30.2 bits (15),  Expect = 0.62
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Minus
+
+Query  8      GTGCGTGTGTTGGGG  22
+              |||||||||||||||
+Sbjct  27229  GTGCGTGTGTTGGGG  27215
+
+
+> Lambert1 complete sequence, 50042 bp including 10 bp 3' overhang 
+(CGGCCGGTAA), Cluster A3
+Length=50042
+
+ Score = 30.2 bits (15),  Expect = 0.62
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Minus
+
+Query  8      GTGCGTGTGTTGGGG  22
+              |||||||||||||||
+Sbjct  27229  GTGCGTGTGTTGGGG  27215
+
+
+> ZygoTaiga complete sequence, 157204 bp, circularly permuted, 
+Cluster C1
+Length=157204
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  3798  GTGTGTGTGCGTGT  3785
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  52713  GTGTGTGTGCGTGT  52700
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  8301  TGTGTGCGTGTGT  8289
+
+
+> Zeenon complete sequence, 155292 bp, circularly permuted, Cluster 
+C1
+Length=155292
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  102626  TGTGTGCGTGTGTT  102613
+
+
+> Willis complete sequence, 155476 bp, circularly permuted, Cluster 
+C1
+Length=155476
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  3724  GTGTGTGTGCGTGT  3711
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  8196  TGTGTGCGTGTGT  8184
+
+
+> Wally Complete Sequence, 155299 bp, Circularly Permuted, Cluster 
+C1
+Length=155299
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  101796  TGTGTGCGTGTGTT  101783
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  7188  TGTGTGCGTGTGT  7176
+
+
+> Tyke Complete Sequence, 156679 bp, Circularly Permuted, Cluster 
+C1
+Length=156679
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  3768  GTGTGTGTGCGTGT  3755
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  103320  TGTGTGCGTGTGTT  103307
+
+
+> Tortoise16 complete sequence, 154584 bp, circularly permuted, 
+Cluster C1
+Length=154584
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  101953  TGTGTGCGTGTGTT  101940
+
+
+> TinyTim Complete Sequence, 153817 bp, circularly permuted, Cluster 
+C1
+Length=153817
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  3798  GTGTGTGTGCGTGT  3785
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  51553  GTGTGTGTGCGTGT  51540
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  101416  TGTGTGCGTGTGTT  101403
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  8301  TGTGTGCGTGTGT  8289
+
+
+> Teardrop complete sequence, 155389 bp, circularly permuted, Cluster 
+C1
+Length=155389
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  100712  TGTGTGCGTGTGTT  100699
+
+
+> Spud
+Length=154906
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  4292  GTGTGTGTGCGTGT  4279
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  101886  TGTGTGCGTGTGTT  101873
+
+
+> Sprinklers complete sequence, 156060 bp, circularly permuted, 
+Cluster C1
+Length=156060
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  2889  GTGTGTGTGCGTGT  2876
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  50361  GTGTGTGTGCGTGT  50348
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  101388  TGTGTGCGTGTGTT  101375
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  7784  TGTGTGCGTGTGT  7772
+
+
+> Specks complete sequence, 156374 bp, circularly permuted, Cluster 
+C1
+Length=156374
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  4744  GTGTGTGTGCGTGT  4731
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  103517  TGTGTGCGTGTGTT  103504
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  9061  TGTGTGCGTGTGT  9049
+
+
+> SmallFry complete sequence, 155433 bp, circularly permuted, Cluster 
+C1
+Length=155433
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  101310  TGTGTGCGTGTGTT  101297
+
+
+> Shrimp Complete Sequence, 155714 bp, Circularly permuted, Cluster 
+C1
+Length=155714
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  3802  GTGTGTGTGCGTGT  3789
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  51792  GTGTGTGTGCGTGT  51779
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  102784  TGTGTGCGTGTGTT  102771
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  8305  TGTGTGCGTGTGT  8293
+
+
+> Sebata
+Length=155286
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  52458  GTGTGTGTGCGTGT  52445
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  8645  TGTGTGCGTGTGT  8633
+
+
+> ScottMcG
+Length=154661
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  3094  GTGTGTGTGCGTGT  3081
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  8613  TGTGTGCGTGTGT  8601
+
+
+> Rizal
+Length=153894
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  100768  TGTGTGCGTGTGTT  100755
+
+
+> QBert complete sequence, 153772 bp, circularly permuted, Cluster 
+C1
+Length=153772
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  50864  GTGTGTGTGCGTGT  50851
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  100986  TGTGTGCGTGTGTT  100973
+
+
+> Pleione Complete Sequence, 155586 bp, Circularly Permuted, Cluster 
+C1
+Length=155586
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  3798  GTGTGTGTGCGTGT  3785
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  51956  GTGTGTGTGCGTGT  51943
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  8301  TGTGTGCGTGTGT  8289
+
+
+> Pio
+Length=156758
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  4292  GTGTGTGTGCGTGT  4279
+
+
+> Pier complete sequence, 156471 bp, circularly permuted, Cluster 
+C1
+Length=156471
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  4533  GTGTGTGTGCGTGT  4520
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  103936  TGTGTGCGTGTGTT  103923
+
+
+> NuevoMundo Complete Sequence, 155943 bp, Circularly permuted, 
+Cluster C1
+Length=155943
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  54070  GTGTGTGTGCGTGT  54057
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  104394  TGTGTGCGTGTGTT  104381
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  9352  TGTGTGCGTGTGT  9340
+
+
+> Nicolasphaqe complete sequence, 155784 bp, circularly permuted, 
+Cluster C1
+Length=155784
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  3798  GTGTGTGTGCGTGT  3785
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  51573  GTGTGTGTGCGTGT  51560
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  103109  TGTGTGCGTGTGTT  103096
+
+
+> Nappy 
+Length=156646
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  3528  GTGTGTGTGCGTGT  3515
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  52716  GTGTGTGTGCGTGT  52703
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  103425  TGTGTGCGTGTGTT  103412
+
+
+> Morizzled23 complete sequence, 155131 bp, circularly permuted, 
+Cluster C1
+Length=155131
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  2698  GTGTGTGTGCGTGT  2685
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  50681  GTGTGTGTGCGTGT  50668
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  101178  TGTGTGCGTGTGTT  101165
+
+
+> MoMoMixon Complete Sequence, 154573 bp, Circularly Permuted, 
+Cluster C1
+Length=154573
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  4138  GTGTGTGTGCGTGT  4125
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  51277  GTGTGTGTGCGTGT  51264
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  101842  TGTGTGCGTGTGTT  101829
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  8624  TGTGTGCGTGTGT  8612
+
+
+> Momo complete sequence, 154553 bp, circularly permuted, Cluster 
+C1
+Length=154553
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  101020  TGTGTGCGTGTGTT  101007
+
+
+> MikeLiesIn complete sequence, 155916 bp, circularly permuted, 
+Cluster C1
+Length=155916
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  3798  GTGTGTGTGCGTGT  3785
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  51801  GTGTGTGTGCGTGT  51788
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  103214  TGTGTGCGTGTGTT  103201
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  8301  TGTGTGCGTGTGT  8289
+
+
+> Melpomini complete sequence, 154855 bp, circularly permuted, 
+Cluster C1
+Length=154855
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  2698  GTGTGTGTGCGTGT  2685
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  100554  TGTGTGCGTGTGTT  100541
+
+
+> Lysocool complete sequence, 154462 bp, circularly permuted, Cluster 
+C1
+Length=154462
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  3798  GTGTGTGTGCGTGT  3785
+
+
+> LRRHood
+Length=154349
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  51289  GTGTGTGTGCGTGT  51276
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  101478  TGTGTGCGTGTGTT  101465
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  8441  TGTGTGCGTGTGT  8429
+
+
+> Lolly9 complete sequence, 75816 bp including 10 bp 3' overhang 
+(TCGATCAGCC), Cluster L3
+Length=75816
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  4      GTGTGTGCGTGTGT  17
+              ||||||||||||||
+Sbjct  75070  GTGTGTGCGTGTGT  75057
+
+
+> Littleton complete sequence, 155800 bp, circularly permuted, 
+Cluster C1
+Length=155800
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  51141  GTGTGTGTGCGTGT  51128
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  102740  TGTGTGCGTGTGTT  102727
+
+
+> LinStu
+Length=153882
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  102074  TGTGTGCGTGTGTT  102061
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  8645  TGTGTGCGTGTGT  8633
+
+
+> Koguma complete sequence, 155759 bp, circularly permuted, Cluster 
+C1
+Length=155759
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  2906  GTGTGTGTGCGTGT  2893
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  101133  TGTGTGCGTGTGTT  101120
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  6512  TGTGTGCGTGTGT  6500
+
+
+> Khaleesi complete sequence, 155251 bp, circularly permuted, Cluster 
+C1
+Length=155251
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  3798  GTGTGTGTGCGTGT  3785
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  51688  GTGTGTGTGCGTGT  51675
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  102576  TGTGTGCGTGTGTT  102563
+
+
+> InterFolia complete genome, 156221 bp, circularly permuted, Cluster 
+C1
+Length=156221
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  103768  TGTGTGCGTGTGTT  103755
+
+
+> Gizmo complete sequence, 157482 bp, circularly permuted, Cluster 
+C1
+Length=157482
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  3798  GTGTGTGTGCGTGT  3785
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  52938  GTGTGTGTGCGTGT  52925
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  104358  TGTGTGCGTGTGTT  104345
+
+
+> Gabriel complete sequence, 154474 bp, circularly permuted, Cluster 
+C1
+Length=154474
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  101037  TGTGTGCGTGTGTT  101024
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  7184  TGTGTGCGTGTGT  7172
+
+
+> ET08
+Length=155445
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  3740  GTGTGTGTGCGTGT  3727
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  50478  GTGTGTGTGCGTGT  50465
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  101300  TGTGTGCGTGTGTT  101287
+
+
+> ErnieJ complete sequence, 153243 bp, circularly permuted, Cluster 
+C1
+Length=153243
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  49998  GTGTGTGTGCGTGT  49985
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  100746  TGTGTGCGTGTGTT  100733
+
+
+> EmToTheThree complete sequence, 155601 bp, circularly permuted, 
+Cluster C1
+Length=155601
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  3798  GTGTGTGTGCGTGT  3785
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  53004  GTGTGTGTGCGTGT  52991
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  102966  TGTGTGCGTGTGTT  102953
+
+
+> DTDevon complete sequence, 156754 bp, circularly permuted, Cluster 
+C1
+Length=156754
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  3768  GTGTGTGTGCGTGT  3755
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  103544  TGTGTGCGTGTGTT  103531
+
+
+> Drazdys Final Sequence, 156281 bp, Circularly Permuted, Cluster 
+C1
+Length=156281
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  3997  GTGTGTGTGCGTGT  3984
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  8092  TGTGTGCGTGTGT  8080
+
+
+> Delilah complete sequence, 155127 bp, circularly permuted, Cluster 
+C1
+Length=155127
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  3798  GTGTGTGTGCGTGT  3785
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  51941  GTGTGTGTGCGTGT  51928
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  102449  TGTGTGCGTGTGTT  102436
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  8301  TGTGTGCGTGTGT  8289
+
+
+> Dandelion Complete Sequence, 157568 bp, Circularly Permuted, 
+Cluster C1
+Length=157568
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  4882  GTGTGTGTGCGTGT  4869
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  54224  GTGTGTGTGCGTGT  54211
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  105866  TGTGTGCGTGTGTT  105853
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  9084  TGTGTGCGTGTGT  9072
+
+
+> ChickenPhender complete sequence, 154397 bp, circularly permuted, 
+Cluster C1
+Length=154397
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  2698  GTGTGTGTGCGTGT  2685
+
+
+> CharlieB complete sequence, 155886 bp, circularly permuted, Cluster 
+C1
+Length=155886
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  2752  GTGTGTGTGCGTGT  2739
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  101266  TGTGTGCGTGTGTT  101253
+
+
+> Catera
+Length=153766
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  101024  TGTGTGCGTGTGTT  101011
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  7188  TGTGTGCGTGTGT  7176
+
+
+> Cali
+Length=155372
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  102817  TGTGTGCGTGTGTT  102804
+
+
+> Bxz1
+Length=156102
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  104476  TGTGTGCGTGTGTT  104463
+
+
+> Bigswole complete sequence, 156514 bp, circularly permuted, Cluster 
+C1
+Length=156514
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  54277  GTGTGTGTGCGTGT  54264
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  104062  TGTGTGCGTGTGTT  104049
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  9825  TGTGTGCGTGTGT  9813
+
+
+> BeanWater complete sequence, 154061 bp, circularly permuted, 
+Cluster C1
+Length=154061
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  3734  GTGTGTGTGCGTGT  3721
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  51089  GTGTGTGTGCGTGT  51076
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  101064  TGTGTGCGTGTGTT  101051
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  7337  TGTGTGCGTGTGT  7325
+
+
+> Bangla1971 complete sequence, 154722 bp, circularly permuted, 
+Cluster C1
+Length=154722
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  101410  TGTGTGCGTGTGTT  101397
+
+
+> Ava3 complete sequence, 154466 bp, circularly permuted, Cluster 
+C1
+Length=154466
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  3798  GTGTGTGTGCGTGT  3785
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  51234  GTGTGTGTGCGTGT  51221
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  8301  TGTGTGCGTGTGT  8289
+
+
+> Astraea Complete Sequence, 154872 bp, Circularly permuted, Cluster 
+C1
+Length=154872
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  4213  GTGTGTGTGCGTGT  4200
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  101112  TGTGTGCGTGTGTT  101099
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  7908  TGTGTGCGTGTGT  7896
+
+
+> ArcherS7 Complete Sequence, 156558 bp, Circularly permuted, Cluster 
+C1
+Length=156558
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  5       TGTGTGCGTGTGTT  18
+               ||||||||||||||
+Sbjct  102050  TGTGTGCGTGTGTT  102037
+
+
+> Alice Complete Sequence, 153401 bp, Circularly Permuted, Cluster 
+C1
+Length=153401
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2     GTGTGTGTGCGTGT  15
+             ||||||||||||||
+Sbjct  3133  GTGTGTGTGCGTGT  3120
+
+
+ Score = 28.2 bits (14),  Expect = 2.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      GTGTGTGTGCGTGT  15
+              ||||||||||||||
+Sbjct  49974  GTGTGTGTGCGTGT  49961
+
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  6821  TGTGTGCGTGTGT  6809
+
+
+> L5
+Length=52297
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Plus
+
+Query  6      GTGTGCGTGTGTT  18
+              |||||||||||||
+Sbjct  52045  GTGTGCGTGTGTT  52057
+
+
+> Kratio Complete Sequence, 62738 bp including 11 bp 3' overhang 
+(CTCAGTGGCAT), Cluster K5
+Length=62738
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  1      GGTGTGTGTGCGT  13
+              |||||||||||||
+Sbjct  28336  GGTGTGTGTGCGT  28324
+
+
+> Jsquared complete sequence, 52967 bp including 10 bp 3' overhang 
+(CGGTCGGTTA), Cluster A2
+Length=52967
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Plus
+
+Query  6      GTGTGCGTGTGTT  18
+              |||||||||||||
+Sbjct  52716  GTGTGCGTGTGTT  52728
+
+
+> Echild complete sequence, 53159 bp including 10bp overhang (CGGTCGGTTA), 
+Cluster A2
+Length=53159
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  15    TGTTGGGGGAGGC  27
+             |||||||||||||
+Sbjct  9029  TGTTGGGGGAGGC  9017
+
+
+> ChipMunk complete sequence, 53932 bp including 10 bp 3' overhang 
+(CGGTCGGTTA), Cluster A2
+Length=53932
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  15    TGTTGGGGGAGGC  27
+             |||||||||||||
+Sbjct  9312  TGTTGGGGGAGGC  9300
+
+
+> Changeling complete sequence, 52991 bp including 10 bp 3' overhang 
+(CGGTCGGTTA), Cluster A2
+Length=52991
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  1      GGTGTGTGTGCGT  13
+              |||||||||||||
+Sbjct  52757  GGTGTGTGTGCGT  52745
+
+
+> Breeniome Complete Sequence, 154434 bp, Circularly permuted, 
+Cluster C1
+Length=154434
+
+ Score = 26.3 bits (13),  Expect = 9.7
+ Identities = 13/13 (100%), Gaps = 0/13 (0%)
+ Strand=Plus/Minus
+
+Query  5     TGTGTGCGTGTGT  17
+             |||||||||||||
+Sbjct  7184  TGTGTGCGTGTGT  7172
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 777642096
+
+
+Query= 10.5
+
+Length=37
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  UnionJack complete sequence, 49158 bp including 10 bp 3' overha...  28.2    3.8  
+  Ph8s complete sequence, 52874 bp including 10 bp 3' overhang (C...  28.2    3.8  
+  Odin complete sequence, 52807 bp including 10 bp 3' overhang (C...  28.2    3.8  
+  MkaliMitinis3 complete sequence, 75844 bp including 10 bp 3' ov...  28.2    3.8  
+  ADZZY complete sequence, 52519 bp including 10 bp 3' overhang (...  28.2    3.8  
+
+
+> UnionJack complete sequence, 49158 bp including 10 bp 3' overhang 
+(CGGGAGGTAA), Cluster A5
+Length=49158
+
+ Score = 28.2 bits (14),  Expect = 3.8
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  8      CGATAGCTTCCTTG  21
+              ||||||||||||||
+Sbjct  21008  CGATAGCTTCCTTG  20995
+
+
+> Ph8s complete sequence, 52874 bp including 10 bp 3' overhang 
+(CGGTCGGTTA), Cluster A2
+Length=52874
+
+ Score = 28.2 bits (14),  Expect = 3.8
+ Identities = 17/18 (94%), Gaps = 0/18 (0%)
+ Strand=Plus/Minus
+
+Query  6     TTCGATAGCTTCCTTGGC  23
+             |||||| |||||||||||
+Sbjct  6221  TTCGATCGCTTCCTTGGC  6204
+
+
+> Odin complete sequence, 52807 bp including 10 bp 3' overhang 
+(CGGTCGGTTA), Cluster A2
+Length=52807
+
+ Score = 28.2 bits (14),  Expect = 3.8
+ Identities = 17/18 (94%), Gaps = 0/18 (0%)
+ Strand=Plus/Minus
+
+Query  6     TTCGATAGCTTCCTTGGC  23
+             |||||| |||||||||||
+Sbjct  6262  TTCGATCGCTTCCTTGGC  6245
+
+
+> MkaliMitinis3 complete sequence, 75844 bp including 10 bp 3' 
+overhang (TCGATCAGCC), Cluster L2
+Length=75844
+
+ Score = 28.2 bits (14),  Expect = 3.8
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  5      TTTCGATAGCTTCC  18
+              ||||||||||||||
+Sbjct  68381  TTTCGATAGCTTCC  68394
+
+
+> ADZZY complete sequence, 52519 bp including 10 bp 3' overhang 
+(CGGTCGGTTA), Cluster A2
+Length=52519
+
+ Score = 28.2 bits (14),  Expect = 3.8
+ Identities = 17/18 (94%), Gaps = 0/18 (0%)
+ Strand=Plus/Minus
+
+Query  6     TTCGATAGCTTCCTTGGC  23
+             |||||| |||||||||||
+Sbjct  6220  TTCGATCGCTTCCTTGGC  6203
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 10.6
+
+Length=38
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 10.7
+
+Length=40
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1388646600
+
+
+Query= 11.1
+
+Length=48
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1777441120
+
+
+Query= 11.10
+
+Length=38
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 11.9
+
+Length=38
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 11.11
+
+Length=36
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1166463144
+
+
+Query= 11.2
+
+Length=35
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Archie Complete Sequence, 76271 bp including 10 bp 3' overhang ...  30.2    0.88 
+
+
+> Archie Complete Sequence, 76271 bp including 10 bp 3' overhang 
+(TCGATCAGCC), Cluster L2
+Length=76271
+
+ Score = 30.2 bits (15),  Expect = 0.88
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Minus
+
+Query  13     AAAAAATAAAAGAAT  27
+              |||||||||||||||
+Sbjct  31409  AAAAAATAAAAGAAT  31395
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1110917280
+
+
+Query= 11.3
+
+Length=38
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 11.4
+
+Length=32
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 944279688
+
+
+Query= 11.5
+
+Length=39
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Zaka complete sequence, 52122 bp including 10 bp 3' overhang (C...  34.2    0.068
+  ToneTone complete genome, 52044 bp including 10 bp 3' overhang ...  34.2    0.068
+  Koko complete sequence, 52879 bp including 10 bp 3' overhang (C...  34.2    0.068
+  Jeffabunny Complete Sequence, 48963 bp including 10bp 3' overha...  34.2    0.068
+  Hammer                                                              34.2    0.068
+  CloudWang3 complete sequence, 52873 bp including 10 bp 3' overh...  34.2    0.068
+  Blue7 Complete Sequence, 52288 bp including 10 bp 3' overhang (...  34.2    0.068
+  Bongo Complete Sequence, 80228 bp including 11 bp 3' overhang (...  30.2    1.1  
+
+
+> Zaka complete sequence, 52122 bp including 10 bp 3' overhang 
+(CGGTCGGTAA), Cluster A6
+Length=52122
+
+ Score = 34.2 bits (17),  Expect = 0.068
+ Identities = 17/17 (100%), Gaps = 0/17 (0%)
+ Strand=Plus/Minus
+
+Query  5      ACATGAGTGCAGAAGAG  21
+              |||||||||||||||||
+Sbjct  30984  ACATGAGTGCAGAAGAG  30968
+
+
+> ToneTone complete genome, 52044 bp including 10 bp 3' overhang 
+(CGGTCGGTAA), Cluster A6
+Length=52044
+
+ Score = 34.2 bits (17),  Expect = 0.068
+ Identities = 17/17 (100%), Gaps = 0/17 (0%)
+ Strand=Plus/Minus
+
+Query  5      ACATGAGTGCAGAAGAG  21
+              |||||||||||||||||
+Sbjct  30916  ACATGAGTGCAGAAGAG  30900
+
+
+> Koko complete sequence, 52879 bp including 10 bp 3' overhang 
+(CGGTCGGTTA), Cluster A6
+Length=52879
+
+ Score = 34.2 bits (17),  Expect = 0.068
+ Identities = 17/17 (100%), Gaps = 0/17 (0%)
+ Strand=Plus/Minus
+
+Query  5      ACATGAGTGCAGAAGAG  21
+              |||||||||||||||||
+Sbjct  31331  ACATGAGTGCAGAAGAG  31315
+
+
+> Jeffabunny Complete Sequence, 48963 bp including 10bp 3' overhang 
+(CGGTCGGTAA), Cluster A2
+Length=48963
+
+ Score = 34.2 bits (17),  Expect = 0.068
+ Identities = 17/17 (100%), Gaps = 0/17 (0%)
+ Strand=Plus/Minus
+
+Query  5      ACATGAGTGCAGAAGAG  21
+              |||||||||||||||||
+Sbjct  31010  ACATGAGTGCAGAAGAG  30994
+
+
+> Hammer
+Length=51889
+
+ Score = 34.2 bits (17),  Expect = 0.068
+ Identities = 17/17 (100%), Gaps = 0/17 (0%)
+ Strand=Plus/Minus
+
+Query  5      ACATGAGTGCAGAAGAG  21
+              |||||||||||||||||
+Sbjct  30792  ACATGAGTGCAGAAGAG  30776
+
+
+> CloudWang3 complete sequence, 52873 bp including 10 bp 3' overhang 
+(CGGTCGGTTA), Cluster A6
+Length=52873
+
+ Score = 34.2 bits (17),  Expect = 0.068
+ Identities = 17/17 (100%), Gaps = 0/17 (0%)
+ Strand=Plus/Minus
+
+Query  5      ACATGAGTGCAGAAGAG  21
+              |||||||||||||||||
+Sbjct  30986  ACATGAGTGCAGAAGAG  30970
+
+
+> Blue7 Complete Sequence, 52288 bp including 10 bp 3' overhang 
+(CGGTCGGTAA), Cluster A6
+Length=52288
+
+ Score = 34.2 bits (17),  Expect = 0.068
+ Identities = 17/17 (100%), Gaps = 0/17 (0%)
+ Strand=Plus/Minus
+
+Query  5      ACATGAGTGCAGAAGAG  21
+              |||||||||||||||||
+Sbjct  30982  ACATGAGTGCAGAAGAG  30966
+
+
+> Bongo Complete Sequence, 80228 bp including 11 bp 3' overhang 
+(ACCTCCTGCAA), Cluster M
+Length=80228
+
+ Score = 30.2 bits (15),  Expect = 1.1
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Minus
+
+Query  12     TGCAGAAGAGGCAAA  26
+              |||||||||||||||
+Sbjct  46558  TGCAGAAGAGGCAAA  46544
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1333100736
+
+
+Query= 11.6
+
+Length=35
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1110917280
+
+
+Query= 11.7
+
+Length=43
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Sprinklers complete sequence, 156060 bp, circularly permuted, C...  28.2    4.9  
+  Sebata                                                              28.2    4.9  
+  ScottMcG                                                            28.2    4.9  
+  QBert complete sequence, 153772 bp, circularly permuted, Cluste...  28.2    4.9  
+  LinStu                                                              28.2    4.9  
+  ET08                                                                28.2    4.9  
+  ErnieJ complete sequence, 153243 bp, circularly permuted, Clust...  28.2    4.9  
+  CharlieB complete sequence, 155886 bp, circularly permuted, Clu...  28.2    4.9  
+  Bigswole complete sequence, 156514 bp, circularly permuted, Clu...  28.2    4.9  
+  Alice Complete Sequence, 153401 bp, Circularly Permuted, Cluste...  28.2    4.9  
+
+
+> Sprinklers complete sequence, 156060 bp, circularly permuted, 
+Cluster C1
+Length=156060
+
+ Score = 28.2 bits (14),  Expect = 4.9
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  9     AGAATGAGAATCTC  22
+             ||||||||||||||
+Sbjct  7397  AGAATGAGAATCTC  7384
+
+
+> Sebata
+Length=155286
+
+ Score = 28.2 bits (14),  Expect = 4.9
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  9     AGAATGAGAATCTC  22
+             ||||||||||||||
+Sbjct  8258  AGAATGAGAATCTC  8245
+
+
+> ScottMcG
+Length=154661
+
+ Score = 28.2 bits (14),  Expect = 4.9
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  9     AGAATGAGAATCTC  22
+             ||||||||||||||
+Sbjct  8226  AGAATGAGAATCTC  8213
+
+
+> QBert complete sequence, 153772 bp, circularly permuted, Cluster 
+C1
+Length=153772
+
+ Score = 28.2 bits (14),  Expect = 4.9
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  9     AGAATGAGAATCTC  22
+             ||||||||||||||
+Sbjct  8072  AGAATGAGAATCTC  8059
+
+
+> LinStu
+Length=153882
+
+ Score = 28.2 bits (14),  Expect = 4.9
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  9     AGAATGAGAATCTC  22
+             ||||||||||||||
+Sbjct  8258  AGAATGAGAATCTC  8245
+
+
+> ET08
+Length=155445
+
+ Score = 28.2 bits (14),  Expect = 4.9
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  9     AGAATGAGAATCTC  22
+             ||||||||||||||
+Sbjct  7364  AGAATGAGAATCTC  7351
+
+
+> ErnieJ complete sequence, 153243 bp, circularly permuted, Cluster 
+C1
+Length=153243
+
+ Score = 28.2 bits (14),  Expect = 4.9
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  9     AGAATGAGAATCTC  22
+             ||||||||||||||
+Sbjct  7728  AGAATGAGAATCTC  7715
+
+
+> CharlieB complete sequence, 155886 bp, circularly permuted, Cluster 
+C1
+Length=155886
+
+ Score = 28.2 bits (14),  Expect = 4.9
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  9     AGAATGAGAATCTC  22
+             ||||||||||||||
+Sbjct  6936  AGAATGAGAATCTC  6923
+
+
+> Bigswole complete sequence, 156514 bp, circularly permuted, Cluster 
+C1
+Length=156514
+
+ Score = 28.2 bits (14),  Expect = 4.9
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  9     AGAATGAGAATCTC  22
+             ||||||||||||||
+Sbjct  8990  AGAATGAGAATCTC  8977
+
+
+> Alice Complete Sequence, 153401 bp, Circularly Permuted, Cluster 
+C1
+Length=153401
+
+ Score = 28.2 bits (14),  Expect = 4.9
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  9     AGAATGAGAATCTC  22
+             ||||||||||||||
+Sbjct  6428  AGAATGAGAATCTC  6415
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1555284192
+
+
+Query= 11.8
+
+Length=42
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Texage complete sequence, 50081 bp including 10 bp 3' overhang ...  28.2    4.7  
+  Send513 Complete Sequence, 71547 bp, Circularly Permuted            28.2    4.7  
+  Popcicle complete sequence, 50075 bp including 10 bp 3' overhan...  28.2    4.7  
+  Pocahontas complete sequence, 50077 bp including 10 bp 3' overh...  28.2    4.7  
+  Norbert Complete Sequence, 50078 bp including 10 bp 3' overhang...  28.2    4.7  
+  Nilo complete sequence, 71752 bp, circularly permuted, Cluster R    28.2    4.7  
+
+
+> Texage complete sequence, 50081 bp including 10 bp 3' overhang 
+(CGGCCGGTAA), Cluster A3
+Length=50081
+
+ Score = 28.2 bits (14),  Expect = 4.7
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  6      TGCCTCTTCAAATC  19
+              ||||||||||||||
+Sbjct  44048  TGCCTCTTCAAATC  44035
+
+
+> Send513 Complete Sequence, 71547 bp, Circularly Permuted
+Length=71547
+
+ Score = 28.2 bits (14),  Expect = 4.7
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  29     TAGCATCAACACCG  42
+              ||||||||||||||
+Sbjct  25848  TAGCATCAACACCG  25861
+
+
+> Popcicle complete sequence, 50075 bp including 10 bp 3' overhang 
+(CGGCCGGTAA), Cluster A3
+Length=50075
+
+ Score = 28.2 bits (14),  Expect = 4.7
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  6      TGCCTCTTCAAATC  19
+              ||||||||||||||
+Sbjct  44044  TGCCTCTTCAAATC  44031
+
+
+> Pocahontas complete sequence, 50077 bp including 10 bp 3' overhang 
+(CGGCCGGTAA), Cluster A3
+Length=50077
+
+ Score = 28.2 bits (14),  Expect = 4.7
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  6      TGCCTCTTCAAATC  19
+              ||||||||||||||
+Sbjct  44044  TGCCTCTTCAAATC  44031
+
+
+> Norbert Complete Sequence, 50078 bp including 10 bp 3' overhang 
+(CGGCCGGTAA), Cluster A3
+Length=50078
+
+ Score = 28.2 bits (14),  Expect = 4.7
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  6      TGCCTCTTCAAATC  19
+              ||||||||||||||
+Sbjct  44046  TGCCTCTTCAAATC  44033
+
+
+> Nilo complete sequence, 71752 bp, circularly permuted, Cluster 
+R
+Length=71752
+
+ Score = 28.2 bits (14),  Expect = 4.7
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  29     TAGCATCAACACCG  42
+              ||||||||||||||
+Sbjct  25845  TAGCATCAACACCG  25858
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1499738328
+
+
+Query= 12.1
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 12.2
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 12.3
+
+Length=39
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1333100736
+
+
+Query= 13.1
+
+Length=43
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1555284192
+
+
+Query= 13.10
+
+Length=46
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1721921784
+
+
+Query= 13.11
+
+Length=38
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 13.2
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 13.3
+
+Length=36
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1166463144
+
+
+Query= 13.4
+
+Length=40
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1388646600
+
+
+Query= 13.5
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 13.6
+
+Length=42
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1499738328
+
+
+Query= 13.7
+
+Length=36
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1166463144
+
+
+Query= 13.8
+
+Length=35
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1110917280
+
+
+Query= 13.9
+
+Length=39
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1333100736
+
+
+Query= 14.1
+
+Length=43
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  UnionJack complete sequence, 49158 bp including 10 bp 3' overha...  28.2    4.9  
+
+
+> UnionJack complete sequence, 49158 bp including 10 bp 3' overhang 
+(CGGGAGGTAA), Cluster A5
+Length=49158
+
+ Score = 28.2 bits (14),  Expect = 4.9
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  24     GAGTTCTTCTTTGA  37
+              ||||||||||||||
+Sbjct  15461  GAGTTCTTCTTTGA  15448
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1555284192
+
+
+Query= 14.10
+
+Length=45
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1666375920
+
+
+Query= 14.11
+
+Length=43
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1555284192
+
+
+Query= 14.12
+
+Length=24
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 499912776
+
+
+Query= 14.2
+
+Length=43
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1555284192
+
+
+Query= 14.3
+
+Length=39
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1333100736
+
+
+Query= 14.4
+
+Length=36
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1166463144
+
+
+Query= 14.5
+
+Length=41
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1444192464
+
+
+Query= 14.6
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 14.7
+
+Length=46
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1721921784
+
+
+Query= 14.8
+
+Length=41
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1444192464
+
+
+Query= 14.9
+
+Length=36
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1166463144
+
+
+Query= 15.1
+
+Length=50
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1888531190
+
+
+Query= 15.2
+
+Length=46
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1721921784
+
+
+Query= 16.1
+
+Length=46
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1721921784
+
+
+Query= 16.2
+
+Length=43
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1555284192
+
+
+Query= 16.3
+
+Length=38
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 16.4
+
+Length=44
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1610830056
+
+
+Query= 17.1
+
+Length=40
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1388646600
+
+
+Query= 17.2
+
+Length=36
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1166463144
+
+
+Query= 17.3
+
+Length=49
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1832986155
+
+
+Query= 17.4
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 17.5
+
+Length=47
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Airmid Complete Sequence, 51241 bp including 10 bp 3' overhang ...  28.2    5.4  
+
+
+> Airmid Complete Sequence, 51241 bp including 10 bp 3' overhang 
+(CGGGAGGTAA), Cluster A5
+Length=51241
+
+ Score = 28.2 bits (14),  Expect = 5.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  1     CGCATTCCATTACC  14
+             ||||||||||||||
+Sbjct  3249  CGCATTCCATTACC  3262
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1721896085
+
+
+Query= 17.6
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 17.7
+
+Length=46
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1721921784
+
+
+Query= 17.8
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 17.9
+
+Length=39
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1333100736
+
+
+Query= 18.1
+
+Length=49
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Ollie complete sequence, 50721 bp including 3' overhang (CGGGTG...  28.2    5.8  
+  Myrna                                                               28.2    5.8  
+
+
+> Ollie complete sequence, 50721 bp including 3' overhang (CGGGTGGTAA), 
+Cluster A3
+Length=50721
+
+ Score = 28.2 bits (14),  Expect = 5.8
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  2      AAAGATGCACAAGG  15
+              ||||||||||||||
+Sbjct  25842  AAAGATGCACAAGG  25829
+
+
+> Myrna
+Length=164602
+
+ Score = 28.2 bits (14),  Expect = 5.8
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  3      AAGATGCACAAGGT  16
+              ||||||||||||||
+Sbjct  27588  AAGATGCACAAGGT  27601
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1832986155
+
+
+Query= 18.2
+
+Length=41
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1444192464
+
+
+Query= 18.3
+
+Length=42
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  L5                                                                  28.2    4.7  
+
+
+> L5
+Length=52297
+
+ Score = 28.2 bits (14),  Expect = 4.7
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  29     TAAGAGCGGGCAGA  42
+              ||||||||||||||
+Sbjct  35711  TAAGAGCGGGCAGA  35698
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1499738328
+
+
+Query= 18.4
+
+Length=47
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  BabyRay complete sequence, 50657 bp including 10 bp 3' overhang...  28.2    5.4  
+
+
+> BabyRay complete sequence, 50657 bp including 10 bp 3' overhang 
+(CGGCCGGTAA), Cluster A3
+Length=50657
+
+ Score = 28.2 bits (14),  Expect = 5.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ACCAGATGAAGCTG  29
+              ||||||||||||||
+Sbjct  29294  ACCAGATGAAGCTG  29281
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1721896085
+
+
+Query= 18.5
+
+Length=41
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1444192464
+
+
+Query= 18.6
+
+Length=39
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1333100736
+
+
+Query= 19.1
+
+Length=45
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1666375920
+
+
+Query= 19.2
+
+Length=39
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1333100736
+
+
+Query= 19.3
+
+Length=36
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1166463144
+
+
+Query= 19.4
+
+Length=41
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1444192464
+
+
+Query= 19.5
+
+Length=39
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1333100736
+
+
+Query= 1.1
+
+Length=40
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1388646600
+
+
+Query= 1.10
+
+Length=40
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Sparkdehlily complete sequence, 56255 bp including 10 bp 3' ove...  28.2    4.4  
+  OwlsT2W complete sequence, 56515 bp including 10 bp 3' overhang...  28.2    4.4  
+  Mozy                                                                28.2    4.4  
+  Llama complete sequence, 58472 bp including 10 bp 3' overhang (...  28.2    4.4  
+  Hegedechwinu complete sequence, 57346 bp including 10 bp 3' ove...  28.2    4.4  
+
+
+> Sparkdehlily complete sequence, 56255 bp including 10 bp 3' overhang 
+(CGGAAGGCGC), Cluster F1
+Length=56255
+
+ Score = 28.2 bits (14),  Expect = 4.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  23     TCAGCTTCCTCATC  36
+              ||||||||||||||
+Sbjct  36873  TCAGCTTCCTCATC  36860
+
+
+> OwlsT2W complete sequence, 56515 bp including 10 bp 3' overhang 
+(CCGAAGGCAT), Cluster F1
+Length=56515
+
+ Score = 28.2 bits (14),  Expect = 4.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  23     TCAGCTTCCTCATC  36
+              ||||||||||||||
+Sbjct  36120  TCAGCTTCCTCATC  36107
+
+
+> Mozy
+Length=57278
+
+ Score = 28.2 bits (14),  Expect = 4.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  23     TCAGCTTCCTCATC  36
+              ||||||||||||||
+Sbjct  38989  TCAGCTTCCTCATC  38976
+
+
+> Llama complete sequence, 58472 bp including 10 bp 3' overhang 
+(CGGATGGCGC), Cluster F1
+Length=58472
+
+ Score = 28.2 bits (14),  Expect = 4.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  23     TCAGCTTCCTCATC  36
+              ||||||||||||||
+Sbjct  38148  TCAGCTTCCTCATC  38135
+
+
+> Hegedechwinu complete sequence, 57346 bp including 10 bp 3' overhang 
+(CCGATGGCAT), Cluster F1
+Length=57346
+
+ Score = 28.2 bits (14),  Expect = 4.4
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  23     TCAGCTTCCTCATC  36
+              ||||||||||||||
+Sbjct  34816  TCAGCTTCCTCATC  34803
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1388646600
+
+
+Query= 1.11
+
+Length=38
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 1.12
+
+Length=38
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 1.13
+
+Length=36
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Whirlwind complete sequence, 76050 bp including 10 bp 3' overha...  28.2    3.7  
+  Lumos complete sequence, 75586 bp including 10 bp 3' overhang (...  28.2    3.7  
+  Lolly9 complete sequence, 75816 bp including 10 bp 3' overhang ...  28.2    3.7  
+
+
+> Whirlwind complete sequence, 76050 bp including 10 bp 3' overhang 
+(TCGATCAGCC), Cluster L3
+Length=76050
+
+ Score = 28.2 bits (14),  Expect = 3.7
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  1      ATTGGTGAAGTAGT  14
+              ||||||||||||||
+Sbjct  39006  ATTGGTGAAGTAGT  38993
+
+
+> Lumos complete sequence, 75586 bp including 10 bp 3' overhang 
+(TCGATCAGCC), Cluster L3
+Length=75586
+
+ Score = 28.2 bits (14),  Expect = 3.7
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  1      ATTGGTGAAGTAGT  14
+              ||||||||||||||
+Sbjct  39187  ATTGGTGAAGTAGT  39174
+
+
+> Lolly9 complete sequence, 75816 bp including 10 bp 3' overhang 
+(TCGATCAGCC), Cluster L3
+Length=75816
+
+ Score = 28.2 bits (14),  Expect = 3.7
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  1      ATTGGTGAAGTAGT  14
+              ||||||||||||||
+Sbjct  39002  ATTGGTGAAGTAGT  38989
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1166463144
+
+
+Query= 1.14
+
+Length=41
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Melpomini complete sequence, 154855 bp, circularly permuted, Cl...  28.2    4.5  
+  Koguma complete sequence, 155759 bp, circularly permuted, Clust...  28.2    4.5  
+  EmToTheThree complete sequence, 155601 bp, circularly permuted,...  28.2    4.5  
+  Ava3 complete sequence, 154466 bp, circularly permuted, Cluster C1  28.2    4.5  
+
+
+> Melpomini complete sequence, 154855 bp, circularly permuted, 
+Cluster C1
+Length=154855
+
+ Score = 28.2 bits (14),  Expect = 4.5
+ Identities = 17/18 (94%), Gaps = 0/18 (0%)
+ Strand=Plus/Minus
+
+Query  1      GACATAATTAAAGCATAA  18
+              |||||| |||||||||||
+Sbjct  48220  GACATAGTTAAAGCATAA  48203
+
+
+> Koguma complete sequence, 155759 bp, circularly permuted, Cluster 
+C1
+Length=155759
+
+ Score = 28.2 bits (14),  Expect = 4.5
+ Identities = 17/18 (94%), Gaps = 0/18 (0%)
+ Strand=Plus/Minus
+
+Query  1      GACATAATTAAAGCATAA  18
+              |||||| |||||||||||
+Sbjct  48529  GACATAGTTAAAGCATAA  48512
+
+
+> EmToTheThree complete sequence, 155601 bp, circularly permuted, 
+Cluster C1
+Length=155601
+
+ Score = 28.2 bits (14),  Expect = 4.5
+ Identities = 17/18 (94%), Gaps = 0/18 (0%)
+ Strand=Plus/Minus
+
+Query  1      GACATAATTAAAGCATAA  18
+              |||||| |||||||||||
+Sbjct  52298  GACATAGTTAAAGCATAA  52281
+
+
+> Ava3 complete sequence, 154466 bp, circularly permuted, Cluster 
+C1
+Length=154466
+
+ Score = 28.2 bits (14),  Expect = 4.5
+ Identities = 17/18 (94%), Gaps = 0/18 (0%)
+ Strand=Plus/Minus
+
+Query  1      GACATAATTAAAGCATAA  18
+              |||||| |||||||||||
+Sbjct  50528  GACATAGTTAAAGCATAA  50511
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1444192464
+
+
+Query= 1.18
+
+Length=41
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Melpomini complete sequence, 154855 bp, circularly permuted, Cl...  28.2    4.5  
+  Koguma complete sequence, 155759 bp, circularly permuted, Clust...  28.2    4.5  
+  EmToTheThree complete sequence, 155601 bp, circularly permuted,...  28.2    4.5  
+  Ava3 complete sequence, 154466 bp, circularly permuted, Cluster C1  28.2    4.5  
+
+
+> Melpomini complete sequence, 154855 bp, circularly permuted, 
+Cluster C1
+Length=154855
+
+ Score = 28.2 bits (14),  Expect = 4.5
+ Identities = 17/18 (94%), Gaps = 0/18 (0%)
+ Strand=Plus/Minus
+
+Query  1      GACATAATTAAAGCATAA  18
+              |||||| |||||||||||
+Sbjct  48220  GACATAGTTAAAGCATAA  48203
+
+
+> Koguma complete sequence, 155759 bp, circularly permuted, Cluster 
+C1
+Length=155759
+
+ Score = 28.2 bits (14),  Expect = 4.5
+ Identities = 17/18 (94%), Gaps = 0/18 (0%)
+ Strand=Plus/Minus
+
+Query  1      GACATAATTAAAGCATAA  18
+              |||||| |||||||||||
+Sbjct  48529  GACATAGTTAAAGCATAA  48512
+
+
+> EmToTheThree complete sequence, 155601 bp, circularly permuted, 
+Cluster C1
+Length=155601
+
+ Score = 28.2 bits (14),  Expect = 4.5
+ Identities = 17/18 (94%), Gaps = 0/18 (0%)
+ Strand=Plus/Minus
+
+Query  1      GACATAATTAAAGCATAA  18
+              |||||| |||||||||||
+Sbjct  52298  GACATAGTTAAAGCATAA  52281
+
+
+> Ava3 complete sequence, 154466 bp, circularly permuted, Cluster 
+C1
+Length=154466
+
+ Score = 28.2 bits (14),  Expect = 4.5
+ Identities = 17/18 (94%), Gaps = 0/18 (0%)
+ Strand=Plus/Minus
+
+Query  1      GACATAATTAAAGCATAA  18
+              |||||| |||||||||||
+Sbjct  50528  GACATAGTTAAAGCATAA  50511
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1444192464
+
+
+Query= 1.15
+
+Length=41
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1444192464
+
+
+Query= 1.16
+
+Length=38
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 1.17
+
+Length=40
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1388646600
+
+
+Query= 1.19
+
+Length=41
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1444192464
+
+
+Query= 1.2
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 1.20
+
+Length=38
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 1.21
+
+Length=40
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1388646600
+
+
+Query= 1.22
+
+Length=38
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 1.23
+
+Length=38
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 1.24
+
+Length=38
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 1.25
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 1.3
+
+Length=37
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Bricole complete sequence, 81128 bp including 11 bp 3' overhang...  28.2    3.8  
+
+
+> Bricole complete sequence, 81128 bp including 11 bp 3' overhang 
+(ACCTCCTGCAA), Cluster M1
+Length=81128
+
+ Score = 28.2 bits (14),  Expect = 3.8
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  1      ATCTAATACAAACA  14
+              ||||||||||||||
+Sbjct  36812  ATCTAATACAAACA  36825
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 1.4
+
+Length=40
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1388646600
+
+
+Query= 1.5
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 1.6
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 1.7
+
+Length=40
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1388646600
+
+
+Query= 1.8
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 1.9
+
+Length=42
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1499738328
+
+
+Query= 20.1
+
+Length=38
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 20.10
+
+Length=41
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1444192464
+
+
+Query= 20.11
+
+Length=38
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Whouxphf complete genome, 59093 bp including 10 bp 3' overhang ...  28.2    4.0  
+  Velveteen complete sequence, 54314 bp including 10 bp 3' overha...  28.2    4.0  
+  Taj Complete Sequence, 58550 bp including 10 bp 3' overhang (CG...  28.2    4.0  
+  Sparkdehlily complete sequence, 56255 bp including 10 bp 3' ove...  28.2    4.0  
+  SiSi complete sequence, 56279 bp including 10 bp 3' overhang (C...  28.2    4.0  
+  ShiLan Complete Sequence, 59794 bp including 10 bp 3' overhang ...  28.2    4.0  
+  Shauna1 Complete Sequence, 59315 bp including 10 bp 3' overhang...  28.2    4.0  
+  SG4 Complete Genome                                                 28.2    4.0  
+  Ruby complete sequence, 57726 bp including 10 bp 3' overhang (C...  28.2    4.0  
+  RockyHorror Complete Sequence, 56719 bp including 10 bp 3' over...  28.2    4.0  
+  Polka14 complete sequence, 58758 bp including 10 bp 3' overhang...  28.2    4.0  
+  PMC                                                                 28.2    4.0  
+  Pippy complete sequence, 56663 bp including 10 bp 3' overhang (...  28.2    4.0  
+  Phatniss complete sequence, 57293 bp including 10 bp 3' overhan...  28.2    4.0  
+  Pacc40                                                              28.2    4.0  
+  OwlsT2W complete sequence, 56515 bp including 10 bp 3' overhang...  28.2    4.0  
+  OlympiaSaint complete sequence, 58297 bp including 10 bp 3' ove...  28.2    4.0  
+  Ogopogo complete sequence, 56867 bp including 10 bp 3' overhang...  28.2    4.0  
+  Mutaforma13 Complete Sequence, 57701 bp including 10 bp 3' over...  28.2    4.0  
+  MisterCuddles complete sequence, 57754 bp including 10 bp 3' ov...  28.2    4.0  
+  Minnie complete sequence, 59268 bp including 10 bp 3' overhang ...  28.2    4.0  
+  MinionDave complete sequence, 58027 bp including 10 bp 3' overh...  28.2    4.0  
+  MilleniumForce complete sequence, 58106 bp including 10 bp 3' o...  28.2    4.0  
+  Mantra Complete Sequence, 57001 bp including 10 bp 3' overhang ...  28.2    4.0  
+  Llij                                                                28.2    4.0  
+  Llama complete sequence, 58472 bp including 10 bp 3' overhang (...  28.2    4.0  
+  Inventum complete sequence, 57052 bp including 10 bp 3' overhan...  28.2    4.0  
+  Ibhubesi                                                            28.2    4.0  
+  Hamulus Complete Sequence, 57155 bp including 10 bp 3' overhang...  28.2    4.0  
+  Girr Complete Sequence, 57754 bp including 10 bp 3' overhang (C...  28.2    4.0  
+  Fruitloop                                                           28.2    4.0  
+  Estave1 complete sequence, 60727 bp including 10 bp 3' overhang...  28.2    4.0  
+  Empress complete sequence, 57155 bp including 10 bp 3' overhang...  28.2    4.0  
+  Drago Complete Sequence, 54411 bp including 10 bp 3' overhang (...  28.2    4.0  
+  DotProduct Final Sequence, 55363 bp including 10 bp 3' overhang...  28.2    4.0  
+  Dorothy Complete Sequence, 58866 bp including 10 bp 3' overhang...  28.2    4.0  
+  DLane                                                               28.2    4.0  
+  DirtMcgirt complete sequence, 54396 bp including 10 bp 3' overh...  28.2    4.0  
+  DeadP Complete Sequence, 56461 bp including 10 bp 3' overhang (...  28.2    4.0  
+  Daenerys complete sequence, 58043 bp including 10 bp 3' overhan...  28.2    4.0  
+  Che8                                                                28.2    4.0  
+  Cerasum complete sequence, 53636 bp including 10 bp 3' overhang...  28.2    4.0  
+  Cabrinians complete sequence, 56669 bp including 10 bp 3' overh...  28.2    4.0  
+  BuzzLyseyear complete sequence, 59419 bp including 10 bp 3' ove...  28.2    4.0  
+  Bobi complete sequence, 59179 bp including 10 bp 3' overhang (C...  28.2    4.0  
+  BigPhil complete genome, 53618 bp including 10 bp 3' overhang (...  28.2    4.0  
+  gi|262262695|gb|GU060500.1| Mycobacterium phage Ardmore, comple...  28.2    4.0  
+
+
+> Whouxphf complete genome, 59093 bp including 10 bp 3' overhang 
+(CGGAAGGCGC), Cluster F1
+Length=59093
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14376  ATCCCAATACATCG  14363
+
+
+> Velveteen complete sequence, 54314 bp including 10 bp 3' overhang 
+(CCGATGGCAT), Cluster F1
+Length=54314
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14130  ATCCCAATACATCG  14117
+
+
+> Taj Complete Sequence, 58550 bp including 10 bp 3' overhang (CGGAAGGCGC), 
+Cluster F1
+Length=58550
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14322  ATCCCAATACATCG  14309
+
+
+> Sparkdehlily complete sequence, 56255 bp including 10 bp 3' overhang 
+(CGGAAGGCGC), Cluster F1
+Length=56255
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14285  ATCCCAATACATCG  14272
+
+
+> SiSi complete sequence, 56279 bp including 10 bp 3' overhang 
+(CGGAAGGCGC), Cluster F1
+Length=56279
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14265  ATCCCAATACATCG  14252
+
+
+> ShiLan Complete Sequence, 59794 bp including 10 bp 3' overhang 
+(CGGAAGGCGC), Cluster F1
+Length=59794
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14281  ATCCCAATACATCG  14268
+
+
+> Shauna1 Complete Sequence, 59315 bp including 10 bp 3' overhang 
+(CGGTAGGCGC), Cluster F1
+Length=59315
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14326  ATCCCAATACATCG  14313
+
+
+> SG4 Complete Genome
+Length=59016
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14440  ATCCCAATACATCG  14427
+
+
+> Ruby complete sequence, 57726 bp including 10 bp 3' overhang 
+(CGGAAGGCGC), Cluster F1
+Length=57726
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14244  ATCCCAATACATCG  14231
+
+
+> RockyHorror Complete Sequence, 56719 bp including 10 bp 3' overhang 
+(CCGATGGCAT), Cluster F1
+Length=56719
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14133  ATCCCAATACATCG  14120
+
+
+> Polka14 complete sequence, 58758 bp including 10 bp 3' overhang 
+(CGGAAGGCGC), Cluster F1
+Length=58758
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14816  ATCCCAATACATCG  14803
+
+
+> PMC
+Length=56692
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14257  ATCCCAATACATCG  14244
+
+
+> Pippy complete sequence, 56663 bp including 10 bp 3' overhang 
+(CGGAAGGCGC), Cluster F1
+Length=56663
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14264  ATCCCAATACATCG  14251
+
+
+> Phatniss complete sequence, 57293 bp including 10 bp 3' overhang 
+(CGGAAGGCGC), Cluster F1
+Length=57293
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14780  ATCCCAATACATCG  14767
+
+
+> Pacc40
+Length=58554
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14444  ATCCCAATACATCG  14431
+
+
+> OwlsT2W complete sequence, 56515 bp including 10 bp 3' overhang 
+(CCGAAGGCAT), Cluster F1
+Length=56515
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14642  ATCCCAATACATCG  14629
+
+
+> OlympiaSaint complete sequence, 58297 bp including 10 bp 3' overhang 
+(CGGAAGGCGC), Cluster F1
+Length=58297
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14468  ATCCCAATACATCG  14455
+
+
+> Ogopogo complete sequence, 56867 bp including 10 bp 3' overhang 
+(CCGGTGGCAT), Cluster F1
+Length=56867
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14532  ATCCCAATACATCG  14519
+
+
+> Mutaforma13 Complete Sequence, 57701 bp including 10 bp 3' overhang 
+(CGGTAGGCGC), Cluster F1
+Length=57701
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14320  ATCCCAATACATCG  14307
+
+
+> MisterCuddles complete sequence, 57754 bp including 10 bp 3' 
+overhang (CGGACGGCGC), Cluster F1
+Length=57754
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14244  ATCCCAATACATCG  14231
+
+
+> Minnie complete sequence, 59268 bp including 10 bp 3' overhang 
+(CGGAAGGCGC), Cluster F1
+Length=59268
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14817  ATCCCAATACATCG  14804
+
+
+> MinionDave complete sequence, 58027 bp including 10 bp 3' overhang 
+(CGGAAGGCGC), Cluster F1
+Length=58027
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14972  ATCCCAATACATCG  14959
+
+
+> MilleniumForce complete sequence, 58106 bp including 10 bp 3' 
+overhang (CGGACGGCGC), Cluster F1
+Length=58106
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  15088  ATCCCAATACATCG  15075
+
+
+> Mantra Complete Sequence, 57001 bp including 10 bp 3' overhang 
+(CGGAAGGCGC), Cluster F1
+Length=57001
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14398  ATCCCAATACATCG  14385
+
+
+> Llij
+Length=56852
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14257  ATCCCAATACATCG  14244
+
+
+> Llama complete sequence, 58472 bp including 10 bp 3' overhang 
+(CGGATGGCGC), Cluster F1
+Length=58472
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14510  ATCCCAATACATCG  14497
+
+
+> Inventum complete sequence, 57052 bp including 10 bp 3' overhang 
+(CGGACGGCGC), Cluster F1
+Length=57052
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14408  ATCCCAATACATCG  14395
+
+
+> Ibhubesi
+Length=55600
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14266  ATCCCAATACATCG  14253
+
+
+> Hamulus Complete Sequence, 57155 bp including 10 bp 3' overhang 
+(CGGAAGGCGC), Cluster F1
+Length=57155
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14280  ATCCCAATACATCG  14267
+
+
+> Girr Complete Sequence, 57754 bp including 10 bp 3' overhang 
+(CGGACGGCGC), Cluster F1
+Length=57754
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14244  ATCCCAATACATCG  14231
+
+
+> Fruitloop
+Length=58471
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14320  ATCCCAATACATCG  14307
+
+
+> Estave1 complete sequence, 60727 bp including 10 bp 3' overhang 
+(CGGATGGCGC), Cluster F1
+Length=60727
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14400  ATCCCAATACATCG  14387
+
+
+> Empress complete sequence, 57155 bp including 10 bp 3' overhang 
+(CGGACGGCGC), Cluster F1
+Length=57155
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  15625  ATCCCAATACATCG  15612
+
+
+> Drago Complete Sequence, 54411 bp including 10 bp 3' overhang 
+(CCGATGGCAT), Cluster F1
+Length=54411
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14098  ATCCCAATACATCG  14085
+
+
+> DotProduct Final Sequence, 55363 bp including 10 bp 3' overhang 
+(CGGAAGGCGC), Cluster F1
+Length=55363
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14284  ATCCCAATACATCG  14271
+
+
+> Dorothy Complete Sequence, 58866 bp including 10 bp 3' overhang 
+(CGGACGGCGC), Cluster F1
+Length=58866
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14234  ATCCCAATACATCG  14221
+
+
+> DLane
+Length=58899
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14276  ATCCCAATACATCG  14263
+
+
+> DirtMcgirt complete sequence, 54396 bp including 10 bp 3' overhang 
+(CCGATGGCAT), Cluster F1
+Length=54396
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14100  ATCCCAATACATCG  14087
+
+
+> DeadP Complete Sequence, 56461 bp including 10 bp 3' overhang 
+(CGGAAGGCGC), Cluster F1
+Length=56461
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14322  ATCCCAATACATCG  14309
+
+
+> Daenerys complete sequence, 58043 bp including 10 bp 3' overhang 
+(CGGACGGCGC), Cluster F1
+Length=58043
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14276  ATCCCAATACATCG  14263
+
+
+> Che8
+Length=59471
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14298  ATCCCAATACATCG  14285
+
+
+> Cerasum complete sequence, 53636 bp including 10 bp 3' overhang 
+(CCGATGGCAT), Cluster F1
+Length=53636
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14130  ATCCCAATACATCG  14117
+
+
+> Cabrinians complete sequence, 56669 bp including 10 bp 3' overhang 
+(CGGACGGCGC), Cluster F1
+Length=56669
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14273  ATCCCAATACATCG  14260
+
+
+> BuzzLyseyear complete sequence, 59419 bp including 10 bp 3' overhang 
+(CCGAAGGCAT), Cluster F1
+Length=59419
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14666  ATCCCAATACATCG  14653
+
+
+> Bobi complete sequence, 59179 bp including 10 bp 3' overhang 
+(CCGATGGCAT), Cluster F1
+Length=59179
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14861  ATCCCAATACATCG  14848
+
+
+> BigPhil complete genome, 53618 bp including 10 bp 3' overhang 
+(CCGATGGCAT), Cluster F1
+Length=53618
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14130  ATCCCAATACATCG  14117
+
+
+> gi|262262695|gb|GU060500.1| Mycobacterium phage Ardmore, complete 
+genome
+Length=52141
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  16     ATCCCAATACATCG  29
+              ||||||||||||||
+Sbjct  14322  ATCCCAATACATCG  14309
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 20.12
+
+Length=42
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Zenon complete sequence, 71726 bp, circularly permuted, Cluster R   28.2    4.7  
+  Send513 Complete Sequence, 71547 bp, Circularly Permuted            28.2    4.7  
+  Papyrus complete sequence, 70657 bp, circularly permuted            28.2    4.7  
+  Nilo complete sequence, 71752 bp, circularly permuted, Cluster R    28.2    4.7  
+
+
+> Zenon complete sequence, 71726 bp, circularly permuted, Cluster 
+R
+Length=71726
+
+ Score = 28.2 bits (14),  Expect = 4.7
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  18     CGAAACTCCAACCA  31
+              ||||||||||||||
+Sbjct  68161  CGAAACTCCAACCA  68148
+
+
+> Send513 Complete Sequence, 71547 bp, Circularly Permuted
+Length=71547
+
+ Score = 28.2 bits (14),  Expect = 4.7
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  18     CGAAACTCCAACCA  31
+              ||||||||||||||
+Sbjct  67978  CGAAACTCCAACCA  67965
+
+
+> Papyrus complete sequence, 70657 bp, circularly permuted
+Length=70657
+
+ Score = 28.2 bits (14),  Expect = 4.7
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  18     CGAAACTCCAACCA  31
+              ||||||||||||||
+Sbjct  67086  CGAAACTCCAACCA  67073
+
+
+> Nilo complete sequence, 71752 bp, circularly permuted, Cluster 
+R
+Length=71752
+
+ Score = 28.2 bits (14),  Expect = 4.7
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  18     CGAAACTCCAACCA  31
+              ||||||||||||||
+Sbjct  68152  CGAAACTCCAACCA  68139
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1499738328
+
+
+Query= 20.2
+
+Length=35
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1110917280
+
+
+Query= 20.3
+
+Length=43
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1555284192
+
+
+Query= 20.4
+
+Length=36
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1166463144
+
+
+Query= 20.5
+
+Length=39
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1333100736
+
+
+Query= 20.6
+
+Length=43
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1555284192
+
+
+Query= 20.7
+
+Length=43
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1555284192
+
+
+Query= 20.8
+
+Length=35
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1110917280
+
+
+Query= 20.9
+
+Length=42
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1499738328
+
+
+Query= 2.1
+
+Length=39
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1333100736
+
+
+Query= 2.2
+
+Length=40
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1388646600
+
+
+Query= 3.1
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 3.2
+
+Length=38
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 4.1
+
+Length=35
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1110917280
+
+
+Query= 4.10
+
+Length=40
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1388646600
+
+
+Query= 4.11
+
+Length=43
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1555284192
+
+
+Query= 4.12
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 4.13
+
+Length=38
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Gaia complete sequence, 90460 bp including 10 bp 3' overhang (C...  28.2    4.0  
+
+
+> Gaia complete sequence, 90460 bp including 10 bp 3' overhang 
+(CGGCCAGCTG)
+Length=90460
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  1      AAAACACCACCTTC  14
+              ||||||||||||||
+Sbjct  53324  AAAACACCACCTTC  53311
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 4.14
+
+Length=47
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1721896085
+
+
+Query= 4.15
+
+Length=45
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1666375920
+
+
+Query= 4.2
+
+Length=47
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1721896085
+
+
+Query= 4.3
+
+Length=37
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Zenon complete sequence, 71726 bp, circularly permuted, Cluster R   30.2    0.97 
+  Weiss13 complete sequence, 71436 bp, circularly permuted, Clust...  30.2    0.97 
+  Send513 Complete Sequence, 71547 bp, Circularly Permuted            30.2    0.97 
+  Nilo complete sequence, 71752 bp, circularly permuted, Cluster R    30.2    0.97 
+
+
+> Zenon complete sequence, 71726 bp, circularly permuted, Cluster 
+R
+Length=71726
+
+ Score = 30.2 bits (15),  Expect = 0.97
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Plus
+
+Query  14     TTGGAGAGGAAGATT  28
+              |||||||||||||||
+Sbjct  33719  TTGGAGAGGAAGATT  33733
+
+
+> Weiss13 complete sequence, 71436 bp, circularly permuted, Cluster 
+R
+Length=71436
+
+ Score = 30.2 bits (15),  Expect = 0.97
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Plus
+
+Query  14     TTGGAGAGGAAGATT  28
+              |||||||||||||||
+Sbjct  33407  TTGGAGAGGAAGATT  33421
+
+
+> Send513 Complete Sequence, 71547 bp, Circularly Permuted
+Length=71547
+
+ Score = 30.2 bits (15),  Expect = 0.97
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Plus
+
+Query  14     TTGGAGAGGAAGATT  28
+              |||||||||||||||
+Sbjct  33711  TTGGAGAGGAAGATT  33725
+
+
+> Nilo complete sequence, 71752 bp, circularly permuted, Cluster 
+R
+Length=71752
+
+ Score = 30.2 bits (15),  Expect = 0.97
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Plus
+
+Query  14     TTGGAGAGGAAGATT  28
+              |||||||||||||||
+Sbjct  33714  TTGGAGAGGAAGATT  33728
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 4.4
+
+Length=36
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1166463144
+
+
+Query= 4.5
+
+Length=40
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1388646600
+
+
+Query= 4.6
+
+Length=36
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1166463144
+
+
+Query= 4.7
+
+Length=38
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 4.8
+
+Length=42
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1499738328
+
+
+Query= 4.9
+
+Length=38
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 5.1
+
+Length=42
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Sbash complete sequence, 55832 bp including 10 bp 3' overhang (...  28.2    4.7  
+
+
+> Sbash complete sequence, 55832 bp including 10 bp 3' overhang 
+(CCCGCCCCCT)
+Length=55832
+
+ Score = 28.2 bits (14),  Expect = 4.7
+ Identities = 17/18 (94%), Gaps = 0/18 (0%)
+ Strand=Plus/Plus
+
+Query  14     AACATAATCAGTGTAATT  31
+              ||||| ||||||||||||
+Sbjct  35943  AACATCATCAGTGTAATT  35960
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1499738328
+
+
+Query= 5.10
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 5.11
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 5.12
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 5.13
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 5.14
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 5.15
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 5.9
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 5.16
+
+Length=43
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  EagleEye complete sequence, 52974 bp including 10 bp 3' overhan...  30.2    1.2  
+  Troll4                                                              28.2    4.9  
+  Trixie Complete Sequence, 53526 bp including 10 bp 3' overhang ...  28.2    4.9  
+  gi|88910489|gb|DQ398047.1| Mycobacteriophage PBI1, complete genome  28.2    4.9  
+  Loser complete sequence, 53486 bp including 10 bp 3' overhang (...  28.2    4.9  
+  LadyBird complete sequence, 53141 bp including 10 bp 3' overhan...  28.2    4.9  
+  gi|206282801|gb|FJ168660.1| Mycobacterium phage Butterscotch, c...  28.2    4.9  
+  AnnaL29 complete sequence, 53253 bp including 10 bp 3' overhang...  28.2    4.9  
+  gi|188090803|gb|EU676000.1| Mycobacterium phage Adjutor, comple...  28.2    4.9  
+
+
+> EagleEye complete sequence, 52974 bp including 10 bp 3' overhang 
+(CGGTCGGTTA), Cluster A2
+Length=52974
+
+ Score = 30.2 bits (15),  Expect = 1.2
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Minus
+
+Query  17     TGCTGGGTCTGGCTG  31
+              |||||||||||||||
+Sbjct  28859  TGCTGGGTCTGGCTG  28845
+
+
+> Troll4
+Length=64618
+
+ Score = 28.2 bits (14),  Expect = 4.9
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  21     GGGTCTGGCTGACT  34
+              ||||||||||||||
+Sbjct  49890  GGGTCTGGCTGACT  49877
+
+
+> Trixie Complete Sequence, 53526 bp including 10 bp 3' overhang 
+(CGGTCGGTTA), Cluster A2
+Length=53526
+
+ Score = 28.2 bits (14),  Expect = 4.9
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  15     TGTGCTGGGTCTGG  28
+              ||||||||||||||
+Sbjct  22254  TGTGCTGGGTCTGG  22241
+
+
+> gi|88910489|gb|DQ398047.1| Mycobacteriophage PBI1, complete genome
+Length=64494
+
+ Score = 28.2 bits (14),  Expect = 4.9
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  21     GGGTCTGGCTGACT  34
+              ||||||||||||||
+Sbjct  49712  GGGTCTGGCTGACT  49699
+
+
+> Loser complete sequence, 53486 bp including 10 bp 3' overhang 
+(CGGTCGGTAA), Cluster A2
+Length=53486
+
+ Score = 28.2 bits (14),  Expect = 4.9
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  15     TGTGCTGGGTCTGG  28
+              ||||||||||||||
+Sbjct  22341  TGTGCTGGGTCTGG  22328
+
+
+> LadyBird complete sequence, 53141 bp including 10 bp 3' overhang 
+(CGGTCGGTTA), Cluster A2
+Length=53141
+
+ Score = 28.2 bits (14),  Expect = 4.9
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  15     TGTGCTGGGTCTGG  28
+              ||||||||||||||
+Sbjct  50731  TGTGCTGGGTCTGG  50744
+
+
+> gi|206282801|gb|FJ168660.1| Mycobacterium phage Butterscotch, 
+complete genome
+Length=64562
+
+ Score = 28.2 bits (14),  Expect = 4.9
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  21     GGGTCTGGCTGACT  34
+              ||||||||||||||
+Sbjct  49781  GGGTCTGGCTGACT  49768
+
+
+> AnnaL29 complete sequence, 53253 bp including 10 bp 3' overhang 
+(CGGTCGGTAA), Cluster A2
+Length=53253
+
+ Score = 28.2 bits (14),  Expect = 4.9
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  15     TGTGCTGGGTCTGG  28
+              ||||||||||||||
+Sbjct  22420  TGTGCTGGGTCTGG  22407
+
+
+> gi|188090803|gb|EU676000.1| Mycobacterium phage Adjutor, complete 
+genome
+Length=64511
+
+ Score = 28.2 bits (14),  Expect = 4.9
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  21     GGGTCTGGCTGACT  34
+              ||||||||||||||
+Sbjct  49730  GGGTCTGGCTGACT  49717
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1555284192
+
+
+Query= 5.17
+
+Length=35
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Archie Complete Sequence, 76271 bp including 10 bp 3' overhang ...  28.2    3.5  
+
+
+> Archie Complete Sequence, 76271 bp including 10 bp 3' overhang 
+(TCGATCAGCC), Cluster L2
+Length=76271
+
+ Score = 28.2 bits (14),  Expect = 3.5
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  12     GCTAAGTGGTTTAT  25
+              ||||||||||||||
+Sbjct  60045  GCTAAGTGGTTTAT  60058
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1110917280
+
+
+Query= 5.18
+
+Length=37
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Troll4                                                              28.2    3.8  
+  SirHarley                                                           28.2    3.8  
+  gi|88910674|gb|DQ398051.1| Mycobacteriophage PLot, complete genome  28.2    3.8  
+  Phlei complete sequence, 50414 bp including 10 bp 3' overhang (...  28.2    3.8  
+  gi|88910489|gb|DQ398047.1| Mycobacteriophage PBI1, complete genome  28.2    3.8  
+  Nova                                                                28.2    3.8  
+  gi|206282801|gb|FJ168660.1| Mycobacterium phage Butterscotch, c...  28.2    3.8  
+  BigMama complete sequence, 64592 bp, circularly permuted, Clust...  28.2    3.8  
+  gi|188090803|gb|EU676000.1| Mycobacterium phage Adjutor, comple...  28.2    3.8  
+
+
+> Troll4
+Length=64618
+
+ Score = 28.2 bits (14),  Expect = 3.8
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  13     CTTTGATCGAGGGC  26
+              ||||||||||||||
+Sbjct  16177  CTTTGATCGAGGGC  16190
+
+
+> SirHarley
+Length=64791
+
+ Score = 28.2 bits (14),  Expect = 3.8
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  13     CTTTGATCGAGGGC  26
+              ||||||||||||||
+Sbjct  16108  CTTTGATCGAGGGC  16121
+
+
+> gi|88910674|gb|DQ398051.1| Mycobacteriophage PLot, complete genome
+Length=64787
+
+ Score = 28.2 bits (14),  Expect = 3.8
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  13     CTTTGATCGAGGGC  26
+              ||||||||||||||
+Sbjct  16179  CTTTGATCGAGGGC  16192
+
+
+> Phlei complete sequence, 50414 bp including 10 bp 3' overhang 
+(CGGTCGGTTA), Cluster A13
+Length=50414
+
+ Score = 28.2 bits (14),  Expect = 3.8
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  17     GATCGAGGGCGATA  30
+              ||||||||||||||
+Sbjct  24268  GATCGAGGGCGATA  24281
+
+
+> gi|88910489|gb|DQ398047.1| Mycobacteriophage PBI1, complete genome
+Length=64494
+
+ Score = 28.2 bits (14),  Expect = 3.8
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  13     CTTTGATCGAGGGC  26
+              ||||||||||||||
+Sbjct  16107  CTTTGATCGAGGGC  16120
+
+
+> Nova
+Length=65108
+
+ Score = 28.2 bits (14),  Expect = 3.8
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  13     CTTTGATCGAGGGC  26
+              ||||||||||||||
+Sbjct  16603  CTTTGATCGAGGGC  16616
+
+
+> gi|206282801|gb|FJ168660.1| Mycobacterium phage Butterscotch, 
+complete genome
+Length=64562
+
+ Score = 28.2 bits (14),  Expect = 3.8
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  13     CTTTGATCGAGGGC  26
+              ||||||||||||||
+Sbjct  16176  CTTTGATCGAGGGC  16189
+
+
+> BigMama complete sequence, 64592 bp, circularly permuted, Cluster 
+D1
+Length=64592
+
+ Score = 28.2 bits (14),  Expect = 3.8
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  13     CTTTGATCGAGGGC  26
+              ||||||||||||||
+Sbjct  16192  CTTTGATCGAGGGC  16205
+
+
+> gi|188090803|gb|EU676000.1| Mycobacterium phage Adjutor, complete 
+genome
+Length=64511
+
+ Score = 28.2 bits (14),  Expect = 3.8
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  13     CTTTGATCGAGGGC  26
+              ||||||||||||||
+Sbjct  16116  CTTTGATCGAGGGC  16129
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 5.19
+
+Length=39
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Saintus Complete Sequence, 49228 bp including 10 bp 3' overhang...  28.2    4.2  
+  gi|192758325|gb|EU770222.1| Mycobacterium phage Predator, compl...  28.2    4.2  
+
+
+> Saintus Complete Sequence, 49228 bp including 10 bp 3' overhang 
+(CGGGATGTAA), Cluster A5
+Length=49228
+
+ Score = 28.2 bits (14),  Expect = 4.2
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  12     CACGCGCTACATCT  25
+              ||||||||||||||
+Sbjct  23385  CACGCGCTACATCT  23372
+
+
+> gi|192758325|gb|EU770222.1| Mycobacterium phage Predator, complete 
+genome
+Length=70110
+
+ Score = 28.2 bits (14),  Expect = 4.2
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  8     CGCACACGCGCTAC  21
+             ||||||||||||||
+Sbjct  7149  CGCACACGCGCTAC  7136
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1333100736
+
+
+Query= 5.2
+
+Length=36
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1166463144
+
+
+Query= 5.20
+
+Length=38
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 5.21
+
+Length=47
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1721896085
+
+
+Query= 5.22
+
+Length=47
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1721896085
+
+
+Query= 5.23
+
+Length=38
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 5.3
+
+Length=39
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1333100736
+
+
+Query= 5.4
+
+Length=38
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 5.5
+
+Length=36
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1166463144
+
+
+Query= 5.6
+
+Length=51
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1944076225
+
+
+Query= 5.7
+
+Length=38
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Texage complete sequence, 50081 bp including 10 bp 3' overhang ...  28.2    4.0  
+  Popcicle complete sequence, 50075 bp including 10 bp 3' overhan...  28.2    4.0  
+  Pocahontas complete sequence, 50077 bp including 10 bp 3' overh...  28.2    4.0  
+  PegLeg complete sequence, 80955 bp including 11 bp 3' overhang ...  28.2    4.0  
+  DarthPhader complete sequence, 53432 bp including 10 bp 3' over...  28.2    4.0  
+  Bricole complete sequence, 81128 bp including 11 bp 3' overhang...  28.2    4.0  
+  Bongo Complete Sequence, 80228 bp including 11 bp 3' overhang (...  28.2    4.0  
+  gi|88910044|gb|DQ398041.1| Mycobacteriophage 244, complete genome   28.2    4.0  
+
+
+> Texage complete sequence, 50081 bp including 10 bp 3' overhang 
+(CGGCCGGTAA), Cluster A3
+Length=50081
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  19     TCTTCTTCTTGGGA  32
+              ||||||||||||||
+Sbjct  28571  TCTTCTTCTTGGGA  28584
+
+
+> Popcicle complete sequence, 50075 bp including 10 bp 3' overhang 
+(CGGCCGGTAA), Cluster A3
+Length=50075
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  19     TCTTCTTCTTGGGA  32
+              ||||||||||||||
+Sbjct  28567  TCTTCTTCTTGGGA  28580
+
+
+> Pocahontas complete sequence, 50077 bp including 10 bp 3' overhang 
+(CGGCCGGTAA), Cluster A3
+Length=50077
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  19     TCTTCTTCTTGGGA  32
+              ||||||||||||||
+Sbjct  28567  TCTTCTTCTTGGGA  28580
+
+
+> PegLeg complete sequence, 80955 bp including 11 bp 3' overhang 
+(ACCTCCTGCAA), Cluster M
+Length=80955
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  15     CTCATCTTCTTCTT  28
+              ||||||||||||||
+Sbjct  51292  CTCATCTTCTTCTT  51305
+
+
+> DarthPhader complete sequence, 53432 bp including 10 bp 3' overhang 
+(CGGGCCGTAA), Cluster A12
+Length=53432
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  19     TCTTCTTCTTGGGA  32
+              ||||||||||||||
+Sbjct  17478  TCTTCTTCTTGGGA  17465
+
+
+> Bricole complete sequence, 81128 bp including 11 bp 3' overhang 
+(ACCTCCTGCAA), Cluster M1
+Length=81128
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  15     CTCATCTTCTTCTT  28
+              ||||||||||||||
+Sbjct  51316  CTCATCTTCTTCTT  51329
+
+
+> Bongo Complete Sequence, 80228 bp including 11 bp 3' overhang 
+(ACCTCCTGCAA), Cluster M
+Length=80228
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  15     CTCATCTTCTTCTT  28
+              ||||||||||||||
+Sbjct  51552  CTCATCTTCTTCTT  51565
+
+
+> gi|88910044|gb|DQ398041.1| Mycobacteriophage 244, complete genome
+Length=74483
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  12     ATTCTCATCTTCTT  25
+              ||||||||||||||
+Sbjct  54097  ATTCTCATCTTCTT  54110
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 5.8
+
+Length=38
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Patience Complete Sequence, 70506 bp, Circularly Permuted, Sing...  28.2    4.0  
+  Madruga complete sequence, 69377 bp, circularly permuted            28.2    4.0  
+  Courthouse Complete Sequence, 110569 bp including 4 bp 3' overh...  28.2    4.0  
+  Ariel complete sequence, 109801 bp including 4 bp 3' overhang (...  28.2    4.0  
+
+
+> Patience Complete Sequence, 70506 bp, Circularly Permuted, Singleton
+Length=70506
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  11     GGGATATATCCAAA  24
+              ||||||||||||||
+Sbjct  69868  GGGATATATCCAAA  69881
+
+
+> Madruga complete sequence, 69377 bp, circularly permuted
+Length=69377
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  11     GGGATATATCCAAA  24
+              ||||||||||||||
+Sbjct  68737  GGGATATATCCAAA  68750
+
+
+> Courthouse Complete Sequence, 110569 bp including 4 bp 3' overhang 
+(ATCC), Cluster J
+Length=110569
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  4      TGGATGAGGGATAT  17
+              ||||||||||||||
+Sbjct  35767  TGGATGAGGGATAT  35780
+
+
+> Ariel complete sequence, 109801 bp including 4 bp 3' overhang 
+(ATCC), Cluster J
+Length=109801
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  4      TGGATGAGGGATAT  17
+              ||||||||||||||
+Sbjct  35363  TGGATGAGGGATAT  35376
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 6.1
+
+Length=38
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Zeenon complete sequence, 155292 bp, circularly permuted, Clust...  28.2    4.0  
+  Wally Complete Sequence, 155299 bp, Circularly Permuted, Cluste...  28.2    4.0  
+  Tyke Complete Sequence, 156679 bp, Circularly Permuted, Cluster C1  28.2    4.0  
+  Tortoise16 complete sequence, 154584 bp, circularly permuted, C...  28.2    4.0  
+  TinyTim Complete Sequence, 153817 bp, circularly permuted, Clus...  28.2    4.0  
+  Teardrop complete sequence, 155389 bp, circularly permuted, Clu...  28.2    4.0  
+  Spud                                                                28.2    4.0  
+  Sprinklers complete sequence, 156060 bp, circularly permuted, C...  28.2    4.0  
+  Specks complete sequence, 156374 bp, circularly permuted, Clust...  28.2    4.0  
+  SmallFry complete sequence, 155433 bp, circularly permuted, Clu...  28.2    4.0  
+  Shrimp Complete Sequence, 155714 bp, Circularly permuted, Clust...  28.2    4.0  
+  ScottMcG                                                            28.2    4.0  
+  Rizal                                                               28.2    4.0  
+  QBert complete sequence, 153772 bp, circularly permuted, Cluste...  28.2    4.0  
+  Pier complete sequence, 156471 bp, circularly permuted, Cluster C1  28.2    4.0  
+  NuevoMundo Complete Sequence, 155943 bp, Circularly permuted, C...  28.2    4.0  
+  Nicolasphaqe complete sequence, 155784 bp, circularly permuted,...  28.2    4.0  
+  Nappy                                                               28.2    4.0  
+  Morizzled23 complete sequence, 155131 bp, circularly permuted, ...  28.2    4.0  
+  MoMoMixon Complete Sequence, 154573 bp, Circularly Permuted, Cl...  28.2    4.0  
+  Momo complete sequence, 154553 bp, circularly permuted, Cluster C1  28.2    4.0  
+  MikeLiesIn complete sequence, 155916 bp, circularly permuted, C...  28.2    4.0  
+  Melpomini complete sequence, 154855 bp, circularly permuted, Cl...  28.2    4.0  
+  LRRHood                                                             28.2    4.0  
+  Littleton complete sequence, 155800 bp, circularly permuted, Cl...  28.2    4.0  
+  LinStu                                                              28.2    4.0  
+  Koguma complete sequence, 155759 bp, circularly permuted, Clust...  28.2    4.0  
+  Khaleesi complete sequence, 155251 bp, circularly permuted, Clu...  28.2    4.0  
+  InterFolia complete genome, 156221 bp, circularly permuted, Clu...  28.2    4.0  
+  Gizmo complete sequence, 157482 bp, circularly permuted, Cluste...  28.2    4.0  
+  Gabriel complete sequence, 154474 bp, circularly permuted, Clus...  28.2    4.0  
+  ET08                                                                28.2    4.0  
+  ErnieJ complete sequence, 153243 bp, circularly permuted, Clust...  28.2    4.0  
+  EmToTheThree complete sequence, 155601 bp, circularly permuted,...  28.2    4.0  
+  DTDevon complete sequence, 156754 bp, circularly permuted, Clus...  28.2    4.0  
+  Delilah complete sequence, 155127 bp, circularly permuted, Clus...  28.2    4.0  
+  Dandelion Complete Sequence, 157568 bp, Circularly Permuted, Cl...  28.2    4.0  
+  CharlieB complete sequence, 155886 bp, circularly permuted, Clu...  28.2    4.0  
+  Catera                                                              28.2    4.0  
+  Cali                                                                28.2    4.0  
+  Bxz1                                                                28.2    4.0  
+  Bigswole complete sequence, 156514 bp, circularly permuted, Clu...  28.2    4.0  
+  BeanWater complete sequence, 154061 bp, circularly permuted, Cl...  28.2    4.0  
+  Bangla1971 complete sequence, 154722 bp, circularly permuted, C...  28.2    4.0  
+  Astraea Complete Sequence, 154872 bp, Circularly permuted, Clus...  28.2    4.0  
+  ArcherS7 Complete Sequence, 156558 bp, Circularly permuted, Clu...  28.2    4.0  
+  Alice Complete Sequence, 153401 bp, Circularly Permuted, Cluste...  28.2    4.0  
+
+
+> Zeenon complete sequence, 155292 bp, circularly permuted, Cluster 
+C1
+Length=155292
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  101302  GTCCAAGATGTCGA  101289
+
+
+> Wally Complete Sequence, 155299 bp, Circularly Permuted, Cluster 
+C1
+Length=155299
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  100472  GTCCAAGATGTCGA  100459
+
+
+> Tyke Complete Sequence, 156679 bp, Circularly Permuted, Cluster 
+C1
+Length=156679
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  101996  GTCCAAGATGTCGA  101983
+
+
+> Tortoise16 complete sequence, 154584 bp, circularly permuted, 
+Cluster C1
+Length=154584
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  100629  GTCCAAGATGTCGA  100616
+
+
+> TinyTim Complete Sequence, 153817 bp, circularly permuted, Cluster 
+C1
+Length=153817
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  100092  GTCCAAGATGTCGA  100079
+
+
+> Teardrop complete sequence, 155389 bp, circularly permuted, Cluster 
+C1
+Length=155389
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22     GTCCAAGATGTCGA  35
+              ||||||||||||||
+Sbjct  99388  GTCCAAGATGTCGA  99375
+
+
+> Spud
+Length=154906
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  100562  GTCCAAGATGTCGA  100549
+
+
+> Sprinklers complete sequence, 156060 bp, circularly permuted, 
+Cluster C1
+Length=156060
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  100064  GTCCAAGATGTCGA  100051
+
+
+> Specks complete sequence, 156374 bp, circularly permuted, Cluster 
+C1
+Length=156374
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  102193  GTCCAAGATGTCGA  102180
+
+
+> SmallFry complete sequence, 155433 bp, circularly permuted, Cluster 
+C1
+Length=155433
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22     GTCCAAGATGTCGA  35
+              ||||||||||||||
+Sbjct  99986  GTCCAAGATGTCGA  99973
+
+
+> Shrimp Complete Sequence, 155714 bp, Circularly permuted, Cluster 
+C1
+Length=155714
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  101460  GTCCAAGATGTCGA  101447
+
+
+> ScottMcG
+Length=154661
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  100108  GTCCAAGATGTCGA  100095
+
+
+> Rizal
+Length=153894
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22     GTCCAAGATGTCGA  35
+              ||||||||||||||
+Sbjct  99444  GTCCAAGATGTCGA  99431
+
+
+> QBert complete sequence, 153772 bp, circularly permuted, Cluster 
+C1
+Length=153772
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22     GTCCAAGATGTCGA  35
+              ||||||||||||||
+Sbjct  99662  GTCCAAGATGTCGA  99649
+
+
+> Pier complete sequence, 156471 bp, circularly permuted, Cluster 
+C1
+Length=156471
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  102612  GTCCAAGATGTCGA  102599
+
+
+> NuevoMundo Complete Sequence, 155943 bp, Circularly permuted, 
+Cluster C1
+Length=155943
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  103070  GTCCAAGATGTCGA  103057
+
+
+> Nicolasphaqe complete sequence, 155784 bp, circularly permuted, 
+Cluster C1
+Length=155784
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  101785  GTCCAAGATGTCGA  101772
+
+
+> Nappy 
+Length=156646
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  102101  GTCCAAGATGTCGA  102088
+
+
+> Morizzled23 complete sequence, 155131 bp, circularly permuted, 
+Cluster C1
+Length=155131
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22     GTCCAAGATGTCGA  35
+              ||||||||||||||
+Sbjct  99854  GTCCAAGATGTCGA  99841
+
+
+> MoMoMixon Complete Sequence, 154573 bp, Circularly Permuted, 
+Cluster C1
+Length=154573
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  100518  GTCCAAGATGTCGA  100505
+
+
+> Momo complete sequence, 154553 bp, circularly permuted, Cluster 
+C1
+Length=154553
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22     GTCCAAGATGTCGA  35
+              ||||||||||||||
+Sbjct  99696  GTCCAAGATGTCGA  99683
+
+
+> MikeLiesIn complete sequence, 155916 bp, circularly permuted, 
+Cluster C1
+Length=155916
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  101890  GTCCAAGATGTCGA  101877
+
+
+> Melpomini complete sequence, 154855 bp, circularly permuted, 
+Cluster C1
+Length=154855
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22     GTCCAAGATGTCGA  35
+              ||||||||||||||
+Sbjct  99230  GTCCAAGATGTCGA  99217
+
+
+> LRRHood
+Length=154349
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  100154  GTCCAAGATGTCGA  100141
+
+
+> Littleton complete sequence, 155800 bp, circularly permuted, 
+Cluster C1
+Length=155800
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  101416  GTCCAAGATGTCGA  101403
+
+
+> LinStu
+Length=153882
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  100750  GTCCAAGATGTCGA  100737
+
+
+> Koguma complete sequence, 155759 bp, circularly permuted, Cluster 
+C1
+Length=155759
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22     GTCCAAGATGTCGA  35
+              ||||||||||||||
+Sbjct  99809  GTCCAAGATGTCGA  99796
+
+
+> Khaleesi complete sequence, 155251 bp, circularly permuted, Cluster 
+C1
+Length=155251
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  101252  GTCCAAGATGTCGA  101239
+
+
+> InterFolia complete genome, 156221 bp, circularly permuted, Cluster 
+C1
+Length=156221
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  102444  GTCCAAGATGTCGA  102431
+
+
+> Gizmo complete sequence, 157482 bp, circularly permuted, Cluster 
+C1
+Length=157482
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  103034  GTCCAAGATGTCGA  103021
+
+
+> Gabriel complete sequence, 154474 bp, circularly permuted, Cluster 
+C1
+Length=154474
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22     GTCCAAGATGTCGA  35
+              ||||||||||||||
+Sbjct  99713  GTCCAAGATGTCGA  99700
+
+
+> ET08
+Length=155445
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22     GTCCAAGATGTCGA  35
+              ||||||||||||||
+Sbjct  99976  GTCCAAGATGTCGA  99963
+
+
+> ErnieJ complete sequence, 153243 bp, circularly permuted, Cluster 
+C1
+Length=153243
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22     GTCCAAGATGTCGA  35
+              ||||||||||||||
+Sbjct  99422  GTCCAAGATGTCGA  99409
+
+
+> EmToTheThree complete sequence, 155601 bp, circularly permuted, 
+Cluster C1
+Length=155601
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  101642  GTCCAAGATGTCGA  101629
+
+
+> DTDevon complete sequence, 156754 bp, circularly permuted, Cluster 
+C1
+Length=156754
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  102220  GTCCAAGATGTCGA  102207
+
+
+> Delilah complete sequence, 155127 bp, circularly permuted, Cluster 
+C1
+Length=155127
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  101125  GTCCAAGATGTCGA  101112
+
+
+> Dandelion Complete Sequence, 157568 bp, Circularly Permuted, 
+Cluster C1
+Length=157568
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  104542  GTCCAAGATGTCGA  104529
+
+
+> CharlieB complete sequence, 155886 bp, circularly permuted, Cluster 
+C1
+Length=155886
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22     GTCCAAGATGTCGA  35
+              ||||||||||||||
+Sbjct  99942  GTCCAAGATGTCGA  99929
+
+
+> Catera
+Length=153766
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22     GTCCAAGATGTCGA  35
+              ||||||||||||||
+Sbjct  99700  GTCCAAGATGTCGA  99687
+
+
+> Cali
+Length=155372
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  101493  GTCCAAGATGTCGA  101480
+
+
+> Bxz1
+Length=156102
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  103152  GTCCAAGATGTCGA  103139
+
+
+> Bigswole complete sequence, 156514 bp, circularly permuted, Cluster 
+C1
+Length=156514
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  102737  GTCCAAGATGTCGA  102724
+
+
+> BeanWater complete sequence, 154061 bp, circularly permuted, 
+Cluster C1
+Length=154061
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22     GTCCAAGATGTCGA  35
+              ||||||||||||||
+Sbjct  99740  GTCCAAGATGTCGA  99727
+
+
+> Bangla1971 complete sequence, 154722 bp, circularly permuted, 
+Cluster C1
+Length=154722
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  100086  GTCCAAGATGTCGA  100073
+
+
+> Astraea Complete Sequence, 154872 bp, Circularly permuted, Cluster 
+C1
+Length=154872
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22     GTCCAAGATGTCGA  35
+              ||||||||||||||
+Sbjct  99788  GTCCAAGATGTCGA  99775
+
+
+> ArcherS7 Complete Sequence, 156558 bp, Circularly permuted, Cluster 
+C1
+Length=156558
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  100726  GTCCAAGATGTCGA  100713
+
+
+> Alice Complete Sequence, 153401 bp, Circularly Permuted, Cluster 
+C1
+Length=153401
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  22      GTCCAAGATGTCGA  35
+               ||||||||||||||
+Sbjct  100334  GTCCAAGATGTCGA  100321
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 6.10
+
+Length=36
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1166463144
+
+
+Query= 6.11
+
+Length=36
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1166463144
+
+
+Query= 6.2
+
+Length=39
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1333100736
+
+
+Query= 6.3
+
+Length=36
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Cain complete sequence, 60813 bp including 10 bp 3' overhang (C...  28.2    3.7  
+
+
+> Cain complete sequence, 60813 bp including 10 bp 3' overhang 
+(CTCGGGGCAT), Cluster K
+Length=60813
+
+ Score = 28.2 bits (14),  Expect = 3.7
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  11     ATTTGTTGTATGTA  24
+              ||||||||||||||
+Sbjct  50896  ATTTGTTGTATGTA  50883
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1166463144
+
+
+Query= 6.4
+
+Length=40
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Sheen complete sequence, 52927 bp including 10 bp 3' overhang (...  30.2    1.1  
+  Mundrea Complete Sequence, 51257 bp including 10 bp 3' overhang...  30.2    1.1  
+  Mulciber complete sequence, 52428 bp including 10 bp 3' overhan...  30.2    1.1  
+  L5                                                                  30.2    1.1  
+  Hutc2 complete sequence, 51393 bp including 10 bp 3' overhang (...  30.2    1.1  
+  Fibonacci complete sequence, 52462 bp including 10 bp 3' overha...  30.2    1.1  
+  Et2Brutus complete sequence, 52497 bp including 10 bp 3' overha...  30.2    1.1  
+  D29                                                                 30.2    1.1  
+  Bachome complete sequence, 51653 bp including 10 bp 3' overhang...  30.2    1.1  
+
+
+> Sheen complete sequence, 52927 bp including 10 bp 3' overhang 
+(CGGGCGGTAA), Cluster A7
+Length=52927
+
+ Score = 30.2 bits (15),  Expect = 1.1
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Plus
+
+Query  16     CATCTGGTTCATCAG  30
+              |||||||||||||||
+Sbjct  38905  CATCTGGTTCATCAG  38919
+
+
+ Score = 30.2 bits (15),  Expect = 1.1
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Plus
+
+Query  14     CCCATCTGGTTCATC  28
+              |||||||||||||||
+Sbjct  43349  CCCATCTGGTTCATC  43363
+
+
+> Mundrea Complete Sequence, 51257 bp including 10 bp 3' overhang 
+(CGGCCGGTAA), Cluster A4
+Length=51257
+
+ Score = 30.2 bits (15),  Expect = 1.1
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Plus
+
+Query  14     CCCATCTGGTTCATC  28
+              |||||||||||||||
+Sbjct  39924  CCCATCTGGTTCATC  39938
+
+
+> Mulciber complete sequence, 52428 bp including 10 bp 3' overhang 
+(CGGTCGGTTA), Cluster A11
+Length=52428
+
+ Score = 30.2 bits (15),  Expect = 1.1
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Plus
+
+Query  16     CATCTGGTTCATCAG  30
+              |||||||||||||||
+Sbjct  41396  CATCTGGTTCATCAG  41410
+
+
+> L5
+Length=52297
+
+ Score = 30.2 bits (15),  Expect = 1.1
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Plus
+
+Query  16     CATCTGGTTCATCAG  30
+              |||||||||||||||
+Sbjct  42428  CATCTGGTTCATCAG  42442
+
+
+> Hutc2 complete sequence, 51393 bp including 10 bp 3' overhang 
+(CGGTCGGTTA), Cluster A11
+Length=51393
+
+ Score = 30.2 bits (15),  Expect = 1.1
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Plus
+
+Query  16     CATCTGGTTCATCAG  30
+              |||||||||||||||
+Sbjct  41399  CATCTGGTTCATCAG  41413
+
+
+> Fibonacci complete sequence, 52462 bp including 10 bp 3' overhang 
+(CGGTCGGTTA), Cluster A
+Length=52462
+
+ Score = 30.2 bits (15),  Expect = 1.1
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Plus
+
+Query  16     CATCTGGTTCATCAG  30
+              |||||||||||||||
+Sbjct  41399  CATCTGGTTCATCAG  41413
+
+
+> Et2Brutus complete sequence, 52497 bp including 10 bp 3' overhang 
+(CGGTCGGTTA), Cluster A11
+Length=52497
+
+ Score = 30.2 bits (15),  Expect = 1.1
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Plus
+
+Query  16     CATCTGGTTCATCAG  30
+              |||||||||||||||
+Sbjct  41393  CATCTGGTTCATCAG  41407
+
+
+> D29
+Length=49136
+
+ Score = 30.2 bits (15),  Expect = 1.1
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Plus
+
+Query  17     ATCTGGTTCATCAGT  31
+              |||||||||||||||
+Sbjct  43576  ATCTGGTTCATCAGT  43590
+
+
+> Bachome complete sequence, 51653 bp including 10 bp 3' overhang 
+(CGGTCGGTTA), Cluster A11
+Length=51653
+
+ Score = 30.2 bits (15),  Expect = 1.1
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Plus
+
+Query  16     CATCTGGTTCATCAG  30
+              |||||||||||||||
+Sbjct  41855  CATCTGGTTCATCAG  41869
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1388646600
+
+
+Query= 6.5
+
+Length=36
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Phabba complete sequence, 164254 bp, circularly permuted, Clust...  30.2    0.93 
+  Pier complete sequence, 156471 bp, circularly permuted, Cluster C1  28.2    3.7  
+
+
+> Phabba complete sequence, 164254 bp, circularly permuted, Cluster 
+C2
+Length=164254
+
+ Score = 30.2 bits (15),  Expect = 0.93
+ Identities = 15/15 (100%), Gaps = 0/15 (0%)
+ Strand=Plus/Plus
+
+Query  19    GGGGAAAGTCCTCCC  33
+             |||||||||||||||
+Sbjct  9670  GGGGAAAGTCCTCCC  9684
+
+
+> Pier complete sequence, 156471 bp, circularly permuted, Cluster 
+C1
+Length=156471
+
+ Score = 28.2 bits (14),  Expect = 3.7
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  19     GGGGAAAGTCCTCC  32
+              ||||||||||||||
+Sbjct  53162  GGGGAAAGTCCTCC  53149
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1166463144
+
+
+Query= 6.6
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 6.7
+
+Length=39
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1333100736
+
+
+Query= 6.8
+
+Length=37
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 6.9
+
+Length=41
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1444192464
+
+
+Query= 7.1
+
+Length=58
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 2332891470
+
+
+Query= 8.1
+
+Length=41
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1444192464
+
+
+Query= 8.10
+
+Length=43
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1555284192
+
+
+Query= 8.11
+
+Length=38
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Omega                                                               28.2    4.0  
+
+
+> Omega
+Length=110865
+
+ Score = 28.2 bits (14),  Expect = 4.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  25     TCTTTTTGTTTTCT  38
+              ||||||||||||||
+Sbjct  45607  TCTTTTTGTTTTCT  45620
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 8.12
+
+Length=38
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 8.13
+
+Length=36
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1166463144
+
+
+Query= 8.14
+
+Length=38
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 8.2
+
+Length=39
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1333100736
+
+
+Query= 8.3
+
+Length=40
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1388646600
+
+
+Query= 8.4
+
+Length=36
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1166463144
+
+
+Query= 8.5
+
+Length=38
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1277554872
+
+
+Query= 8.6
+
+Length=45
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1666375920
+
+
+Query= 8.7
+
+Length=37
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Patience Complete Sequence, 70506 bp, Circularly Permuted, Sing...  28.2    3.8  
+
+
+> Patience Complete Sequence, 70506 bp, Circularly Permuted, Singleton
+Length=70506
+
+ Score = 28.2 bits (14),  Expect = 3.8
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Minus
+
+Query  12     TATTTTGATTAAAT  25
+              ||||||||||||||
+Sbjct  70336  TATTTTGATTAAAT  70323
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1222009008
+
+
+Query= 8.8
+
+Length=36
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1166463144
+
+
+Query= 8.9
+
+Length=46
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1721921784
+
+
+Query= 9.1
+
+Length=56
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Pound complete sequence, 109901 bp including 4 bp 3' overhang (...  28.2    7.0  
+  Minerva complete sequence, 109871 bp including 4 bp 3' overhang...  28.2    7.0  
+  MiaZeal complete sequence, 110764 bp including 4 bp 3' overhang...  28.2    7.0  
+  EricMillard complete sequence, 113536 bp including 4 bp 3' over...  28.2    7.0  
+  DmpstrDiver complete sequence, 112285 bp including 4 bp 3' over...  28.2    7.0  
+
+
+> Pound complete sequence, 109901 bp including 4 bp 3' overhang 
+(ATCC), Cluster J
+Length=109901
+
+ Score = 28.2 bits (14),  Expect = 7.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  10    AGGGTTGGACAAAA  23
+             ||||||||||||||
+Sbjct  2735  AGGGTTGGACAAAA  2748
+
+
+> Minerva complete sequence, 109871 bp including 4 bp 3' overhang 
+(ATCC), Cluster J
+Length=109871
+
+ Score = 28.2 bits (14),  Expect = 7.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  10    AGGGTTGGACAAAA  23
+             ||||||||||||||
+Sbjct  2739  AGGGTTGGACAAAA  2752
+
+
+> MiaZeal complete sequence, 110764 bp including 4 bp 3' overhang 
+(ATCC), Cluster J
+Length=110764
+
+ Score = 28.2 bits (14),  Expect = 7.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  10    AGGGTTGGACAAAA  23
+             ||||||||||||||
+Sbjct  3103  AGGGTTGGACAAAA  3116
+
+
+> EricMillard complete sequence, 113536 bp including 4 bp 3' overhang 
+(ATCC), Cluster J
+Length=113536
+
+ Score = 28.2 bits (14),  Expect = 7.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  10    AGGGTTGGACAAAA  23
+             ||||||||||||||
+Sbjct  2965  AGGGTTGGACAAAA  2978
+
+
+> DmpstrDiver complete sequence, 112285 bp including 4 bp 3' overhang 
+(ATCC), Cluster J
+Length=112285
+
+ Score = 28.2 bits (14),  Expect = 7.0
+ Identities = 14/14 (100%), Gaps = 0/14 (0%)
+ Strand=Plus/Plus
+
+Query  10    AGGGTTGGACAAAA  23
+             ||||||||||||||
+Sbjct  2860  AGGGTTGGACAAAA  2873
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 2221801400
+
+
+Query= 9.2
+
+Length=39
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1333100736
+
+
+Query= 9.3
+
+Length=39
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 1333100736
+
+
+  Database: PhageDatabase
+    Posted date:  Mar 7, 2015  12:10 PM
+  Number of letters in database: 55,558,299
+  Number of sequences in database:  829
+
+
+
+Matrix: blastn matrix 1 -3
+Gap Penalties: Existence: 5, Extension: 2
