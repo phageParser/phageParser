@@ -15,7 +15,7 @@ for num, line in enumerate(spacer_db,1):
     check = True # awkward while loop
     if line[0] == ">": # use the headers, indicated by >, to sort
         line = line[1:] # delete 1st character to make loop same each time around
-        counter = 1
+        counter = 0
         while check == True: 
             counter +=1
             refseq = line[0:9] # this part of the header is the NCBI accession#
