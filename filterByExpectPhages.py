@@ -1,7 +1,7 @@
 ## March 7 2015
 
 import time, os
-from parsers.phage_file import PhageDBReader
+from parsers.phage_file_2_2_30 import PhageDBReader
 
 for fn in os.listdir("data/phages"):
     ext = fn.index('.')
