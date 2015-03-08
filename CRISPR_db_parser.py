@@ -1,8 +1,7 @@
 import linecache
 
 # CRISPR db parser
-# MB Mar 05 2015
-
+# MB Mar 07 2015
 
 filename = "spacerdatabase.txt" # File from CRISPRdb to sort 
 spacer_db = open("%s" %(filename),"r") 
@@ -23,11 +22,13 @@ for num, line in enumerate(spacer_db,1):
                 refseq_dict[refseq] = open("%s.fasta" %(refseq),"w")
                 if "|" in line: # if more than one bacteria contain spacer
                     i = line.index("|")
-                    writeline = line[0:i] # include in header the locus identifier and spacer position identifier
+                    writeline = line[10:i]  # include in header the locus identifier and spacer position identifier
+                    writeline2 = writeline.replace('_','.')
                 else: # if it's only one bacteria
-                    writeline = line
+                    writeline = line[10:] 
+                    writeline2 = writeline.replace('_','.')
                 # write header and spacer to file
-                refseq_dict[refseq].write(">" + writeline + "\n")
+                refseq_dict[refseq].write(">" + writeline2 + "\n")
                 refseq_dict[refseq].write(linecache.getline("%s" %(filename), num+1))
                 if counter == 1: # since the file is organized alphabetically by the first bacteria in the header, if we see a different first bacteria we can close the previous file to free up space. This might be buggy. 
                     try:
@@ -39,10 +40,13 @@ for num, line in enumerate(spacer_db,1):
             if refseq in refseq_list:
                 if "|" in line:
                     i = line.index("|")
-                    writeline = line[0:i] 
+                    writeline = line[10:i]  # include in header the locus identifier and spacer position identifier
+                    writeline2 = writeline.replace('_','.')
                 else:
-                    writeline = line[0:]                
-                refseq_dict[refseq].write(">" + writeline + "\n")
+                    writeline = line[10:] 
+                    writeline2 = writeline.replace('_','.')
+                
+                refseq_dict[refseq].write(">" + writeline2 + "\n")
                 refseq_dict[refseq].write(linecache.getline("%s" %(filename), num+1))
             try:
                 i = line.index("|")
