@@ -12,4 +12,4 @@ for fn in os.listdir("data/phages"):
         parser = PhageDBReader('data/'+'phages/'+fn)
         # parser.write('output/blast-phagesdb.%s.csv' % current_milli_time())
 
-        parser.filterByExpect('output/blast-phagesdb.%s' % outfile)
+        parser.filterByExpect('output/%s' % outfile)
