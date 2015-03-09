@@ -68,7 +68,7 @@ class PhageDBReader:
     def parse(self):
         for (queryNumber, sequence) in self.sequences():
             pattern = re.compile(
-                r"(?P<Sequence>\w+)[^~]*(Length=)(?P<Length>\d*.\d*)(\s*)(Score = )(?P<Score>\d*.\d*)[^~]*(Expect = )(?P<Expect>\d*.\d*)[^~]*(Query\s*)(?P<QStart>\d*)\s*[ACGT]*\s*(?P<QEnd>\d*)[^~]*(Sbjct\s*)(?P<SubStart>\d*)\s*[ACGT]*\s*(?P<SubEnd>\d*)[^~]*",
+                r"(?P<Sequence>\w+)[^~]*(Length=)(?P<Length>\d*.\d*)(\s*)(Score = )(?P<Score>\d*.\d*)[^~]*(Expect = )(?P<Expect>\d*.\d*-*\d*)[^~]*(Query\s*)(?P<QStart>\d*)\s*[ACGT-]*\s*(?P<QEnd>\d*)[^~]*(Sbjct\s*)(?P<SubStart>\d*)\s*[ACGT-]*\s*(?P<SubEnd>\d*)[^~]*",
                 re.MULTILINE)
 
             iterator = pattern.finditer(sequence)
