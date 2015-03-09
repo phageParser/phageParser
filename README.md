@@ -56,7 +56,7 @@ All of the following assumes you are using the reference CRISPR database set of 
 
 - run `filterByExpectPhages.py`, which essentially runs filterByExpect.py on all files in the `/phages` folder. These will be saved to `/output`.
 
-- run `orderByExpect.py`, which rearranges the results of filterByExpectPhages in each file to be in order of lowest to highest expect value.
+- make a directory called `sorted` under `output`. run `orderByExpect.py`, which rearranges the results of filterByExpectPhages in each file to be in order of lowest to highest expect value.
 
 - run `interactions.py`, which makes a json file `json.txt` for visualization in cytoscape.js. 
 
