@@ -25,8 +25,6 @@ This package depends on Biopython:
 sudo pip install Biopython
 ```
 
-Also, make yourself a directory `phageParser/output` - some data cleaning scripts will dump their results there.
-
 ##Usage
 
  - To get a phage dataset, take a fasta-formatted list of genes (example in `data/velvet-distinct-spacers.fasta`) and upload to http://phagesdb.org/blast/ - example result in `data/blast-phagesdb.txt`
