@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # The MIT License (MIT)
 #
 # Copyright (c) 2014 Sidhartha Goyal, Shirish Goyal
@@ -29,5 +30,8 @@ setup(
     name = "phageParser",
     version = "0.1",
     packages = ['filter'],
-    install_requires = ['Biopython']
+    install_requires = ['Biopython'],
+    extras_require = {
+        'tests': ['nose >= 1.0']
+    }
 )
