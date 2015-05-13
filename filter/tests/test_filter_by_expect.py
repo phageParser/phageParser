@@ -20,16 +20,11 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-DEPS=Biopython
-PYSOURCES=$(wildcard *.py)
+def teardown():
+	pass
 
-## help			: print the help message
-help: Makefile
-		@sed -n 's/^##//p' $<
+class Test_Filter_By_Expect(object):
 
-## install-deps	: install the dependencies to run dn develop the project
-install-deps: install-dependencies
-
-install-dependencies: 
-	pip2 install --upgrade $(DEPS) || pip install --upgrade $(DEPS)
-
+	def test_filter(self):
+		# TODO: add tests
+		pass

@@ -20,16 +20,14 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-DEPS=Biopython
-PYSOURCES=$(wildcard *.py)
+import ez_setup
 
-## help			: print the help message
-help: Makefile
-		@sed -n 's/^##//p' $<
+ez_setup.use_setuptools()
 
-## install-deps	: install the dependencies to run dn develop the project
-install-deps: install-dependencies
-
-install-dependencies: 
-	pip2 install --upgrade $(DEPS) || pip install --upgrade $(DEPS)
-
+from setuptools import setup, find_packages
+setup(
+    name = "phageParser",
+    version = "0.1",
+    packages = ['filter'],
+    install_requires = ['Biopython']
+)
