@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import time
 from parsers.phage_file import PhageDBReader
 
