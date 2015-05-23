@@ -1,9 +1,22 @@
 # Parts of the Makefile were adapted from the Khmer project one.
 # Copyright (c) 2010-2014, Michigan State University. All rights reserved.
 
+# project dependencies
 DEPS=Biopython
+
+# pattern to find Python source files
 SOURCES=$(wildcard *.py)
-OUTPUT_FOLDER=output
+
+# default parameters used in Python scripts
+output=output
+threshold=1.0
+
+# checks for required variables
+guard-%:
+	@ if [ "${${*}}" = "" ]; then \
+		echo "Required variable '$*' not set"; \
+		exit 1; \
+	fi
 
 ## help:			: print the help message
 help: Makefile
@@ -21,7 +34,7 @@ clean:
 	./setup.py clean --all || true
 	rm coverage-debug || true
 	rm -Rf .coverage || true
-	rm -Rf output || true
+	rm -Rf $(output) || true
 
 ## test			: run the test suite
 test:
@@ -52,9 +65,9 @@ pep257_report.txt: $(SOURCES) $(wildcard tests/*.py)
 diff_pep257_report: pep257_report.txt
 	diff-quality --violations=pep8 pep257_report.txt
 
-# --- running the pipeline
+## --- running the pipeline
 
 ## filter_by_expect	: run the filterByExpect.py script
-filter_by_expect:
-	mkdir -p $(OUTPUT_FOLDER)
-	./filterByExpect.py
+filter_by_expect: guard-infile
+	mkdir -p $(output)
+	./filterByExpect.py --infile=$(infile) --output=$(output) --threshold=$(threshold)
