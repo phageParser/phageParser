@@ -22,20 +22,22 @@ Happily, much of the existing data needed to understand bacteria / phage interac
 This package depends on Biopython:
 
 ```
-sudo pip install Biopython
+sudo make install-deps
 ```
-
-Also, make yourself a directory `phageParser/output` - some data cleaning scripts will dump their results there.
 
 ##Usage
 
+phageParser uses Make to build the project and to run its pipeline. Make is available for most Operating Systems, and you
+can learn more about it reading the [GNU Make manual](http://www.gnu.org/software/make/manual/make.html) and the
+[O'Reilly GNU Make book](http://www.oreilly.com/openbook/make3/book/index.csp).
+
  - To get a phage dataset, take a fasta-formatted list of genes (example in `data/velvet-distinct-spacers.fasta`) and upload to http://phagesdb.org/blast/ - example result in `data/blast-phagesdb.txt`
 
- - To clean up the results returned from phagesdb.org, change the raw filename in `filterByExpect.py` from `data/blast-phagesdb.txt` to whatever file contains the results from the BLAST search, then do
+ - To clean up the results returned from phagesdb.org, you can call the Make target filter_by_expect, as in the example below.
 
- `python filterByExpect.py`
+ `make filter_by_expect infile=data/blast-phagesdb.txt output=output/ threshold=0.21`
 
- The result will be written to a file in `phageParser/output`, in a CSV formatted as
+ The result will be written to a file in `output/`, in a CSV formatted as
 ```
  Query, Name, Length, Score, Expect, QueryStart, QueryEnd, SubjectStart, SubjectEnd
 ```
