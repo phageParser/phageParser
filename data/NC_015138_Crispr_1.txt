@@ -1,0 +1,115 @@
+########################################
+# Program: Crispr Finder Program
+# Author: Ibtissem GRISSA
+# Rundate (GMT): 17/3/2011 13:46:50
+# Report_file: /var/www/html/CRISPR/crispr/Admin/Output/643561/NC_015138/NC_015138_Crispr_1
+########################################
+#=======================================
+# 
+# Sequence: NC_015138 
+# Description: Acidovorax avenae subsp. avenae ATCC 19860 chromosome, complete genome.
+# Length: 5482170
+# Id: NC_015138
+#
+#=========================================================================
+# Crispr Rank in the sequence: 1
+# Crispr_begin_position: 300343		 Crispr_end_position: 303481
+# DR: AGTCTAGATCACTGGGATATGCGCACTGGCCGGAAC	 DR_length: 36	 Number_of_spacers: 47
+#=========================================================================
+Spacer_begin_position	 Spacer_length	 Spacer_sequence
+               300379	            30	 TGAGGCAGCACGCGATTTCCGCCAGCAGGT
+
+               300445	            30	 GCTGGCAAAGTGGACCATGCTCCAACATGT
+
+               300511	            30	 CCAAGGTCACCGTGGCTGTCATGTCGCTGG
+
+               300577	            30	 TGCCGGTGGTCTATCGAGCGTAACGGCGCG
+
+               300643	            30	 TCGGATGCTCGCGTGCATCCATCGGCGATT
+
+               300709	            30	 GAAATGGCTGCAAAAGCCTTGGCAGTGGGC
+
+               300775	            31	 AGGATTGACCACACGATCAACCACAGCGCGC
+
+               300842	            30	 TCGTCGGTACCGGCGGATGCGGTTCCTGCG
+
+               300908	            30	 GGCCTGGTCCAGCACCCAGGCGCCGATCGC
+
+               300974	            30	 ACTCGCGCGGCGGAGGCGTACACCACCGGC
+
+               301040	            30	 ACGAACTGGGTTTCAACGCCGCGAGTACCG
+
+               301106	            30	 GCCGACCGCCACGCCTTGTCGCGCCGACCA
+
+               301172	            30	 AAGACTGGTGACATAGTTCAGTTCTTTTGC
+
+               301238	            30	 TGTGGCCGGGTGGTCACGCGGGCGGATCTG
+
+               301304	            30	 CTGCTGGTCTGCATGTCCGATGCAAATCCA
+
+               301370	            30	 ATGGCGGTGATCGTCTCCAGCGTCTGCTTG
+
+               301436	            30	 TTCCCGAAAACTTCCTGAATGGTCTGCGAA
+
+               301502	            30	 GCCCGTGGCCGCCACCCGCCGGTACACCTC
+
+               301568	            30	 TCCAGCGTCGGCGGTCAAACGATGCATCAC
+
+               301634	            30	 CTCATCGTAGAAGGGGATCACAAGCCGGGC
+
+               301700	            30	 TGGCTCAGCAACCATTCCTTAACTCTCATG
+
+               301766	            30	 TGCAGTGTCGTCAGGTCTATGACCTGAGCC
+
+               301832	            30	 AGGATCACTATTTTTCCAAGGCATGGCGCG
+
+               301898	            30	 GCCCCGCATAGAGACTTGCGTAATTTGCGC
+
+               301964	            31	 GTCGGGATGCACGTTTTGCAGCACGCCCGAC
+
+               302031	            30	 TGCAGTGCCAATTGGAGTGCGTGTGCTGCG
+
+               302097	            30	 GCAATCGCCAGCTTCGTTGCCACCGCCGAG
+
+               302163	            30	 AGGTCGGGCAGGCCATCGGCCAAGACCTGA
+
+               302229	            30	 AGCATGGTTCTGGCTGTGGCGGCCTGCGCT
+
+               302295	            30	 CCCGCGCCACGGCGATGCAGTACCGCGAAA
+
+               302361	            30	 ACCCTGGCAATCGCCGCACTGATCGGCGCT
+
+               302427	            30	 ATTGCGCGCATGCTCGTCGCTGATCATCGG
+
+               302493	            30	 AAGAGGGATGCGGCTATTGGTTTATTGACA
+
+               302559	            30	 CGAAACGGTTGCCACAGACGCAAGTTTCTT
+
+               302625	            30	 TGCGACCTGTTCCAAGGGCATCAACATGCT
+
+               302691	            30	 TGCATTTCTCATACTCCTGTTGCGCCGCGT
+
+               302757	            29	 CTAATTTGCGCCTGTCGATCCGAAGCCGC
+
+               302822	            30	 TCACCAGCGTGCAGGCCGCGGACCGCGCCG
+
+               302888	            30	 CCGGCAGATCGGATACGCCCACGGCGGGGT
+
+               302954	            30	 AAAGGCCGTAGGCCGAGCTGCAGGAAGTTG
+
+               303020	            30	 CGTCACGCCCTGCCGGTGTAGCGCGCCCGA
+
+               303086	            29	 CCGGGCGGCGGCCGACCCCGGGCGCTTCG
+
+               303151	            30	 CCTGGTGCTGGCCGCATCGGGCGCATTGCC
+
+               303217	            30	 GCACGCATGCGGCAATGCGACAGACAGCAT
+
+               303283	            30	 TCGAGTACGTGAAGGAAACCGGCTTCACGA
+
+               303349	            30	 CGGGGGTGTCGGGCTGCTTGTCGTGGGTGA
+
+               303415	            30	 TGGTGGCACGGACCGCGCCCCGACTGGTCC
+
+#=========================================================================
+########################################
