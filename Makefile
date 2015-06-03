@@ -22,7 +22,7 @@ guard-%:
 help: Makefile
 	@sed -n 's/^##//p' $<
 
-## install-deps		: install the dependencies to run dn develop the project
+## install-deps		: install the dependencies to run and develop the project
 install-deps: install-dependencies
 
 install-dependencies: 
