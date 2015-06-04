@@ -30,7 +30,7 @@ sys.stderr.write( "Fetching %s entries from GenBank: %s\n" % (len(accs), ", ".jo
 for i,acc in enumerate(accs):
   try:
     sys.stderr.write( " %9i %s          \r" % (i+1,acc))  
-    handle = Entrez.efetch(db=db, rettype="gb", id=acc)
+    handle = Entrez.efetch(db=db, rettype="gbwithparts", id=acc)
     #print output to stdout
     sys.stdout.write(handle.read())
   except:
