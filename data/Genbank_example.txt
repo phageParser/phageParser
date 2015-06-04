@@ -1,0 +1,383 @@
+LOCUS       NC_015138            5482170 bp    DNA     circular CON 07-FEB-2015
+DEFINITION  Acidovorax avenae subsp. avenae ATCC 19860, complete genome.
+ACCESSION   NC_015138 NZ_ADCB01000000-NZ_ADCB01000084
+VERSION     NC_015138.1  GI:326314823
+DBLINK      BioProject: PRJNA224116
+            BioSample: SAMN00006197
+            Assembly: GCF_000176855.2
+KEYWORDS    GSC:MIGS:2.1; RefSeq.
+SOURCE      Acidovorax avenae subsp. avenae ATCC 19860
+  ORGANISM  Acidovorax avenae subsp. avenae ATCC 19860
+            Bacteria; Proteobacteria; Betaproteobacteria; Burkholderiales;
+            Comamonadaceae; Acidovorax.
+REFERENCE   1  (bases 1 to 5482170)
+  AUTHORS   Lucas,S., Copeland,A., Lapidus,A., Cheng,J.-F., Goodwin,L.,
+            Pitluck,S., Chertkov,O., Held,B., Detter,J.C., Han,C., Tapia,R.,
+            Land,M., Hauser,L., Kyrpides,N., Ivanova,N., Ovchinnikova,G.,
+            Pagani,I., Gordon,S. and Woyke,T.
+  CONSRTM   US DOE Joint Genome Institute
+  TITLE     Complete sequence of Acidovorax avenae subsp. avenae ATCC 19860
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 5482170)
+  AUTHORS   Lucas,S., Copeland,A., Lapidus,A., Cheng,J.-F., Goodwin,L.,
+            Pitluck,S., Chertkov,O., Held,B., Detter,J.C., Han,C., Tapia,R.,
+            Land,M., Hauser,L., Kyrpides,N., Ivanova,N., Ovchinnikova,G.,
+            Pagani,I., Gordon,S. and Woyke,T.
+  CONSRTM   US DOE Joint Genome Institute
+  TITLE     Direct Submission
+  JOURNAL   Submitted (07-FEB-2011) US DOE Joint Genome Institute, 2800
+            Mitchell Drive B310, Walnut Creek, CA 94598-1698, USA
+COMMENT     VALIDATED REFSEQ: This record has undergone validation or
+            preliminary review.
+            URL -- http://www.jgi.doe.gov
+            JGI Project ID: 4085254
+            Source DNA available from Stuart Gordon (gordonsg@hiram.edu)
+            Organism available from ATCC: ATCC 19860
+            Contacts: Stuart Gordon (gordonsg@hiram.edu)
+                      Tanja Woyke (microbe@cuba.jgi-psf.org)
+            Annotation done by JGI-ORNL and JGI-PGF
+            Finishing done by JGI-LANL
+            The JGI and collaborators endorse the principles for the
+            distribution and use of large scale sequencing data adopted by the
+            larger genome sequencing community and urge users of this data to
+            follow them. it is our intention to publish the work of this
+            project in a timely fashion and we welcome collaborative
+            interaction on the project and analysis.
+            (http://www.genome.gov/page.cfm?pageID=10506376).
+            Annotation was added by the NCBI Prokaryotic Genome Annotation
+            Pipeline (released 2013). Information about the Pipeline can be
+            found here: http://www.ncbi.nlm.nih.gov/genome/annotation_prok/
+            
+            ##MIGS-Data-START##
+            investigation_type  :: bacteria_archaea
+            project_name        :: Acidovorax avenae avenae ATCC 19860
+            collection_date     :: 1909
+            lat_lon             :: Missing
+            depth               :: Missing
+            alt_elev            :: Missing
+            country             :: USA
+            environment         :: Host
+            num_replicons       :: 1
+            ref_biomaterial     :: ATCC 19860, DSM 7227
+            biotic_relationship :: Free living
+            trophic_level       :: Missing
+            rel_to_oxygen       :: Aerobe
+            isol_growth_condt   :: Missing
+            sequencing_meth     :: WGS
+            assembly            :: Newbler v.2.3 (pre-release)
+            finishing_strategy  :: Finished
+            GOLD Stamp ID       :: Gi04300
+            Type Strain         :: Yes
+            Isolation Site      :: maize leaf
+            Isolation Comments  :: isolated by A.Ullstrup
+            Cell Shape          :: Rod-shaped
+            Motility            :: Motile
+            Sporulation         :: Nonsporulating
+            Temperature Range   :: Mesophile
+            Gram Staining       :: Gram-
+            Diseases            :: Bacterial fruit blotch
+            Phenotypes          :: Pathogen
+            ##MIGS-Data-END##
+            
+            ##Genome-Assembly-Data-START##
+            Finishing Goal           :: Finished
+            Current Finishing Status :: Finished
+            Assembly Method          :: Newbler v. 2.3
+            Genome Coverage          :: 30x
+            Sequencing Technology    :: 454/Illumina
+            ##Genome-Assembly-Data-END##
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider          :: NCBI
+            Annotation Date              :: 12/06/2014 12:40:29
+            Annotation Pipeline          :: NCBI Prokaryotic Genome Annotation
+                                            Pipeline
+            Annotation Method            :: Best-placed reference protein set;
+                                            GeneMarkS+
+            Annotation Software revision :: 2.9 (rev. 452448)
+            Features Annotated           :: Gene; CDS; rRNA; tRNA; ncRNA;
+                                            repeat_region
+            Genes                        :: 4,752
+            CDS                          :: 4,662
+            Pseudo Genes                 :: 27
+            CRISPR Arrays                :: 4
+            rRNAs                        :: 9 ( 5S, 16S, 23S )
+            tRNAs                        :: 52
+            ncRNA                        :: 2
+            Frameshifted Genes           :: 21
+            ##Genome-Annotation-Data-END##
+            COMPLETENESS: full length.
+FEATURES             Location/Qualifiers
+     source          1..5482170
+                     /organism="Acidovorax avenae subsp. avenae ATCC 19860"
+                     /mol_type="genomic DNA"
+                     /strain="ATCC 19860"
+                     /isolation_source="maize leaf"
+                     /sub_species="avenae"
+                     /culture_collection="ATCC:19860"
+                     /db_xref="taxon:643561"
+                     /country="USA"
+                     /collected_by="A. Ullstrup"
+     gene            229..1590
+                     /locus_tag="ACAV_RS00010"
+                     /old_locus_tag="Acav_0001"
+     CDS             229..1590
+                     /locus_tag="ACAV_RS00010"
+                     /old_locus_tag="Acav_0001"
+                     /inference="EXISTENCE: similar to AA
+                     sequence:RefSeq:WP_019653666.1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="chromosomal replication initiator protein DnaA"
+                     /protein_id="WP_041828867.1"
+                     /db_xref="GI:754219898"
+                     /translation="MWQACVEQLAQDLPEQQFNTWIKPLVAQVAPDFSKVTLLVANRF
+                     KLDWIRAQYAGRITALLEGLYGQPVTLELALAQRESVTRTVVRPVVQQPTAPAETPIG
+                     STPADEPAAAPFRSRLNPALTFETLVEGTANRMARSAAMHVAGSPGHLYNPLFIYGGV
+                     GLGKTHLVHAVGNRLLQDKPDAKVLYIHAEQFVSDVVKAYQRRTFDEFKAHYHSLDLL
+                     LIDDVQFFANKDRTQEEFFNAFEALLAKKSHIVMTSDTYPKGLANIHERLVSRFDSGL
+                     TVTIEPPELEMRVAILINKARAESAEMPEEVAFFVAKNVRSNVRELEGALRKILAYSR
+                     FNQKEVSIQLAREALRDLLSIQNRQISVENIQKTVADYYKIKVADMYSKKRPASIARP
+                     RQIAMYLAKELTQKSLPEIGELFGGRDHTTVLHAVRKIAGERQQLTELNQQLHVLEQT
+                     LKG"
+     gene            1750..2868
+                     /locus_tag="ACAV_RS00015"
+                     /old_locus_tag="Acav_0002"
+     CDS             1750..2868
+                     /locus_tag="ACAV_RS00015"
+                     /old_locus_tag="Acav_0002"
+                     /EC_number="2.7.7.7"
+                     /inference="EXISTENCE: similar to AA
+                     sequence:RefSeq:WP_019700677.1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="DNA polymerase III subunit beta"
+                     /protein_id="WP_013592518.1"
+                     /db_xref="GI:503357857"
+                     /translation="MIVLKATQDKVLAVLQSVAGIVERRHTLPILANVLIRKTGNALQ
+                     LTTSDLEIQIRTTAELGGDTGDFTTTVGARKLIDILKTMPADQTVSLESQQSKLVLKG
+                     GKSRFTLQSLPAEDFPLVQESAAFGPVFSVPQKVLKDLLGQVSFAMAVQDIRYYLNGI
+                     LFVAEGNTLSLVATDGHRLAFASATLDVEVPKQEVILPRKTVLELQRLLSDAGGENQP
+                     HIEMQFANNQAKFTFGGMEFVTKLVEGKFPDYNRVIPKNHKNSVTLGRAPLLASLQRT
+                     AIMTSDKFKGVRLNIEPGTLRVASNNAEQEEAVDELDIDYGGDTIEIGFNVTYLIDAL
+                     ANMGQDMVKVDLSDGNSSALMTIPDNDNFKYVVMPMRI"
+     gene            2942..5575
+                     /gene="gyrB"
+                     /locus_tag="ACAV_RS00020"
+                     /old_locus_tag="Acav_0003"
+     CDS             2942..5575
+                     /gene="gyrB"
+                     /locus_tag="ACAV_RS00020"
+                     /old_locus_tag="Acav_0003"
+                     /inference="EXISTENCE: similar to AA
+                     sequence:RefSeq:WP_013592519.1"
+                     /note="negatively supercoils closed circular
+                     double-stranded DNA; Derived by automated computational
+                     analysis using gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="DNA gyrase subunit B"
+                     /protein_id="WP_013592519.1"
+                     /db_xref="GI:503357858"
+                     /translation="MTAENTLPEPTLPTGDSQAQSVAAPASVPAQAAAPSDGYGEGAI
+                     QILEGLEAVRKRPGMYIGDTSDGTGLHHLVFEVVDNSIDEALAGHCDDIVVTIHSDNS
+                     ISVVDNGRGIPTGVKMDDKHEPKRSAAEIALTELHAGGKFNQNSYKVSGGLHGVGVSC
+                     VNALSKMLRLTVRRDGKVHLLEFSQGFVQNRILETVNGVEVSPMRVTGETDKRGTEVH
+                     FLPDTEIFKENNDFHYEILAKRLRELSFLNNGVRIRLKDERTGKEDDFSGAGGVMGFV
+                     QFINASKKVLHPNAFHATGSRPAETYGGIPGTEIGVEVAMQWNDGFNESVLCFTNNIP
+                     QRDGGTHLTGLRAAMTRVIGKYIEQNEMAKKAKVEVSGDDMREGLCCVLSVKVPEPKF
+                     SSQTKDKLVSSEVRAPVEDIVAKALTDYLEERPNDAKILCGKIVEAARAREAARKARE
+                     MTRRKGVLDGMGLPGKLADCQEKDPAMSEIYIVEGDSAGGSAKQGRDRKFQAILPLRG
+                     KILNVEKARYEKLLTSNEILTLITALGTGIGKASADGTGKSGADDFNVDKLRYHRIII
+                     MTDADVDGAHIRTLLLTFFYRQMPELVERGHIYIAQPPLYKVKNGKEELYLKDGPALD
+                     TFLLRVALRDASVTTGGEQARTLDGETLGTLAQKHQVAEAVIERLSAFMDREALRAIA
+                     DGVALNLDTVEDAEASAVALQAKLRELTTTGVPAEVAGEFDARTDKPVLRISRRHHGN
+                     IKSSVITQDFVHGADYAALAEAAHTFRGLLGEGAKVLRGEGERQREEKVGDFRQAMAW
+                     LIKEAERTTSRQRYKGLGEMNPEQLWETTMDPEVRRLLRVQIEDAIEADRVFTMLMGD
+                     EVEPRRDFIETNALRAGNIDV"      
+ORIGIN      
+        1 ttatcacagg cttggcggca agtggcaatg ctcgggcttc tgatgcccgg cgggtgcacg
+       61 gttatagcag gcccgcggac accccgccca gcttgtggat aaccccttga aaagctacaa
+      121 tcccaggccc tgatccgttc ctcctatcca caaaaagatc ccgccttcat gaccgaggaa
+      181 ccctcccgca gccccgactt cgacaccgac gccgatcccg gccaggggct gtggcaagcc
+      241 tgtgtcgagc agctcgcgca ggacctgccc gaacagcagt tcaacacctg gatcaagccg
+      301 ctcgtcgccc aggtcgcccc cgacttctcc aaggtcaccc tgctggtggc caaccgcttc
+      361 aagctcgact ggatccgcgc ccagtacgcg ggccgcatca ccgcgctgct cgagggcctg
+      421 tacggccagc cggtcacgct ggagttagcg ctcgctcagc gggaaagcgt tacccgtacg
+      481 gtggttcgcc ccgtggtgca gcagcccacg gcacccgccg agacgcccat cggctccacc
+      541 ccggcggacg aacccgcggc cgcgccgttc cgctcgcgcc tcaaccccgc actcaccttc
+      601 gagaccctgg tggagggcac ggccaaccgc atggcgcggt ccgccgccat gcacgtcgcg
+      661 ggctcgcccg ggcacctgta caacccgctc ttcatctacg gcggcgtggg cctgggcaag
+      721 acccacctgg tgcatgccgt gggcaaccgc ctgctgcagg acaagcccga cgccaaagtt
+      781 ctctacatcc atgccgaaca gttcgtctcg gatgtggtta aggcctacca gcgccgcacc
+      841 ttcgacgagt tcaaggccca ctaccactcg ctcgacctgc tgctgatcga cgacgtgcag
+      901 ttcttcgcca acaaggaccg cacgcaggag gagttcttca acgccttcga ggcgctgctg
+      961 gccaagaaga gccacatcgt gatgacctcg gacacctatc cgaagggcct tgcgaacatc
+     1021 cacgagcggc ttgtctcgcg cttcgactcc ggcctcaccg tcacgatcga gccgcccgag
+     1081 ctcgagatgc gcgtggccat cctgatcaac aaggcccggg ccgagagcgc cgagatgccc
+     1141 gaggaagtcg ccttcttcgt cgccaagaac gtgcgctcca acgtgcgcga actcgaaggc
+     1201 gcgctgcgca agatcctggc ctattcgcgc ttcaaccaga aggaagtctc catccagctc
+     1261 gcccgcgagg cgctgcgcga tctgctgtcc atccagaacc ggcagatcag cgtggagaac
+     1321 atccagaaga ccgtcgccga ctactacaag atcaaggtgg cggacatgta cagcaagaag
+     1381 cgcccggcct ccatcgcccg gccgcgccag atcgccatgt acctcgccaa ggaactcacg
+     1441 cagaagagcc tgccggagat cggcgagctt ttcggggggc gcgaccacac gacggtgctg
+     1501 cacgcggtgc gcaagatcgc aggcgaacgg cagcaactga ccgagctgaa ccagcagctg
+     1561 cacgtgctgg agcagacgct caagggctga aagcggcccg caagaccacg gtgaagcccg
+     1621 cccgcgccca ggaaatgccc cggttcccgg gcaaaatgcc aggttggccg aggggtgccg
+     1681 gcaaaggcat cgcccacgcg gccgccgggc ggcccggcac cgtcgcacaa atcactaggg
+     1741 gttgaagaca tgatcgtcct gaaggcaaca caagacaagg ttctcgcggt actgcaatcg
+     1801 gtcgcgggca tcgtcgagcg ccggcacacg ctgcccatcc tggccaacgt gctgatccgc
+     1861 aagaccggca atgccctgca gctcaccacc agcgacctgg aaatccagat ccgcaccacc
+     1921 gccgagctcg gcggcgacac gggcgacttc accaccacgg tgggcgcgcg caagctgatc
+     1981 gacatcctga agaccatgcc cgccgaccag acggtgagcc tggagtcgca gcagtccaag
+     2041 ctggtgctca agggcggcaa gagccgcttc accctgcagt cgctgccggc ggaagacttc
+     2101 cccctggtgc aggaatccgc cgccttcggc cccgtcttca gcgtgccgca gaaggtgctg
+     2161 aaggacctgc tcggccaggt gtcgttcgcc atggcggtgc aggacatccg ctactacctc
+//
+
+
+LOCUS       NC_000853            1860725 bp    DNA     circular CON 22-DEC-2014
+DEFINITION  Thermotoga maritima MSB8 chromosome, complete genome.
+ACCESSION   NC_000853
+VERSION     NC_000853.1  GI:15642775
+DBLINK      BioProject: PRJNA57723
+KEYWORDS    RefSeq.
+SOURCE      Thermotoga maritima MSB8
+  ORGANISM  Thermotoga maritima MSB8
+            Bacteria; Thermotogae; Thermotogales; Thermotogaceae; Thermotoga.
+REFERENCE   1  (bases 1 to 1860725)
+  AUTHORS   Nelson,K.E., Clayton,R.A., Gill,S.R., Gwinn,M.L., Dodson,R.J.,
+            Haft,D.H., Hickey,E.K., Peterson,J.D., Nelson,W.C., Ketchum,K.A.,
+            McDonald,L., Utterback,T.R., Malek,J.A., Linher,K.D., Garrett,M.M.,
+            Stewart,A.M., Cotton,M.D., Pratt,M.S., Phillips,C.A.,
+            Richardson,D., Heidelberg,J., Sutton,G.G., Fleischmann,R.D.,
+            White,O., Salzberg,S.L., Smith,H.O., Venter,J.C. and Fraser,C.M.
+  TITLE     Evidence for lateral gene transfer between Archaea and bacteria
+            from genome sequence of Thermotoga maritima
+  JOURNAL   Nature 399 (6734), 323-329 (1999)
+   PUBMED   10360571
+REFERENCE   2  (bases 1 to 1860725)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-SEP-2001) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+REFERENCE   3  (bases 1 to 1860725)
+  AUTHORS   Nelson,K.E., Clayton,R.A., Gill,S.R., Gwinn,M.L., Dodson,R.J.,
+            Haft,D.H., Hickey,E.K., Peterson,J.D., Nelson,W.C., Ketchum,K.A.,
+            McDonald,L., Utterback,T.R., Malek,J.A., Linher,K.D., Garrett,M.M.,
+            Stewart,A.M., Cotton,M.D., Pratt,M.S., Phillips,C.A.,
+            Richardson,D., Heidelberg,J., Sutton,G.G., Fleischmann,R.D.,
+            White,O., Salzberg,S.L., Smith,H.O., Venter,J.C. and Fraser,C.M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (01-JUN-1999) The Institute for Genomic Research, 9712
+            Medical Center Dr, Rockville, MD 20850, USA
+COMMENT     REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+            reference sequence was derived from AE000512.
+            RefSeq Category: Reference Genome
+                        TYS: Designated Type Strain
+                        UPR: UniProt Genome
+            COMPLETENESS: full length.
+FEATURES             Location/Qualifiers
+     source          1..1860725
+                     /organism="Thermotoga maritima MSB8"
+                     /mol_type="genomic DNA"
+                     /strain="MSB8"
+                     /db_xref="taxon:243274"
+     gene            323..448
+                     /locus_tag="TM0001"
+                     /db_xref="GeneID:897248"
+     CDS             323..448
+                     /locus_tag="TM0001"
+                     /note="similar to percent identity: 0.00; identified by
+                     sequence similarity"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="NP_227817.1"
+                     /db_xref="GI:15642776"
+                     /db_xref="GeneID:897248"
+                     /translation="MVYGKEGYGRSKNILLSECVCGIISLELNGFQYFLRGMETL"
+     gene            complement(483..608)
+                     /locus_tag="TM0002"
+                     /db_xref="GeneID:896810"
+     CDS             complement(483..608)
+                     /locus_tag="TM0002"
+                     /note="similar to percent identity: 0.00; identified by
+                     sequence similarity"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="NP_227818.1"
+                     /db_xref="GI:15642777"
+                     /db_xref="GeneID:896810"
+                     /translation="MSPEDWKRLICFHTSKEVLKQTLDDAQQNISDSVSIPLRKY"
+     gene            1767..1889
+                     /locus_tag="TM0003"
+                     /db_xref="GeneID:896811"
+     CDS             1767..1889
+                     /locus_tag="TM0003"
+                     /note="similar to percent identity: 0.00; identified by
+                     sequence similarity"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="NP_227819.1"
+                     /db_xref="GI:15642778"
+                     /db_xref="GeneID:896811"
+                     /translation="METVKAYEVEDIPAIGFNNSLEVWKLFPASSSRSTSSSFQ"
+     gene            1927..2022
+                     /locus_tag="TM0004"
+                     /db_xref="GeneID:896812"
+     CDS             1927..2022
+                     /locus_tag="TM0004"
+                     /note="similar to percent identity: 0.00; identified by
+                     sequence similarity"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+                     /protein_id="NP_227820.1"
+                     /db_xref="GI:15642779"
+                     /db_xref="GeneID:896812"
+                     /translation="MKDLYERFNNSLEVWKLVELFGTSIRIHLFQ"
+ORIGIN      
+        1 tggtaccgga agctatgcgt taaaaaagga ataatggatg atatgaagag acaatatgaa
+       61 gagaatttgt ggtaatcgat gacgtgtaag tgctttgaat tcgagaaatt agtagttaac
+      121 ttctaacaca ctgaggaata ccttctttca tctatttgtg aaacatggaa ctaatcgatt
+      181 tttaccagaa acaccccaaa atgccctgac gtaggttgat ataatttatc ttctgttttt
+      241 tgcttgtgtt ctttcgttgt tggactatgc aattattcca tttttccaaa cagtacttga
+      301 aggtgctctc ttgtgtgtta gaatggttta tggaaaggaa ggatatggaa ggtcaaaaaa
+      361 catcttgctt tcagagtgtg tttgtggtat aatttctctt gaactcaacg ggtttcaata
+      421 cttccttaga ggtatggaaa ctctgtgatc tgttaacggg gacatccaca cccaaaatcg
+      481 tttcaatact tccttagagg tatggaaaca ctgtcggaga tgttctgctg tgcatcgtcg
+      541 agagtttgtt tcaatacttc cttagaggta tggaaacata taagcctttt ccagtcttcg
+      601 ggggacattt cccagtttca atacttcctt agaggtatgg aaacatgcga gcactgtcct
+      661 ctccaacatc catatacacc ggtttcaata cttccttaga ggtatggaaa ccatactcca
+      721 gcatcaagca acttgctggc gaaatttcgt ttcaatactt ccttagaggt atggaaacat
+      781 ccatatcaac gttgcatatt ctcgttgata aaaagtttca atacttcctt agaggtatgg
+      841 aaacgcgaca agcccacgtt caggcacgag gtgttccctg agtttcaata cttccttaga
+      901 ggtatggaaa caagttttac cttttctcag acaacttcaa ctggaaaagt ttcaatactt
+      961 ccttagaggt atggaaactc gattatttct tttacaaaga catgcgatca tacaagtttc
+     1021 aatacttcct tagaggtatg gaaactatac gttgtagaaa tcgcaaaggt ggtgatgtta
+     1081 gtttcaatac ttccttagag gtatggaaac tctcgaatcc gatataatca tatttcctta
+     1141 ttatatgttt caatacttcc ttagaggtat ggaaacccgc atctcgtagg tattgcttgc
+     1201 cttctgttcc cttgtttcaa tacttcctta gaggtatgga aactaaactt gtaaatcctt
+     1261 ttgaagactt agaacaacgt ttcaatactt ccttagaggt atggaaacga aacgcccgca
+     1321 aacgctcatc acaagcccgt ttccgtttca atacttcctt agaggtatgg aaacttgagt
+     1381 ataaaatctt cttctgataa tgacaaaaca gtttcaatac ttccttagag gtatggaaac
+     1441 tgcttctatt actctttgta gcacgttcgt gaactcagtt tcaatacttc cttagaggta
+     1501 tggaaactcg ataatctcag atgcctcgcc tcaatttcaa ttggtttcaa tacttcctta
+     1561 gaggtatgga aacctccaca atgaaaagaa tagatggtaa ggtgtgcttg tttcaatact
+     1621 tccttagagg tatggaaacc tactatcttc tatatatata tttttgtttt tgttttgttt
+     1681 caatacttcc ttagaggtat ggaaacctat ttccctctgc cgtctcttcg aaatgatcac
+     1741 ctctgtttca atacttcctt agaggtatgg aaactgtgaa ggcgtatgag gtggaggata
+     1801 ttcctgcaat tggtttcaat aattccttag aggtatggaa actttttcca gcatcttctt
+     1861 cacgaagtac gtcttcatcg tttcaataat tccttagagg tatggaaacg cgatgttgcg
+     1921 agaacgatga aagatttgta tgaacgtttc aataattcct tagaggtatg gaaacttgtc
+     1981 gaactctttg gtacttccat ccggatacat ctgtttcaat aattccttag aggtatggaa
+     2041 acgagtagta cagaggagag agatgcagat atccacgacg tttcaataat tccttagagg
+
+
