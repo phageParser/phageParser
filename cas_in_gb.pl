@@ -6,14 +6,16 @@ open GB_FH, "<", $gbfile;
 
 my $line = readline GB_FH;
 
-my $in_organism = "";
+my $accession = "";
 my $curr_taxonomy = "";
 my $curr_location = "";
 
 while (my $line = readline GB_FH) {
-		print "$1\n";
 	if ($line =~ m/^\s*(ORGANISM\s+.+)$/) {
+		print "$1\n$accession\n";
 		$curr_taxonomy = "TAXONOMY ";
+	} elsif ($line =~ m/^\s*(ACCESSION\s+.+)$/) {
+		$accession = "$1";
 	} elsif (($line !~ m/^ {12}\S/) && ($curr_taxonomy ne "")) {
 		print "$curr_taxonomy\n";
 		$curr_taxonomy = "";
