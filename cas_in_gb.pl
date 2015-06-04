@@ -11,8 +11,8 @@ my $curr_taxonomy = "";
 my $curr_location = "";
 
 while (my $line = readline GB_FH) {
-	if ($line =~ m/^\s+(ORGANISM\s+.+)$/) {
 		print "$1\n";
+	if ($line =~ m/^\s*(ORGANISM\s+.+)$/) {
 		$curr_taxonomy = "TAXONOMY ";
 	} elsif (($line !~ m/^ {12}\S/) && ($curr_taxonomy ne "")) {
 		print "$curr_taxonomy\n";
