@@ -33,7 +33,7 @@ can learn more about it reading the [GNU Make manual](http://www.gnu.org/softwar
 
 There are several usage options depending on what data outcome is desired.
 
-##Usage - Blast individual bacteria files and get phage info from NCBI
+###Usage - Blast individual bacteria files and get phage info from NCBI
 
  - To get a phage dataset, take a fasta-formatted list of genes (example in `data/velvet-distinct-spacers.fasta`) and upload to http://phagesdb.org/blast/ - example result in `data/blast-phagesdb.txt`
 
@@ -54,7 +54,7 @@ There are several usage options depending on what data outcome is desired.
 ```
  where `accessionNumber.txt` contains a list of accession numbers of interest; results will be dumped to `NCBIresults.txt` - see [#2](https://github.com/goyalsid/phageParser/issues/2) for ongoing development here. 
 
-##Usage - Blasting multiple bacteria files and visualizing interactions
+###Usage - Blasting multiple bacteria files and visualizing interactions
 
 All of the following assumes you are using the reference CRISPR database set of spacers (file `spacerdatabase.txt`). Things *should* work with other spacer files; however there are several things hard-coded that might break. `filterByExpect.py` assumes the header line for each spacer is a number, for example, and `bac_name` is hardcoded in `interactions.py` as the 8th to 16th characters of the file name.
 
@@ -76,7 +76,7 @@ Visualization
 
 - paste the file `index.html` into a web browser. 
 
-##Usage - Detecting CRISPR type from bacterial genome metadata
+###Usage - Detecting CRISPR type from bacterial genome metadata
 
 - Start with a list of bacteria of interest - in this case, it's all the bacteria from CRISPRdb that had hits to a conglomerate of phage databases - `bac_accession_list.txt`. 
 
