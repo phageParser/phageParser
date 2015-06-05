@@ -9,23 +9,22 @@ $file = $ARGV[0];
 open(FILE, "<$file") or die "cannot open infile!\n";
 
 #line by line, store data for each organism in hashes
-my %organismhash;
-my $organism;
+my %organismhash; #storing info related to each unique organism
+my $organism; #storing organism name
 my %proteins; #hash of every unique protein product
-my $kingdom=1; #placeholder array, used later in both loops
 
 while(my $line = <FILE>) {
     chomp $line;
     if ($line =~ m/ORGANISM/) { #if the line has the word "ORGANISM" in it
 	my ($element1, $element2, @rest) = split("  ", $line);
 	$organism=$element2;
-	print STDERR "$organism is the current organism\n";
+	#print STDERR "$organism is the current organism\n";
     }
     elsif ($line =~ m/TAXONOMY/) { #if it's the taxonomy line, we want the first element (the kingdom)
 	$line =~ m/TAXONOMY (.[A-Za-z]{1,});.*/;
 	my $lineage = $1;
 	$organismhash{$organism}{"kingdom"}=$lineage;
-	print STDERR "the organism: $organism belongs to the kingdom $lineage\n";
+	#print STDERR "the organism: $organism belongs to the kingdom $lineage\n";
     }
     elsif($line =~ m/PRODUCT/i) { #if it's a product line, we just want the protein product name
 	my @products = (); #array to store protein products
@@ -40,31 +39,28 @@ while(my $line = <FILE>) {
 }
 
 
-#iterate over organisms, collecting information for each organism
+#now iterate over organisms again, printing (to STDOUT) info we collected for each
 #print header for outfile
-print 
-#print STDERR "species\tkingdom\t"; #print species and kingdom
+print STDOUT "species\tkingdom\t"; #print species and kingdom
 #iterate over unique proteins in the protein hash, join by tab, print to the header
-
-foreach my $proteinproducts (sort keys %proteins) {
-    #print STDERR "$proteinproducts\t";
+foreach my $proteinproduct (sort keys %proteins) {
+    print STDOUT "$proteinproduct\t";
 }
-#print STDERR "\n";
+print STDOUT "\n";
 
 foreach my $bacteria (sort keys %organismhash) {
-    print "$bacteria\n";
-    my $type=$organismhash{$bacteria}{$kingdom};
-    foreach my $a (@{$organismhash{$bacteria}{"products"}}) {
+    my $type=$organismhash{$bacteria}{"kingdom"};
+    #print the species and the kingdom
+    print STDOUT "$bacteria\t$type\t";
+    foreach my $a (@{$organismhash{$bacteria}{"products"}}) { #iterate over the protein products for each organism to count them
 	$proteins{$a}++;
-	#print STDERR "$a\tline58\n";
+	#print STDOUT "$a\tline58\n";
     }
-    foreach my $proteinproducts (sort keys %proteins) {
-	#print STDERR "$proteins{$proteinproducts}\t";
+    foreach my $proteinproducts (sort keys %proteins) { #now print out the numbers we've counted for each protein product
+	print STDOUT "$proteins{$proteinproducts}\t";
     }
-    #print STDERR "\n";
+    print STDOUT "\n";
     foreach my $proteinproducts (keys %proteins) { #clear out the hash of any incrementation
 	$proteins{$proteinproducts}=0;
     }
 }
-
-#print collected info to file
