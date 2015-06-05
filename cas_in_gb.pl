@@ -1,10 +1,13 @@
 #!/usr/bin/env perl
 
-my $gbfile = shift @ARGV;
+use strict;
+use warnings;
 
-open GB_FH, "<", $gbfile;
+my $gbfile = shift || die "Usage: $0 <gb_file>\b";
 
-my $line = readline GB_FH;
+open my $gb_fh, "<", $gbfile;
+
+my $line = readline $gb_fh;
 
 my $accession = "";
 my $curr_taxonomy = "";
