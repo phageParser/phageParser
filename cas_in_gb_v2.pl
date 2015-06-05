@@ -3,6 +3,8 @@
 use strict;
 use warnings;
 
+use File::Slurp::Tiny qw(read_lines)
+
 my $gbfile = shift || die "Usage: $0 <gb_file> \b";
 
 open my $gb_fh, "<", $gbfile;
