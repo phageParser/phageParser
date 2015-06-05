@@ -13,7 +13,7 @@ my $accession = "";
 my $curr_taxonomy = "";
 my $curr_location = "";
 
-while (my $line = readline GB_FH) {
+while (my $line = readline $gb_fh) {
 	if ($line =~ m/^\s*(ORGANISM\s+.+)$/) {
 		print "$1\n$accession\n";
 		$curr_taxonomy = "TAXONOMY ";
