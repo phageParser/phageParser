@@ -130,7 +130,7 @@ FEATURES             Location/Qualifiers
                      gene prediction method: Protein Homology."
                      /codon_start=1
                      /transl_table=11
-                     /product="chromosomal replication initiator protein DnaA"
+                     /product="chromosomal replication initiator protein Cas3"
                      /protein_id="WP_041828867.1"
                      /db_xref="GI:754219898"
                      /translation="MWQACVEQLAQDLPEQQFNTWIKPLVAQVAPDFSKVTLLVANRF

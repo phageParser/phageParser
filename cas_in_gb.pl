@@ -1,16 +1,20 @@
 #!/usr/bin/env perl
 
-my $gbfile = shift @ARGV;
+#Use it with 
+use strict;
+use warnings;
 
-open GB_FH, "<", $gbfile;
+my $gbfile = shift || "data/Genbank_example.txt";
 
-my $line = readline GB_FH;
+open my $gb_fh, "<", $gbfile;
+
+my $line = readline $gb_fh;
 
 my $accession = "";
 my $curr_taxonomy = "";
 my $curr_location = "";
 
-while (my $line = readline GB_FH) {
+while (my $line = readline $gb_fh) {
 	if ($line =~ m/^\s*(ORGANISM\s+.+)$/) {
 		print "$1\n$accession\n";
 		$curr_taxonomy = "TAXONOMY ";
