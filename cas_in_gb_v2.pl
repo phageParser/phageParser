@@ -14,6 +14,7 @@ my $file_contents = read_file( $gb_file);
 my %cas = ( Cas3 => 'Type I',
 	    Cas9 => 'Type II', 
 	    Cas10 => 'Type III');
+
 my $cas_str = join("|",keys %cas );
 my $cas_regex = qr/($cas_str)/;
 
@@ -23,14 +24,15 @@ for my $l (@loci ) {
   next if ! ($l =~ m{/product});
   my ( @genes ) = split(/\n\s+gene\s{2,}/, $l );
   for my $g ( @genes ) {
-    next if $g !~ m{/product};
     my ($seq ) = ($g =~ /(\d+\.\.\d+)/);
-    my (@products) = ($l =~ m{/product="([^\"]+)"}g);
-    for my $p (@products) {
-	if ( $p =~ $cas_regex ) {
-	    my $pattern = $1;
-	    say "-> $seq ==> ", $cas{$pattern};
-	  }
-      }
+#    say "Looking at $seq";
+    next if $g !~ m{/product};
+#    say "We have a product\n";
+    my ($product) = ($g =~ m{/product="([^\"]+)"}g);
+#    say "Product $product";
+    if ( $product =~ $cas_regex ) {
+      my $pattern = $1;
+      say "-> $seq ==> ", $cas{$pattern};
+    }
   }
 }
