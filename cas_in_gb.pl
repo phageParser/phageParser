@@ -1,9 +1,10 @@
 #!/usr/bin/env perl
 
+#Use it with 
 use strict;
 use warnings;
 
-my $gbfile = shift || die "Usage: $0 <gb_file> \b";
+my $gbfile = shift || "data/Genbank_example.txt";
 
 open my $gb_fh, "<", $gbfile;
 

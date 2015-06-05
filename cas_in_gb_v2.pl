@@ -3,36 +3,19 @@
 use strict;
 use warnings;
 
-use File::Slurp::Tiny qw(read_lines)
+use v5.14;
 
-my $gbfile = shift || die "Usage: $0 <gb_file> \b";
+use File::Slurp::Tiny 'read_file';
 
-open my $gb_fh, "<", $gbfile;
+my $gb_file = shift || "data/Genbank_example.txt";
 
-my $line = readline $gb_fh;
+my $file_contents = read_file( $gb_file);
 
-my $accession = "";
-my $curr_taxonomy = "";
-my $curr_location = "";
 
-while (my $line = readline GB_FH) {
-	if ($line =~ m/^\s*(ORGANISM\s+.+)$/) {
-		print "$1\n$accession\n";
-		$curr_taxonomy = "TAXONOMY ";
-	} elsif ($line =~ m/^\s*(ACCESSION\s+.+)$/) {
-		$accession = "$1";
-	} elsif (($line !~ m/^ {12}\S/) && ($curr_taxonomy ne "")) {
-		print "$curr_taxonomy\n";
-		$curr_taxonomy = "";
-	} elsif ($curr_taxonomy ne "") {
-		# we are still in the taxonomy line; concat.
-		$line =~ s/\s//g;
-		$line =~ s/\n//;
-		$curr_taxonomy .= $line;
-	} elsif ($line =~ m/^\s+\/(product=.*Cas.*)$/) {
-		print "$1\t$curr_location\n";
-		$curr_location = "";
-	} elsif ($line =~ m/^\s+CDS\s+(.*)$/) {
-		$curr_location = $1;
-	}
+my @loci = split(/LOCUS\s+/s, $file_contents );
+
+for my $l (@loci ) {
+  next if ! ($l =~ m{/product});
+  my (@products) = ($l =~ m{/product="([^\"]+)"}g);
+  say @product;
 }
