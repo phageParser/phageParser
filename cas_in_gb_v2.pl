@@ -21,7 +21,8 @@ my $cas_regex = qr/($cas_str)/;
 my @loci = split(/LOCUS\s+/s, $file_contents );
 
 for my $l (@loci ) {
-  next if ! ($l =~ m{/product});
+  next if !$l;
+  my ($ac_code) = ($l =~ /^(\w+)/); 
   my ( @genes ) = split(/\n\s+gene\s{2,}/, $l );
   for my $g ( @genes ) {
     my ($seq ) = ($g =~ /(\d+\.\.\d+)/);
@@ -32,7 +33,7 @@ for my $l (@loci ) {
 #    say "Product $product";
     if ( $product =~ $cas_regex ) {
       my $pattern = $1;
-      say "-> $seq ==> ", $cas{$pattern};
+      say "->$ac_code: $seq ==> ", $cas{$pattern};
     }
   }
 }
