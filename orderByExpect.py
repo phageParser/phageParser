@@ -45,6 +45,16 @@ for fn in os.listdir("output/"):
     csv_cont = csv_to_list('output/'+fn)
     convert_cells_to_floats(csv_cont)
     csv_sorted = sort_by_column(csv_cont, "Expect")
-    write_csv("output/sorted/"+"sorted."+fn, csv_sorted)
-    print_csv(csv_sorted)
+    
+    csv_new = []
+    datas = []
+    for i in range(len(csv_sorted)-2):
+        
+        if csv_sorted[i+1][3:] in datas:
+            continue
+        datas.append(csv_sorted[i][3:])
+        csv_new.append(csv_sorted[i])
+    
+    write_csv("output/sorted/"+"sorted."+fn, csv_new)
+    #print_csv(csv_sorted)
     
