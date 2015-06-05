@@ -2,7 +2,7 @@
 
 import linecache
 
-filename = "out3.gb"
+filename = "out_all.gb"
 
 # ----------------------------------------------------------------------------
 i = filename.index('.')
@@ -12,7 +12,6 @@ data = open(filename,"rb")
 new_data = open("%s_cleaned.gb" %nm,"wb")
 
 for num, line in enumerate(data,1):
-    #print line
 
     if line[0:5] == 'LOCUS':
         new_data.write(line)
