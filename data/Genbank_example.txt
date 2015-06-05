@@ -142,6 +142,27 @@ FEATURES             Location/Qualifiers
                      FNQKEVSIQLAREALRDLLSIQNRQISVENIQKTVADYYKIKVADMYSKKRPASIARP
                      RQIAMYLAKELTQKSLPEIGELFGGRDHTTVLHAVRKIAGERQQLTELNQQLHVLEQT
                      LKG"
+     gene            298983..299912
+                     /locus_tag="ACAV_RS01305"
+                     /old_locus_tag="Acav_0268"
+     CDS             298983..299912
+                     /locus_tag="ACAV_RS01305"
+                     /old_locus_tag="Acav_0268"
+                     /inference="EXISTENCE: similar to AA
+                     sequence:RefSeq:WP_013592778.1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="CRISPR-associated protein Cas1"
+                     /protein_id="WP_013592778.1"
+                     /db_xref="GI:503358117"
+                     /translation="MVGRIVEIADDRRHLFVHRGFLVVRDTEGERKELGQIPLDDIAA
+                     VIANAHGLSYTNNLLVALAERGAPFVLCGANHNAVGMLLPIDGHHVQAKRIEAQLAAG
+                     LPLLKRLWATVVKAKLEQQAAALEAAGAATAPLLALVGKVRSGDPENIEGQGARRYWS
+                     LLFGADFRRDQDGDGLNALLNYGYTLLRSATARAVVAAGLHPSLGLHHSNDANPMRLV
+                     DDLMEPFRPVVDLKVWQLHRAGEAHVTPETKRALVRVLYDDMQTLQGVTPVMVCMQRM
+                     ATSLAQVYLGERLRLDLPLPGLPLSLAGSFDPD"
      gene            1750..2868
                      /locus_tag="ACAV_RS00015"
                      /old_locus_tag="Acav_0002"
@@ -165,6 +186,36 @@ FEATURES             Location/Qualifiers
                      HIEMQFANNQAKFTFGGMEFVTKLVEGKFPDYNRVIPKNHKNSVTLGRAPLLASLQRT
                      AIMTSDKFKGVRLNIEPGTLRVASNNAEQEEAVDELDIDYGGDTIEIGFNVTYLIDAL
                      ANMGQDMVKVDLSDGNSSALMTIPDNDNFKYVVMPMRI"
+     gene            4418503..4421010
+                     /locus_tag="ACAV_RS19180"
+                     /old_locus_tag="Acav_3869"
+     CDS             4418503..4421010
+                     /locus_tag="ACAV_RS19180"
+                     /old_locus_tag="Acav_3869"
+                     /inference="EXISTENCE: similar to AA
+                     sequence:RefSeq:WP_013596235.1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="CRISPR-associated protein Cas3"
+                     /protein_id="WP_013596235.1"
+                     /db_xref="GI:503361574"
+                     /translation="MTCVREIPQEHRLRMTGTHPLRTMAAEAPHPAWPGRTEPRQAIE
+                     RELLLKDDTQGSGHASAPADDAAAPHAPPGAPSTTPAFHAHSVEGQPESRWQTLPEHL
+                     HAVGRMAGDFAAVFNAQELAQVMGWLHDLGKYTLPFQARLRGSPLRVDHSTWGARIAQ
+                     QRLGVMGQLMAYGIAGHHAGLANGQGEGERTALSDRIASTDLPALHPAWEKDIPLPAR
+                     LALPAGLKLYGQDRQQALARQPFQMAFLARMLFSCLVDADFIDTERFYLQARGGPDHR
+                     SAGPAWPALPALRAQLDTYLRTLTAECDPAREVNRLRADILRQVRERAECAPGLFSLT
+                     VPTGGGKTLASLAFALDHAIRHGLQRVIFVIPFTSIVEQNAAVFRKALGPLGDAAVLE
+                     HHSAFTERQPPRDDPEKYQSAEKLRLAMENWDAPIVVTTAVQFFESLFAARPSQCRKL
+                     HHIAGSVVVLDEAQTMPLKLLKPCVATIDELARNYRTSVVLCTATQPVLEAPAFDGGL
+                     TGVRELAPEPTRLFQQLERVRVRHVGTLDDAALAGHMRAREQVLCIVNNRRHARAVYE
+                     AMADLPGARHLTTLMCAKHRSEVLDEVRQMLKAGQPCRVVSTSLIEAGVDVDFPTVLR
+                     AEAGLDSIAQAAGRCNREGLRNIDASEVLVFANANEEWAPPPELKQYAQAAREVLRQC
+                     ADDPLSPEAIARYFALLYWQKGSDQLDVPDLMGLLKTRRPDSLPMETLATKFRMIDSV
+                     QMPVIVPYDDAAREALEQLRFAEGSVGLARKLQPYVVQLPRQGFDALYQAGAIAPVRP
+                     DRWGEQFMQLVHPDIYSQRSGLRWDDPTFIRSERLHW"
      gene            2942..5575
                      /gene="gyrB"
                      /locus_tag="ACAV_RS00020"

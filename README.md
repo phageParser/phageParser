@@ -31,6 +31,10 @@ phageParser uses Make to build the project and to run its pipeline. Make is avai
 can learn more about it reading the [GNU Make manual](http://www.gnu.org/software/make/manual/make.html) and the
 [O'Reilly GNU Make book](http://www.oreilly.com/openbook/make3/book/index.csp).
 
+There are several usage options depending on what data outcome is desired.
+
+###Usage - Blast individual bacteria files and get phage info from NCBI
+
  - To get a phage dataset, take a fasta-formatted list of genes (example in `data/velvet-distinct-spacers.fasta`) and upload to http://phagesdb.org/blast/ - example result in `data/blast-phagesdb.txt`
 
  - To clean up the results returned from phagesdb.org, you can call the Make target filter_by_expect, as in the example below.
@@ -50,7 +54,7 @@ can learn more about it reading the [GNU Make manual](http://www.gnu.org/softwar
 ```
  where `accessionNumber.txt` contains a list of accession numbers of interest; results will be dumped to `NCBIresults.txt` - see [#2](https://github.com/goyalsid/phageParser/issues/2) for ongoing development here. 
 
-##Alternative usage for code sprint materials
+###Usage - Blasting multiple bacteria files and visualizing interactions
 
 All of the following assumes you are using the reference CRISPR database set of spacers (file `spacerdatabase.txt`). Things *should* work with other spacer files; however there are several things hard-coded that might break. `filterByExpect.py` assumes the header line for each spacer is a number, for example, and `bac_name` is hardcoded in `interactions.py` as the 8th to 16th characters of the file name.
 
@@ -71,3 +75,17 @@ Visualization
 - paste the contents of `json.txt` into the `elements[]` field in the file `ui.js`. This creates the structure needed for cytoscape.js to plot stuff. Various style fields can be changed, see [cytoscape.js](http://js.cytoscape.org/) for documentation (or ask @MaxKFranz for help).
 
 - paste the file `index.html` into a web browser. 
+
+###Usage - Detecting CRISPR type from bacterial genome metadata
+
+- Start with a list of bacteria of interest - in this case, it's all the bacteria from CRISPRdb that had hits to a conglomerate of phage databases - `bac_accession_list.txt`. 
+
+- Next is to fetch bacterial genome data from NCBI. Run the following:
+```
+ cat bac_accession_list.txt | python acc2gb.py youremail@yourinstitution.org > NCBIresults.txt
+```
+Be warned that this will take a long time (~1-2 hours) because the list is long. For testing, shorten the list to only a few accession numbers. 
+
+- Run the script `trimGenbankDNA.py` to get rid of unnecessary data and make the file size more manageable. 
+
+- Run `cas_in_gb.pl` (it's in Perl) to detect which Cas genes are in each organism.
