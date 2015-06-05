@@ -3,13 +3,15 @@
 use strict;
 use warnings;
 
-use v5.14;
-
-use File::Slurp::Tiny 'read_file';
-
 my $gb_file = shift || "data/Genbank_example.txt";
 
-my $file_contents = read_file( $gb_file);
+my $file_contents = "";
+
+open FH, "<", $gb_file;
+while (my $line = readline FH) {
+	$file_contents .= $line;
+}
+close FH;
 
 my %cas = ( Cas3 => 'Type I',
 	    Cas9 => 'Type II', 
@@ -33,7 +35,7 @@ for my $l (@loci ) {
 #    say "Product $product";
     if ( $product =~ $cas_regex ) {
       my $pattern = $1;
-      say "->$ac_code: $seq ==> ", $cas{$pattern};
+      print "->$ac_code: $seq ==> " . $cas{$pattern} . "\n";
     }
   }
 }
