@@ -33,7 +33,7 @@ for my $l (@loci ) {
 #    say "Product $product";
     if ( $product =~ $cas_regex ) {
       my $pattern = $1;
-      say "->$ac_code: $seq ==> ", $cas{$pattern};
+      say "->$ac_code: $seq ==> ", $pattern, " --> ", $cas{$pattern};
     }
   }
 }
