@@ -46,5 +46,5 @@ for fn in os.listdir("output/"):
     convert_cells_to_floats(csv_cont)
     csv_sorted = sort_by_column(csv_cont, "Expect")
     write_csv("output/sorted/"+"sorted."+fn, csv_sorted)
-    print_csv(csv_sorted)
+    #print_csv(csv_sorted)
     

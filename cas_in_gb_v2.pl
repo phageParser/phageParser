@@ -3,13 +3,14 @@
 use strict;
 use warnings;
 
-use v5.14;
-
-use File::Slurp::Tiny 'read_file';
+#Use with 
+# ./cas_in_gb_v2.pl file_name.txt
 
 my $gb_file = shift || "data/Genbank_example.txt";
 
-my $file_contents = read_file( $gb_file);
+open my $fh, "<", $gb_file;
+my $file_contents = join( "", <$fh> );
+close $fh;
 
 my %cas = ( Cas3 => 'Type I',
 	    Cas9 => 'Type II', 
@@ -26,14 +27,11 @@ for my $l (@loci ) {
   my ( @genes ) = split(/\n\s+gene\s{2,}/, $l );
   for my $g ( @genes ) {
     my ($seq ) = ($g =~ /(\d+\.\.\d+)/);
-#    say "Looking at $seq";
     next if $g !~ m{/product};
-#    say "We have a product\n";
     my ($product) = ($g =~ m{/product="([^\"]+)"}g);
-#    say "Product $product";
     if ( $product =~ $cas_regex ) {
       my $pattern = $1;
-      say "->$ac_code: $seq ==> ", $pattern, " --> ", $cas{$pattern};
+      print "->$ac_code: $seq ==> $cas{$pattern}\n";
     }
   }
 }
