@@ -3,15 +3,14 @@
 use strict;
 use warnings;
 
+#Use with 
+# ./cas_in_gb_v2.pl file_name.txt
+
 my $gb_file = shift || "data/Genbank_example.txt";
 
-my $file_contents = "";
-
-open FH, "<", $gb_file;
-while (my $line = readline FH) {
-	$file_contents .= $line;
-}
-close FH;
+open my $fh, "<", $gb_file;
+my $file_contents = join( "", <$fh> );
+close $fh;
 
 my %cas = ( Cas3 => 'Type I',
 	    Cas9 => 'Type II', 
@@ -28,14 +27,11 @@ for my $l (@loci ) {
   my ( @genes ) = split(/\n\s+gene\s{2,}/, $l );
   for my $g ( @genes ) {
     my ($seq ) = ($g =~ /(\d+\.\.\d+)/);
-#    say "Looking at $seq";
     next if $g !~ m{/product};
-#    say "We have a product\n";
     my ($product) = ($g =~ m{/product="([^\"]+)"}g);
-#    say "Product $product";
     if ( $product =~ $cas_regex ) {
       my $pattern = $1;
-      print "->$ac_code: $seq ==> " . $cas{$pattern} . "\n";
+      print "->$ac_code: $seq ==> $cas{$pattern}\n";
     }
   }
 }
