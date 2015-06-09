@@ -31,7 +31,7 @@ for my $l (@loci ) {
     my ($product) = ($g =~ m{/product="([^\"]+)"}g);
     if ( $product =~ $cas_regex ) {
       my $pattern = $1;
-      print "->$ac_code: $seq ==> $cas{$pattern}\n";
+      print "->$ac_code: $seq ==> $pattern --> $cas{$pattern}\n";
     }
   }
 }
