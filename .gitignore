@@ -4,3 +4,6 @@ output/*
 *.egg-info
 *.egg
 pep8_report.txt
+
+# front-end dependencies
+visualization/components/

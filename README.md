@@ -72,6 +72,11 @@ All of the following assumes you are using the reference CRISPR database set of 
 
 Visualization
 
+####Install Front-End Dependencies (to visualize in browser). 
+- Install [node.js](https://nodejs.org/). Installing node will also install the node package manager (NPM).
+
+- Install [bower](bower.io) 
+
 - paste the contents of `json.txt` into the `elements[]` field in the file `ui.js`. This creates the structure needed for cytoscape.js to plot stuff. Various style fields can be changed, see [cytoscape.js](http://js.cytoscape.org/) for documentation (or ask @MaxKFranz for help).
 
 - paste the file `index.html` into a web browser. 
