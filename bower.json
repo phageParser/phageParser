@@ -1,0 +1,8 @@
+{
+  "name": "phage-parser",
+  "license": "MIT",
+  "privae": true,
+  "dependencies": {
+    "cytoscape.js": "https://github.com/cytoscape/cytoscape.js.git#v2.3.9"
+  }
+}
