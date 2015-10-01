@@ -21,10 +21,9 @@ def get_taxons_from_CRISPRdb():
     return crisprs
 
 def get_genome_properties(crispr):
-    url_crispr = "http://crispr.u-psud.fr/cgi-bin/crispr/SpecieProperties.cgi?Taxon_id=" + crispr['Taxon_id']
-    html_crispr = requests.get(url_crispr).text
-    dom_crispr = web.Element(html_crispr)
-    table = dom_crispr('table[class="primary_table"]')[1]
+    url = "http://crispr.u-psud.fr/cgi-bin/crispr/SpecieProperties.cgi?Taxon_id=" + crispr['Taxon_id']
+    dom = get_dom(url)
+    table = dom('table[class="primary_table"]')[1]
     crispr['Ref_seqs']={}
     for sequence in table('tr'):
         if sequence('th')==[]:
@@ -34,8 +33,7 @@ def get_genome_properties(crispr):
 def get_CRISPR_properties(crispr):
     for ref_seq in crispr['Ref_seqs'].keys():
         url = "http://crispr.u-psud.fr/crispr/CRISPRProperties.php?RefSeq=" + ref_seq + "&Taxon=" + crispr['Taxon_id']
-        html = requests.get(url).text
-        dom = web.Element(html)
+        dom = get_dom(url)
         div = dom('div[class="rightcontent"]')[1]
         table = div('table[class="primary_table"]')[0]
         tbody = table('tbody')[0]
