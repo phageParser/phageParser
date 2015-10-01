@@ -10,13 +10,9 @@ def get_dom(url):
 
 def get_taxons_from_CRISPRdb():
     url = "http://crispr.u-psud.fr/crispr/"
-
     dom_homepage = get_dom(url)
-
     container = dom_homepage('div[class="strainlist"]')[0]
-
     crisprs = []
-
     for link in container('a'):
         crispr = {}
         crispr['Name'] = link.content.encode('ascii','ignore')
@@ -52,25 +48,28 @@ def get_CRISPR_properties(crispr):
             crispr['Ref_seqs'][ref_seq].append(crispr_id_value)
     return crispr
 
+def get_begin(source):
+    begin = re.search('(?<=Crispr_begin_position: )\d+', source)
+    begin = begin.group(0)
+    return begin
+
+def get_end(source):
+    end = re.search('(?<=Crispr_end_position: )\d+', source)
+    end = end.group(0)
+    return end
+
+def get_loc_id(source):
+    loc_id = re.search('(?<=Crispr Rank in the sequence: )\d+', source)
+    loc_id = loc_id.group(0)
+    return loc_id
+
 def get_results():
     crisprs =  get_taxons_from_CRISPRdb()
-    #uncomment if you want to test the script for 4 cases
-    #k = 0
     for crispr in crisprs:
-    #uncomment if you want to test the script for 4 cases
-    #    k+=1
-    #    if k==5:
-    #        break
         crispr = get_genome_properties(crispr)
         crispr = get_CRISPR_properties(crispr)
     results = []
-    #uncomment if you want to test the script for 4 cases
-    #k = 0
     for crispr in crisprs:
-        #uncomment if you want to test the script for 4 cases
-        #k+=1
-        #if k==5:
-        #    break
         for ref_seq in crispr['Ref_seqs'].keys():
             for crispr_id in crispr['Ref_seqs'][ref_seq]:
                 params = {'checked[]': crispr_id, 'Taxon': crispr['Taxon_id']}
@@ -79,13 +78,10 @@ def get_results():
                 table = file_crispr_seq('table[class="crisprs_table"]')[0]
                 url = "http://crispr.u-psud.fr" + table('form')[-2].action
                 source = requests.get(url).text
-                begin = re.search('(?<=Crispr_begin_position: )\d+', source)
-                begin = begin.group(0)
-                end = re.search('(?<=Crispr_end_position: )\d+', source)
-                end = end.group(0)
+                begin = get_begin(source)
+                end = get_end(source)
                 main_accession_number = ref_seq
-                loc_id = re.search('(?<=Crispr Rank in the sequence: )\d+', source)
-                loc_id = loc_id.group(0)
+                loc_id = get_loc_id(source)
                 results.append([main_accession_number,loc_id,begin,end])
 
     with open('results.csv', 'wb') as csvfile:
