@@ -3,7 +3,6 @@ from pattern import web
 import re
 import csv
 
-
 def get_dom(url):
     html = requests.get(url).text
     dom = web.Element(html)
@@ -23,9 +22,7 @@ def get_taxons_from_CRISPRdb():
         crispr['Name'] = link.content.encode('ascii','ignore')
         crispr['Taxon_id'] = link.href.encode('ascii','ignore')[46:]
         crisprs.append(crispr)
-
     return crisprs
-
 
 def get_genome_properties(crispr):
     url_crispr = "http://crispr.u-psud.fr/cgi-bin/crispr/SpecieProperties.cgi?Taxon_id=" + crispr['Taxon_id']
