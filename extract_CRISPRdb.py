@@ -61,13 +61,30 @@ def get_loc_id(source):
     loc_id = loc_id.group(0)
     return loc_id
 
+def download(source,a,b):
+    directory = "files/"
+    namefile =  a + "_" + b
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    f = open(directory + namefile, 'w')
+    f.write(source)
+    f.close()
+
 def get_results():
     crisprs =  get_taxons_from_CRISPRdb()
+    n = len(crisprs)
+    i = 0.
+    print "Getting genome and CRISPR properties..."
     for crispr in crisprs:
+        print str(i/n*100) + "%"
         crispr = get_genome_properties(crispr)
         crispr = get_CRISPR_properties(crispr)
+        i += 1
     results = []
+    i = 0.
+    print "Downloading files..."
     for crispr in crisprs:
+        print str(i/n*100) + "%"
         for ref_seq in crispr['Ref_seqs'].keys():
             for crispr_id in crispr['Ref_seqs'][ref_seq]:
                 params = {'checked[]': crispr_id, 'Taxon': crispr['Taxon_id']}
@@ -80,7 +97,9 @@ def get_results():
                 end = get_end(source)
                 main_accession_number = ref_seq
                 loc_id = get_loc_id(source)
+                download(source,main_accession_number,loc_id)
                 results.append([main_accession_number,loc_id,begin,end])
+                i += 1
 
     with open('results.csv', 'wb') as csvfile:
         writer = csv.writer(csvfile, delimiter=',')
