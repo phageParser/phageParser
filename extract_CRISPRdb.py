@@ -2,6 +2,7 @@ import requests
 from pattern import web
 import re
 import csv
+import time
 
 def get_dom(url):
     html = requests.get(url).text
@@ -77,18 +78,18 @@ def get_results():
     print "Getting genome and CRISPR properties..."
     start = time.time()
     for crispr in crisprs:
-        print str(i/n*100) + "%"
+        print "{:.2%}".format(i/n)
         crispr = get_genome_properties(crispr)
         crispr = get_CRISPR_properties(crispr)
         i += 1
     end = time.time()
-    print "Getting properties required " + end-start " seconds."
+    print "Getting properties required " + str(end-start) + " seconds."
     results = []
     i = 0.
     print "Downloading files..."
     start = time.time()
     for crispr in crisprs:
-        print str(i/n*100) + "%"
+        print "{:.2%}".format(i/n)
         for ref_seq in crispr['Ref_seqs'].keys():
             for crispr_id in crispr['Ref_seqs'][ref_seq]:
                 params = {'checked[]': crispr_id, 'Taxon': crispr['Taxon_id']}
@@ -105,7 +106,7 @@ def get_results():
                 results.append([main_accession_number,loc_id,begin,end])
         i += 1
     end = time.time()
-    print "Downloading files required " + end-start + " seconds."
+    print "Downloading files required " + str(end-start) + " seconds."
 
     print "Writing .csv file..."
     start = time.time()
@@ -114,9 +115,9 @@ def get_results():
         for result in results:
             writer.writerow(result)
     end = time.time()
-    print "Writing .csv file required " + end-start + " seconds."
+    print "Writing .csv file required " + str(end-start) + " seconds."
 
 start = time.time() 
 get_results()
 end = time.time()
-print = "The complete process required " + end-start + " seconds."
+print "The complete process required " + str(end-start) + " seconds."
