@@ -3,6 +3,7 @@ from pattern import web
 import re
 import csv
 import time
+import os
 
 def get_dom(url):
     html = requests.get(url).text
