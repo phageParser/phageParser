@@ -75,14 +75,18 @@ def get_results():
     n = len(crisprs)
     i = 0.
     print "Getting genome and CRISPR properties..."
+    start = time.time()
     for crispr in crisprs:
         print str(i/n*100) + "%"
         crispr = get_genome_properties(crispr)
         crispr = get_CRISPR_properties(crispr)
         i += 1
+    end = time.time()
+    print "Getting properties required " + end-start " seconds."
     results = []
     i = 0.
     print "Downloading files..."
+    start = time.time()
     for crispr in crisprs:
         print str(i/n*100) + "%"
         for ref_seq in crispr['Ref_seqs'].keys():
@@ -99,11 +103,20 @@ def get_results():
                 loc_id = get_loc_id(source)
                 download(source,main_accession_number,loc_id)
                 results.append([main_accession_number,loc_id,begin,end])
-                i += 1
+        i += 1
+    end = time.time()
+    print "Downloading files required " + end-start + " seconds."
 
+    print "Writing .csv file..."
+    start = time.time()
     with open('results.csv', 'wb') as csvfile:
         writer = csv.writer(csvfile, delimiter=',')
         for result in results:
             writer.writerow(result)
-            
+    end = time.time()
+    print "Writing .csv file required " + end-start + " seconds."
+
+start = time.time() 
 get_results()
+end = time.time()
+print = "The complete process required " + end-start + " seconds."
