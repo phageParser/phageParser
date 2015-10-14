@@ -2,7 +2,6 @@ import requests
 from pattern import web
 import re
 import csv
-import time
 import os
 
 def get_dom(url):
