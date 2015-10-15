@@ -83,7 +83,7 @@ def get_results():
     print "Getting positions..."
     restart = False
     var = False
-    if os.path.exists('results.csv'):
+    if os.path.exists('last'):
         f = open('last','r')
         last = f.read()
         [last_taxon_id,last_refseq,last_loc_id] = last.split(',')
