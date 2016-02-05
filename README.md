@@ -3,7 +3,7 @@ phageParser
 
 ##Taming Pathogens
 
-Pathogens have played a crucial role in human history. The most iconic is the Black Death, which was (is thought to have been) caused by bacteria named Yersinia pestis in the 14th century. A more recent example is AIDS caused by human immunodeficiency virus (HIV). Hence, understanding fundamentals of the host-pathogen interactions has been a central problem in epidemiology, which with the genomic age requires tools from quantitative fields to make sense of the large amount of sequencing data that is being generated.  
+Pathogens have played a crucial role in human history. The most iconic is the Black Death, which was (is thought to have been) caused by bacteria named Yersinia pestis in the 14th century. A more recent example is AIDS caused by human immunodeficiency virus (HIV). Hence, understanding fundamentals of the host-pathogen interactions has been a central problem in epidemiology, which in the genomic age requires tools from quantitative fields to make sense of the large amount of sequencing data that is being generated.
 
 A virus-bacteria interaction provides the simplest host-pathogen pair and is crucial for functioning of human gut to marine ecosystems. Interestingly, a mechanism for “adaptive” immune system in bacteria against the viruses infecting them (usually referred to as phages) was discovered just a few years ago, called CRISPR-Cas. Curiously, much like the anti-virus software and intrusion detection systems that rely on detecting patterns found in malicious code, bacteria keeps a dynamic library of small pieces of phage genomes (spacers) to detect and neutralize phage attacks.  
 
@@ -11,7 +11,7 @@ The basic problem of understanding how this immune system works is to understand
 
 ##Data Challenge
 
-Happily, much of the existing data needed to understand bacteria / phage interaction has been released openly to the public and is available over the web; the current challenge is to help extract the relevant parts of that huge database, and automate the production of targeted datasets for these studies.  More details are in the issue tracker!
+Happily, much of the existing data needed to understand bacteria / phage interaction has been released openly to the public and is available over the web; the current challenge is to help extract the relevant parts from those resources, and automate the production of targeted datasets for these studies.  More details are in the issue tracker!
 
 ##Relevant Literature
 
@@ -19,7 +19,7 @@ Happily, much of the existing data needed to understand bacteria / phage interac
 
 ##Installation
 
-This package depends on Biopython:
+This package depends on Biopython, which can be installed as follows:
 
 ```
 sudo make install-deps
@@ -35,7 +35,7 @@ There are several usage options depending on what data outcome is desired.
 
 ###Usage - Blast individual bacteria files and get phage info from NCBI
 
- - To get a phage dataset, take a fasta-formatted list of genes (example in `data/velvet-distinct-spacers.fasta`) and upload to http://phagesdb.org/blast/ - example result in `data/blast-phagesdb.txt`
+ - To get a phage dataset, take a fasta-formatted list of genes (example in [`data/velvet-distinct-spacers.fasta`](data/velvet-distinct-spacers.fasta)) and upload to http://phagesdb.org/blast/ - example result in [`data/blast-phagesdb.txt`](data/blast-phagesdb.txt)
 
  - To clean up the results returned from phagesdb.org, you can call the Make target filter_by_expect, as in the example below.
 
@@ -56,7 +56,7 @@ There are several usage options depending on what data outcome is desired.
 
 ###Usage - Blasting multiple bacteria files and visualizing interactions
 
-All of the following assumes you are using the reference CRISPR database set of spacers (file `spacerdatabase.txt`). Things *should* work with other spacer files; however there are several things hard-coded that might break. `filterByExpect.py` assumes the header line for each spacer is a number, for example, and `bac_name` is hardcoded in `interactions.py` as the 8th to 16th characters of the file name.
+All of the following assumes you are using the reference CRISPR database set of spacers (file `spacerdatabase.txt`). Things *should* work with other spacer files; however there are several things hard-coded that might break. [`filterByExpect.py`](filterByExpect.py) assumes the header line for each spacer is a number, for example, and `bac_name` is hardcoded in [`interactions.py`](interactions.py) as the 8th to 16th characters of the file name.
 
 - To get individual spacer files for each bacteria species in the reference set, run `CRISPR_db_parser` on with the input file `spacerdatabase.txt` (downloaded from the [Utilities](http://crispr.u-psud.fr/crispr/BLAST/Spacer/Spacerdatabase) page of CRISPRdb). Put all the output files in a folder `/spacers` under `data`.
 
@@ -64,11 +64,11 @@ All of the following assumes you are using the reference CRISPR database set of 
 
 - Blasting of spacer-containing files against the phage database can be done locally (handy if you have many files to blast). Download a local version of blast (blast+) [here](http://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download) and find/follow instructions for your OS. (We used [these instructions](http://www.ncbi.nlm.nih.gov/books/NBK52637/) for Windows successfully.) Put the file `Mycobacteriophages-All.fasta` (in [data](https://github.com/goyalsid/phageParser/tree/master/data) folder) into the main blast+ directory and use the command `makeblastdb -in "Mycobacteriophages-All.fasta" -dbtype nucl -title PhageDatabase -out phagedb` to create a blast-ready database. It's possible to combine multiple databases into one blastable database by including more than one filename between the quotes in the `-in` command (i.e. the ENA phage database or NCBI virus database). Now you should be able to run the script `BLAST_loop.py`, but make sure directory names are correct - probably `BLAST_loop.py` will need to be run from inside wherever you installed blast+. 
 
-- run `filterByExpectPhages.py`, which essentially runs filterByExpect.py on all files in the `/phages` folder. These will be saved to `/output`.
+- run [`filterByExpectPhages.py`](filterByExpectPhages.py), which essentially runs filterByExpect.py on all files in the `/phages` folder. These will be saved to `/output`.
 
-- make a directory called `sorted` under `output`. run `orderByExpect.py`, which rearranges the results of filterByExpectPhages in each file to be in order of lowest to highest expect value.
+- make a directory called `sorted` under `output`. run [`orderByExpect.py`](orderByExpect.py), which rearranges the results of filterByExpectPhages in each file to be in order of lowest to highest expect value.
 
-- run `interactions.py`, which makes a json file `json.txt` for visualization in cytoscape.js. 
+- run [`interactions.py`](interactions.py), which makes a json file `json.txt` for visualization in cytoscape.js. 
 
 Visualization
 
@@ -93,4 +93,4 @@ Be warned that this will take a long time (~1-2 hours) because the list is long.
 
 - Run the script `trimGenbankDNA.py` to get rid of unnecessary data and make the file size more manageable. 
 
-- Run `cas_in_gb.pl` (it's in Perl) to detect which Cas genes are in each organism.
+- Run [`cas_in_gb.pl`](cas_in_gb.pl) (it's in Perl) to detect which Cas genes are in each organism.
