@@ -1,17 +1,31 @@
 phageParser
 ===========
 
-##Taming Pathogens
+phageParser is a project to extract and organize CRISPR information from open genetic data.
 
-Pathogens have played a crucial role in human history. The most iconic is the Black Death, which was (is thought to have been) caused by bacteria named Yersinia pestis in the 14th century. A more recent example is AIDS caused by human immunodeficiency virus (HIV). Hence, understanding fundamentals of the host-pathogen interactions has been a central problem in epidemiology, which in the genomic age requires tools from quantitative fields to make sense of the large amount of sequencing data that is being generated.
+## What is this tool?
 
-A virus-bacteria interaction provides the simplest host-pathogen pair and is crucial for functioning of human gut to marine ecosystems. Interestingly, a mechanism for “adaptive” immune system in bacteria against the viruses infecting them (usually referred to as phages) was discovered just a few years ago, called CRISPR-Cas. Curiously, much like the anti-virus software and intrusion detection systems that rely on detecting patterns found in malicious code, bacteria keeps a dynamic library of small pieces of phage genomes (spacers) to detect and neutralize phage attacks.  
+Many bacterial and archaeal genomes have been sequenced, and a large fraction of them have CRISPR systems, ranging from deadly human pathogens to archaea living in the harshest environments on earth. Some CRISPR systems have been studied very well, and more is being discovered about CRISPR every day. phageParser is a tool to collect this growing pool of information and generate versatile and useful annotations. These are some of the annotations we include:
+* Spacer matches to known phages and prophages
+* Phage genome content near spacer matches
+* Spacer self-matches to host genome
+* *cas* gene content and inferred CRISPR type
 
-The basic problem of understanding how this immune system works is to understand the pattern of spacers on phage genomes: how many per phage genome, where on a phage genome, if the spacers containing regions are more or less dynamic compared to the rest of the phage genome, etc. Since we have a large number of sequenced phages and a library of spacers from a variety of bacteria - ranging from deadly human pathogens such as tuberculosis to bacteria that live in our guts - we can attempt to aggregate this information to develop a more “complete” understanding of phage-bacteria interactions.
+These annotations will be collected in a database that can be queried through a GUI. Neither of these exist yet, and we are actively looking for contributors. 
 
-##Data Challenge
+This tool is currently in development, and it will always be possible to modify and enhance what is included as CRISPR research moves forward. We welcome suggestions for features or annotations you'd like to see! 
 
-Happily, much of the existing data needed to understand bacteria / phage interaction has been released openly to the public and is available over the web; the current challenge is to help extract the relevant parts from those resources, and automate the production of targeted datasets for these studies.  More details are in the issue tracker!
+## Who is this for?
+
+This tool is for anyone interested in exploring what we know about CRISPR systems in nature. This includes researchers, educators, and the general public.
+
+## Where can I get involved?
+
+
+
+## About the CRISPR system
+
+Interestingly, a mechanism for “adaptive” immune system in bacteria against the viruses infecting them (usually referred to as phages) was discovered just a few years ago, called CRISPR-Cas. Curiously, much like the anti-virus software and intrusion detection systems that rely on detecting patterns found in malicious code, bacteria keeps a dynamic library of small pieces of phage genomes (spacers) to detect and neutralize phage attacks.  
 
 ##Relevant Literature
 
