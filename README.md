@@ -5,7 +5,7 @@ phageParser is a project to extract and organize CRISPR information from open ge
 
 ## What is this tool?
 
-Many bacterial and archaeal genomes have been sequenced, and a large fraction of them have CRISPR systems, ranging from deadly human pathogens to archaea living in the harshest environments on earth. Some CRISPR systems have been studied very well, and more is being discovered about CRISPR every day. phageParser is a tool to collect this growing pool of information and generate versatile and useful annotations. These are some of the annotations we include:
+Many bacterial and archaeal genomes have been sequenced, and [a large fraction of them have CRISPR systems](http://crispr.u-psud.fr/crispr/), ranging from deadly human pathogens to archaea living in the harshest environments on earth. Some CRISPR systems have been studied very well, and more is being discovered about CRISPR every day. phageParser is a tool to collect this growing pool of information and generate versatile and useful annotations. These are some of the annotations we include:
 * Spacer matches to known phages and prophages
 * Phage genome content near spacer matches
 * Spacer self-matches to host genome
@@ -13,15 +13,20 @@ Many bacterial and archaeal genomes have been sequenced, and a large fraction of
 
 These annotations will be collected in a database that can be queried through a GUI. Neither of these exist yet, and we are actively looking for contributors. 
 
-This tool is currently in development, and it will always be possible to modify and enhance what is included as CRISPR research moves forward. We welcome suggestions for features or annotations you'd like to see! 
+This tool is currently in development, and it will always be possible to modify and enhance what is included as CRISPR research moves forward. We welcome suggestions for features or annotations you'd like to see! To suggest a feature, create an issue in our [issue tracker](https://github.com/goyalsid/phageParser/issues).
 
 ## Who is this for?
 
-This tool is for anyone interested in exploring what we know about CRISPR systems in nature. This includes researchers, educators, and the general public.
+phageParser is for anyone interested in exploring what we know about CRISPR systems in nature. This includes researchers, educators, and the general public.
 
 ## Where can I get involved?
 
-
+We need many different skills and areas of expertise to build this tool, and you can help! 
+* [Good first bugs](https://github.com/goyalsid/phageParser/labels/good%20first%20bug) include documentation and coding tasks that are doable by a newcomer. Mentoring is available for these tasks. 
+* Do you know about CRISPR biology? Issues labeled [science](https://github.com/goyalsid/phageParser/issues?q=is%3Aissue+is%3Aopen+label%3Ascience) are things we need people with science background to work on.
+* Are you interested in contributing to project documentation? Any issues labeled [documentation](https://github.com/goyalsid/phageParser/issues?q=is%3Aissue+is%3Aopen+label%3Adocumentation) are ways to create or improve our docs. 
+* Do you know about databases? We're just starting to think about how to structure our data - join the discussion in issue #64.
+* Do you know about Python and/or developing code? Check out our [code](https://github.com/goyalsid/phageParser/labels/code)-specific issues.
 
 ## About the CRISPR system
 
