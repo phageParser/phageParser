@@ -46,10 +46,6 @@ sudo make install-deps
 
 ##Usage
 
-phageParser uses Make to build the project and to run its pipeline. Make is available for most Operating Systems, and you
-can learn more about it reading the [GNU Make manual](http://www.gnu.org/software/make/manual/make.html) and the
-[O'Reilly GNU Make book](http://www.oreilly.com/openbook/make3/book/index.csp).
-
 There are several usage options depending on what data outcome is desired.
 
 ###Usage - Blast individual bacteria files and get phage info from NCBI
