@@ -73,7 +73,7 @@ There are several usage options depending on what data outcome is desired.
 
 All of the following assumes you are using the reference CRISPR database set of spacers (file `spacerdatabase.txt`). Things *should* work with other spacer files; however there are several things hard-coded that might break. [`filterByExpect.py`](filterByExpect.py) assumes the header line for each spacer is a number, for example, and `bac_name` is hardcoded in [`interactions.py`](interactions.py) as the 8th to 16th characters of the file name.
 
-- To get individual spacer files for each bacteria species in the reference set, run `CRISPR_db_parser` on with the input file `spacerdatabase.txt` (downloaded from the [Utilities](http://crispr.u-psud.fr/crispr/BLAST/Spacer/Spacerdatabase) page of CRISPRdb). Put all the output files in a folder `/spacers` under `data`.
+- To get individual spacer files for each bacteria species in the reference set, run `CRISPR_db_parser` on with the input file `spacerdatabase.txt` (downloaded from the [Utilities](http://crispr.u-psud.fr/crispr/BLAST/Spacer/Spacerdatabase) page of CRISPRdb). The output files will be saved in the folder `data/spacers`.
 
 - Make folders `data/phages` and `/output`. The current files in `data/spacers` and `data/phages` are examples.
 
