@@ -1,10 +1,25 @@
+"""
+CRISPR_db_parser
+Madeleine Bonsma
+March 7, 2015
+Updated May 3, 2016
+
+This script takes a list of spacers downloaded from the CRISPRdb website and splits them into individual files, one file per organism. Result files are saved in "data/spacers".
+"""
+
 import linecache
+import os
 
 # CRISPR db parser
 # MB Mar 07 2015
 
-filename = "spacerdatabase.txt" # File from CRISPRdb to sort 
+filename = "data/spacerdatabase.txt" # File from CRISPRdb to sort 
 spacer_db = open("%s" %(filename),"r") 
+
+# check if directory for saving exists
+directory = "data/spacers"
+if not os.path.exists(directory):
+    os.makedirs(directory)
 
 # places to dump accession numbers during execution
 refseq_list = []
@@ -19,7 +34,7 @@ for num, line in enumerate(spacer_db,1):
             counter +=1
             refseq = line[0:9] # this part of the header is the NCBI accession#
             if refseq not in refseq_list: # open new file if it's a new bacteria
-                refseq_dict[refseq] = open("%s.fasta" %(refseq),"w")
+                refseq_dict[refseq] = open("data/spacers/%s.fasta" %(refseq),"w")
                 if "|" in line: # if more than one bacteria contain spacer
                     i = line.index("|")
                     writeline = line[10:i]  # include in header the locus identifier and spacer position identifier
