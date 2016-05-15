@@ -9,6 +9,20 @@ import os
 filePath = "data/Genbank_example.txt"
 filePathWithoutExt = os.path.splitext(filePath)[0]
 
+def extractCDS(file):
+    cds = []
+
+    f = open(file, 'r')
+    fileText = f.read()
+    m = re.finditer('CDS\s{13}(?P<CDS>\S*)', fileText)
+
+    for reg in m:
+        element = reg.group('CDS')
+        if element != "":
+            cds.append(element)
+
+    return cds
+
 def extractTranslations(file):
     translations = []
 
@@ -71,6 +85,7 @@ def getValues(url):
 
 def main():
     translations = extractTranslations(filePath)
+    cds = extractCDS(filePath)
 
     for i, translation in enumerate(translations):
         print "Getting translation " + str(i + 1) + "/" + str(len(translations)) + "..."
@@ -78,6 +93,8 @@ def main():
         result = getValues(url)
 
         for indexRow, row in enumerate(result):
+            row["translation_number"] = i + 1
+            row["cds"] = cds[i]
             if i == 0 and indexRow == 0:
                 with open(filePathWithoutExt + '.csv', 'w') as f:
                     w = csv.DictWriter(f, row.keys())
