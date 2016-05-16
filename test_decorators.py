@@ -6,24 +6,30 @@ from Bio import Entrez
 
 
 def check(func):
-    '''Decorator to check if file
-       is present or up-to-date
+    '''
+    Decorator to check if file
+    is present or up-to-date
 
-       kwargs required:
-           accession_id - i.e "NC_000853"
-           months - Number of months since last download
-           dir_paths - directory path where files are stored
+    decorated function require these kwargs:
+       'accession_id' - i.e "NC_000853"
+       'months' - Options:
+                    1. The number of months since file's last download
+                    2. value set to NONE
+       'data_dir' - directory path where the data files are stored
     '''
     database = 'nuccore'
-    Entrez.email = 'lwgray@gmail.com'
+    Entrez.email = 'example@example.com'
 
-    def fetch(accession_id):
+    def fetch(accession_id, data_dir):
         '''Download File'''
         print "Downloading {0}!".format(accession_id)
         handle = Entrez.efetch(db=database, rettype="gbwithparts",
                                id=accession_id)
-        with open('{0}.fasta'.format(accession_id), 'wb') as outfile:
-            outfile.write(handle.read())
+        file_name = '{0}.fasta'.format(accession_id)
+        file_path = os.path.join(data_dir, file_name)
+        with open(file_path, 'wb') as outfile:
+            for line in handle:
+                outfile.write(line)
         return
 
     def checked(*args, **kwargs):
@@ -31,21 +37,21 @@ def check(func):
            downloaded or re-downloaded
         '''
         accession_id = kwargs['accession_id']
-        dir_path = kwargs['dir_path']
+        data_dir = kwargs['data_dir']
         months = kwargs['months']
-        downloaded, date_created = is_downloaded(accession_id, dir_path)
+        downloaded, date_created = is_downloaded(accession_id, data_dir)
         recent = is_recent(months, date_created, downloaded)
         if downloaded is False or recent is False:
-            fetch(accession_id)
+            fetch(accession_id, data_dir)
         return func(*args, **kwargs)
 
-    def is_downloaded(accession_id, dir_path):
+    def is_downloaded(accession_id, data_dir):
         ''' Checks if file is downloaded and
         meets time framed requiredment
         Returns True or False
         '''
         accession_file_path = os.path.join(
-            dir_path, '{0}.fasta'.format(accession_id))
+            data_dir, '{0}.fasta'.format(accession_id))
         file_exists = os.path.exists(accession_file_path)
         if not file_exists:
             downloaded = False
