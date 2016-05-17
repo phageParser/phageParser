@@ -15,17 +15,17 @@ def file_check(func):
        'months' - Options:
                     1. The number of months since file's last download
                     2. value set to NONE
-       'data_dir' - directory path where the data files are stored
     '''
     database = 'nuccore'
     Entrez.email = 'example@example.com'
+    data_dir = 'data/genomes/'
 
-    def fetch(accession_id, data_dir):
+    def fetch(accession_id):
         '''Download File'''
         print "Downloading {0}!".format(accession_id)
         handle = Entrez.efetch(db=database, rettype="gbwithparts",
                                id=accession_id)
-        file_name = '{0}.fasta'.format(accession_id)
+        file_name = '{0}.txt'.format(accession_id)
         file_path = os.path.join(data_dir, file_name)
         with open(file_path, 'wb') as outfile:
             for line in handle:
@@ -37,21 +37,20 @@ def file_check(func):
            downloaded or re-downloaded
         '''
         accession_id = kwargs['accession_id']
-        data_dir = kwargs['data_dir']
         months = kwargs['months']
-        downloaded, date_created = is_downloaded(accession_id, data_dir)
+        downloaded, date_created = is_downloaded(accession_id)
         recent = is_recent(months, date_created, downloaded)
         if downloaded is False or recent is False:
-            fetch(accession_id, data_dir)
+            fetch(accession_id)
         return func(*args, **kwargs)
 
-    def is_downloaded(accession_id, data_dir):
+    def is_downloaded(accession_id):
         ''' Checks if file is downloaded and
         meets time framed requiredment
         Returns True or False
         '''
         accession_file_path = os.path.join(
-            data_dir, '{0}.fasta'.format(accession_id))
+            data_dir, '{0}.txt'.format(accession_id))
         file_exists = os.path.exists(accession_file_path)
         if not file_exists:
             downloaded = False
