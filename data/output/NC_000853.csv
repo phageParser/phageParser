@@ -1,0 +1,164 @@
+Query,Name,Length,Score,Expect,QueryStart,QueryEnd,SubjectStart,SubjectEnd
+1.1,"gnl|BL_ORD_ID|969 gi|269838908|ref|NC_011085.2| Morganella phage MmP1, complete genome",38234,20.0,0.00439786,12,31,14627,14646
+1.1,"gnl|BL_ORD_ID|1057 gi|281416278|ref|NC_013647.1| Klebsiella phage KP32, complete genome",41119,19.0,0.0173776,12,30,15407,15425
+1.1,"gnl|BL_ORD_ID|969 gi|269838908|ref|NC_011085.2| Morganella phage MmP1, complete genome",38234,20.0,0.00439786,12,31,14627,14646
+1.1,"gnl|BL_ORD_ID|1057 gi|281416278|ref|NC_013647.1| Klebsiella phage KP32, complete genome",41119,19.0,0.0173776,12,30,15407,15425
+1.11,"gnl|BL_ORD_ID|1159 gi|358356482|ref|NC_016163.1| Yersinia phage phiR1-37, complete genome",262391,17.0,0.246656,9,25,157138,157154
+1.13,"gnl|BL_ORD_ID|186 gi|589890759|ref|NC_023574.1| Lactococcus phage phiL47, complete genome",128546,20.0,0.00379815,9,28,52507,52526
+1.13,"gnl|BL_ORD_ID|285 gi|643319045|ref|NC_024212.1| Enterococcus phage VD13, complete genome",55726,18.0,0.0593018,10,27,36008,36025
+1.15,"gnl|BL_ORD_ID|2249 ENA|KF835987|KF835987.1 Pectobacterium bacteriophage PM2, complete genome. [21-MAR-2015]",170286,17.0,0.246656,13,29,120713,120697
+1.15,"gnl|BL_ORD_ID|152 gi|589286276|ref|NC_023568.1| Vibrio phage VH7D, complete genome",246964,17.0,0.246656,8,24,212137,212121
+1.19,"gnl|BL_ORD_ID|2040 ENA|KP399677|KP399677.1 Listeria phage vB_LmoS_188, complete genome. [17-APR-2015]",38392,18.0,0.0655441,20,37,2988,2971
+1.19,"gnl|BL_ORD_ID|923 gi|157325422|ref|NC_009815.1| Listeria phage A006, complete genome",38124,18.0,0.0655441,20,37,2991,2974
+1.19,"gnl|BL_ORD_ID|372 gi|672550958|ref|NC_024697.1| Aureococcus anophagefferens virus isolate BtV-01, complete genome",370920,18.0,0.0655441,19,36,153538,153521
+1.19,"gnl|BL_ORD_ID|2520 ENA|AF115102|AF115102.1 Streptococcus thermophilus bacteriophage Sfi19, complete genome. [29-AUG-2014]",37370,17.0,0.258989,15,35,30498,30478
+1.19,"gnl|BL_ORD_ID|1641 ENA|AP008983|AP008983.1 Clostridium phage c-st genomic DNA, complete genome. [28-FEB-2015]",185683,17.0,0.258989,19,35,122359,122375
+1.19,"gnl|BL_ORD_ID|814 gi|80159686|ref|NC_007581.1| Clostridium phage c-st, complete genome",185683,17.0,0.258989,19,35,122359,122375
+1.19,"gnl|BL_ORD_ID|554 gi|9632893|ref|NC_000871.1| Streptococcus phage Sfi19, complete genome",37370,17.0,0.258989,15,35,30498,30478
+1.19,"gnl|BL_ORD_ID|67 gi|253682848|ref|NZ_ACSJ01000012.1| Clostridium phage D-1873 CLG.Contig163, whole genome shotgun sequence",6422,17.0,0.258989,19,35,5483,5499
+1.20,"gnl|BL_ORD_ID|1678 ENA|KJ803031|KJ803031.1 Dinoroseobacter phage vBDshPR2C, complete genome. [28-FEB-2015]",74806,17.0,0.271322,9,25,13726,13742
+1.20,"gnl|BL_ORD_ID|317 gi|658310992|ref|NC_024367.1| Dinoroseobacter phage DFL12phi1, complete genome",75028,17.0,0.271322,9,25,60385,60369
+1.22,"gnl|BL_ORD_ID|3626 Mycobacterium phage Updawg complete sequence, 53043 bp including 10 bp 3' overhang (CGGTCGGTTA), Cluster A2",53043,17.0,0.258989,19,35,19523,19539
+1.22,"gnl|BL_ORD_ID|3424 Mycobacterium phage Piro94 complete sequence, 52647 bp including 10 bp 3' overhang (CGGTCGGTTA), Cluster A2",52647,17.0,0.258989,19,35,19539,19555
+1.22,"gnl|BL_ORD_ID|3005 Mycobacterium phage Equemioh13 complete sequence, 53042 bp including 10 bp 3' overhang (CGGTCGGTTA), Cluster A2",53042,17.0,0.258989,19,35,19523,19539
+1.22,"gnl|BL_ORD_ID|2109 ENA|KJ959632|KJ959632.1 Mycobacterium phage Equemioh13, complete genome. [28-FEB-2015]",53042,17.0,0.258989,19,35,19523,19539
+1.22,"gnl|BL_ORD_ID|1069 gi|282598938|ref|NC_013697.1| Deftia phage phiW-14, complete genome",157486,17.0,0.258989,5,21,24455,24471
+1.22,"gnl|BL_ORD_ID|40 ENA|KJ183193|KJ183193.1 Podovirus Lau218 strain TahiMoana, complete genome. [28-FEB-2015]",38756,17.0,0.258989,1,21,8005,7985
+1.23,"gnl|BL_ORD_ID|2026 ENA|KF114880|KF114880.1 Leptospira phage LinZ_10, complete genome. [29-AUG-2014]",89607,18.0,0.062423,5,22,59747,59764
+1.23,"gnl|BL_ORD_ID|2025 ENA|KF114879|KF114879.1 Leptospira phage LbrZ_5399, complete genome. [29-AUG-2014]",87308,18.0,0.062423,5,22,58609,58592
+1.24,"gnl|BL_ORD_ID|1268 gi|414086645|ref|NC_019400.1| Cronobacter phage vB_CsaM_GAP31, complete genome",147940,17.0,0.258989,13,29,115588,115572
+1.29,"gnl|BL_ORD_ID|2470 ENA|KF021268|KF021268.1 Staphylococcus phage phiIBB-SEP1, complete genome. [28-FEB-2015]",139928,17.0,0.258989,15,31,128159,128143
+1.3,"gnl|BL_ORD_ID|1886 ENA|KJ477686|KJ477686.1 Enterobacteria phage T4 strain GT7, complete genome. [28-FEB-2015]",165660,19.0,0.0165877,16,34,16402,16420
+1.3,gnl|BL_ORD_ID|2420 ENA|HG934470|HG934470.1 Salmonella phage vB_SenS-Ent3 complete genome [28-FEB-2015],42764,18.0,0.0655441,4,21,8404,8387
+1.3,"gnl|BL_ORD_ID|1888 ENA|HM137666|HM137666.1 Enterobacteria phage T4T, complete genome. [28-FEB-2015]",168920,18.0,0.0655441,17,34,16403,16420
+1.3,"gnl|BL_ORD_ID|1887 ENA|KJ477684|KJ477684.1 Enterobacteria phage T4 strain wild, complete genome. [28-FEB-2015]",168922,18.0,0.0655441,17,34,16403,16420
+1.3,"gnl|BL_ORD_ID|1885 ENA|KJ477685|KJ477685.1 Enterobacteria phage T4 strain 147, complete genome. [28-FEB-2015]",166816,18.0,0.0655441,17,34,16403,16420
+1.3,"gnl|BL_ORD_ID|1884 ENA|KM607003|KM607003.1 Enterobacteria phage RB59, complete genome. [28-FEB-2015]",168966,18.0,0.0655441,17,34,16381,16398
+1.3,"gnl|BL_ORD_ID|1883 ENA|KM607002|KM607002.1 Enterobacteria phage RB55, complete genome. [28-FEB-2015]",168896,18.0,0.0655441,17,34,16381,16398
+1.3,"gnl|BL_ORD_ID|397 gi|29366675|ref|NC_000866.4| Enterobacteria phage T4, complete genome",168903,18.0,0.0655441,17,34,16417,16434
+1.3,gnl|BL_ORD_ID|283 gi|643216961|ref|NC_024204.1| Salmonella phage vB_SenS-Ent3 complete genome,42764,18.0,0.0655441,4,21,8404,8387
+1.3,gnl|BL_ORD_ID|158 gi|589287388|ref|NC_023608.1| Salmonella phage vB_SenS-Ent2 complete genome,42093,18.0,0.0655441,4,21,8400,8383
+1.4,"gnl|BL_ORD_ID|605 gi|764161111|ref|NC_026600.1| Pseudomonas phage vB_PaeM_C1-14_Ab28, complete genome",66181,17.0,0.258989,7,23,29597,29613
+1.8,"gnl|BL_ORD_ID|2689 ENA|DQ997624|DQ997624.1 Thermus thermophilus phage YS40, complete genome. [28-FEB-2015]",152372,17.0,0.258989,1,17,105521,105505
+1.8,"gnl|BL_ORD_ID|2688 ENA|AP011616|AP011616.1 Thermus phage phiYS40 DNA, complete genome. [28-FEB-2015]",152372,17.0,0.258989,1,17,105520,105504
+1.8,"gnl|BL_ORD_ID|874 gi|118197620|ref|NC_008584.1| Thermus phage phiYS40, complete genome",152372,17.0,0.258989,1,17,105521,105505
+1.9,"gnl|BL_ORD_ID|1658 ENA|JF767209|JF767209.1 Clostridium phage phi34O, complete genome. [28-FEB-2015]",38309,17.0,0.258989,4,20,16646,16630
+1.9,"gnl|BL_ORD_ID|1655 ENA|JF767208|JF767208.1 Clostridium phage phi13O, complete genome. [28-FEB-2015]",38329,17.0,0.258989,4,20,16873,16857
+1.9,"gnl|BL_ORD_ID|1244 gi|422935424|ref|NC_019508.1| Clostridium phage phiCP34O, complete genome",38309,17.0,0.258989,4,20,16646,16630
+1.9,"gnl|BL_ORD_ID|1242 gi|422935057|ref|NC_019506.1| Clostridium phage phiCP13O, complete genome",38329,17.0,0.258989,4,20,16873,16857
+2.1,"gnl|BL_ORD_ID|3568 Mycobacterium phage SweetiePie complete sequence, 53184 bp including 10 bp 3' overhang (CGGTCGGTTA), Cluster A2",53184,17.0,0.258989,9,25,6157,6173
+2.1,"gnl|BL_ORD_ID|3501 Mycobacterium phage SemperFi complete sequence, 53235 bp including 10 bp 3' overhang (CGGTCGGTTA), Cluster A2",53235,17.0,0.258989,9,25,6585,6601
+2.1,"gnl|BL_ORD_ID|3437 Mycobacterium phage Power complete sequence, 53395 bp including 10 bp 3' overhang (CGGTCGGTTA), Cluster A2",53395,17.0,0.258989,9,25,6157,6173
+2.1,"gnl|BL_ORD_ID|3294 Mycobacterium phage Muddy complete sequence, 48228 bp including 11 bp 3' overhang (CGTAGCGGCTT)",48228,17.0,0.258989,9,25,23664,23680
+2.1,"gnl|BL_ORD_ID|3032 Mycobacterium phage Fishburne complete sequence, 47109 bp including 12 bp 3' overhang (CCCGCCCCCCGA), Cluster P",47109,17.0,0.258989,9,29,41294,41274
+2.1,"gnl|BL_ORD_ID|2964 Mycobacterium phage Donovan complete sequence, 47162 bp including 12 bp 3' overhang (CCTGCCCCCCGA), Cluster P",47162,17.0,0.258989,9,29,41468,41448
+2.1,"gnl|BL_ORD_ID|2211 ENA|KM591906|KM591906.1 Mycobacterium phage SweetiePie, complete genome. [28-FEB-2015]",53183,17.0,0.258989,9,25,6157,6173
+2.1,"gnl|BL_ORD_ID|2189 ENA|KM463009|KM463009.1 Mycobacterium phage Power, complete genome. [28-FEB-2015]",53395,17.0,0.258989,9,25,6157,6173
+2.1,"gnl|BL_ORD_ID|1448 gi|530545284|ref|NC_022054.1| Mycobacterium phage Muddy, complete genome",48228,17.0,0.258989,9,25,23664,23680
+2.1,"gnl|BL_ORD_ID|1416 gi|508178429|ref|NC_021302.1| Mycobacterium phage Fishburne, complete genome",47109,17.0,0.258989,9,29,41294,41274
+2.1,"gnl|BL_ORD_ID|399 gi|479336577|ref|NC_021063.1| Mycobacterium phage vB_MapS_FF47, complete genome",47724,17.0,0.258989,9,25,23384,23400
+2.1,"gnl|BL_ORD_ID|179 gi|589893045|ref|NC_023552.1| Mycobacterium phage Donovan, complete genome",47162,17.0,0.258989,9,29,41468,41448
+2.2,"gnl|BL_ORD_ID|2815 Mycobacterium phage Avani Complete Sequence, 54470 bp including 10 bp 3' overhang (CTCAGGGCAT), Cluster F2",54470,17.0,0.258989,4,20,43632,43648
+2.2,"gnl|BL_ORD_ID|202 gi|593775231|ref|NC_023698.1| Mycobacterium phage Avani, complete genome",54470,17.0,0.258989,4,20,43632,43648
+2.7,"gnl|BL_ORD_ID|2361 ENA|HQ630627|HQ630627.1 Pseudomonas phage PhiPA3, complete genome. [29-AUG-2014]",309208,17.0,0.258989,21,37,227843,227859
+2.8,"gnl|BL_ORD_ID|190 gi|589892962|ref|NC_023550.1| Staphylococcus phage GRCS, complete genome",17869,17.0,0.197325,9,29,14056,14076
+4.13,"gnl|BL_ORD_ID|1036 gi|238695156|ref|NC_012741.1| Enterobacteria phage JS10, complete genome",171451,17.0,0.246656,8,24,106009,105993
+4.19,"gnl|BL_ORD_ID|1890 ENA|KP007360|KP007360.1 Enterobacteria phage vB_EcoM_VR20, complete genome. [28-FEB-2015]",170336,17.0,0.234324,19,35,162745,162729
+4.19,"gnl|BL_ORD_ID|1083 gi|308814351|ref|NC_014595.1| Shigella phage SP18, complete genome",170605,17.0,0.234324,19,35,163270,163254
+5.1,"gnl|BL_ORD_ID|1608 ENA|CP000623|CP000623.1 Burkholderia phage phiE202, complete genome. [29-AUG-2014]",35741,19.0,0.0157978,7,29,11490,11512
+5.1,"gnl|BL_ORD_ID|1605 ENA|JX681814|JX681814.1 Burkholderia phage phiX216, complete genome. [29-AUG-2014]",37637,19.0,0.0157978,7,29,31293,31271
+5.1,"gnl|BL_ORD_ID|1604 ENA|CP008753|CP008753.1 Burkholderia phage BEK, complete genome. [28-FEB-2015]",37631,19.0,0.0157978,7,29,25198,25176
+5.1,"gnl|BL_ORD_ID|892 gi|134288739|ref|NC_009234.1| Burkholderia phage phiE202 chromosome, complete genome",35741,19.0,0.0157978,7,29,11490,11512
+5.1,"gnl|BL_ORD_ID|806 gi|117676329|ref|NC_007145.2| Burkholderia prophage phi52237, complete genome",37639,19.0,0.0157978,7,29,12892,12914
+5.1,"gnl|BL_ORD_ID|2277 ENA|KJ578773|KJ578773.1 Propionibacterium phage PHL092M00, complete genome. [21-APR-2015]",29261,17.0,0.246656,5,21,25775,25791
+5.1,"gnl|BL_ORD_ID|1509 gi|543171401|ref|NC_022337.1| Propionibacterium phage PHL071N05, complete genome",29467,17.0,0.246656,5,21,26100,26116
+5.2,"gnl|BL_ORD_ID|1118 gi|326781756|ref|NC_015279.1| Synechococcus phage S-SM2, complete genome",190789,17.0,0.234324,7,23,154512,154496
+5.2,"gnl|BL_ORD_ID|1054 gi|273810419|ref|NC_013599.1| Xylella phage Xfas53, complete genome",36674,17.0,0.234324,19,35,31369,31385
+6.4,"gnl|BL_ORD_ID|777 gi|312281379|ref|NC_006883.2| Prochlorococcus phage P-SSM2, complete genome",252401,17.0,0.246656,1,17,171566,171582
+7.2,"gnl|BL_ORD_ID|3436 Corynebacterium phage Poushou complete sequence, 40353 bp, circularly permuted",40353,17.0,0.234324,5,21,14098,14114
+7.3,"gnl|BL_ORD_ID|1126 gi|326783659|ref|NC_015287.1| Synechococcus phage S-SSM7, complete genome",232878,17.0,0.246656,1,17,29892,29876
+8.2,"gnl|BL_ORD_ID|3374 Rhodococcus phage Pepy6 complete genome, 76797 bp including 9 bp 3' overhang (CGCCGCCCT)",76797,17.0,0.234324,1,17,39478,39462
+8.2,"gnl|BL_ORD_ID|239 gi|593779787|ref|NC_023735.1| Rhodococcus phage ReqiPepy6, complete genome",76797,17.0,0.234324,1,17,39478,39462
+8.3,"gnl|BL_ORD_ID|2977 Mycobacterium phage DS6A Final Sequence, 60588 bp including 12 bp 3' overhang (CGAGGCCGACAT), Singleton",60588,18.0,0.0655441,14,31,23327,23344
+8.3,"gnl|BL_ORD_ID|2425 ENA|AF448724|AF448724.1 Sinorhizobium meliloti phage PBC5, complete genome. [28-FEB-2015]",57416,18.0,0.0655441,17,34,31281,31264
+8.3,"gnl|BL_ORD_ID|665 gi|18071213|ref|NC_003324.1| Sinorhizobium phage PBC5, complete genome",57416,18.0,0.0655441,17,34,31281,31264
+8.3,"gnl|BL_ORD_ID|258 gi|609252387|ref|NC_023744.1| Mycobacterium phage DS6A, complete genome",60588,18.0,0.0655441,14,31,23327,23344
+8.3,"gnl|BL_ORD_ID|3679 Mycobacterium phage Youngblood complete sequence, 75896 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",75896,17.0,0.258989,17,33,27479,27495
+8.3,"gnl|BL_ORD_ID|3662 Mycobacterium phage Willez Complete Sequence, 74576 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",74576,17.0,0.258989,17,33,26815,26831
+8.3,"gnl|BL_ORD_ID|3623 Mycobacterium phage Ukulele Complete Sequence, 75114 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",75114,17.0,0.258989,17,33,27069,27085
+8.3,"gnl|BL_ORD_ID|3616 Mycobacterium phage Tuco complete sequence, 76944 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",76944,17.0,0.258989,17,33,27826,27842
+8.3,"gnl|BL_ORD_ID|3582 Mycobacterium phage Terminus complete sequence, 76169 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",76169,17.0,0.258989,17,33,27398,27414
+8.3,"gnl|BL_ORD_ID|3581 Mycobacterium phage TeardropMSU complete sequence, 74896 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",74896,17.0,0.258989,17,33,27218,27234
+8.3,"gnl|BL_ORD_ID|3554 Mycobacterium phage Stark complete sequence, 74731 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",74731,17.0,0.258989,17,33,27069,27085
+8.3,"gnl|BL_ORD_ID|3539 Mycobacterium phage Sotrice96 complete sequence, 76299 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",76299,17.0,0.258989,17,33,27272,27288
+8.3,"gnl|BL_ORD_ID|3520 Mycobacterium phage Simpliphy complete sequence, 75366 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",75366,17.0,0.258989,17,33,27056,27072
+8.3,"gnl|BL_ORD_ID|3492 Mycobacterium phage Sassay complete sequence, 73495 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",73495,17.0,0.258989,17,33,26815,26831
+8.3,"gnl|BL_ORD_ID|3468 Mycobacterium phage RiverMonster complete sequence, 75565 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",75565,17.0,0.258989,17,33,27066,27082
+8.3,"gnl|BL_ORD_ID|3465 Mycobacterium phage Rimmer Complete Sequence, 75660 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",75660,17.0,0.258989,17,33,26877,26893
+8.3,"gnl|BL_ORD_ID|3451 Mycobacterium phage Rakim Complete Sequence, 75706 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",75706,17.0,0.258989,17,33,27424,27440
+8.3,"gnl|BL_ORD_ID|3411 Mycobacterium phage Phrux complete sequence, 74711 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",74711,17.0,0.258989,17,33,27052,27068
+8.3,"gnl|BL_ORD_ID|3391 Mycobacterium phage Phaux Complete Sequence, 76479 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",76479,17.0,0.258989,17,33,27337,27353
+8.3,"gnl|BL_ORD_ID|3388 Mycobacterium phage PhatBacter complete sequence, 76217 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",76217,17.0,0.258989,17,33,27339,27355
+8.3,"gnl|BL_ORD_ID|3387 Mycobacterium phage Pharsalus complete sequence, 75779 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",75779,17.0,0.258989,17,33,28091,28107
+8.3,"gnl|BL_ORD_ID|3384 Mycobacterium phage Phaja complete sequence, 75685 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",75685,17.0,0.258989,17,33,27493,27509
+8.3,"gnl|BL_ORD_ID|3379 Mycobacterium phage Petra64142 complete sequence, 75842 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",75842,17.0,0.258989,17,33,27771,27787
+8.3,"gnl|BL_ORD_ID|3340 Mycobacterium phage OrionPax complete sequence, 75101 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",75101,17.0,0.258989,17,33,27056,27072
+8.3,"gnl|BL_ORD_ID|3321 Mycobacterium phage NoSleep complete sequence, 74655 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",74655,17.0,0.258989,17,33,27050,27066
+8.3,"gnl|BL_ORD_ID|3312 Mycobacterium phage NelitzaMV complete sequence, 72790 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",72790,17.0,0.258989,17,33,27386,27402
+8.3,"gnl|BL_ORD_ID|3309 Mycobacterium phage Nala Complete Sequence, 75894 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",75894,17.0,0.258989,17,33,27337,27353
+8.3,"gnl|BL_ORD_ID|3301 Mycobacterium phage Murphy Complete Sequence, 76179 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",76179,17.0,0.258989,17,33,27290,27306
+8.3,"gnl|BL_ORD_ID|3300 Mycobacterium phage Murica complete sequence, 77053 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",77053,17.0,0.258989,17,33,27295,27311
+8.3,"gnl|BL_ORD_ID|3286 Mycobacterium phage Mosby complete sequence, 74533 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",74533,17.0,0.258989,17,33,26815,26831
+8.3,"gnl|BL_ORD_ID|3269 Mycobacterium phage MISSy complete sequence, 75808 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",75808,17.0,0.258989,17,33,26823,26839
+8.3,"gnl|BL_ORD_ID|3264 Mycobacterium phage Mindy complete sequence, 75796 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",75796,17.0,0.258989,17,33,27095,27111
+8.3,"gnl|BL_ORD_ID|3224 Mycobacterium phage MadamMonkfish Complete Sequence, 75554 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",75554,17.0,0.258989,17,33,26729,26745
+8.3,"gnl|BL_ORD_ID|3206 Mycobacterium phage Lilac Complete Sequence, 76260 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",76260,17.0,0.258989,17,33,26808,26824
+8.3,"gnl|BL_ORD_ID|3154 Mycobacterium phage Kanye complete sequence, 75453 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",75453,17.0,0.258989,17,33,28297,28313
+8.3,"gnl|BL_ORD_ID|3106 Mycobacterium phage HufflyPuff Complete Sequence, 76323 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",76323,17.0,0.258989,17,33,27295,27311
+8.3,"gnl|BL_ORD_ID|3104 Mycobacterium phage Hopey complete sequence, 75586 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",75586,17.0,0.258989,17,33,27588,27604
+8.3,"gnl|BL_ORD_ID|3095 Mycobacterium phage Henry Final Sequence, 76049 bp, 9 bp 3' overhang, Cluster E, Roche 454, 29 primers",76049,17.0,0.258989,17,33,27316,27332
+8.3,"gnl|BL_ORD_ID|3064 Mycobacterium phage Goku complete sequence, 76483 bp, including 9 bp 3' overhang (CGCTTGTCA), Cluster E",76483,17.0,0.258989,17,33,27031,27047
+8.3,"gnl|BL_ORD_ID|3031 Mycobacterium phage FireRed complete sequence, 76217 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",76217,17.0,0.258989,17,33,27339,27355
+8.3,"gnl|BL_ORD_ID|3017 Mycobacterium phage Eureka Complete Sequence, 76174 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",76174,17.0,0.258989,17,33,27302,27318
+8.3,"gnl|BL_ORD_ID|2995 Mycobacterium phage Elph10 Complete Sequence, 74675 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",74675,17.0,0.258989,17,33,26781,26797
+8.3,"gnl|BL_ORD_ID|2994 Mycobacterium phage Elite2014 complete sequence, 74969 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",74969,17.0,0.258989,17,33,26518,26534
+8.3,"gnl|BL_ORD_ID|2982 Mycobacterium phage Dusk Complete Sequence, 75339 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",75339,17.0,0.258989,17,33,26970,26986
+8.3,"gnl|BL_ORD_ID|2981 Mycobacterium phage Dumbo Complete Sequence, 75736 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",75736,17.0,0.258989,17,33,26778,26794
+8.3,"gnl|BL_ORD_ID|2972 Mycobacterium phage DrDrey complete sequence, 77367 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",77367,17.0,0.258989,17,33,27803,27819
+8.3,"gnl|BL_ORD_ID|2942 Mycobacterium phage Czyszczon1 complete sequence, 75075 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",75075,17.0,0.258989,17,33,27056,27072
+8.3,"gnl|BL_ORD_ID|2924 Mycobacterium phage Contagion Complete Sequence, 74533 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",74533,17.0,0.258989,17,33,26815,26831
+8.3,"gnl|BL_ORD_ID|2915 Mycobacterium phage Cjw1 Complete Sequence, 75931 bp including 9 bp 3' overhang, Cluster E",75931,17.0,0.258989,17,33,28071,28087
+8.3,"gnl|BL_ORD_ID|2885 Mycobacterium phage Cactus Complete Sequence, 75603 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",75603,17.0,0.258989,17,33,26529,26545
+8.3,"gnl|BL_ORD_ID|2870 Mycobacterium phage Bruin complete sequence, 74210 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",74210,17.0,0.258989,17,33,27331,27347
+8.3,"gnl|BL_ORD_ID|2758 Mycobacterium phage ABCat Complete Sequence, 76131 bp including 9 bp 3' overhang (CGCTTGTCA), Cluster E",76131,17.0,0.258989,17,33,27310,27326
+8.3,"gnl|BL_ORD_ID|2207 ENA|JF937106|JF937106.1 Mycobacterium phage SirDuracell, complete genome. [29-AUG-2014]",75973,17.0,0.258989,17,33,25983,25999
+8.3,"gnl|BL_ORD_ID|2193 ENA|JN006062|JN006062.1 Mycobacterium phage Rakim, complete genome. [29-AUG-2014]",75706,17.0,0.258989,17,33,27424,27440
+8.3,"gnl|BL_ORD_ID|2190 ENA|GQ303265|GQ303265.1 Mycobacterium phage Pumpkin, complete genome. [29-AUG-2014]",74491,17.0,0.258989,17,33,27391,27407
+8.3,"gnl|BL_ORD_ID|2128 ENA|JF937096|JF937096.1 Mycobacterium phage Henry, complete genome. [29-AUG-2014]",76049,17.0,0.258989,17,33,27316,27332
+8.3,"gnl|BL_ORD_ID|2112 ENA|JN412590|JN412590.1 Mycobacterium phage Eureka, complete genome. [29-AUG-2014]",76174,17.0,0.258989,17,33,27302,27318
+8.3,"gnl|BL_ORD_ID|2106 ENA|JN391441|JN391441.1 Mycobacterium phage Elph10, complete genome. [28-FEB-2015]",74675,17.0,0.258989,17,33,26781,26797
+8.3,"gnl|BL_ORD_ID|2092 ENA|KF493883|KF493883.1 Mycobacterium phage Mosby, complete genome. [29-AUG-2014]",74533,17.0,0.258989,17,33,26815,26831
+8.3,"gnl|BL_ORD_ID|2091 ENA|AY129331|AY129331.1 Mycobacteriophage CJW1, complete genome. [28-FEB-2015]",75931,17.0,0.258989,17,33,28071,28087
+8.3,"gnl|BL_ORD_ID|2070 ENA|JF937091|JF937091.1 Mycobacterium phage Bask21, complete genome. [29-AUG-2014]",74997,17.0,0.258989,17,33,26505,26521
+8.3,"gnl|BL_ORD_ID|2049 ENA|KF188414|KF188414.1 Mycobacterium phage ABCat, complete genome. [29-AUG-2014]",76131,17.0,0.258989,17,33,27310,27326
+8.3,"gnl|BL_ORD_ID|2048 ENA|DQ398041|DQ398041.1 Mycobacteriophage 244, complete genome. [28-FEB-2015]",74483,17.0,0.258989,17,33,27591,27607
+8.3,"gnl|BL_ORD_ID|1504 gi|543171015|ref|NC_022330.1| Mycobacterium phage Quink, complete genome",76586,17.0,0.258989,17,33,27069,27085
+8.3,"gnl|BL_ORD_ID|1468 gi|530786827|ref|NC_022085.1| Myobacteriophage Goku, complete genome",76483,17.0,0.258989,17,33,27031,27047
+8.3,"gnl|BL_ORD_ID|1459 gi|530546427|ref|NC_022065.1| Mycobacterium phage Contagion, complete genome",74533,17.0,0.258989,17,33,26815,26831
+8.3,"gnl|BL_ORD_ID|1453 gi|530545796|ref|NC_022059.1| Mycobacterium phage DrDrey, complete genome",77367,17.0,0.258989,17,33,27803,27819
+8.3,"gnl|BL_ORD_ID|1428 gi|508179165|ref|NC_021305.1| Mycobacterium phage Murphy, complete genome",76179,17.0,0.258989,17,33,27290,27306
+8.3,"gnl|BL_ORD_ID|1426 gi|508180789|ref|NC_021311.1| Mycobacterium phage Phaux, complete genome",76479,17.0,0.258989,17,33,27337,27353
+8.3,"gnl|BL_ORD_ID|1421 gi|508180091|ref|NC_021309.1| Mycobacterium phage Phrux, complete genome",74711,17.0,0.258989,17,33,27052,27068
+8.3,"gnl|BL_ORD_ID|1415 gi|508179584|ref|NC_021306.1| Mycobacterium phage Dumbo, complete genome",75736,17.0,0.258989,17,33,26778,26794
+8.3,"gnl|BL_ORD_ID|968 gi|194303296|ref|NC_011055.1| Mycobacterium phage Porky, complete genome",76312,17.0,0.258989,17,33,27148,27164
+8.3,"gnl|BL_ORD_ID|966 gi|194303053|ref|NC_011056.1| Mycobacterium phage Kostya, complete genome",75811,17.0,0.258989,17,33,27316,27332
+8.3,"gnl|BL_ORD_ID|852 gi|109302753|ref|NC_008194.1| Mycobacterium phage 244, complete genome",74483,17.0,0.258989,17,33,27591,27607
+8.3,"gnl|BL_ORD_ID|684 gi|29565879|ref|NC_004681.1| Mycobacterium phage Cjw1, complete genome",75931,17.0,0.258989,17,33,28071,28087
+8.3,"gnl|BL_ORD_ID|194 gi|593774137|ref|NC_023689.1| Mycobacterium phage Lilac, complete genome",76260,17.0,0.258989,17,33,26808,26824
+8.3,"gnl|BL_ORD_ID|127 gi|564292481|ref|NC_023006.1| Pseudomonas phage PPpW-3 DNA, complete sequence",43564,17.0,0.258989,15,31,4830,4846
+8.3,"gnl|BL_ORD_ID|120 gi|563399598|ref|NC_022988.1| Mycobacterium phage Bruin, complete genome",74210,17.0,0.258989,17,33,27331,27347
+8.3,"gnl|BL_ORD_ID|116 gi|563398883|ref|NC_022981.1| Mycobacterium phage HufflyPuff, complete genome",76323,17.0,0.258989,17,33,27295,27311
+8.3,"gnl|BL_ORD_ID|113 gi|563398524|ref|NC_022976.1| Mycobacterium phage Nala, complete genome",75894,17.0,0.258989,17,33,27337,27353
+8.3,"gnl|BL_ORD_ID|108 gi|563397724|ref|NC_022969.1| Mycobacterium phage PhatBacter, complete genome",76217,17.0,0.258989,17,33,27339,27355
+8.8,"gnl|BL_ORD_ID|1678 ENA|KJ803031|KJ803031.1 Dinoroseobacter phage vBDshPR2C, complete genome. [28-FEB-2015]",74806,17.0,0.246656,3,23,50297,50277
+8.8,"gnl|BL_ORD_ID|402 gi|589890545|ref|NC_023569.1| Vibrio phage SHOU24, complete genome",77837,17.0,0.246656,16,32,67867,67883
