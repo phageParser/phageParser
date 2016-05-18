@@ -1,0 +1,420 @@
+Query,Name,Length,Score,Expect,QueryStart,QueryEnd,SubjectStart,SubjectEnd
+10.1,"gnl|BL_ORD_ID|144 gi|399498678|ref|NC_018285.1| Streptococcus phage YMC-2011, complete genome",40758,17.0,0.258989,10,26,10631,10615
+10.1,"gnl|BL_ORD_ID|144 gi|399498678|ref|NC_018285.1| Streptococcus phage YMC-2011, complete genome",40758,17.0,0.258989,10,26,10631,10615
+10.2,"gnl|BL_ORD_ID|975 gi|197085614|ref|NC_011142.1| Iodobacteriophage phiPLPE, complete genome",47453,20.0,0.00519747,13,32,13808,13789
+10.4,"gnl|BL_ORD_ID|1178 gi|372217834|ref|NC_016659.1| Cyanophage NATL2A-133, complete genome",47536,17.0,0.160327,1,17,44954,44938
+10.5,"gnl|BL_ORD_ID|2344 ENA|KP025626|KP025626.1 Pseudomonas phage Pf-10, complete genome. [28-FEB-2015]",39167,17.0,0.258989,6,26,7930,7950
+10.5,"gnl|BL_ORD_ID|1110 gi|326536907|ref|NC_015264.1| Pseudomonas phage phiIBB-PF7A, complete genome",40973,17.0,0.258989,6,26,7512,7532
+10.5,"gnl|BL_ORD_ID|914 gi|157310906|ref|NC_009816.1| Corynebacterium phage P1201, complete genome",70579,17.0,0.258989,7,23,32793,32777
+11.10,"gnl|BL_ORD_ID|300 gi|640883881|ref|NC_024137.1| Bacillus phage Bcp1, complete genome",152778,17.0,0.271322,19,35,12410,12426
+11.9,"gnl|BL_ORD_ID|300 gi|640883881|ref|NC_024137.1| Bacillus phage Bcp1, complete genome",152778,17.0,0.271322,19,35,12410,12426
+11.11,"gnl|BL_ORD_ID|1731 ENA|AF069529|AF069529.1 Bacteriophage HK97, complete genome. [28-FEB-2015]",39732,17.0,0.246656,4,24,8246,8266
+11.11,"gnl|BL_ORD_ID|1315 gi|428783279|ref|NC_019768.1| Enterobacteria phage HK106, complete genome",41468,17.0,0.246656,4,24,8197,8217
+11.11,"gnl|BL_ORD_ID|1314 gi|428783215|ref|NC_019767.1| Enterobacteria phage HK544, complete genome",40155,17.0,0.246656,4,24,8197,8217
+11.11,"gnl|BL_ORD_ID|1307 gi|428782521|ref|NC_019719.1| Enterobacteria phage HK633, complete genome",41528,17.0,0.246656,4,24,8249,8269
+11.11,"gnl|BL_ORD_ID|1303 gi|428782254|ref|NC_019715.1| Enterobacterial phage mEp234, complete genome",39578,17.0,0.246656,4,24,8197,8217
+11.11,"gnl|BL_ORD_ID|1302 gi|428782193|ref|NC_019714.1| Enterobacteria phage HK446, complete genome",39026,17.0,0.246656,4,24,8197,8217
+11.11,"gnl|BL_ORD_ID|1298 gi|428781872|ref|NC_019709.1| Enterobacteria phage mEpX1, complete genome",41567,17.0,0.246656,4,24,8197,8217
+11.11,"gnl|BL_ORD_ID|1156 gi|356870677|ref|NC_016160.1| Escherichia phage HK75, complete genome",36661,17.0,0.246656,4,24,8246,8266
+11.11,"gnl|BL_ORD_ID|761 gi|9634155|ref|NC_002167.1| Enterobacteria phage HK97, complete genome",39732,17.0,0.246656,4,24,8246,8266
+11.2,"gnl|BL_ORD_ID|1641 ENA|AP008983|AP008983.1 Clostridium phage c-st genomic DNA, complete genome. [28-FEB-2015]",185683,18.0,0.0593018,13,34,35232,35253
+11.2,"gnl|BL_ORD_ID|814 gi|80159686|ref|NC_007581.1| Clostridium phage c-st, complete genome",185683,18.0,0.0593018,13,34,35232,35253
+11.2,"gnl|BL_ORD_ID|978 gi|197261511|ref|NC_011167.1| Bacillus phage IEBH, complete genome",53104,17.0,0.234324,19,35,18235,18251
+11.3,"gnl|BL_ORD_ID|223 gi|593777468|ref|NC_023719.1| Bacillus phage G, complete genome",497513,17.0,0.271322,10,26,173343,173359
+11.4,"gnl|BL_ORD_ID|1387 gi|481019622|ref|NC_021073.1| Vibrio phage henriette 12B8, complete genome",107218,18.0,0.0499384,10,27,68226,68209
+11.5,"gnl|BL_ORD_ID|3681 Mycobacterium phage Zaka complete sequence, 52122 bp including 10 bp 3' overhang (CGGTCGGTAA), Cluster A6",52122,17.0,0.283655,5,21,30984,30968
+11.5,"gnl|BL_ORD_ID|3602 Mycobacterium phage ToneTone complete genome, 52044 bp including 10 bp 3' overhang (CGGTCGGTAA), Cluster A6",52044,17.0,0.283655,5,21,30916,30900
+11.5,"gnl|BL_ORD_ID|3174 Mycobacterium phage Koko complete sequence, 52879 bp including 10 bp 3' overhang (CGGTCGGTTA), Cluster A6",52879,17.0,0.283655,5,21,31331,31315
+11.5,"gnl|BL_ORD_ID|3136 Mycobacterium phage Jeffabunny Complete Sequence, 48963 bp including 10bp 3' overhang (CGGTCGGTAA), Cluster A2",48963,17.0,0.283655,5,21,31010,30994
+11.5,"gnl|BL_ORD_ID|2917 Mycobacterium phage CloudWang3 complete sequence, 52873 bp including 10 bp 3' overhang (CGGTCGGTTA), Cluster A6",52873,17.0,0.283655,5,21,30986,30970
+11.5,"gnl|BL_ORD_ID|2853 Mycobacterium phage Blue7 Complete Sequence, 52288 bp including 10 bp 3' overhang (CGGTCGGTAA), Cluster A6",52288,17.0,0.283655,5,21,30982,30966
+11.5,"gnl|BL_ORD_ID|2136 ENA|JN699019|JN699019.1 Mycobacterium phage Jeffabunny, complete genome. [29-AUG-2014]",48963,17.0,0.283655,5,21,31010,30994
+11.5,"gnl|BL_ORD_ID|2123 ENA|JF937094|JF937094.1 Mycobacterium phage Hammer, complete genome. [29-AUG-2014]",51889,17.0,0.283655,5,21,30792,30776
+11.5,"gnl|BL_ORD_ID|217 gi|593776642|ref|NC_023713.1| Mycobacterium phage Blue7, complete genome",52288,17.0,0.283655,5,21,30982,30966
+11.5,"gnl|BL_ORD_ID|118 gi|563399268|ref|NC_022985.1| Mycobacterium phage Zaka, complete genome",52122,17.0,0.283655,5,21,30984,30968
+11.5,"gnl|BL_ORD_ID|105 gi|563397006|ref|NC_022965.1| Mycobacterium phage CloudWang3, complete genome",52873,17.0,0.283655,5,21,30986,30970
+12.3,"gnl|BL_ORD_ID|253 gi|564292548|ref|NC_023007.1| Bacillus phage vB_BanS-Tsamsa, complete genome",168876,19.0,0.0181675,3,21,130729,130747
+12.3,"gnl|BL_ORD_ID|882 gi|119967833|ref|NC_008723.1| Staphylococcus phage PH15, complete genome",44041,18.0,0.0717864,5,22,25269,25252
+12.3,"gnl|BL_ORD_ID|881 gi|119953678|ref|NC_008722.1| Staphylococcus phage CNPH82, complete genome",43420,18.0,0.0717864,5,22,24829,24812
+12.3,"gnl|BL_ORD_ID|648 gi|399529119|ref|NC_018284.1| Staphylococcus phage vB_SepiS-phiIPLA7, complete genome",42123,18.0,0.0717864,5,22,23916,23899
+12.3,"gnl|BL_ORD_ID|2690 ENA|AP011617|AP011617.1 Thermus phage TMA DNA, complete genome. [28-FEB-2015]",151483,17.0,0.283655,1,21,12929,12949
+12.3,"gnl|BL_ORD_ID|2689 ENA|DQ997624|DQ997624.1 Thermus thermophilus phage YS40, complete genome. [28-FEB-2015]",152372,17.0,0.283655,1,21,13028,13048
+12.3,"gnl|BL_ORD_ID|2688 ENA|AP011616|AP011616.1 Thermus phage phiYS40 DNA, complete genome. [28-FEB-2015]",152372,17.0,0.283655,1,21,13028,13048
+12.3,"gnl|BL_ORD_ID|2454 ENA|AY954954|AY954954.1 Bacteriophage 2638A, complete genome. [28-FEB-2015]",41318,17.0,0.283655,9,25,10936,10952
+12.3,"gnl|BL_ORD_ID|1151 gi|343960381|ref|NC_015937.1| Thermus phage TMA, complete genome",151483,17.0,0.283655,1,21,12929,12949
+12.3,"gnl|BL_ORD_ID|874 gi|118197620|ref|NC_008584.1| Thermus phage phiYS40, complete genome",152372,17.0,0.283655,1,21,13028,13048
+12.3,"gnl|BL_ORD_ID|836 gi|388570316|ref|NC_017968.1| Staphylococcus phage TEM123, complete genome",43786,17.0,0.283655,2,18,28890,28874
+12.3,"gnl|BL_ORD_ID|797 gi|66395450|ref|NC_007051.1| Staphylococcus phage 2638A, complete genome",41318,17.0,0.283655,9,25,10936,10952
+13.10,"gnl|BL_ORD_ID|1646 ENA|AY855346|AY855346.1 Clostridium difficile bacteriophage phi CD119, complete genome. [28-FEB-2015]",53325,18.0,0.0905119,28,45,28498,28515
+13.10,"gnl|BL_ORD_ID|831 gi|90592637|ref|NC_007917.1| Clostridium phage phi CD119, complete genome",53325,18.0,0.0905119,28,45,28498,28515
+13.11,"gnl|BL_ORD_ID|1632 ENA|KC821604|KC821604.1 Cellulophaga phage phiST, complete genome. [29-AUG-2014]",78269,17.0,0.271322,1,17,63667,63683
+13.11,"gnl|BL_ORD_ID|1631 ENA|KC821621|KC821621.1 Cellulophaga phage phi19:2, complete genome. [29-AUG-2014]",78275,17.0,0.271322,1,17,63676,63692
+13.11,"gnl|BL_ORD_ID|1630 ENA|KC821625|KC821625.1 Cellulophaga phage phi13:1, complete genome. [29-AUG-2014]",76666,17.0,0.271322,1,17,61578,61594
+13.2,"gnl|BL_ORD_ID|1616 ENA|FR823450|FR823450.1 Campylobacter phage CP81, complete genome [28-FEB-2015]",132454,18.0,0.0655441,5,22,106323,106306
+13.2,"gnl|BL_ORD_ID|1615 ENA|KF148616|KF148616.1 Campylobacter phage CP8, complete genome. [28-FEB-2015]",132667,18.0,0.0655441,5,22,22386,22403
+13.2,"gnl|BL_ORD_ID|1165 gi|371670910|ref|NC_016562.1| Campylobacter phage CPX, complete genome",132662,18.0,0.0655441,5,22,22152,22169
+13.2,"gnl|BL_ORD_ID|1259 gi|422936890|ref|NC_019526.1| Enterobacteria phage vB_KleM-RaK2, complete genome",345809,17.0,0.258989,9,25,81688,81672
+13.2,"gnl|BL_ORD_ID|1206 gi|408905856|ref|NC_018861.1| Campylobacter phage CP30A, complete genome",133572,17.0,0.258989,6,22,71469,71485
+13.2,"gnl|BL_ORD_ID|1140 gi|332672312|ref|NC_015464.1| Campylobacter phage NCTC12673, complete genome",135041,17.0,0.258989,6,22,69776,69792
+13.5,gnl|BL_ORD_ID|1642 ENA|HG531805|HG531805.1 Clostridium phage CDMH1 complete genome [28-FEB-2015],54279,17.0,0.258989,13,37,52989,52965
+13.5,"gnl|BL_ORD_ID|1259 gi|422936890|ref|NC_019526.1| Enterobacteria phage vB_KleM-RaK2, complete genome",345809,17.0,0.258989,7,31,306164,306140
+13.5,"gnl|BL_ORD_ID|745 gi|28876263|ref|NC_004586.1| Streptococcus pyogenes phage 315.3, complete genome",34419,17.0,0.258989,2,18,18782,18766
+13.5,"gnl|BL_ORD_ID|681 gi|29134936|ref|NC_004629.1| Pseudomonas phage phiKZ, complete genome",280334,17.0,0.258989,21,37,260650,260634
+13.5,gnl|BL_ORD_ID|278 gi|640884857|ref|NC_024144.1| Clostridium phage CDMH1 complete genome,54279,17.0,0.258989,13,37,52989,52965
+13.8,"gnl|BL_ORD_ID|238 gi|593779737|ref|NC_023734.1| Psychrobacter phage Psymv2, complete genome",35725,18.0,0.0593018,10,27,26315,26298
+13.8,"gnl|BL_ORD_ID|1474 gi|392973229|ref|NC_018088.1| Colwellia phage 9A, complete genome",104936,17.0,0.234324,12,28,953,969
+14.1,"gnl|BL_ORD_ID|2689 ENA|DQ997624|DQ997624.1 Thermus thermophilus phage YS40, complete genome. [28-FEB-2015]",152372,18.0,0.084271,24,41,98681,98664
+14.1,"gnl|BL_ORD_ID|2688 ENA|AP011616|AP011616.1 Thermus phage phiYS40 DNA, complete genome. [28-FEB-2015]",152372,18.0,0.084271,24,41,98680,98663
+14.1,"gnl|BL_ORD_ID|874 gi|118197620|ref|NC_008584.1| Thermus phage phiYS40, complete genome",152372,18.0,0.084271,24,41,98681,98664
+14.12,"gnl|BL_ORD_ID|2485 ENA|AB626962|AB626962.1 Staphylococcus phage S24-1 DNA, complete genome. [29-AUG-2014]",18168,17.0,0.0986626,5,21,8176,8192
+14.12,"gnl|BL_ORD_ID|2484 ENA|AB626963|AB626963.1 Staphylococcus phage S13' DNA, complete genome. [29-AUG-2014]",18186,17.0,0.0986626,5,21,8176,8192
+14.12,"gnl|BL_ORD_ID|1648 ENA|LN681537|LN681537.1 Clostridium phage phiCD211, complete genome [28-FEB-2015]",131326,17.0,0.0986626,5,21,66472,66456
+14.12,"gnl|BL_ORD_ID|1167 gi|371671319|ref|NC_016565.1| Staphylococcus phage S24-1, complete genome",18168,17.0,0.0986626,5,21,8176,8192
+14.12,"gnl|BL_ORD_ID|924 gi|157738587|ref|NC_009875.1| Staphylococcus phage SAP-2, complete genome",17938,17.0,0.0986626,5,21,7951,7967
+14.12,"gnl|BL_ORD_ID|190 gi|589892962|ref|NC_023550.1| Staphylococcus phage GRCS, complete genome",17869,17.0,0.0986626,5,21,8275,8291
+14.6,"gnl|BL_ORD_ID|1040 gi|238821317|ref|NC_012756.1| Streptococcus phage PH10, complete genome",31276,18.0,0.0655441,6,23,10643,10626
+14.6,"gnl|BL_ORD_ID|1537 ENA|JX560521|JX560521.1 Acinetobacter phage phiAC-1, complete genome. [29-AUG-2014]",43216,17.0,0.258989,4,20,33613,33629
+14.6,"gnl|BL_ORD_ID|1493 gi|37651481|ref|NC_005135.1| Aeromonas phage 44RR2.8t, complete genome",173591,17.0,0.258989,7,23,21968,21984
+14.6,"gnl|BL_ORD_ID|1481 gi|66391804|ref|NC_007022.1| Aeromonas phage 31, complete genome",172963,17.0,0.258989,7,23,21609,21625
+14.6,"gnl|BL_ORD_ID|778 gi|312281391|ref|NC_006884.2| Prochlorococcus phage P-SSM4, complete genome",178249,17.0,0.258989,3,19,175260,175244
+14.6,"gnl|BL_ORD_ID|40 ENA|KJ183193|KJ183193.1 Podovirus Lau218 strain TahiMoana, complete genome. [28-FEB-2015]",38756,17.0,0.258989,12,28,8011,8027
+14.7,"gnl|BL_ORD_ID|253 gi|564292548|ref|NC_023007.1| Bacillus phage vB_BanS-Tsamsa, complete genome",168876,18.0,0.0905119,18,35,142331,142348
+16.2,"gnl|BL_ORD_ID|2039 ENA|DQ004855|DQ004855.1 Listeria bacteriophage P100, complete genome. [29-AUG-2014]",131384,21.0,0.00136595,21,41,129941,129921
+16.2,"gnl|BL_ORD_ID|2038 ENA|KJ094029|KJ094029.1 Listeria phage LP-064, complete genome. [28-FEB-2015]",135279,21.0,0.00136595,21,41,41532,41512
+16.2,"gnl|BL_ORD_ID|2037 ENA|KJ094031|KJ094031.2 Listeria phage LP-124, complete genome. [28-FEB-2015]",135764,21.0,0.00136595,21,41,313,293
+16.2,"gnl|BL_ORD_ID|2036 ENA|KJ586795|KJ586795.1 Listeria phage LMTA-94, complete genome. [28-FEB-2015]",136468,21.0,0.00136595,21,41,99888,99908
+16.2,"gnl|BL_ORD_ID|2035 ENA|KJ591605|KJ591605.1 Listeria phage LMTA-57, complete genome. [28-FEB-2015]",136589,21.0,0.00136595,21,41,110296,110316
+16.2,"gnl|BL_ORD_ID|2034 ENA|KJ586794|KJ586794.1 Listeria phage LMTA-34, complete genome. [28-FEB-2015]",138036,21.0,0.00136595,21,41,47424,47404
+16.2,"gnl|BL_ORD_ID|1379 gi|472437258|ref|NC_020871.1| Listeria phage vB_LmoM_AG20, complete genome",133057,21.0,0.00136595,21,41,31418,31398
+16.2,"gnl|BL_ORD_ID|1371 gi|197322500|ref|NC_009811.2| Listeria phage A511, complete genome",137619,21.0,0.00136595,21,41,32065,32045
+16.2,"gnl|BL_ORD_ID|465 gi|725950085|ref|NC_025440.1| Listeria phage WIL-1, complete genome",134369,21.0,0.00136595,21,41,134311,134331
+16.2,"gnl|BL_ORD_ID|383 gi|682123269|ref|NC_024787.1| Listeria phage LMTA-148, complete genome",132541,21.0,0.00136595,21,41,39499,39479
+16.2,"gnl|BL_ORD_ID|368 gi|573007037|ref|NC_021781.2| Listeria phage LP-125, complete genome",135281,21.0,0.00136595,21,41,41531,41511
+16.2,"gnl|BL_ORD_ID|363 gi|658607439|ref|NC_024383.1| Listeria phage LP-083-2, complete genome",135831,21.0,0.00136595,21,41,38198,38178
+16.2,"gnl|BL_ORD_ID|361 gi|658310567|ref|NC_024359.1| Listeria phage LP-048, complete genome",133048,21.0,0.00136595,21,41,34013,33993
+16.2,"gnl|BL_ORD_ID|310 gi|658307532|ref|NC_024364.1| Listeria phage List-36, complete genome",131952,21.0,0.00136595,21,41,96985,97005
+16.2,"gnl|BL_ORD_ID|309 gi|658307287|ref|NC_024360.1| Listeria phage LMSP-25, complete genome",138036,21.0,0.00136595,21,41,47424,47404
+16.2,"gnl|BL_ORD_ID|2029 ENA|GQ451696|GQ451696.1 Leuconostoc phage 1-A4, complete genome. [28-FEB-2015]",29508,18.0,0.084271,18,35,160,143
+16.2,"gnl|BL_ORD_ID|325 gi|658607762|ref|NC_024386.1| Leuconostoc phage phiLN25, complete genome",28427,18.0,0.084271,18,35,1948,1931
+17.2,"gnl|BL_ORD_ID|2471 ENA|KP027447|KP027447.1 Staphylococcus phage phiIPLA-C1C, complete genome. [24-MAR-2015]",140961,17.0,0.246656,6,30,3608,3584
+17.2,"gnl|BL_ORD_ID|2470 ENA|KF021268|KF021268.1 Staphylococcus phage phiIBB-SEP1, complete genome. [28-FEB-2015]",139928,17.0,0.246656,6,30,4947,4923
+17.5,"gnl|BL_ORD_ID|2242 ENA|KC595516|KC595516.1 Paenibacillus phage Emery, complete genome. [21-NOV-2014]",58573,20.0,0.00599699,28,47,40974,40955
+17.6,"gnl|BL_ORD_ID|2486 ENA|GU169904|GU169904.1 Staphylococcus phage SA1, complete genome. [29-AUG-2014]",147303,17.0,0.258989,9,25,67131,67115
+17.6,"gnl|BL_ORD_ID|2411 ENA|KP143762|KP143762.1 Salmonella phage Mushroom, complete genome. [17-APR-2015]",87709,17.0,0.258989,9,25,56757,56773
+17.6,"gnl|BL_ORD_ID|2406 ENA|JF461087|JF461087.1 Salmonella phage FO1a, complete genome. [29-AUG-2014]",83331,17.0,0.258989,9,25,33934,33918
+17.6,"gnl|BL_ORD_ID|1955 ENA|KR014248|KR014248.1 Escherichia phage vB_EcoM_AYO145A, complete genome. [19-APR-2015]",87372,17.0,0.258989,9,25,35159,35143
+17.6,"gnl|BL_ORD_ID|1954 ENA|KM657822|KM657822.1 Escherichia phage vB_EcoM-VpaE1, complete genome. [28-FEB-2015]",88403,17.0,0.258989,9,25,34152,34136
+17.6,"gnl|BL_ORD_ID|1933 ENA|JX560968|JX560968.1 Escherichia phage EC6, complete genome. [29-AUG-2014]",86231,17.0,0.258989,9,25,21020,21004
+17.6,"gnl|BL_ORD_ID|1928 ENA|KP869110|KP869110.1 Escherichia coli O157 typing phage 12, complete genome. [30-APR-2015]",88632,17.0,0.258989,9,25,80835,80851
+17.6,"gnl|BL_ORD_ID|1927 ENA|KP869109|KP869109.1 Escherichia coli O157 typing phage 11, complete genome. [30-APR-2015]",88771,17.0,0.258989,9,25,33418,33402
+17.6,"gnl|BL_ORD_ID|1922 ENA|KP869100|KP869100.1 Escherichia coli O157 typing phage 1, complete genome. [30-APR-2015]",88531,17.0,0.258989,9,25,6366,6382
+17.6,"gnl|BL_ORD_ID|1208 gi|408905826|ref|NC_018831.1| Listeria phage P70, complete genome",67170,17.0,0.258989,1,17,21597,21581
+17.6,"gnl|BL_ORD_ID|1038 gi|238801731|ref|NC_012749.1| Enterobacteria phage WV8, complete genome",88487,17.0,0.258989,9,25,35388,35372
+17.6,"gnl|BL_ORD_ID|515 gi|38707640|ref|NC_005282.1| Enterobacteria phage Felix 01, complete genome",86155,17.0,0.258989,9,25,34012,33996
+17.6,"gnl|BL_ORD_ID|141 gi|110804020|ref|NC_008265.1| Clostridium phage phiSM101, complete genome",38092,17.0,0.258989,13,29,1752,1736
+17.8,"gnl|BL_ORD_ID|1466 gi|526118413|ref|NC_021856.1| Bacillus phage phiNIT1 DNA, complete genome",155631,19.0,0.0165877,5,23,39341,39323
+17.8,"gnl|BL_ORD_ID|348 gi|568191581|ref|NC_022771.1| Bacillus phage Grass, complete genome",156648,19.0,0.0165877,5,23,36865,36847
+17.8,"gnl|BL_ORD_ID|1629 ENA|KC821616|KC821616.1 Cellulophaga phage phiSM, complete genome. [29-AUG-2014]",54566,18.0,0.0655441,1,18,12611,12594
+17.8,"gnl|BL_ORD_ID|1628 ENA|KC821634|KC821634.1 Cellulophaga phage phi47:1, complete genome. [29-AUG-2014]",54016,18.0,0.0655441,1,18,12611,12594
+17.8,"gnl|BL_ORD_ID|1627 ENA|KC821629|KC821629.1 Cellulophaga phage phi38:2, complete genome. [29-AUG-2014]",54012,18.0,0.0655441,1,18,12611,12594
+17.8,"gnl|BL_ORD_ID|1626 ENA|KC821610|KC821610.1 Cellulophaga phage phi3ST:2, complete genome. [29-AUG-2014]",54015,18.0,0.0655441,1,18,12611,12594
+17.8,"gnl|BL_ORD_ID|1625 ENA|KC821630|KC821630.1 Cellulophaga phage phi3:1, complete genome. [29-AUG-2014]",54427,18.0,0.0655441,1,18,12611,12594
+17.9,"gnl|BL_ORD_ID|1882 ENA|JX421753|JX421753.1 Enterobacteria phage T7M, complete genome. [28-FEB-2015]",38202,17.0,0.283655,17,33,24962,24978
+17.9,"gnl|BL_ORD_ID|1881 ENA|AJ318471|AJ318471.1 Bacteriophage T3 complete genome, strain Luria [28-FEB-2015]",38208,17.0,0.283655,17,33,24960,24976
+17.9,"gnl|BL_ORD_ID|953 gi|189427193|ref|NC_010807.1| Salmonella phage phiSG-JL2, complete genome",38815,17.0,0.283655,17,33,25365,25381
+17.9,"gnl|BL_ORD_ID|538 gi|17570786|ref|NC_003298.1| Enterobacteria phage T3, complete genome",38208,17.0,0.283655,17,33,24960,24976
+18.4,"gnl|BL_ORD_ID|153 gi|589286604|ref|NC_023571.1| Oenococcus phage phiS11, complete genome",46243,20.0,0.00599699,21,40,760,741
+18.4,"gnl|BL_ORD_ID|151 gi|589286221|ref|NC_023560.1| Oenococcus phage phiS13, complete genome",43454,20.0,0.00599699,21,40,760,741
+18.4,"gnl|BL_ORD_ID|150 gi|589286165|ref|NC_023559.1| Oenococcus phage phi9805, complete genome",46145,20.0,0.00599699,21,40,760,741
+18.4,"gnl|BL_ORD_ID|328 gi|658607984|ref|NC_024390.1| Leuconostoc phage phiLN03, complete genome",26752,18.0,0.093633,27,44,3878,3861
+18.4,"gnl|BL_ORD_ID|324 gi|658607716|ref|NC_024385.1| Leuconostoc phage phiLN12, complete genome",28193,18.0,0.093633,27,44,4428,4411
+18.4,"gnl|BL_ORD_ID|323 gi|658607305|ref|NC_024380.1| Leuconostoc phage phiLN6B, complete genome",25740,18.0,0.093633,27,44,4275,4258
+19.2,"gnl|BL_ORD_ID|1648 ENA|LN681537|LN681537.1 Clostridium phage phiCD211, complete genome [28-FEB-2015]",131326,19.0,0.0181675,3,25,83035,83057
+19.2,"gnl|BL_ORD_ID|2039 ENA|DQ004855|DQ004855.1 Listeria bacteriophage P100, complete genome. [29-AUG-2014]",131384,18.0,0.0717864,1,18,118420,118403
+19.2,"gnl|BL_ORD_ID|2036 ENA|KJ586795|KJ586795.1 Listeria phage LMTA-94, complete genome. [28-FEB-2015]",136468,18.0,0.0717864,1,18,111212,111229
+19.2,"gnl|BL_ORD_ID|2035 ENA|KJ591605|KJ591605.1 Listeria phage LMTA-57, complete genome. [28-FEB-2015]",136589,18.0,0.0717864,1,18,121307,121324
+19.2,"gnl|BL_ORD_ID|2034 ENA|KJ586794|KJ586794.1 Listeria phage LMTA-34, complete genome. [28-FEB-2015]",138036,18.0,0.0717864,1,18,36413,36396
+19.2,"gnl|BL_ORD_ID|1962 ENA|KR131710|KR131710.1 Fusobacterium phage Funu1, complete genome. [21-APR-2015]",39921,18.0,0.0717864,15,32,39823,39806
+19.2,"gnl|BL_ORD_ID|1379 gi|472437258|ref|NC_020871.1| Listeria phage vB_LmoM_AG20, complete genome",133057,18.0,0.0717864,1,18,20544,20527
+19.2,"gnl|BL_ORD_ID|1371 gi|197322500|ref|NC_009811.2| Listeria phage A511, complete genome",137619,18.0,0.0717864,1,18,20584,20567
+19.2,"gnl|BL_ORD_ID|465 gi|725950085|ref|NC_025440.1| Listeria phage WIL-1, complete genome",134369,18.0,0.0717864,1,18,11506,11523
+19.2,"gnl|BL_ORD_ID|383 gi|682123269|ref|NC_024787.1| Listeria phage LMTA-148, complete genome",132541,18.0,0.0717864,1,18,29199,29182
+19.2,"gnl|BL_ORD_ID|361 gi|658310567|ref|NC_024359.1| Listeria phage LP-048, complete genome",133048,18.0,0.0717864,1,18,22519,22502
+19.2,"gnl|BL_ORD_ID|310 gi|658307532|ref|NC_024364.1| Listeria phage List-36, complete genome",131952,18.0,0.0717864,1,18,108507,108524
+19.2,"gnl|BL_ORD_ID|309 gi|658307287|ref|NC_024360.1| Listeria phage LMSP-25, complete genome",138036,18.0,0.0717864,1,18,36413,36396
+19.2,"gnl|BL_ORD_ID|47 ENA|AJ748296|AJ748296.1 Sulfolobus islandicus rudivirus 1 variant XX, complete genome [28-FEB-2015]",33641,18.0,0.0717864,9,30,30996,30975
+19.2,"gnl|BL_ORD_ID|151 gi|589286221|ref|NC_023560.1| Oenococcus phage phiS13, complete genome",43454,17.0,0.283655,9,29,36909,36889
+19.3,"gnl|BL_ORD_ID|776 gi|388483859|ref|NC_006882.2| Prochlorococcus phage P-SSP7, complete genome",45176,17.0,0.246656,20,36,18796,18780
+19.3,"gnl|BL_ORD_ID|471 gi|589891425|ref|NC_023582.1| Staphylococcus phage vB_SepS_SEP9, complete genome",92417,17.0,0.246656,15,31,67354,67370
+19.5,"gnl|BL_ORD_ID|1903 ENA|KC579452|KC579452.1 Enterobacteriophage phiKP26, complete genome. [29-AUG-2014]",47285,17.0,0.283655,5,21,33917,33901
+19.5,"gnl|BL_ORD_ID|1758 ENA|KC333879|KC333879.1 Enterobacteria phage phiJLA23, complete genome. [29-AUG-2014]",43017,17.0,0.283655,5,21,34934,34950
+1.11,"gnl|BL_ORD_ID|1563 ENA|KJ676859|KJ676859.1 Bacillus phage JBP901, complete genome. [16-APR-2015]",159492,17.0,0.271322,12,28,115825,115841
+1.11,"gnl|BL_ORD_ID|1551 ENA|KJ081346|KJ081346.1 Bacillus phage BCP8-2, complete genome. [16-APR-2015]",159071,17.0,0.271322,12,28,153098,153114
+1.11,"gnl|BL_ORD_ID|1380 gi|472437437|ref|NC_020873.1| Bacillus cereus bacteriophage vB_BceM_Bc431v3, complete genome",158621,17.0,0.271322,12,28,115489,115505
+1.11,"gnl|BL_ORD_ID|300 gi|640883881|ref|NC_024137.1| Bacillus phage Bcp1, complete genome",152778,17.0,0.271322,12,28,70991,70975
+1.13,"gnl|BL_ORD_ID|1638 ENA|KM236240|KM236240.1 Citrobacter phage Moon, complete genome. [28-FEB-2015]",170341,17.0,0.246656,3,19,14611,14595
+1.21,gnl|BL_ORD_ID|1677 ENA|HE600015|HE600015.1 Dickeya phage vB_DsoM_LIMEstone1 complete genome [28-FEB-2015],152427,18.0,0.0749076,19,36,140934,140917
+1.21,gnl|BL_ORD_ID|1353 gi|448259945|ref|NC_019925.1| Dickeya phage vB_DsoM_LIMEstone1 complete genome,152427,18.0,0.0749076,19,36,140934,140917
+1.21,"gnl|BL_ORD_ID|452 gi|713322875|ref|NC_025452.1| Dickeya phage RC-2014, complete genome",155346,18.0,0.0749076,19,36,118018,118001
+1.21,"gnl|BL_ORD_ID|2486 ENA|GU169904|GU169904.1 Staphylococcus phage SA1, complete genome. [29-AUG-2014]",147303,17.0,0.295988,15,31,143100,143116
+1.21,"gnl|BL_ORD_ID|2411 ENA|KP143762|KP143762.1 Salmonella phage Mushroom, complete genome. [17-APR-2015]",87709,17.0,0.295988,15,31,69323,69307
+1.21,"gnl|BL_ORD_ID|2406 ENA|JF461087|JF461087.1 Salmonella phage FO1a, complete genome. [29-AUG-2014]",83331,17.0,0.295988,15,31,19871,19887
+1.21,"gnl|BL_ORD_ID|1936 ENA|KF055347|KF055347.1 Escherichia phage JH2, complete genome. [29-AUG-2014]",87712,17.0,0.295988,15,31,78449,78433
+1.21,"gnl|BL_ORD_ID|1933 ENA|JX560968|JX560968.1 Escherichia phage EC6, complete genome. [29-AUG-2014]",86231,17.0,0.295988,15,31,8186,8202
+1.21,"gnl|BL_ORD_ID|1928 ENA|KP869110|KP869110.1 Escherichia coli O157 typing phage 12, complete genome. [30-APR-2015]",88632,17.0,0.295988,15,31,5501,5485
+1.21,"gnl|BL_ORD_ID|1927 ENA|KP869109|KP869109.1 Escherichia coli O157 typing phage 11, complete genome. [30-APR-2015]",88771,17.0,0.295988,15,31,20266,20282
+1.21,"gnl|BL_ORD_ID|1038 gi|238801731|ref|NC_012749.1| Enterobacteria phage WV8, complete genome",88487,17.0,0.295988,15,31,22236,22252
+1.21,"gnl|BL_ORD_ID|840 gi|388684650|ref|NC_017972.1| Pseudomonas phage Lu11, complete genome",280538,17.0,0.295988,1,17,84304,84320
+1.21,"gnl|BL_ORD_ID|515 gi|38707640|ref|NC_005282.1| Enterobacteria phage Felix 01, complete genome",86155,17.0,0.295988,15,31,19949,19965
+1.25,"gnl|BL_ORD_ID|2582 ENA|KJ019133|KJ019133.1 Synechococcus phage ACG-2014b isolate Syn9311C4, complete genome. [12-APR-2015]",172874,18.0,0.0655441,2,23,75952,75931
+1.25,"gnl|BL_ORD_ID|2581 ENA|KJ019132|KJ019132.1 Synechococcus phage ACG-2014b isolate Syn9311C1, complete genome. [12-APR-2015]",172261,18.0,0.0655441,2,23,75371,75350
+1.25,"gnl|BL_ORD_ID|2580 ENA|KJ019110|KJ019110.1 Synechococcus phage ACG-2014b isolate Syn7803US56, complete genome. [12-APR-2015]",172688,18.0,0.0655441,2,23,75475,75454
+1.25,"gnl|BL_ORD_ID|2579 ENA|KJ019109|KJ019109.1 Synechococcus phage ACG-2014b isolate Syn7803US54, complete genome. [12-APR-2015]",172688,18.0,0.0655441,2,23,75380,75359
+1.25,"gnl|BL_ORD_ID|2578 ENA|KJ019108|KJ019108.1 Synechococcus phage ACG-2014b isolate Syn7803US53, complete genome. [12-APR-2015]",172688,18.0,0.0655441,2,23,75380,75359
+1.25,"gnl|BL_ORD_ID|2577 ENA|KJ019104|KJ019104.1 Synechococcus phage ACG-2014b isolate Syn7803US49, complete genome. [12-APR-2015]",172688,18.0,0.0655441,2,23,75380,75359
+1.25,"gnl|BL_ORD_ID|2576 ENA|KJ019134|KJ019134.1 Synechococcus phage ACG-2014b isolate Syn7803C100, complete genome. [12-APR-2015]",172688,18.0,0.0655441,2,23,75475,75454
+1.25,"gnl|BL_ORD_ID|2575 ENA|KJ019061|KJ019061.1 Synechococcus phage ACG-2014b isolate Syn7803C92, complete genome. [12-APR-2015]",172691,18.0,0.0655441,2,23,75380,75359
+1.25,"gnl|BL_ORD_ID|2574 ENA|KJ019060|KJ019060.1 Synechococcus phage ACG-2014b isolate Syn7803C91, complete genome. [12-APR-2015]",172688,18.0,0.0655441,2,23,75475,75454
+1.25,"gnl|BL_ORD_ID|2573 ENA|KJ019051|KJ019051.1 Synechococcus phage ACG-2014b isolate Syn7803C78, complete genome. [12-APR-2015]",172688,18.0,0.0655441,2,23,75475,75454
+1.25,"gnl|BL_ORD_ID|2572 ENA|KJ019049|KJ019049.1 Synechococcus phage ACG-2014b isolate Syn7803C76, complete genome. [12-APR-2015]",172688,18.0,0.0655441,2,23,75475,75454
+1.25,"gnl|BL_ORD_ID|2571 ENA|KJ019044|KJ019044.1 Synechococcus phage ACG-2014b isolate Syn7803C69, complete genome. [12-APR-2015]",172681,18.0,0.0655441,2,23,75468,75447
+1.25,"gnl|BL_ORD_ID|2570 ENA|KJ019043|KJ019043.1 Synechococcus phage ACG-2014b isolate Syn7803C68, complete genome. [12-APR-2015]",172688,18.0,0.0655441,2,23,75380,75359
+1.25,"gnl|BL_ORD_ID|2569 ENA|KJ019042|KJ019042.1 Synechococcus phage ACG-2014b isolate Syn7803C67, complete genome. [12-APR-2015]",172686,18.0,0.0655441,2,23,75377,75356
+1.25,"gnl|BL_ORD_ID|2568 ENA|KJ019041|KJ019041.1 Synechococcus phage ACG-2014b isolate Syn7803C66, complete genome. [12-APR-2015]",172802,18.0,0.0655441,2,23,75459,75438
+1.25,"gnl|BL_ORD_ID|2566 ENA|KJ019161|KJ019161.1 Synechococcus phage ACG-2014b isolate Syn7803C36, complete genome. [12-APR-2015]",172684,18.0,0.0655441,2,23,75376,75355
+1.25,"gnl|BL_ORD_ID|2565 ENA|KJ019154|KJ019154.1 Synechococcus phage ACG-2014b isolate Syn7803C28, complete genome. [12-APR-2015]",172681,18.0,0.0655441,2,23,75468,75447
+1.25,"gnl|BL_ORD_ID|2015 ENA|KF676640|KF676640.1 Lactococcus phage SK1833, complete genome. [28-FEB-2015]",28452,17.0,0.258989,4,20,4700,4684
+1.25,gnl|BL_ORD_ID|2014 ENA|AF011378|AF011378.1 Bacteriophage sk1 complete genome. [28-FEB-2015],28451,17.0,0.258989,4,20,4700,4684
+1.25,"gnl|BL_ORD_ID|2008 ENA|DQ227764|DQ227764.1 Lactococcus lactis phage jj50, complete genome. [29-AUG-2014]",27453,17.0,0.258989,4,20,4699,4683
+1.25,"gnl|BL_ORD_ID|2007 ENA|FJ848885|FJ848885.1 Lactococcus phage CB20, complete genome. [29-AUG-2014]",28625,17.0,0.258989,4,20,4922,4906
+1.25,"gnl|BL_ORD_ID|2006 ENA|FJ848884|FJ848884.1 Lactococcus phage CB19, complete genome. [29-AUG-2014]",28643,17.0,0.258989,4,20,4941,4925
+1.25,"gnl|BL_ORD_ID|2005 ENA|FJ848883|FJ848883.1 Lactococcus phage CB14, complete genome. [29-AUG-2014]",29459,17.0,0.258989,4,20,4931,4915
+1.25,"gnl|BL_ORD_ID|2004 ENA|FJ848882|FJ848882.1 Lactococcus phage CB13, complete genome. [29-AUG-2014]",32182,17.0,0.258989,4,20,4922,4906
+1.25,"gnl|BL_ORD_ID|1993 ENA|KM091442|KM091442.1 Lactococcus phage phi15, complete genome. [28-FEB-2015]",31945,17.0,0.258989,4,20,5128,5112
+1.25,"gnl|BL_ORD_ID|1990 ENA|KC182544|KC182544.1 Lactococcus phage 936, complete genome. [29-AUG-2014]",27302,17.0,0.258989,4,20,4700,4684
+1.25,"gnl|BL_ORD_ID|1440 gi|526244756|ref|NC_021860.1| Lactococcus phage jm2, complete genome",31090,17.0,0.258989,4,20,4680,4664
+1.25,"gnl|BL_ORD_ID|1437 gi|526244525|ref|NC_021854.1| Lactococcus phage jm3, complete genome",28674,17.0,0.258989,4,20,4668,4652
+1.25,"gnl|BL_ORD_ID|1435 gi|526241733|ref|NC_021852.1| Lactococcus phage P680, complete genome",29631,17.0,0.258989,4,20,4675,4659
+1.25,"gnl|BL_ORD_ID|870 gi|115315628|ref|NC_008371.1| Lactococcus phage jj50, complete genome",27453,17.0,0.258989,4,20,4699,4683
+1.25,"gnl|BL_ORD_ID|869 gi|115315572|ref|NC_008370.1| Lactococcus phage 712, complete genome",30510,17.0,0.258989,4,20,4855,4839
+1.25,"gnl|BL_ORD_ID|657 gi|9629653|ref|NC_001835.1| Lactococcus phage sk1, complete genome",28451,17.0,0.258989,4,20,4700,4684
+1.4,gnl|BL_ORD_ID|2678 ENA|AJ630128|AJ630128.1 Bacteriophage S-PM2 complete genome [28-FEB-2015],196280,17.0,0.295988,9,29,121776,121756
+1.4,"gnl|BL_ORD_ID|1475 gi|58532811|ref|NC_006820.1| Synechococcus phage S-PM2, complete genome",196280,17.0,0.295988,9,29,121776,121756
+1.6,"gnl|BL_ORD_ID|1259 gi|422936890|ref|NC_019526.1| Enterobacteria phage vB_KleM-RaK2, complete genome",345809,17.0,0.258989,15,31,336202,336218
+1.7,"gnl|BL_ORD_ID|2417 ENA|JX181824|JX181824.1 Salmonella phage SSE-121, complete genome. [21-NOV-2014]",147745,17.0,0.295988,21,37,115578,115594
+1.7,"gnl|BL_ORD_ID|1154 gi|363539522|ref|NC_016071.1| Salmonella phage PVP-SE1, complete genome",145964,17.0,0.295988,21,37,99287,99271
+1.7,"gnl|BL_ORD_ID|420 gi|658307760|ref|NC_024370.1| Streptococcus phage IC1, complete sequence",39965,17.0,0.295988,1,17,30663,30679
+1.7,"gnl|BL_ORD_ID|419 gi|658307475|ref|NC_024361.1| Streptococcus phage DCC1738, complete sequence",38392,17.0,0.295988,1,17,27686,27702
+1.8,"gnl|BL_ORD_ID|2418 ENA|KM236244|KM236244.1 Salmonella phage Stitch, complete genome. [28-FEB-2015]",123475,17.0,0.258989,8,24,15512,15528
+1.8,"gnl|BL_ORD_ID|1619 ENA|HM246720|HM246720.1 Campylobacter phage vB_CcoM-IBB_35 clone Contig1, complete genome. [28-FEB-2015]",53237,17.0,0.258989,11,35,11371,11395
+1.8,"gnl|BL_ORD_ID|1618 ENA|FN667789|FN667789.1 Campylobacter phage CPt10, complete genome [29-AUG-2014]",175720,17.0,0.258989,11,35,53278,53302
+1.8,"gnl|BL_ORD_ID|1617 ENA|FN667788|FN667788.1 Campylobacter phage CP220, complete genome [29-AUG-2014]",177534,17.0,0.258989,11,35,53585,53609
+1.8,"gnl|BL_ORD_ID|1616 ENA|FR823450|FR823450.1 Campylobacter phage CP81, complete genome [28-FEB-2015]",132454,17.0,0.258989,3,23,52334,52354
+1.8,"gnl|BL_ORD_ID|1615 ENA|KF148616|KF148616.1 Campylobacter phage CP8, complete genome. [28-FEB-2015]",132667,17.0,0.258989,3,23,76000,75980
+1.8,"gnl|BL_ORD_ID|1243 gi|422935113|ref|NC_019507.1| Campylobacter phage CP21, complete genome",182833,17.0,0.258989,11,35,43185,43161
+1.8,"gnl|BL_ORD_ID|1206 gi|408905856|ref|NC_018861.1| Campylobacter phage CP30A, complete genome",133572,17.0,0.258989,3,23,123061,123041
+1.8,"gnl|BL_ORD_ID|1165 gi|371670910|ref|NC_016562.1| Campylobacter phage CPX, complete genome",132662,17.0,0.258989,3,23,75766,75746
+1.8,"gnl|BL_ORD_ID|1140 gi|332672312|ref|NC_015464.1| Campylobacter phage NCTC12673, complete genome",135041,17.0,0.258989,3,23,121880,121860
+1.9,"gnl|BL_ORD_ID|223 gi|593777468|ref|NC_023719.1| Bacillus phage G, complete genome",497513,18.0,0.0811499,18,39,225293,225272
+20.6,"gnl|BL_ORD_ID|778 gi|312281391|ref|NC_006884.2| Prochlorococcus phage P-SSM4, complete genome",178249,19.0,0.021327,18,36,153794,153776
+20.7,"gnl|BL_ORD_ID|1648 ENA|LN681537|LN681537.1 Clostridium phage phiCD211, complete genome [28-FEB-2015]",131326,18.0,0.084271,8,25,106304,106321
+20.7,"gnl|BL_ORD_ID|932 gi|161622381|ref|NC_010105.1| Enterobacteria phage JS98, complete genome",170523,18.0,0.084271,8,25,146821,146838
+20.9,"gnl|BL_ORD_ID|1651 ENA|LN681540|LN681540.1 Clostridium phage phiCD506, complete genome [28-FEB-2015]",33274,19.0,0.0205371,11,29,32012,31994
+20.9,"gnl|BL_ORD_ID|1216 gi|414090442|ref|NC_019422.1| Clostridium phage phiMMP04, complete genome",31674,18.0,0.0811499,12,29,29900,29883
+3.1,"gnl|BL_ORD_ID|2580 ENA|KJ019110|KJ019110.1 Synechococcus phage ACG-2014b isolate Syn7803US56, complete genome. [12-APR-2015]",172688,17.0,0.258989,19,35,26759,26775
+3.1,"gnl|BL_ORD_ID|2579 ENA|KJ019109|KJ019109.1 Synechococcus phage ACG-2014b isolate Syn7803US54, complete genome. [12-APR-2015]",172688,17.0,0.258989,19,35,26664,26680
+3.1,"gnl|BL_ORD_ID|2578 ENA|KJ019108|KJ019108.1 Synechococcus phage ACG-2014b isolate Syn7803US53, complete genome. [12-APR-2015]",172688,17.0,0.258989,19,35,26664,26680
+3.1,"gnl|BL_ORD_ID|2577 ENA|KJ019104|KJ019104.1 Synechococcus phage ACG-2014b isolate Syn7803US49, complete genome. [12-APR-2015]",172688,17.0,0.258989,19,35,26664,26680
+3.1,"gnl|BL_ORD_ID|2576 ENA|KJ019134|KJ019134.1 Synechococcus phage ACG-2014b isolate Syn7803C100, complete genome. [12-APR-2015]",172688,17.0,0.258989,19,35,26759,26775
+3.1,"gnl|BL_ORD_ID|2575 ENA|KJ019061|KJ019061.1 Synechococcus phage ACG-2014b isolate Syn7803C92, complete genome. [12-APR-2015]",172691,17.0,0.258989,19,35,26664,26680
+3.1,"gnl|BL_ORD_ID|2574 ENA|KJ019060|KJ019060.1 Synechococcus phage ACG-2014b isolate Syn7803C91, complete genome. [12-APR-2015]",172688,17.0,0.258989,19,35,26664,26680
+3.1,"gnl|BL_ORD_ID|2573 ENA|KJ019051|KJ019051.1 Synechococcus phage ACG-2014b isolate Syn7803C78, complete genome. [12-APR-2015]",172688,17.0,0.258989,19,35,26759,26775
+3.1,"gnl|BL_ORD_ID|2572 ENA|KJ019049|KJ019049.1 Synechococcus phage ACG-2014b isolate Syn7803C76, complete genome. [12-APR-2015]",172688,17.0,0.258989,19,35,26664,26680
+3.1,"gnl|BL_ORD_ID|2571 ENA|KJ019044|KJ019044.1 Synechococcus phage ACG-2014b isolate Syn7803C69, complete genome. [12-APR-2015]",172681,17.0,0.258989,19,35,26752,26768
+3.1,"gnl|BL_ORD_ID|2570 ENA|KJ019043|KJ019043.1 Synechococcus phage ACG-2014b isolate Syn7803C68, complete genome. [12-APR-2015]",172688,17.0,0.258989,19,35,26664,26680
+3.1,"gnl|BL_ORD_ID|2567 ENA|KJ019040|KJ019040.1 Synechococcus phage ACG-2014b isolate Syn7803C61, complete genome. [12-APR-2015]",154990,17.0,0.258989,19,35,26664,26680
+3.1,"gnl|BL_ORD_ID|2566 ENA|KJ019161|KJ019161.1 Synechococcus phage ACG-2014b isolate Syn7803C36, complete genome. [12-APR-2015]",172684,17.0,0.258989,19,35,26664,26680
+3.1,"gnl|BL_ORD_ID|2565 ENA|KJ019154|KJ019154.1 Synechococcus phage ACG-2014b isolate Syn7803C28, complete genome. [12-APR-2015]",172681,17.0,0.258989,19,35,26664,26680
+4.10,"gnl|BL_ORD_ID|372 gi|672550958|ref|NC_024697.1| Aureococcus anophagefferens virus isolate BtV-01, complete genome",370920,19.0,0.0189574,11,33,119792,119814
+4.10,"gnl|BL_ORD_ID|1232 gi|418489681|ref|NC_019488.1| Salmonella phage RE-2010, complete genome",34117,18.0,0.0749076,5,22,11546,11563
+4.10,"gnl|BL_ORD_ID|223 gi|593777468|ref|NC_023719.1| Bacillus phage G, complete genome",497513,18.0,0.0749076,8,25,162280,162263
+4.10,gnl|BL_ORD_ID|2422 ENA|AM491472|AM491472.1 Salmonella phage E1 complete genome [28-FEB-2015],45051,17.0,0.295988,1,17,21665,21681
+4.10,"gnl|BL_ORD_ID|1672 ENA|KC954775|KC954775.1 UNVERIFIED: Cronobacter phage S13, complete genome. [28-FEB-2015]",182145,17.0,0.295988,7,27,175546,175526
+4.10,"gnl|BL_ORD_ID|1668 ENA|LN681542|LN681542.1 Clostridium phage phiMMP03, complete genome [28-FEB-2015]",52261,17.0,0.295988,9,25,43585,43569
+4.10,"gnl|BL_ORD_ID|1654 ENA|LK985322|LK985322.1 Clostridium phage phiCDHM19, complete genome [28-FEB-2015]",54295,17.0,0.295988,9,25,44626,44610
+4.10,"gnl|BL_ORD_ID|1646 ENA|AY855346|AY855346.1 Clostridium difficile bacteriophage phi CD119, complete genome. [28-FEB-2015]",53325,17.0,0.295988,9,25,41615,41599
+4.10,"gnl|BL_ORD_ID|1616 ENA|FR823450|FR823450.1 Campylobacter phage CP81, complete genome [28-FEB-2015]",132454,17.0,0.295988,7,27,48129,48109
+4.10,"gnl|BL_ORD_ID|1615 ENA|KF148616|KF148616.1 Campylobacter phage CP8, complete genome. [28-FEB-2015]",132667,17.0,0.295988,7,27,80205,80225
+4.10,"gnl|BL_ORD_ID|1357 gi|371671060|ref|NC_016563.1| Bacillus phage W.Ph., complete genome",156897,17.0,0.295988,8,24,119473,119457
+4.10,"gnl|BL_ORD_ID|1206 gi|408905856|ref|NC_018861.1| Campylobacter phage CP30A, complete genome",133572,17.0,0.295988,7,27,127259,127279
+4.10,"gnl|BL_ORD_ID|1204 gi|408905852|ref|NC_018857.1| Bacillus phage BPS13, complete genome",158305,17.0,0.295988,8,24,43179,43195
+4.10,"gnl|BL_ORD_ID|1165 gi|371670910|ref|NC_016562.1| Campylobacter phage CPX, complete genome",132662,17.0,0.295988,7,27,79971,79991
+4.10,"gnl|BL_ORD_ID|1140 gi|332672312|ref|NC_015464.1| Campylobacter phage NCTC12673, complete genome",135041,17.0,0.295988,7,27,125308,125328
+4.10,"gnl|BL_ORD_ID|1004 gi|209901237|ref|NC_011398.1| Clostridium phage phiCD27, complete genome",50930,17.0,0.295988,9,25,42674,42658
+4.10,"gnl|BL_ORD_ID|944 gi|170676276|ref|NC_010495.1| Salmonella phage E1, complete genome",45051,17.0,0.295988,1,17,21665,21681
+4.10,"gnl|BL_ORD_ID|890 gi|134287335|ref|NC_009231.1| Clostridium phage phiC2, complete genome",56538,17.0,0.295988,9,25,47122,47106
+4.10,"gnl|BL_ORD_ID|831 gi|90592637|ref|NC_007917.1| Clostridium phage phi CD119, complete genome",53325,17.0,0.295988,9,25,41615,41599
+4.10,"gnl|BL_ORD_ID|416 gi|643218205|ref|NC_024213.1| Bacillus phage Hakuna, complete genome",158100,17.0,0.295988,8,24,145984,145968
+4.10,"gnl|BL_ORD_ID|415 gi|643217861|ref|NC_024211.1| Bacillus phage Megatron, complete genome",158750,17.0,0.295988,8,24,146749,146733
+4.10,"gnl|BL_ORD_ID|390 gi|588498374|ref|NC_023501.1| Bacillus phage BPS10C, complete genome",159590,17.0,0.295988,8,24,43185,43201
+4.12,"gnl|BL_ORD_ID|1740 ENA|KP719132|KP719132.1 Enterobacteria phage JenP1, complete genome. [09-MAY-2015]",60754,18.0,0.0655441,9,26,52082,52099
+4.12,"gnl|BL_ORD_ID|1648 ENA|LN681537|LN681537.1 Clostridium phage phiCD211, complete genome [28-FEB-2015]",131326,18.0,0.0655441,11,28,112770,112787
+4.12,"gnl|BL_ORD_ID|279 gi|640885073|ref|NC_024146.1| Enterobacteria phage 9g, complete genome",56702,18.0,0.0655441,9,26,25148,25165
+4.12,"gnl|BL_ORD_ID|1616 ENA|FR823450|FR823450.1 Campylobacter phage CP81, complete genome [28-FEB-2015]",132454,17.0,0.258989,14,30,51973,51989
+4.12,"gnl|BL_ORD_ID|1615 ENA|KF148616|KF148616.1 Campylobacter phage CP8, complete genome. [28-FEB-2015]",132667,17.0,0.258989,14,30,76361,76345
+4.12,"gnl|BL_ORD_ID|1566 ENA|KM236246|KM236246.1 Bacillus phage Moonbeam, complete genome. [28-FEB-2015]",161239,17.0,0.258989,14,30,28128,28144
+4.12,"gnl|BL_ORD_ID|1206 gi|408905856|ref|NC_018861.1| Campylobacter phage CP30A, complete genome",133572,17.0,0.258989,14,30,123419,123403
+4.12,"gnl|BL_ORD_ID|1165 gi|371670910|ref|NC_016562.1| Campylobacter phage CPX, complete genome",132662,17.0,0.258989,14,30,76127,76111
+4.12,"gnl|BL_ORD_ID|72 gi|253682895|ref|NZ_ACSJ01000017.1| Clostridium phage D-1873 CLG.Contig173, whole genome shotgun sequence",74599,17.0,0.258989,9,29,23927,23947
+4.13,"gnl|BL_ORD_ID|1236 gi|422934005|ref|NC_019500.1| Enterobacteria phage Bp7, complete genome",168066,20.0,0.00439786,1,20,68978,68959
+4.13,"gnl|BL_ORD_ID|777 gi|312281379|ref|NC_006883.2| Prochlorococcus phage P-SSM2, complete genome",252401,19.0,0.0173776,5,27,49025,49003
+4.13,"gnl|BL_ORD_ID|355 gi|414086915|ref|NC_019401.1| Cronobacter phage vB_CsaM_GAP32, complete genome",358663,19.0,0.0173776,11,29,268519,268501
+4.13,"gnl|BL_ORD_ID|1889 ENA|KP007359|KP007359.1 Enterobacteria phage vB_EcoM_VR5, complete genome. [28-FEB-2015]",170473,18.0,0.0686653,1,22,169363,169384
+4.13,"gnl|BL_ORD_ID|1125 gi|326783443|ref|NC_015286.1| Synechococcus phage Syn19, complete genome",175230,18.0,0.0686653,11,28,43028,43011
+4.13,"gnl|BL_ORD_ID|932 gi|161622381|ref|NC_010105.1| Enterobacteria phage JS98, complete genome",170523,18.0,0.0686653,1,22,169425,169446
+4.13,"gnl|BL_ORD_ID|620 gi|314121562|ref|NC_014792.1| Enterobacteria phage vB_EcoM-VR7, complete genome",169285,18.0,0.0686653,1,22,167746,167767
+4.13,"gnl|BL_ORD_ID|2418 ENA|KM236244|KM236244.1 Salmonella phage Stitch, complete genome. [28-FEB-2015]",123475,17.0,0.271322,11,27,99660,99676
+4.13,"gnl|BL_ORD_ID|1952 ENA|AY587007|AY587007.1 Bacteriophage T5 strain ATCC 11303-B5, complete genome. [28-FEB-2015]",121752,17.0,0.271322,11,27,97348,97364
+4.13,"gnl|BL_ORD_ID|1951 ENA|AY543070|AY543070.1 Bacteriophage T5, complete genome. [28-FEB-2015]",121750,17.0,0.271322,11,27,97266,97282
+4.13,"gnl|BL_ORD_ID|1910 ENA|AB609718|AB609718.1 Enterococcus phage phiEF24C-P2 DNA, complete genome. [29-AUG-2014]",142072,17.0,0.271322,8,24,128907,128923
+4.13,"gnl|BL_ORD_ID|1909 ENA|AP009390|AP009390.1 Enterococcus phage phiEF24C DNA, complete genome. [28-FEB-2015]",142072,17.0,0.271322,8,24,128907,128923
+4.13,"gnl|BL_ORD_ID|1907 ENA|KR049063|KR049063.1 Enterococcus phage EFLK1, complete genome. [19-APR-2015]",130952,17.0,0.271322,8,24,133,117
+4.13,"gnl|BL_ORD_ID|1905 ENA|KJ801817|KJ801817.1 Enterococcus phage ECP3, complete genome. [28-FEB-2015]",145518,17.0,0.271322,8,24,111444,111428
+4.13,"gnl|BL_ORD_ID|1122 gi|326782732|ref|NC_015283.1| Prochlorococcus phage P-RSM4, complete genome",176428,17.0,0.271322,9,29,43781,43761
+4.13,"gnl|BL_ORD_ID|948 gi|182682799|ref|NC_010583.1| Enterobacteria phage EPS7, complete genome",111382,17.0,0.271322,11,27,97705,97721
+4.13,"gnl|BL_ORD_ID|927 gi|158079296|ref|NC_009904.1| Enterococcus phage phiEF24C, complete genome",142072,17.0,0.271322,8,24,128907,128923
+4.13,"gnl|BL_ORD_ID|780 gi|46401737|ref|NC_005859.1| Enterobacteria phage T5, complete genome",121750,17.0,0.271322,11,27,97266,97282
+4.2,"gnl|BL_ORD_ID|1536 ENA|HQ186308|HQ186308.1 Acinetobacter phage phiAB1, complete genome. [28-FEB-2015]",41526,18.0,0.093633,22,39,38109,38092
+4.4,"gnl|BL_ORD_ID|2718 ENA|JN849462|JN849462.1 Vibriophage phi-pp2, complete genome. [28-FEB-2015]",246421,17.0,0.246656,19,35,151796,151780
+4.4,"gnl|BL_ORD_ID|1654 ENA|LK985322|LK985322.1 Clostridium phage phiCDHM19, complete genome [28-FEB-2015]",54295,17.0,0.246656,7,27,18632,18612
+4.4,"gnl|BL_ORD_ID|1653 ENA|LK985321|LK985321.1 Clostridium phage phiCDHM14, complete genome [28-FEB-2015]",32651,17.0,0.246656,7,27,11537,11517
+4.4,gnl|BL_ORD_ID|1652 ENA|HG796225|HG796225.1 Clostridium phage phiCDHM13 complete genome [28-FEB-2015],33596,17.0,0.246656,7,27,11505,11485
+4.4,"gnl|BL_ORD_ID|1646 ENA|AY855346|AY855346.1 Clostridium difficile bacteriophage phi CD119, complete genome. [28-FEB-2015]",53325,17.0,0.246656,7,27,18378,18358
+4.4,"gnl|BL_ORD_ID|831 gi|90592637|ref|NC_007917.1| Clostridium phage phi CD119, complete genome",53325,17.0,0.246656,7,27,18378,18358
+4.4,"gnl|BL_ORD_ID|731 gi|91214232|ref|NC_005083.2| Vibrio phage KVP40, complete genome",244834,17.0,0.246656,19,35,150627,150611
+4.5,"gnl|BL_ORD_ID|1486 gi|526178095|ref|NC_021802.1| Cellulophaga phage phi10:1, complete genome",53664,20.0,0.00479766,14,37,22005,21982
+4.5,"gnl|BL_ORD_ID|1299 gi|428781939|ref|NC_019710.1| Enterobacteria phage HK140, complete genome",40710,18.0,0.0749076,21,38,20002,19985
+4.5,"gnl|BL_ORD_ID|2465 ENA|AF424782|AF424782.1 Staphylococcus aureus phage phi 12, complete genome. [29-AUG-2014]",44970,17.0,0.295988,16,32,15875,15859
+4.5,"gnl|BL_ORD_ID|2464 ENA|JX174275|JX174275.1 Staphylococcus phage LH1, complete genome. [29-AUG-2014]",46048,17.0,0.295988,16,32,41394,41378
+4.5,"gnl|BL_ORD_ID|2440 ENA|AY954957|AY954957.1 Bacteriophage 47, complete genome. [29-AUG-2014]",44777,17.0,0.295988,16,32,40122,40106
+4.5,"gnl|BL_ORD_ID|2434 ENA|AY954956|AY954956.1 Bacteriophage 3A, complete genome. [29-AUG-2014]",43095,17.0,0.295988,16,32,38499,38483
+4.5,"gnl|BL_ORD_ID|2045 ENA|AB231700|AB231700.1 Microcystis phage Ma-LMM01 DNA, complete genome. [21-NOV-2014]",162109,17.0,0.295988,15,31,10442,10458
+4.5,gnl|BL_ORD_ID|1959 ENA|AJ842011|AJ842011.2 Bacteriophage 11b complete genome [29-AUG-2014],36012,17.0,0.295988,1,21,29031,29011
+4.5,"gnl|BL_ORD_ID|1406 gi|509139878|ref|NC_021323.1| Staphylococcus phage StauST398-2, complete genome",45572,17.0,0.295988,16,32,14917,14901
+4.5,"gnl|BL_ORD_ID|1011 gi|215401108|ref|NC_011612.1| Staphylococcus phage phiSauS-IPLA35, complete genome",45344,17.0,0.295988,16,32,15287,15271
+4.5,"gnl|BL_ORD_ID|909 gi|157102937|ref|NC_009762.2| Staphylococcus prophage tp310-2, complete genome",45710,17.0,0.295988,16,32,16686,16670
+4.5,"gnl|BL_ORD_ID|873 gi|117530171|ref|NC_008562.1| Microcystis phage Ma-LMM01, complete genome",162109,17.0,0.295988,15,31,10442,10458
+4.5,"gnl|BL_ORD_ID|799 gi|66395588|ref|NC_007053.1| Staphylococcus phage 3A, complete genome",43095,17.0,0.295988,16,32,38499,38483
+4.5,"gnl|BL_ORD_ID|754 gi|77020112|ref|NC_006356.2| Flavobacterium phage 11b, complete genome",36012,17.0,0.295988,1,21,29031,29011
+4.5,"gnl|BL_ORD_ID|679 gi|29028617|ref|NC_004616.1| Staphylococcus prophage phi 12, complete genome",44970,17.0,0.295988,16,32,15875,15859
+4.5,"gnl|BL_ORD_ID|581 gi|66395656|ref|NC_007054.1| Staphylococcus phage 47, complete genome",44777,17.0,0.295988,16,32,40122,40106
+4.6,"gnl|BL_ORD_ID|1552 ENA|JN797798|JN797798.1 Bacillus phage BCU4, complete genome. [28-FEB-2015]",154371,18.0,0.062423,5,22,133855,133838
+4.6,"gnl|BL_ORD_ID|1205 gi|408905855|ref|NC_018860.1| Bacillus phage BCP78, complete genome",156176,18.0,0.062423,5,22,141562,141545
+4.6,"gnl|BL_ORD_ID|1946 ENA|KC295538|KC295538.1 Escherichia phage PBECO 4, complete genome. [28-FEB-2015]",348113,17.0,0.246656,5,21,5404,5420
+4.6,"gnl|BL_ORD_ID|681 gi|29134936|ref|NC_004629.1| Pseudomonas phage phiKZ, complete genome",280334,17.0,0.246656,4,20,250631,250647
+4.6,"gnl|BL_ORD_ID|438 gi|712914205|ref|NC_025447.1| Escherichia phage 121Q, complete genome",348532,17.0,0.246656,5,21,280260,280244
+4.6,"gnl|BL_ORD_ID|35 ENA|KJ003983|KJ003983.1 IAS virus, complete genome. [29-AUG-2014]",99915,17.0,0.246656,4,20,31674,31690
+4.7,"gnl|BL_ORD_ID|960 gi|194100305|ref|NC_011042.1| Enterobacteria phage EcoDS1, complete genome",39252,17.0,0.271322,9,25,5582,5598
+4.9,"gnl|BL_ORD_ID|373 gi|658310315|ref|NC_024355.1| Staphylococcus phage 6ec, complete genome",93794,19.0,0.0173776,3,25,86650,86672
+4.9,"gnl|BL_ORD_ID|2709 ENA|KM224878|KM224878.1 Vibrio phage ICP2_2011_A, complete genome. [28-FEB-2015]",50250,17.0,0.271322,16,32,26842,26858
+4.9,"gnl|BL_ORD_ID|2708 ENA|HQ641346|HQ641346.1 Vibrio phage ICP2_2006_A, complete genome. [29-AUG-2014]",48626,17.0,0.271322,16,32,26851,26867
+4.9,"gnl|BL_ORD_ID|1098 gi|325171199|ref|NC_015158.1| Vibrio phage ICP2, complete genome",49675,17.0,0.271322,16,32,27702,27718
+4.9,"gnl|BL_ORD_ID|706 gi|38639923|ref|NC_005260.1| Aeromonas phage Aeh1, complete genome",233234,17.0,0.271322,20,36,5287,5271
+4.9,"gnl|BL_ORD_ID|386 gi|682123897|ref|NC_024791.1| Vibrio phage ICP2_2013_A_Haiti, complete genome",50440,17.0,0.271322,16,32,27722,27738
+4.9,"gnl|BL_ORD_ID|193 gi|593773806|ref|NC_023688.1| Aeromonas phage PX29, complete genome",222006,17.0,0.271322,20,36,5020,5004
+5.2,"gnl|BL_ORD_ID|1546 ENA|JN797796|JN797796.1 Bacillus phage B5S, complete genome. [29-AUG-2014]",162598,17.0,0.246656,13,29,48724,48708
+5.2,"gnl|BL_ORD_ID|80 gi|408905858|ref|NC_018863.1| Bacillus phage B4, complete genome",162596,17.0,0.246656,13,29,48669,48653
+5.20,"gnl|BL_ORD_ID|2718 ENA|JN849462|JN849462.1 Vibriophage phi-pp2, complete genome. [28-FEB-2015]",246421,19.0,0.0173776,11,29,169458,169440
+5.20,"gnl|BL_ORD_ID|731 gi|91214232|ref|NC_005083.2| Vibrio phage KVP40, complete genome",244834,19.0,0.0173776,11,29,168219,168201
+5.20,"gnl|BL_ORD_ID|2564 ENA|KJ019084|KJ019084.1 Synechococcus phage ACG-2014a isolate Syn7803US123, complete genome. [12-APR-2015]",171183,17.0,0.271322,8,28,10248,10268
+5.20,"gnl|BL_ORD_ID|2563 ENA|KJ019081|KJ019081.1 Synechococcus phage ACG-2014a isolate Syn7803US117, complete genome. [12-APR-2015]",171192,17.0,0.271322,8,28,10248,10268
+5.20,"gnl|BL_ORD_ID|2562 ENA|KJ019076|KJ019076.1 Synechococcus phage ACG-2014a isolate Syn7803US112, complete genome. [12-APR-2015]",172372,17.0,0.271322,8,28,10248,10268
+5.20,"gnl|BL_ORD_ID|2561 ENA|KJ019068|KJ019068.1 Synechococcus phage ACG-2014a isolate Syn7803US102, complete genome. [12-APR-2015]",171231,17.0,0.271322,8,28,10248,10268
+5.20,"gnl|BL_ORD_ID|2560 ENA|KJ019067|KJ019067.1 Synechococcus phage ACG-2014a isolate Syn7803US101, complete genome. [12-APR-2015]",171192,17.0,0.271322,8,28,10248,10268
+5.20,"gnl|BL_ORD_ID|2559 ENA|KJ019122|KJ019122.1 Synechococcus phage ACG-2014a isolate Syn7803US79, complete genome. [12-APR-2015]",171285,17.0,0.271322,8,28,10248,10268
+5.20,"gnl|BL_ORD_ID|2558 ENA|KJ019116|KJ019116.1 Synechococcus phage ACG-2014a isolate Syn7803US62, complete genome. [12-APR-2015]",170403,17.0,0.271322,8,28,10248,10268
+5.20,"gnl|BL_ORD_ID|2557 ENA|KJ019114|KJ019114.1 Synechococcus phage ACG-2014a isolate Syn7803US60, complete genome. [12-APR-2015]",171192,17.0,0.271322,8,28,10248,10268
+5.20,"gnl|BL_ORD_ID|2556 ENA|KJ019087|KJ019087.1 Synechococcus phage ACG-2014a isolate Syn7803US19, complete genome. [12-APR-2015]",171238,17.0,0.271322,8,28,10248,10268
+5.20,"gnl|BL_ORD_ID|2555 ENA|KJ019088|KJ019088.1 Synechococcus phage ACG-2014a isolate Syn7803US1, complete genome. [12-APR-2015]",171276,17.0,0.271322,8,28,10242,10262
+5.20,"gnl|BL_ORD_ID|2554 ENA|KJ019138|KJ019138.1 Synechococcus phage ACG-2014a isolate Syn7803C107, complete genome. [12-APR-2015]",171295,17.0,0.271322,8,28,10260,10280
+5.20,"gnl|BL_ORD_ID|2553 ENA|KJ019137|KJ019137.1 Synechococcus phage ACG-2014a isolate Syn7803C104, complete genome. [12-APR-2015]",171289,17.0,0.271322,8,28,10248,10268
+5.20,"gnl|BL_ORD_ID|2552 ENA|KJ019135|KJ019135.1 Synechococcus phage ACG-2014a isolate Syn7803C101, complete genome. [12-APR-2015]",171274,17.0,0.271322,8,28,10248,10268
+5.20,"gnl|BL_ORD_ID|2551 ENA|KJ019065|KJ019065.1 Synechococcus phage ACG-2014a isolate Syn7803C99, complete genome. [12-APR-2015]",171179,17.0,0.271322,8,28,10248,10268
+5.20,"gnl|BL_ORD_ID|2550 ENA|KJ019055|KJ019055.1 Synechococcus phage ACG-2014a isolate Syn7803C86, complete genome. [12-APR-2015]",171294,17.0,0.271322,8,28,10248,10268
+5.20,"gnl|BL_ORD_ID|2549 ENA|KJ019039|KJ019039.1 Synechococcus phage ACG-2014a isolate Syn7803C60, complete genome. [12-APR-2015]",171296,17.0,0.271322,8,28,10248,10268
+5.20,"gnl|BL_ORD_ID|2548 ENA|KJ019038|KJ019038.1 Synechococcus phage ACG-2014a isolate Syn7803C59, complete genome. [12-APR-2015]",171073,17.0,0.271322,8,28,10248,10268
+5.20,"gnl|BL_ORD_ID|2547 ENA|KJ019033|KJ019033.1 Synechococcus phage ACG-2014a isolate Syn7803C53, complete genome. [12-APR-2015]",171035,17.0,0.271322,8,28,10248,10268
+5.20,"gnl|BL_ORD_ID|2546 ENA|KJ019030|KJ019030.1 Synechococcus phage ACG-2014a isolate Syn7803C47, complete genome. [12-APR-2015]",171279,17.0,0.271322,8,28,10248,10268
+5.20,"gnl|BL_ORD_ID|2545 ENA|KJ019026|KJ019026.1 Synechococcus phage ACG-2014a isolate Syn7803C42, complete genome. [12-APR-2015]",171282,17.0,0.271322,8,28,10254,10274
+5.20,"gnl|BL_ORD_ID|2544 ENA|KJ019163|KJ019163.1 Synechococcus phage ACG-2014a isolate Syn7803C38, complete genome. [12-APR-2015]",171179,17.0,0.271322,8,28,10248,10268
+5.20,"gnl|BL_ORD_ID|2543 ENA|KJ019157|KJ019157.1 Synechococcus phage ACG-2014a isolate Syn7803C31, complete genome. [12-APR-2015]",171292,17.0,0.271322,8,28,10343,10363
+5.20,"gnl|BL_ORD_ID|2542 ENA|KJ019153|KJ019153.1 Synechococcus phage ACG-2014a isolate Syn7803C26, complete genome. [12-APR-2015]",171166,17.0,0.271322,8,28,10248,10268
+5.20,"gnl|BL_ORD_ID|1159 gi|358356482|ref|NC_016163.1| Yersinia phage phiR1-37, complete genome",262391,17.0,0.271322,3,23,11955,11975
+5.20,"gnl|BL_ORD_ID|624 gi|815853630|ref|NC_026925.1| Synechococcus phage ACG-2014a isolate Syn7803C33, complete genome",171292,17.0,0.271322,8,28,10248,10268
+5.20,"gnl|BL_ORD_ID|518 gi|28876145|ref|NC_004584.1| Streptococcus prophage 315.1, complete genome",39538,17.0,0.271322,12,32,25410,25430
+5.20,"gnl|BL_ORD_ID|376 gi|589891555|ref|NC_023584.1| Synechococcus phage S-MbCM100, complete genome",170438,17.0,0.271322,8,28,11044,11064
+5.21,"gnl|BL_ORD_ID|1616 ENA|FR823450|FR823450.1 Campylobacter phage CP81, complete genome [28-FEB-2015]",132454,19.0,0.0236963,15,37,123303,123325
+5.21,"gnl|BL_ORD_ID|1615 ENA|KF148616|KF148616.1 Campylobacter phage CP8, complete genome. [28-FEB-2015]",132667,19.0,0.0236963,15,37,5406,5384
+5.21,"gnl|BL_ORD_ID|1206 gi|408905856|ref|NC_018861.1| Campylobacter phage CP30A, complete genome",133572,19.0,0.0236963,15,37,52630,52608
+5.21,"gnl|BL_ORD_ID|1165 gi|371670910|ref|NC_016562.1| Campylobacter phage CPX, complete genome",132662,19.0,0.0236963,15,37,5173,5151
+5.21,"gnl|BL_ORD_ID|777 gi|312281379|ref|NC_006883.2| Prochlorococcus phage P-SSM2, complete genome",252401,19.0,0.0236963,1,19,176324,176306
+5.21,"gnl|BL_ORD_ID|964 gi|194186868|ref|NC_011048.1| Bacillus phage phi29, complete genome",19282,18.0,0.093633,8,25,6103,6086
+5.23,"gnl|BL_ORD_ID|1573 ENA|KC595513|KC595513.2 Bacillus phage Shanette, complete genome. [21-NOV-2014]",138877,17.0,0.271322,2,22,133762,133742
+5.23,"gnl|BL_ORD_ID|1564 ENA|KC595512|KC595512.2 Bacillus phage JL, complete genome. [21-NOV-2014]",137918,17.0,0.271322,2,22,132805,132785
+5.3,"gnl|BL_ORD_ID|1046 gi|254729462|ref|NC_013021.1| Cyanophage PSS2, complete genome",107530,17.0,0.283655,15,31,34481,34497
+5.4,"gnl|BL_ORD_ID|1616 ENA|FR823450|FR823450.1 Campylobacter phage CP81, complete genome [28-FEB-2015]",132454,17.0,0.271322,9,29,84170,84190
+5.4,"gnl|BL_ORD_ID|1615 ENA|KF148616|KF148616.1 Campylobacter phage CP8, complete genome. [28-FEB-2015]",132667,17.0,0.271322,9,29,44538,44518
+5.4,"gnl|BL_ORD_ID|1206 gi|408905856|ref|NC_018861.1| Campylobacter phage CP30A, complete genome",133572,17.0,0.271322,9,29,93004,92984
+5.4,"gnl|BL_ORD_ID|1165 gi|371670910|ref|NC_016562.1| Campylobacter phage CPX, complete genome",132662,17.0,0.271322,9,29,44304,44284
+5.4,"gnl|BL_ORD_ID|1140 gi|332672312|ref|NC_015464.1| Campylobacter phage NCTC12673, complete genome",135041,17.0,0.271322,9,29,91367,91347
+5.5,"gnl|BL_ORD_ID|294 gi|460042436|ref|NC_020484.1| Pelagibacter phage HTVC008M, complete genome",147284,17.0,0.246656,17,33,101699,101683
+5.6,"gnl|BL_ORD_ID|1264 gi|408905830|ref|NC_018835.1| Enterobacteria phage NJ01, complete genome",77448,18.0,0.106117,34,51,59310,59327
+5.6,"gnl|BL_ORD_ID|937 gi|167583555|ref|NC_010324.1| Enterobacteria phage phiEco32, complete genome",77554,18.0,0.106117,34,51,52468,52485
+6.10,"gnl|BL_ORD_ID|1910 ENA|AB609718|AB609718.1 Enterococcus phage phiEF24C-P2 DNA, complete genome. [29-AUG-2014]",142072,19.0,0.0157978,3,25,59759,59781
+6.10,"gnl|BL_ORD_ID|1909 ENA|AP009390|AP009390.1 Enterococcus phage phiEF24C DNA, complete genome. [28-FEB-2015]",142072,19.0,0.0157978,3,25,59759,59781
+6.10,"gnl|BL_ORD_ID|1907 ENA|KR049063|KR049063.1 Enterococcus phage EFLK1, complete genome. [19-APR-2015]",130952,19.0,0.0157978,3,25,67902,67880
+6.10,"gnl|BL_ORD_ID|1905 ENA|KJ801817|KJ801817.1 Enterococcus phage ECP3, complete genome. [28-FEB-2015]",145518,19.0,0.0157978,3,25,32928,32906
+6.10,"gnl|BL_ORD_ID|927 gi|158079296|ref|NC_009904.1| Enterococcus phage phiEF24C, complete genome",142072,19.0,0.0157978,3,25,59759,59781
+6.2,"gnl|BL_ORD_ID|223 gi|593777468|ref|NC_023719.1| Bacillus phage G, complete genome",497513,23.0,7.4525e-05,8,34,196877,196903
+6.2,"gnl|BL_ORD_ID|1371 gi|197322500|ref|NC_009811.2| Listeria phage A511, complete genome",137619,17.0,0.283655,5,25,131513,131533
+6.4,"gnl|BL_ORD_ID|1031 gi|229604924|ref|NC_012662.1| Vibrio phage VP93, complete genome",43931,17.0,0.295988,18,38,11951,11931
+6.8,"gnl|BL_ORD_ID|2526 ENA|KP208803|KP208803.1 Streptococcus phage Str-PAP-1, complete genome. [19-JAN-2015]",36595,18.0,0.0655441,18,35,16563,16546
+6.8,"gnl|BL_ORD_ID|970 gi|195546530|ref|NC_011103.1| Rhizobium phage 16-3, complete genome",60195,17.0,0.258989,13,29,59450,59434
+7.1,"gnl|BL_ORD_ID|2245 ENA|KC595514|KC595514.1 Paenibacillus phage Jimmer2, complete genome. [21-NOV-2014]",54312,18.0,0.127965,16,33,11956,11939
+7.1,"gnl|BL_ORD_ID|2244 ENA|KC595515|KC595515.1 Paenibacillus phage Jimmer1, complete genome. [21-NOV-2014]",54312,18.0,0.127965,16,33,11956,11939
+7.1,"gnl|BL_ORD_ID|1961 ENA|KJ018210|KJ018210.1 Flavobacterium sp. phage 1/32, complete genome. [28-FEB-2015]",42252,18.0,0.127965,8,25,20343,20360
+8.11,"gnl|BL_ORD_ID|1925 ENA|KP869104|KP869104.1 Escherichia coli O157 typing phage 6, complete genome. [30-APR-2015]",160570,17.0,0.271322,10,26,120252,120236
+8.11,"gnl|BL_ORD_ID|1923 ENA|KP869101|KP869101.1 Escherichia coli O157 typing phage 3, complete genome. [30-APR-2015]",168733,17.0,0.271322,10,26,40309,40325
+8.11,"gnl|BL_ORD_ID|1889 ENA|KP007359|KP007359.1 Enterobacteria phage vB_EcoM_VR5, complete genome. [28-FEB-2015]",170473,17.0,0.271322,10,26,106943,106927
+8.11,"gnl|BL_ORD_ID|1640 ENA|KM236241|KM236241.1 Citrobacter phage Stevie, complete genome. [28-FEB-2015]",49816,17.0,0.271322,16,36,20462,20442
+8.11,"gnl|BL_ORD_ID|1538 ENA|KM672662|KM672662.1 Acinetobacter phage YMC13/03/R2096, complete genome. [28-FEB-2015]",98170,17.0,0.271322,16,32,94292,94276
+8.11,"gnl|BL_ORD_ID|1265 gi|408905850|ref|NC_018855.1| Enterobacteria phage HX01, complete genome",169158,17.0,0.271322,10,26,164175,164191
+8.11,"gnl|BL_ORD_ID|779 gi|32453484|ref|NC_004928.1| Enterobacteria phage RB69, complete genome",167560,17.0,0.271322,10,26,111608,111592
+8.11,"gnl|BL_ORD_ID|389 gi|682124280|ref|NC_024794.1| Escherichia phage vB_EcoM_PhAPEC2, complete genome",167318,17.0,0.271322,10,26,110572,110556
+8.13,"gnl|BL_ORD_ID|835 gi|388570360|ref|NC_017969.1| Escherichia phage bV_EcoS_AKFV33, complete genome",108853,17.0,0.246656,6,26,102550,102530
+8.14,"gnl|BL_ORD_ID|2753 ENA|KF208315|KF208315.1 Yersinia phage PST, complete genome. [28-FEB-2015]",167785,17.0,0.271322,1,17,76942,76926
+8.14,gnl|BL_ORD_ID|2748 ENA|HE956711|HE956711.1 Yersinia phage phiD1 complete genome [28-FEB-2015],167063,17.0,0.271322,1,17,78270,78254
+8.14,"gnl|BL_ORD_ID|1875 ENA|KM607001|KM607001.1 Enterobacteria phage RB33, complete genome. [28-FEB-2015]",166007,17.0,0.271322,1,17,78388,78372
+8.14,"gnl|BL_ORD_ID|1874 ENA|KM606999|KM606999.1 Enterobacteria phage RB10, complete genome. [28-FEB-2015]",168401,17.0,0.271322,1,17,76177,76161
+8.14,"gnl|BL_ORD_ID|1873 ENA|KM606998|KM606998.1 Enterobacteria phage RB9, complete genome. [28-FEB-2015]",168395,17.0,0.271322,1,17,76171,76155
+8.14,"gnl|BL_ORD_ID|1872 ENA|KM606997|KM606997.1 Enterobacteria phage RB7, complete genome. [28-FEB-2015]",168395,17.0,0.271322,1,17,76171,76155
+8.14,"gnl|BL_ORD_ID|1871 ENA|KM606996|KM606996.1 Enterobacteria phage RB6, complete genome. [28-FEB-2015]",168394,17.0,0.271322,1,17,76170,76154
+8.14,"gnl|BL_ORD_ID|1870 ENA|KM606995|KM606995.1 Enterobacteria phage RB5, complete genome. [28-FEB-2015]",168394,17.0,0.271322,1,17,76170,76154
+8.14,"gnl|BL_ORD_ID|1693 ENA|AP011113|AP011113.1 Enterobacteria phage AR1 DNA, complete genome. [28-FEB-2015]",167435,17.0,0.271322,1,17,77977,77961
+8.14,"gnl|BL_ORD_ID|1358 gi|116326222|ref|NC_008515.1| Bacteriophage RB32, complete genome",165890,17.0,0.271322,1,17,78269,78253
+8.14,"gnl|BL_ORD_ID|1241 gi|422934783|ref|NC_019505.1| Escherichia phage wV7, complete genome",166452,17.0,0.271322,1,17,77763,77747
+8.14,"gnl|BL_ORD_ID|1209 gi|414086362|ref|NC_019399.1| Enterobacteria phage vB_EcoM_ACG-C40, complete genome",167396,17.0,0.271322,1,17,78363,78347
+8.14,"gnl|BL_ORD_ID|495 gi|713322590|ref|NC_025448.1| Enterobacteria phage RB27, complete genome",165179,17.0,0.271322,1,17,76550,76534
+8.14,"gnl|BL_ORD_ID|493 gi|713322302|ref|NC_025419.1| Enterobacteria phage RB3, complete genome",168402,17.0,0.271322,1,17,76178,76162
+8.14,"gnl|BL_ORD_ID|439 gi|712914839|ref|NC_025449.1| Escherichia phage ECML-134, complete genome",166783,17.0,0.271322,1,17,77708,77692
+8.2,"gnl|BL_ORD_ID|1616 ENA|FR823450|FR823450.1 Campylobacter phage CP81, complete genome [28-FEB-2015]",132454,18.0,0.0717864,1,22,43420,43399
+8.2,"gnl|BL_ORD_ID|1615 ENA|KF148616|KF148616.1 Campylobacter phage CP8, complete genome. [28-FEB-2015]",132667,18.0,0.0717864,1,22,84911,84932
+8.2,"gnl|BL_ORD_ID|1206 gi|408905856|ref|NC_018861.1| Campylobacter phage CP30A, complete genome",133572,18.0,0.0717864,1,22,132154,132175
+8.2,"gnl|BL_ORD_ID|1165 gi|371670910|ref|NC_016562.1| Campylobacter phage CPX, complete genome",132662,18.0,0.0717864,1,22,84675,84696
+8.2,"gnl|BL_ORD_ID|1140 gi|332672312|ref|NC_015464.1| Campylobacter phage NCTC12673, complete genome",135041,18.0,0.0717864,1,22,130125,130146
+8.2,"gnl|BL_ORD_ID|223 gi|593777468|ref|NC_023719.1| Bacillus phage G, complete genome",497513,17.0,0.283655,3,19,297569,297553
+8.4,"gnl|BL_ORD_ID|223 gi|593777468|ref|NC_023719.1| Bacillus phage G, complete genome",497513,18.0,0.062423,18,35,213224,213241
+8.7,"gnl|BL_ORD_ID|373 gi|658310315|ref|NC_024355.1| Staphylococcus phage 6ec, complete genome",93794,18.0,0.0655441,11,28,79188,79171
+8.7,"gnl|BL_ORD_ID|223 gi|593777468|ref|NC_023719.1| Bacillus phage G, complete genome",497513,17.0,0.258989,14,34,296090,296070
+9.1,"gnl|BL_ORD_ID|3068 Arthrobacter phage Gordon complete sequence, 58279 bp including 9 bp 3' overhang (CGCCGGCCT)",58279,18.0,0.121723,33,50,9008,9025
+9.1,"gnl|BL_ORD_ID|2891 Arthrobacter phage CapnMurica complete sequence, 58159 bp including 9 bp 3' overhang (CGCCGGCCT)",58159,18.0,0.121723,33,50,8972,8989
