@@ -16,9 +16,11 @@ blast+
 from Bio.Blast.Applications import NcbiblastnCommandline
 #help(NcbiblastnCommandline)
 import os
+import sys
+directory = sys.argv[-1]	#first argument input after 'python BLAST_loop.py' in command line will be stored in variable 'directory'
 
 #change this directory as needed. Note that local blast may experience issues if you're not working in the blast directory (here NCBI/blast-2.2.30+)
-directory = "C:/Users/madeleine/Documents/NCBI/phageParser/data"
+#directory = "C:/Users/madeleine/Documents/NCBI/phageParser/data"
 
 for fn in os.listdir("%s/spacers" %directory):
     
