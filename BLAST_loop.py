@@ -1,4 +1,17 @@
-# This script BLASTs all the files in /spacers against a downloaded copy of the phage database.
+"""
+This script BLASTs all the files in /spacers against a downloaded copy of the phage database.
+
+USAGE:
+Change directory to one folder above the /spacers directory
+python BLAST_loop.py
+
+where:
+/spacers is a directory containing files with a list of CRISPR spacers
+
+DEPENDENCIES:
+Biopython
+blast+
+"""
 
 from Bio.Blast.Applications import NcbiblastnCommandline
 #help(NcbiblastnCommandline)
