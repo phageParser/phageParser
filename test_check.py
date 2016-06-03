@@ -2,12 +2,12 @@
 Test that decorator can verify genome is downloaded
 and up-to-date
 '''
-from check import file_check
+from check import genome_check
 from datetime import datetime
 import os
 
 
-@file_check
+@genome_check
 def print_date(*args, **kwargs):
     '''
     print datetime after decorator
