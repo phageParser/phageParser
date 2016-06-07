@@ -30,7 +30,7 @@ seq = [l.strip() for l in sys.stdin if l.strip()]
 seq = ''.join(seq)
 
 #builds command line string 
-tblastn_obj = NcbitblastnCommandline(cmd = 'tblastn', query=seq, subject=genome.read(), 
+tblastn_obj = NcbitblastnCommandline(cmd = 'tblastn', query=seq, subject=genome, 
                                      evalue=10, outfmt = 5)
 
 tblastn_cline = str(tblastn_obj) 
