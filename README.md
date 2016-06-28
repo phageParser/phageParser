@@ -30,7 +30,19 @@ We need many different skills and areas of expertise to build this tool, and you
 
 ## About the CRISPR system
 
-Interestingly, a mechanism for “adaptive” immune system in bacteria against the viruses infecting them (usually referred to as phages) was discovered just a few years ago, called CRISPR-Cas. Curiously, much like the anti-virus software and intrusion detection systems that rely on detecting patterns found in malicious code, bacteria keeps a dynamic library of small pieces of phage genomes (spacers) to detect and neutralize phage attacks.  
+**C**lustered **R**egularly **I**nter-spaced **S**hort **P**alindromic **R**epeats (CRISPR), and associated proteins (Cas) are part of the CRISPR-Cas system in bacteria. First observed in 1987 (Ishino et al., 1987), the CRISPR system acts like the immune system for bacteria.
+
+In humans, when a virus enters the body, specialized immune cells are often quick to recognize the foreign pathogen and kill it. Bacteria do not have the benefit of a legion of cells to protect them against viruses, so they use the CRISPR-Cas mechanism that begins with the creation of *spacer* sequences from the invading virus' genetic material followed by the production of small interfering crRNAs. Finally, when the bacterium is invaded again, it uses the crRNAs to target the viral nucleic acid and prevent infection. 
+
+The spacers acquired are always flanked by bacterial DNA forming a library of small pieces of phage genomes from which to form crRNAs to target future viral genetic material (see Figure below). 
+![alt text](https://github.com/goyalsid/phageParser/blob/master/CRISPR_locus_diagram.png?raw=true "CRISPR Locus")
+
+Amazingly, even though this process is not entirely common, when it does happen, the bacteria are essentially vaccinated against future attacks and can pass on their phage genome libraries to future generations.
+
+However, more research is still needed to better understand the mechanisms that make this process possible. 
+
+*Ishino, Y., Shinagawa, H., Makino, K., Amemura, M., and Nakata, A. (1987). Nucleotide sequence of the iap gene, responsible for alkaline phosphatase isozyme conversion in Escherichia coli, and identification of the gene product. J. Bacteriol. 169, 5429–5433.
+
 
 ##Relevant Literature
 
