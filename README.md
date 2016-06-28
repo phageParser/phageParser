@@ -30,16 +30,16 @@ We need many different skills and areas of expertise to build this tool, and you
 
 ## About the CRISPR system
 
-**C**lustered **R**egularly **I**nter-spaced **S**hort **P**alindromic **R**epeats (CRISPR), and associated proteins (Cas) are part of the CRISPR-Cas system in bacteria. First observed in 1987 (Ishino et al., 1987), the CRISPR system acts like the immune system for bacteria.
+**C**lustered **R**egularly **I**nterspaced **S**hort **P**alindromic **R**epeats (CRISPR), and associated proteins (Cas) are part of the CRISPR-Cas system in bacteria. First observed in 1987 (Ishino et al., 1987), the CRISPR system is an adaptive immune system for bacteria.
 
 In humans, when a virus enters the body, specialized immune cells are often quick to recognize the foreign pathogen and kill it. Bacteria do not have the benefit of a legion of cells to protect them against viruses, so they use the CRISPR-Cas mechanism that begins with the creation of *spacer* sequences from the invading virus' genetic material followed by the production of small interfering crRNAs. Finally, when the bacterium is invaded again, it uses the crRNAs to target the viral nucleic acid and prevent infection. 
 
 The spacers acquired are always flanked by bacterial DNA forming a library of small pieces of phage genomes from which to form crRNAs to target future viral genetic material (see Figure below). 
 ![alt text](https://github.com/goyalsid/phageParser/blob/master/CRISPR_locus_diagram.png?raw=true "CRISPR Locus")
 
-Amazingly, even though this process is not entirely common, when it does happen, the bacteria are essentially vaccinated against future attacks and can pass on their phage genome libraries to future generations.
+Amazingly, after acquiring a spacer the bacteria are essentially vaccinated against future attacks and can pass on their phage libraries to future generations.
 
-However, more research is still needed to better understand the mechanisms that make this process possible. 
+However, more research is needed to better understand the mechanisms that make this process possible, and to understand how microorganisms use their CRISPR systems in nature.
 
 *Ishino, Y., Shinagawa, H., Makino, K., Amemura, M., and Nakata, A. (1987). Nucleotide sequence of the iap gene, responsible for alkaline phosphatase isozyme conversion in Escherichia coli, and identification of the gene product. J. Bacteriol. 169, 5429–5433.
 
