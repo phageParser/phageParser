@@ -22,9 +22,3 @@ class PhageFinder:
                 if 'True' in row[self.EXIST_IN_GENBANK]:
                     return row[self.ACCESSION]
         return -1
-
-
-
-
-
-
