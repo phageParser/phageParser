@@ -28,6 +28,7 @@ We need many different skills and areas of expertise to build this tool, and you
 * Are you interested in contributing to project documentation? Any issues labeled [documentation](https://github.com/goyalsid/phageParser/issues?q=is%3Aissue+is%3Aopen+label%3Adocumentation) are ways to create or improve our docs. 
 * Do you know about databases? We're just starting to think about how to structure our data - join the discussion in issue #64.
 * Do you know about Python and/or developing code? Check out our [code](https://github.com/goyalsid/phageParser/labels/code)-specific issues.
+* Check out our [code of conduct](https://github.com/goyalsid/phageParser/blob/master/CODE-OF-CONDUCT.md) which applies to all maintainers and contributors to this project.
 
 ## About the CRISPR system
 
