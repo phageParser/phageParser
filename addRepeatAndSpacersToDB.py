@@ -58,8 +58,8 @@ def populateDB(dbName, tableName, fileName):
 		SQL_add(d, tableName, dbName)
 
 
-repeatFile = 'DRdatabase'
-spacerFile = 'Spacerdatabase'
+repeatFile = 'data/DRdatabase.txt'
+spacerFile = 'data/Spacerdatabase.txt'
 dbName = 'crispr.sqlite'
 
 populateDB(dbName, 'Repeat', repeatFile)
