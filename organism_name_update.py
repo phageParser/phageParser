@@ -1,18 +1,16 @@
 #!/usr/bin/env python
 
-# TODO: Connect this to database!
-
-"""Fetch GenBank names for given accessions.
+""" Determine accession numbers in Organism table with missing names. 
+Fetch GenBank information for these accession numbers.
+Fill in missing names from GenBank information.
 
 Adapted from bac_info.py and acc2gb.py
 
 USAGE:
-cat <file> | python acc2gb.py <email> > <output>
+python organism_name_update.py <email> 
 
 where:
-<file> is the name of a file containing accession numbers to download
 <email> is the email address associated with your NCBI account
-<output> is the name of the file you'd like to write the results to
 
 DEPENDENCIES:
 Biopython
@@ -21,11 +19,29 @@ Biopython
 import sys
 from Bio import Entrez
 from Bio.SeqIO import parse
+import sqlite3
+
+sqlite_file = 'crispr.sqlite'
+
+
+conn = sqlite3.connect(sqlite_file)
+c = conn.cursor()
 
 
 #define email for entrez login
 db           = "nuccore"
 Entrez.email = sys.argv[1]
+
+
+
+def missing_names(sqlite_file):
+	'''
+	Check for and return accession numbers in Organism table that don't have names
+	'''
+	c.execute("SELECT  Accession FROM Organism WHERE OrganismName IS NULL")
+	id_list = c.fetchall()
+	return id_list
+
 
 def fetch_names(id_list):
     organism_names = {}
@@ -47,8 +63,18 @@ def fetch_names(id_list):
 
     return organism_names
 
+def insert_names(organism_names):
+	for key in organism_names.keys():
+		c.execute("UPDATE Organism SET OrganismName=({name}) WHERE Accession=({acc})".\
+    	    format(name=organism_names[key], acc=key))	
 
-#get accession numbers out of stdin
-accession_numbers = [ l.strip() for l in sys.stdin if l.strip() ]
 
-print(fetch_names(accession_numbers))
+id_list = missing_names(sqlite_file)
+organism_names = fetch_names(id_list)
+insert_names(organism_names)
+
+
+conn.commit()
+conn.close()
+
+
