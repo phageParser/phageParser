@@ -7,7 +7,7 @@ Fill in missing names from GenBank information.
 Adapted from bac_info.py and acc2gb.py
 
 USAGE:
-python organism_name_update.py <email> 
+python organism_name_update.py <email> database.sqlite
 
 where:
 <email> is the email address associated with your NCBI account
@@ -21,10 +21,11 @@ from Bio import Entrez
 from Bio.SeqIO import parse
 import sqlite3
 
-sqlite_file = 'crispr.sqlite'
+sqlite_file = sys.argv[2]
 
 
 conn = sqlite3.connect(sqlite_file)
+conn.row_factory = lambda cursor, row: row[0]
 c = conn.cursor()
 
 
