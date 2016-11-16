@@ -66,8 +66,8 @@ def fetch_names(id_list):
 
 def insert_names(organism_names):
 	for key in organism_names.keys():
-		c.execute("UPDATE Organism SET OrganismName=({name}) WHERE Accession=({acc})".\
-    	    format(name=organism_names[key], acc=key))	
+		c.execute('UPDATE Organism SET OrganismName=? WHERE Accession=?', [organism_names[key], key])
+        print key + ': ' organism_names[key] 
 
 
 id_list = missing_names(sqlite_file)
