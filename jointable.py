@@ -1,21 +1,15 @@
 #!/usr/bin/python
 import sqlite3
 
-# THIS file will parse in two files named 'DRdatabase' and 'Spacerdatabase', 
-# and populate the 'crispr.sqlite' file tables Spacers and Repeats, as per 
-# ISSUE #99 https://github.com/goyalsid/phageParser/issues/99
-
 def printDict(d):
 	for i in d:
 		print i,d[i]
 
-
-
-def SQL_add(elem, name, dbName, columns):
+def SQL_add(elem, name, columns, dbName):
 	conn = sqlite3.connect(dbName)
 	c = conn.cursor()
 	q = "INSERT INTO " + str(name) + " " + columns + " VALUES "+ elem+""
-	#print q
+	# print q
 	try:
 		c.execute(q)
 		conn.commit()
@@ -29,7 +23,7 @@ def SQL_search(elem, name, column, dbName):
 	conn = sqlite3.connect(dbName)
 	c = conn.cursor()
 	q = "SELECT * FROM " + name + " " + " WHERE " + column + " = '" + elem + "'"
-	#print q
+	# print q
 	c.execute(q)
 	r = c.fetchone()
 	c.close()
@@ -48,6 +42,13 @@ def readRepeatFile(filename):
 			out_dict[acc] = entry[1].replace('\n', '')
 	return out_dict
 
+def getIdAndAdd(elem, name, column, dbName):
+	item_id =  SQL_search(elem, name, column, dbName)
+	if(item_id is None):
+		SQL_add(elem, name, columns, dbName)
+		item_id =  SQL_search(elem, name, column, dbName)
+	return item_id[0]
+
 
 def match_repeat_to_spacer(repeat_data, spacer_file_name, dbName):
 	spacer_file = open(spacer_file_name,'r').readlines()
@@ -59,14 +60,14 @@ def match_repeat_to_spacer(repeat_data, spacer_file_name, dbName):
 		#print entry[1]
 		for acc in accessions:
 			acc_match = "_".join(acc.split("_")[:-1])
-			spacer_id =  SQL_search(sequence, 'Spacer', 'SpacerSequence', dbName)[0]
-			repeat_id =  SQL_search(repeat_data[acc_match], 'Repeat', 'RepeatSequence', dbName)[0]
+			spacer_id =  getIdAndAdd("('"+sequence+"')", 'Spacer', '(SpacerSequence)', dbName)
+			repeat_id =  getIdAndAdd("('"+repeat_data[acc_match]+"')", 'Repeat', '(RepeatSequence)', dbName)
 			try:
 				match = repeat_data[acc_match]
 				acc
 			except KeyError:
 				print "Error: Wrong Accession code"	
-			SQL_add(str((spacer_id,repeat_id)), 'SpacerRepeatPair', dbName, '(SpacerID, RepeatID)')		
+			getIdAndAdd(str((spacer_id,repeat_id)), 'SpacerRepeatPair', '(SpacerID, RepeatID)', dbName)
 
 
 spacerFile = 'data/Spacerdatabase.txt'
