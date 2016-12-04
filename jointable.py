@@ -8,7 +8,11 @@ def printDict(d):
 def SQL_add(elem, name, columns, dbName):
 	conn = sqlite3.connect(dbName)
 	c = conn.cursor()
-	q = "INSERT INTO " + str(name) + " " + columns + " VALUES "+ elem+""
+	if(type(elem) is list):
+		# It is assumed that the length of list and of columns will always match
+		q = "INSERT INTO " + str(name) + " (" + ",".join(columns) + ") VALUES ('"+ "','".join(elem) + "')"
+	else:
+		q = "INSERT INTO " + str(name) + columns + " VALUES " + elem
 	# print q
 	try:
 		c.execute(q)
@@ -22,8 +26,15 @@ def SQL_add(elem, name, columns, dbName):
 def SQL_search(elem, name, column, dbName):
 	conn = sqlite3.connect(dbName)
 	c = conn.cursor()
-	q = "SELECT * FROM " + name + " " + " WHERE " + column + " = '" + elem + "'"
-	# print q
+	if(type(elem) is list):
+		# It is assumed that the length of list and of columns will always match
+		q = "SELECT * FROM " + name + " " + " WHERE "
+		for i in range(0, len(elem)):
+			q += str(column[i]) + " = " + str(elem[i]) + " and "
+		q = q[:-5]
+	else:
+		q = "SELECT * FROM " + name + " " + " WHERE " + column + " = " + elem
+	print q
 	c.execute(q)
 	r = c.fetchone()
 	c.close()
@@ -45,7 +56,7 @@ def readRepeatFile(filename):
 def getIdAndAdd(elem, name, column, dbName):
 	item_id =  SQL_search(elem, name, column, dbName)
 	if(item_id is None):
-		SQL_add(elem, name, columns, dbName)
+		SQL_add(elem, name, column, dbName)
 		item_id =  SQL_search(elem, name, column, dbName)
 	return item_id[0]
 
@@ -67,7 +78,7 @@ def match_repeat_to_spacer(repeat_data, spacer_file_name, dbName):
 				acc
 			except KeyError:
 				print "Error: Wrong Accession code"	
-			getIdAndAdd(str((spacer_id,repeat_id)), 'SpacerRepeatPair', '(SpacerID, RepeatID)', dbName)
+			getIdAndAdd([str(spacer_id),str(repeat_id)], 'SpacerRepeatPair', ['SpacerID', 'RepeatID'], dbName)
 
 
 spacerFile = 'data/Spacerdatabase.txt'
