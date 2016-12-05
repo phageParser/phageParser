@@ -34,7 +34,7 @@ def SQL_search(elem, name, column, dbName):
 		q = q[:-5]
 	else:
 		q = "SELECT * FROM " + name + " " + " WHERE " + column + " = " + elem
-	print q
+	# print q
 	c.execute(q)
 	r = c.fetchone()
 	c.close()
