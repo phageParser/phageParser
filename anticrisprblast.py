@@ -5,7 +5,7 @@ Created on Fri Jun  3 15:18:42 2016
 @author: Ahmed
 
 Given a 
-echo <file> | python phageblast.py <genome> > <output>
+echo <file> | python anticrisprblast.py <genome> > <output>
 where:
 <file> is the name of a fasta file containing protein sequences of the antiCRISPR genes of interest
 <genome> is the name of a file containing the bacterial genome of interest 
