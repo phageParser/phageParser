@@ -11,7 +11,7 @@ Many bacterial and archaeal genomes have been sequenced, and [a large fraction o
 * Spacer self-matches to host genome
 * *cas* gene content and inferred CRISPR type
 
-These annotations will be collected in a database that can be queried through a GUI. Neither of these exist yet, and we are actively looking for contributors. 
+We will collect these annotations in a database that can users can query through a GUI. Neither of these exist yet, and we are looking for contributors! 
 
 This tool is currently in development, and it will always be possible to modify and enhance what is included as CRISPR research moves forward. We welcome suggestions for features or annotations you'd like to see! To suggest a feature, create an issue in our [issue tracker](https://github.com/goyalsid/phageParser/issues).
 
@@ -34,14 +34,15 @@ We need many different skills and areas of expertise to build this tool, and you
 
 **C**lustered **R**egularly **I**nterspaced **S**hort **P**alindromic **R**epeats (CRISPR), and associated proteins (Cas) are part of the CRISPR-Cas system in bacteria. First observed in 1987 (Ishino et al., 1987), the CRISPR system is an adaptive immune system for bacteria.
 
-In humans, when a virus enters the body, specialized immune cells are often quick to recognize the foreign pathogen and kill it. Bacteria do not have the benefit of a legion of cells to protect them against viruses, so they use the CRISPR-Cas mechanism that begins with the creation of *spacer* sequences from the invading virus' genetic material followed by the production of small interfering crRNAs. Finally, when the bacterium is invaded again, it uses the crRNAs to target the viral nucleic acid and prevent infection. 
+When a virus enters a human body, specialized immune cells are often quick to recognize the virus invader and kill it. Bacteria do not have the benefit of millions of immune cells to protect them against viruses, but they have something else: CRISPR-Cas. The CRISPR-Cas immune response begins with the creation of *spacer* sequences from the invading virus' DNA followed by the production of small interfering crRNAs. Finally, when the bacterium is invaded again, the crRNAs recognize and cut the viral DNA, preventing infection.
 
-The spacers acquired are always flanked by bacterial DNA forming a library of small pieces of phage genomes from which to form crRNAs to target future viral genetic material (see Figure below). 
+Bacteria store their acquired spacers in their own DNA. The spacers are flanked by short pieces of bacterial DNA called *repeats* (see figure below).
+
 ![alt text](https://github.com/goyalsid/phageParser/blob/master/CRISPR_locus_diagram.png?raw=true "CRISPR Locus")
 
-Amazingly, after acquiring a spacer the bacteria are essentially vaccinated against future attacks and can pass on their phage libraries to future generations.
+Amazingly, CRISPR-Cas immunity is both *adaptive* and *hereditary*! After acquiring a spacer, bacteria are both protected against future virus attacks and they can pass on their spacer libraries to their descendants.  
 
-However, more research is needed to better understand the mechanisms that make this process possible, and to understand how microorganisms use their CRISPR systems in nature.
+More research is needed to better understand how bacteria use their CRISPR systems in nature.
 
 *Ishino, Y., Shinagawa, H., Makino, K., Amemura, M., and Nakata, A. (1987). Nucleotide sequence of the iap gene, responsible for alkaline phosphatase isozyme conversion in Escherichia coli, and identification of the gene product. J. Bacteriol. 169, 5429–5433.
 
