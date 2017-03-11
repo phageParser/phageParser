@@ -11,7 +11,7 @@ Many bacterial and archaeal genomes have been sequenced, and [a large fraction o
 * Spacer self-matches to host genome
 * *cas* gene content and inferred CRISPR type
 
-We will collect these annotations in a database that can users can query through a GUI. Neither of these exist yet, and we are looking for contributors! 
+We will collect these annotations in a database that can users can query through a GUI (graphical user interface). Neither of these exist yet, and we are looking for contributors! 
 
 This tool is currently in development, and it will always be possible to modify and enhance what is included as CRISPR research moves forward. We welcome suggestions for features or annotations you'd like to see! To suggest a feature, create an issue in our [issue tracker](https://github.com/goyalsid/phageParser/issues).
 
