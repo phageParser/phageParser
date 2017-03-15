@@ -47,11 +47,11 @@ More research is needed to better understand how bacteria use their CRISPR syste
 *Ishino, Y., Shinagawa, H., Makino, K., Amemura, M., and Nakata, A. (1987). Nucleotide sequence of the iap gene, responsible for alkaline phosphatase isozyme conversion in Escherichia coli, and identification of the gene product. J. Bacteriol. 169, 5429–5433.
 
 
-##Relevant Literature
+## Relevant Literature
 
 [CRISPR-Cas Systems: Prokaryotes Upgrade to Adaptive Immunity](http://www.cell.com/molecular-cell/abstract/S1097-2765%2814%2900216-0): a very good review paper on the CRISPR-cas system, the biological backdrop of this project.
 
-##Installation
+## Installation
 
 This package depends on Biopython, which can be installed as follows:
 
@@ -59,11 +59,11 @@ This package depends on Biopython, which can be installed as follows:
 sudo make install-deps
 ```
 
-##Usage
+## Usage
 
 There are several usage options depending on what data outcome is desired.
 
-###Usage - Blast individual bacteria files and get phage info from NCBI
+### Usage - Blast individual bacteria files and get phage info from NCBI
 
  - To get a phage dataset, take a fasta-formatted list of genes (example in [`data/velvet-distinct-spacers.fasta`](data/velvet-distinct-spacers.fasta)) and upload to http://phagesdb.org/blast/ - example result in [`data/blast-phagesdb.txt`](data/blast-phagesdb.txt)
 
@@ -84,7 +84,7 @@ There are several usage options depending on what data outcome is desired.
 ```
  where `accessionNumber.txt` contains a list of accession numbers of interest; results will be dumped to `NCBIresults.txt` - see [#2](https://github.com/goyalsid/phageParser/issues/2) for ongoing development here. 
 
-###Usage - Blasting multiple bacteria files and visualizing interactions
+### Usage - Blasting multiple bacteria files and visualizing interactions
 
 All of the following assumes you are using the reference CRISPR database set of spacers (file `spacerdatabase.txt`). Things *should* work with other spacer files; however there are several things hard-coded that might break. [`filterByExpect.py`](filterByExpect.py) assumes the header line for each spacer is a number, for example, and `bac_name` is hardcoded in [`interactions.py`](interactions.py) as the 8th to 16th characters of the file name.
 
@@ -100,9 +100,9 @@ All of the following assumes you are using the reference CRISPR database set of 
 
 - run [`interactions.py`](interactions.py), which makes a json file `json.txt` for visualization in cytoscape.js. 
 
-Visualization
+### Visualization
 
-####Install Front-End Dependencies (to visualize in browser). 
+#### Install Front-End Dependencies (to visualize in browser). 
 - Install [node.js](https://nodejs.org/). Installing node will also install the node package manager (NPM).
 
 - Install [bower](bower.io) 
@@ -111,7 +111,7 @@ Visualization
 
 - paste the file `index.html` into a web browser. 
 
-###Usage - Detecting CRISPR type from bacterial genome metadata
+### Usage - Detecting CRISPR type from bacterial genome metadata
 
 - Start with a list of bacteria of interest - in this case, it's all the bacteria from CRISPRdb that had hits to a conglomerate of phage databases - `bac_accession_list.txt`. 
 
