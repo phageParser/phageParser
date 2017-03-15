@@ -81,7 +81,7 @@ def match_repeat_to_spacer(repeat_data, spacer_file_name, dbName):
 			getIdAndAdd([str(spacer_id),str(repeat_id)], 'SpacerRepeatPair', ['SpacerID', 'RepeatID'], dbName)
 
 
-spacerFile = 'data/Spacerdatabase.txt'
+spacerFile = 'data/spacerdatabase.txt'
 repeatFile = 'data/DRdatabase.txt'
 dbName = 'crispr.sqlite'
 repeat_dict = readRepeatFile(repeatFile)

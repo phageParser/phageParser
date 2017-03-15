@@ -59,7 +59,7 @@ def populateDB(dbName, tableName, fileName):
 
 
 repeatFile = 'data/DRdatabase.txt'
-spacerFile = 'data/Spacerdatabase.txt'
+spacerFile = 'data/spacerdatabase.txt'
 dbName = 'crispr.sqlite'
 
 populateDB(dbName, 'Repeat', repeatFile)
