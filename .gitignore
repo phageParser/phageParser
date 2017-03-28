@@ -5,6 +5,6 @@ output/*
 *.egg
 pep8_report.txt
 *vsdx
-
 # front-end dependencies
 visualization/components/
+**.DS_STORE
