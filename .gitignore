@@ -7,4 +7,4 @@ pep8_report.txt
 *vsdx
 # front-end dependencies
 visualization/components/
-.DS_STORE
+**.DS_STORE
