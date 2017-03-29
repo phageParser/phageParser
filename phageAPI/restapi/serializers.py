@@ -8,4 +8,4 @@ class RepeatSerializer(serializers.ModelSerializer):
 class OrganismSerializer(serializers.ModelSerializer):
     class Meta:
         model = Organism
-        fields = ('id', 'name', 'accession', 'repeats')
+        fields = ('id', 'name', 'accession')
