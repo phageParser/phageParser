@@ -9,3 +9,4 @@ class OrganismSerializer(serializers.ModelSerializer):
     class Meta:
         model = Organism
         fields = ('id', 'name', 'accession', 'repeats')
+
