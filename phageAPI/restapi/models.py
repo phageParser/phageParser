@@ -30,6 +30,7 @@ class Repeat(models.Model):
     sequence = models.CharField(max_length=2000, blank=True, default='')
 class AntiCRISPR(models.Model):
     sequence = models.CharField(max_length=2000, blank=True, default='')
+    accession = models.CharField(max_length=50, blank=True, default='')
 class SpacerRepeatPair(models.Model):
     spacer = models.ForeignKey(Spacer, on_delete=models.CASCADE, null=True)
     repeat = models.ForeignKey(Repeat, on_delete=models.CASCADE, null=True)
