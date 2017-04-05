@@ -15,6 +15,7 @@ where:
 DEPENDENCIES:
 Biopython
 """
+import os
 import sys
 from Bio import Entrez
 from Bio.SeqIO import parse
