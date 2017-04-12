@@ -3,7 +3,14 @@
 # for each xml output file, use NCBIXML to extract the important things 
 # Note: this requires blast output in xml format (set 'outfmt = 5')
 
-import os, csv
+'''
+USAGE:
+python filterbyexpect.py <indir> <outdir>
+'''
+
+import os
+import csv
+import sys
 
 def parse_blast(resultfile): #takes in the BLAST result, outputs list that can be made into csv
     from Bio.Blast import NCBIXML
@@ -51,8 +58,8 @@ def write_csv(dest, csv_cont): #takes a list of lists object with each csv row a
 
 # ----------------------------------------------------------------------------
            
-indir = "data/phages"
-outdir = "output"
+indir = str(sys.argv[1])
+outdir = str(sys.argv[2])
 
 for fn in os.listdir("%s/" %indir):
     ID = fn[:fn.index('.')]
