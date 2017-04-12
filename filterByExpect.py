@@ -5,7 +5,7 @@
 
 '''
 USAGE:
-python filterbyexpect.py <indir> <outdir>
+python filterByExpect.py <indir> <outdir>
 '''
 
 import os
