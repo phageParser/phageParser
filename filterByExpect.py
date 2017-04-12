@@ -1,36 +1,69 @@
-#!/usr/bin/env python
+# filterByExpect_all_v2
+
+# for each xml output file, use NCBIXML to extract the important things 
+# Note: this requires blast output in xml format (set 'outfmt = 5')
+
+'''
+USAGE:
+python filterByExpect.py <indir> <outdir>
+'''
+
 import os
-import time
-import argparse
+import csv
+import sys
 
-import logging
-from logging.config import fileConfig
+def parse_blast(resultfile): #takes in the BLAST result, outputs list that can be made into csv
+    from Bio.Blast import NCBIXML
+    result_handle = open(resultfile)
+    blast_records = NCBIXML.parse(result_handle)
+    csv_list = []
+    
+    header = [  'Query',
+                'Name', 'Length', 'Score', 'Expect',
+                'QueryStart', 'QueryEnd',
+                'SubjectStart', 'SubjectEnd'
+            ]
+    
+    csv_list.append(header)
+    count = 0
+    for blast_record in blast_records:
+        '''help(blast_record.alignments[0].hsps[0])''' # these give help info for the parts 
+        '''help(blast_record.alignments[0])        '''
+        count +=1
+        
+        query = blast_record.query
+        for alignment in blast_record.alignments:
 
-from parsers.phage_file import PhageDBReader
+            name = alignment.title
+            length = alignment.length
+    
+            hsp = alignment.hsps[0] # I don't know if we will ever have more than one, so might as well take the first one.
+            score = hsp.score
+            expect = hsp.expect
+            querystart = hsp.query_start
+            queryend = hsp.query_end
+            subjectstart = hsp.sbjct_start
+            subjectend = hsp.sbjct_end
+            row = [query,name,length,score,expect,querystart,queryend,subjectstart,subjectend]
+            csv_list.append(row)
+            
+    result_handle.close()
+    return csv_list
 
-fileConfig('logging.ini')
-logger = logging.getLogger()
+def write_csv(dest, csv_cont): #takes a list of lists object with each csv row as a list
+    with open(dest, 'w') as out_file:
+        writer= csv.writer(out_file, delimiter=',')
+        for row in csv_cont:
+            writer.writerow(row)
 
-def parse_args():
-    parser = argparse.ArgumentParser(description='Cleans up the results returned from phagesdb.org')
-    parser.add_argument('--infile', help='the input file returned from phagesdb.org', required=True)
-    parser.add_argument('--output', help='the output directory (default = output/)', required=True, default='output/')
-    parser.add_argument('--threshold', help='the threshold (default = 1.0)', required=False, type=float, default=1.0)
-    args = parser.parse_args()
-    return args
+# ----------------------------------------------------------------------------
+           
+indir = str(sys.argv[1])
+outdir = str(sys.argv[2])
 
-if __name__ == '__main__':
-    args = parse_args()
-
-    infile = args.infile
-    output_dir = args.output
-    outfilename = os.path.basename(os.path.splitext(infile)[0])
-    threshold = args.threshold
-
-    current_milli_time = lambda: int(round(time.time() * 1000))
-    parser = PhageDBReader(infile)
-    # parser.write('output/blast-phagesdb.%s.csv' % current_milli_time())
-
-    outfile = 'output/%s.%s.csv' % (outfilename, current_milli_time())
-    logger.info("Running phagesdb filter, infile=[%s], outputfile=[%s], threshold=[%.2f]" % (infile, output_dir, threshold))
-    parser.filterByExpect(outfile, 0.21)
+for fn in os.listdir("%s/" %indir):
+    ID = fn[:fn.index('.')]
+    if fn == 'sorted':
+        continue
+    csv_list = parse_blast(fn)
+    write_csv("%s/%s.csv" %(outdir,ID), csv_list)
