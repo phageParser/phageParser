@@ -9,12 +9,14 @@ cat <file> | python acc2gb.py <email> <db> <rettype> > <output>
 where:
 <file> is the name of a file containing accession numbers to download
 <email> is the email address associated with your NCBI account
-<db> is 
-<rettype> is 
+<db> is the NCBI database ID
+<rettype> is the retrieval type
 <output> is the name of the file you'd like to write the results to
 
+EXAMPLES:
 Case 1: rettype = gbwithparts, db = nuccore - downloads genbank file with metadata and fasta DNA sequence (i.e. for downloading bacterial genomes with metadata)
 Case 2: rettype = fasta, db = protein - downloads fasta file with protein sequence (i.e. for downloading antiCRISPR protein sequences for BLAST)
+
 DEPENDENCIES:
 Biopython
 
