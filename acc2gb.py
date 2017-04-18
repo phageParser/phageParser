@@ -9,8 +9,8 @@ cat <file> | python acc2gb.py <email> <db> <rettype> > <output>
 where:
 <file> is the name of a file containing accession numbers to download
 <email> is the email address associated with your NCBI account
-<db> is the NCBI database ID
-<rettype> is the retrieval type
+<db> is the NCBI database ID, which must be a valid Entrez database name
+<rettype> is the type of file to retrieve
 <output> is the name of the file you'd like to write the results to
 
 EXAMPLES:
