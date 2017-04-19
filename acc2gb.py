@@ -13,21 +13,23 @@ where:
 <rettype> is the type of file to retrieve
 <output> is the name of the file you'd like to write the results to
 
-EXAMPLES:
+EXAMPLE:
+cat data/antiCRISPR_accessions.txt | python acc2gb.py your@email.com protein fasta > outfile.txt
+
 Case 1: rettype = gbwithparts, db = nuccore - downloads genbank file with metadata and fasta DNA sequence (i.e. for downloading bacterial genomes with metadata)
 Case 2: rettype = fasta, db = protein - downloads fasta file with protein sequence (i.e. for downloading antiCRISPR protein sequences for BLAST)
 
 DEPENDENCIES:
 Biopython
-
 """
 
 import sys
 from Bio import Entrez
 
-#define email for entrez login
-db           = sys.argv[2]
+#define parameters
 Entrez.email = sys.argv[1]
+db           = sys.argv[2]
+rettype      = sys.argv[3]
 
 #get accession numbers out of stdin
 accs = [ l.strip() for l in sys.stdin if l.strip() ]
@@ -37,7 +39,7 @@ sys.stderr.write( "Fetching %s entries from GenBank: %s\n" % (len(accs), ", ".jo
 for i,acc in enumerate(accs):
   try:
     sys.stderr.write( " %9i %s          \r" % (i+1,acc))  
-    handle = Entrez.efetch(db=db, rettype=sys.argv[3], retmode="text", id=acc)
+    handle = Entrez.efetch(db=db, rettype=rettype, retmode="text", id=acc)
     #print output to stdout
     sys.stdout.write(handle.read())
   except:
