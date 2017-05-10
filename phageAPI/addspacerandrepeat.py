@@ -1,12 +1,17 @@
 #!/usr/bin/python
 
 '''
-Issue #120 - testing
+Issue #120
 Author: Ahmed
 
 Usage:
 python addspacerandrepeat.py
 
+Reads in the contents of spacerdatabase.txt and DRdatabase.txt and imports their
+contents to the Spacer and Repeat tables.
+
+A future iteration of this script could remove the hardcoded file paths and take in 
+input files as arguments.
 '''
 
 
@@ -14,21 +19,15 @@ import os
 import sys
 from Bio import SeqIO
 
-spacerinput = os.listdir('../data/spacers') # these are multiple files
+spacerinput = '../data/spacerdatabase.txt'
 repeatinput = '../data/DRdatabase.txt'
 
 def populate_spacers():
-	spacerfile = SeqIO.parse('../data/spacerdatabase.txt', 'fasta') 
+	spacerfile = SeqIO.parse(spacerinput, 'fasta') 
 	for entry in spacerfile: # that one file in data/
 		spacer = entry.seq
 		spacer, created = Spacer.objects.get_or_create(sequence = spacer)
-	for file in spacerinput: # those files in data/spacers
-		filename = '../data/spacers/' + file 
-		handle = SeqIO.parse(filename, 'fasta')
-		for entry in handle:
-			spacer = entry.seq
-			spacer, created = Spacer.objects.get_or_create(sequence = spacer) 
-
+		
 def populate_repeats():
 	repeatfile = SeqIO.parse(repeatinput, 'fasta')
 	for entry in repeatfile:
