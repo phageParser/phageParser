@@ -143,7 +143,6 @@ def fetch(path, url=None):
                 r.close()
                 gzip_decomp = zlib.decompressobj(16 + zlib.MAX_WBITS)
                 decomp_chunk = gzip_decomp.decompress(fchunk)
-                print(decomp_chunk)
                 urldate = re.search(regex, decomp_chunk).groups()[0]
                 if gbdate != urldate:
                     print(
