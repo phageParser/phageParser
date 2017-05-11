@@ -103,7 +103,7 @@ def fetch(path, url=None):
         not exist or its dates are different from url version.
         """
         print('Trying to fetch from Entrez')
-        regex = r'(\w{2}_\d{6}|\w{1}_\d{5})'
+        regex = r'([A-Z]{1,2}_\w+) '
         filename = os.path.basename(path)
         matches = re.search(regex, filename)
         if not matches:
