@@ -41,7 +41,8 @@ def reqfile(func=None, path=None, url=None):
     return wrapper
 
 """
-Downloads a file to a given path. Also shows a progress bar
+Downloads a file from url to a given path.
+Also shows a progress bar to keep track.
 """
 def downfile(path, url):
     r = requests.get(url, stream=True)
@@ -57,10 +58,14 @@ def downfile(path, url):
 """
 Checks a given path for file and downloads if a url is given or file name
 is an accession id. Also downloads the file if the remote location has a
-more recent version.
+more recent version. Gives an IOError if path does not exist and an accession id
+can not be found.
 """
 def fetch(path=None, url=None):
-
+    """
+    Checks and downloads a url if last modified date does not exist for
+    the url or is more recent than local file.
+    """
     def sync():
         if not path_exists:
             downfile(path, url)
@@ -83,6 +88,10 @@ def fetch(path=None, url=None):
             return
         print('File is recent, returning')
         return
+    """
+    Checks and downloads an accession file from nuccore database if file does
+    not exist or its dates are different from url version.
+    """
     def gbsync():
         print('Trying to fetch from Entrez')
         regex = r'(\w{2}_\d{6}|\w{1}_\d{5})'
