@@ -23,12 +23,11 @@
 import os
 import time
 import datetime
-from Bio import Entrez
 import functools
-import requests
-from tqdm import tqdm
-import re
 import zlib
+import requests
+import re
+from tqdm import tqdm
 """
 Decorator for downloading or updating files required for a function.
 """
@@ -40,11 +39,7 @@ def reqfile(func=None, path=None, url=None):
         fetch(path, url)
         return func(*args, **kwargs)
     return wrapper
-"""
-Checks a given path for file and downloads if a url is given or file name
-is an accession id. Also downloads the file if the remote location has a
-more recent version.
-"""
+
 """
 Downloads a file to a given path. Also shows a progress bar
 """
@@ -59,7 +54,11 @@ def downfile(path, url):
             f.write(data)
             pbar.update(chunk_size)
 
-
+"""
+Checks a given path for file and downloads if a url is given or file name
+is an accession id. Also downloads the file if the remote location has a
+more recent version.
+"""
 def fetch(path=None, url=None):
 
     def sync():
@@ -94,10 +93,17 @@ def fetch(path=None, url=None):
             return False
         else:
             acc = matches.groups()[0]
-            url='https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?rettype=gbwithparts&tool=biopython&db=nuccore&id={}&email=example%40example.com'.format(acc)
+            url = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?rettype=gbwithparts&tool=biopython&db=nuccore&id={}&email=example%40example.com'.format(acc)
+            r = requests.get(url, stream=True)
+            if r.status_code != requests.codes.ok:
+                print('Status code is faulty from Entrez, returning from gbsync')
+                r.close()
+                return False
             if not path_exists:
                 print('Path given does not exist, downloading from url')
+                r.close()
                 downfile(path, url)
+                return True
             else:
                 '''
                 Path exists, try to get date to compare with Entrez version, download if different.
@@ -110,31 +116,26 @@ def fetch(path=None, url=None):
                     if not matches:
                         print('No date found in accession file, returning from gbsync')
                         return False
-                    else:
-                        gbdate = matches.groups()[0]
-                        r = requests.get(url, stream=True)
-                        if r.status_code != requests.codes.ok:
-                            print('Status code is faulty from Entrez, returning from gbsync')
-                            return False
-                        else:
-                            '''
-                            Status code ok, download the first chunk and
-                            decompress with gzip to get date.
-                            '''
-                            chunk_size = 256
-                            fchunk = r.raw.read(chunk_size)
-                            r.close()
-                            gzip_decomp = zlib.decompressobj(16+zlib.MAX_WBITS)
-                            decomp_chunk = gzip_decomp.decompress(fchunk)
-                            urldate = re.search(regex, decomp_chunk).groups()[0]
-                            print('Status code ok from Entrez, checking dates')
-                            if gbdate != urldate:
-                                print("Dates don't match, downloading")
-                                downfile(path, url)
-                                return True
-                            else:
-                                print('Dates are matching, returning from gbsync')
-                                return True
+                    gbdate = matches.groups()[0]
+                '''
+                Date found in file, download the first chunk of url and
+                decompress with gzip to get url date.
+                '''
+                chunk_size = 256
+                fchunk = r.raw.read(chunk_size)
+                r.close()
+                gzip_decomp = zlib.decompressobj(16+zlib.MAX_WBITS)
+                decomp_chunk = gzip_decomp.decompress(fchunk)
+                print(decomp_chunk)
+                urldate = re.search(regex, decomp_chunk).groups()[0]
+                print('Status code ok from Entrez, checking dates')
+                if gbdate != urldate:
+                    print("Dates don't match, downloading")
+                    downfile(path, url)
+                    return True
+                else:
+                    print('Dates are matching, returning from gbsync')
+                    return True
 
     if not path:
         print('No path given, returning')
@@ -152,5 +153,5 @@ def fetch(path=None, url=None):
                 print("File {} exists but no url is given nor an accession id found, returning".format(filename))
                 return
             else:
-                print("File {} does not exist and no url is given nor an accession id found, returning".format(filename))
+                print("File {} does not exist and no url is given nor an accession id found, raising IOError".format(filename))
                 raise IOError('No file found')
