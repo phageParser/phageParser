@@ -6,10 +6,10 @@ import zlib
 import requests
 import re
 from tqdm import tqdm
+def reqfile(func=None, path=None, url=None):
 """
 Decorator for downloading or updating files required for a function.
 """
-def reqfile(func=None, path=None, url=None):
     if not func:
         return functools.partial(fetch_factory, path=path, url=url)
     @functools.wraps(test_func)
@@ -17,12 +17,11 @@ def reqfile(func=None, path=None, url=None):
         fetch(path, url)
         return func(*args, **kwargs)
     return wrapper
-
+def downfile(path, url):
 """
 Downloads a file from url to a given path.
 Also shows a progress bar to keep track.
 """
-def downfile(path, url):
     r = requests.get(url, stream=True)
     r.raise_for_status()
     total_size = int(r.headers.get('content-length', 0))
@@ -32,7 +31,7 @@ def downfile(path, url):
         for data in r.iter_content(chunk_size):
             f.write(data)
             pbar.update(chunk_size)
-
+def fetch(path=None, url=None):
 """
 Checks a given path for file and downloads if a url is given or file name
 is an accession id. Also downloads the file if the remote location has a
@@ -47,18 +46,15 @@ can not be found.
     would also be created in the running folder, if the url has a more recent version
     the local file would be updated.
 """
-def fetch(path=None, url=None):
+    def sync():
     """
     Checks and downloads a url if last modified date does not exist for
     the url or is more recent than local file.
     """
-    def sync():
         if not path_exists:
             downfile(path, url)
             return
-        '''
-        Check last modified dates of file and url, download if url is newer.
-        '''
+        '''Check last modified dates of file and url, download if url is newer.'''
         filemodtime = datetime.datetime.fromtimestamp(os.path.getmtime(path))
         r = requests.get(url, stream=True)
         if 'Last-Modified' not in r.headers.keys():
@@ -67,18 +63,17 @@ def fetch(path=None, url=None):
         urlmodstr = r.headers['Last-Modified']
         urlmodtime = datetime.datetime.strptime(urlmodstr, '%a, %d %b %Y %H:%M:%S %Z')
         if filemodtime < urlmodtime:
-            '''
-            Url file is more recent, downloading url.'''
+            '''Url file is more recent, downloading url.'''
             print('Url is more recent than file, downloading')
             downfile(path, url)
             return
         print('File is recent, returning')
         return
+    def gbsync():
     """
     Checks and downloads an accession file from nuccore database if file does
     not exist or its dates are different from url version.
     """
-    def gbsync():
         print('Trying to fetch from Entrez')
         regex = r'(\w{2}_\d{6}|\w{1}_\d{5})'
         filename = os.path.basename(path)
@@ -100,9 +95,7 @@ def fetch(path=None, url=None):
                 downfile(path, url)
                 return True
             else:
-                '''
-                Path exists, try to get date to compare with Entrez version, download if different.
-                '''
+                '''Path exists, try to get date to compare with Entrez version, download if different.'''
                 regex = r'(\d{2}-\w{3}-\d{4})'
                 with open(path, 'r') as f:
                     print('Checking accession file for date')
