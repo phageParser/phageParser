@@ -1,25 +1,3 @@
-""" A decorator to check if genome file exists or up-to-date.
-
-    Example:
-        The decorated function require the 'accession_id' kwarg
-        and optionally the 'months' kwarg::
-
-        >>> from check import genome_check
-        >>> from datetime import datetime
-
-        >>> @genome_check
-            def print_date(*args, **kwargs):
-               print "Printed by func 'print_date' ", datetime.now()
-
-        >>> print_date(accession_id='NC_000853', months=8)
-
-    Output:
-        NC_000853 File exists and created @ Tue May 17 12:48:14 2016
-        Days passed since last download 0:00:32.932481
-        Printed by func 'print_date' 2016-05-17 12:48:46.932501
-
-"""
-
 import os
 import time
 import datetime
@@ -60,6 +38,14 @@ Checks a given path for file and downloads if a url is given or file name
 is an accession id. Also downloads the file if the remote location has a
 more recent version. Gives an IOError if path does not exist and an accession id
 can not be found.
+    Usage:
+        fetch('NC_000853.txt')
+        fetch('DRDatabase.txt', 'http://crispr.i2bc.paris-saclay.fr/crispr/BLAST/DR/DRdatabase')
+    Output:
+    NC_000853.txt file would be created in the running folder, if it existed before,
+    it would be updated to a newer version if available in Entrez database. DRDatabase
+    would also be created in the running folder, if the url has a more recent version
+    the local file would be updated.
 """
 def fetch(path=None, url=None):
     """
