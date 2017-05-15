@@ -1,6 +1,5 @@
 import re
 import csv
-from csv_file import CSVWriter, CSVReader
 
 
 class PhageFinder:
@@ -12,7 +11,7 @@ class PhageFinder:
     def __init__(self, infile, **kwargs):
 
         blast_file = open(infile, 'r')
-        self.reader = CSVReader(blast_file, dialect=csv.excel_tab)
+        self.reader = csv.reader(blast_file, dialect=csv.excel_tab)
 
     def findByPhage(self, phage, cluster):
         for row in self.reader:
