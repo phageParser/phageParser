@@ -2,7 +2,6 @@ import re
 import requests
 from xml.etree import ElementTree
 import time
-import urllib2
 import csv
 import os
 
@@ -58,7 +57,7 @@ def getValues(url):
         response = requests.get(url)
 
         if response.status_code != 202 and response.status_code != 200:
-            print "Error: " + response.status_code
+            print("Error: " + response.status_code)
             break
 
         if response.status_code == 200:
@@ -69,7 +68,7 @@ def getValues(url):
         time.sleep(sleep_time)
 
     if ntry + 1 == tries:
-        print "Reached max tries without response."
+        print("Reached max tries without response.")
         return
 
 
@@ -88,7 +87,7 @@ def main():
     cds = extractCDS(filePath)
 
     for i, translation in enumerate(translations):
-        print "Getting translation " + str(i + 1) + "/" + str(len(translations)) + "..."
+        print("Getting translation " + str(i + 1) + "/" + str(len(translations)) + "...")
         url = getTranslationURL(translation)
         result = getValues(url)
 
