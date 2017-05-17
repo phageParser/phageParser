@@ -1,11 +1,22 @@
+'''
+PFAM_db.py extracts and submits the translations from a GenBank input file (such as data/Genbank_example.txt) 
+to PFAM, before writing results to a CSV file in the same directory.
+
+Usage:
+python PFAM_db.py <infile> 
+
+Ref - Issue #70
+'''
+
 import re
 import requests
 from xml.etree import ElementTree
 import time
 import csv
 import os
+import sys
 
-filePath = "data/Genbank_example.txt"
+filePath = str(sys.argv[1])
 filePathWithoutExt = os.path.splitext(filePath)[0]
 
 def extractCDS(file):
