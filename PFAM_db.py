@@ -5,7 +5,7 @@ to PFAM, before writing results to a CSV file in the same directory.
 Usage:
 python PFAM_db.py <infile> 
 
-Ref - Issue #70
+Ref - PR #73
 '''
 
 import re
