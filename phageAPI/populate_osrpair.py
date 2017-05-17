@@ -5,8 +5,9 @@ from Bio import SeqIO
 from lxml import html, etree
 import requests
 import pandas
+import pickle
 from prunedict import prunedict
-
+from tqdm import tqdm
 
 def get_spacerrepeatfiles(datapath):
     spath = os.path.join(datapath, "spacerdatabase.txt")
@@ -72,21 +73,48 @@ def addpositionstodict(gendict):
                     print("Can't find %s in local files" % row[0])
     return gendict
 
-
+def populate_fromlocus(locid, locus):
+    accid = '_'.join(locid.split('_')[:-1])
+    organismset = Organism.objects.filter(accession=accid)
+    if not organismset:
+        print('Organism with accid %s not found in db' % accid)
+        return
+    organism = organismset[0]
+    repeat, _ = Repeat.objects.get_or_create(sequence=locus['RepeatSeq'])
+    posindex = int(locus['Start'])
+    spacers = locus['Spacers']
+    for order in spacers:
+        spacer, _ = Spacer.objects.get_or_create(sequence=spacers[order])
+        spacerrepeatpair, _ = SpacerRepeatPair.objects.get_or_create(spacer=spacer, repeat=repeat)
+        pairstart = posindex
+        pairend = pairstart + len(spacer.sequence) + len(repeat.sequence)
+        posindex = pairend
+        osrpair, _ = OrganismSpacerRepeatPair.objects.get_or_create(organism=organism,
+                                                                    spacerrepeatpair=spacerrepeatpair,
+                                                                    order=int(order),
+                                                                    genomic_start=int(pairstart),
+                                                                    genomic_end=int(pairend))
+        spacer.save()
+        spacerrepeatpair.save()
+        osrpair.save()
+    repeat.save()
+    organism.save()
 if __name__ == '__main__':
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'phageAPI.settings')
     import django
     django.setup()
     from restapi.models import Organism, Spacer, Repeat, SpacerRepeatPair, OrganismSpacerRepeatPair
-    print "Populating spacerrepeatpair and organismspacerrepeatpair tables"
     datapath = "../data"
+    print('Downloading files and gathering online data.')
     sfile, rfile = get_spacerrepeatfiles(datapath)
     gendict = prunedict(
         addpositionstodict(
             addspacerstodict(
                 repeatfiletodict(rfile), sfile)))
-    import pickle
-    with open('gendict.pickle', 'wb') as f:
+    with open('genedict.pickle', 'wb') as f:
         pickle.dump(gendict, f, protocol=pickle.HIGHEST_PROTOCOL)
     print('Created dictionary and dumped data to gendict.pickle')
+    print("Populating Spacer, Repeat, SpacerRepeatPair, OrganismSpacerRepeatPair tables")
+    for locid in tqdm(gendict):
+        populate_fromlocus(locid, gendict[locid])
     embed()
