@@ -32,8 +32,8 @@ def populate_organism(org_accession_path='../data/bac_accession_list.txt'):
         db           = "nuccore"
         Entrez.email = sys.argv[1] #need to provide email for NCBI
         # Doing 100 by 100 to make sure requests to NCBI are not too big
-        for i in range(0, len(accession_list), 100):
-            j = i + 100
+        for i in range(0, len(accession_list), 200):
+            j = i + 200
             if (j >= len(accession_list)):
                 j = len(accession_list)
 
@@ -42,9 +42,13 @@ def populate_organism(org_accession_path='../data/bac_accession_list.txt'):
             result_handle = Entrez.efetch(db=db, rettype="gb", id=accession_list[i:j])
 
             # Populate result per organism name
-            for record in parse(result_handle, 'genbank'):
+            records = parse(result_handle, 'genbank')
+            count=0
+            for record in records:
                 # Using NCBI name, which should match accession number passed
                 acc_name_dict[record.name] = record.annotations['organism']
+                count += 1
+            print(count)
 
         return acc_name_dict
     accession_list = fetch_accessions()
@@ -52,7 +56,7 @@ def populate_organism(org_accession_path='../data/bac_accession_list.txt'):
     for acc in acc_name_dict.keys():
         add_organism(name=acc_name_dict[acc], accession=acc)
 if __name__ == '__main__':
-    print "Starting orgnanism population script"
+    print("Starting orgnanism population script")
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'phageAPI.settings')
     import django
     django.setup()
