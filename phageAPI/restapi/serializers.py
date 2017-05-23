@@ -2,25 +2,29 @@ from restapi.models import Spacer, Repeat, Organism, OrganismSpacerRepeatPair
 from rest_framework import serializers
 
 
-class SpacerSerializer(serializers.ModelSerializer):
+class SpacerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Spacer
-        fields = ('id', 'sequence')
+        fields = ('url', 'sequence')
 
 
-class RepeatSerializer(serializers.ModelSerializer):
+class RepeatSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Repeat
-        fields = ('id', 'sequence')
+        fields = ('url', 'sequence')
 
 
-class OrganismSerializer(serializers.ModelSerializer):
+class OrganismSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Organism
-        fields = ('id', 'name', 'accession')
+        fields = ('url', 'name', 'accession')
 
 
-class OSRPairSerializer(serializers.ModelSerializer):
+class OSRPairSerializer(serializers.HyperlinkedModelSerializer):
+    spacer = serializers.HyperlinkedRelatedField(many=False, read_only=True, view_name='spacer-detail')
+    repeat = serializers.HyperlinkedRelatedField(many=False, read_only=True, view_name='repeat-detail')
+    organism = serializers.HyperlinkedRelatedField(many=False, read_only=True, view_name='organism-detail')
+
     class Meta:
         model = OrganismSpacerRepeatPair
         fields = ('id', 'organism', 'spacer', 'repeat',
