@@ -19,8 +19,10 @@ from django.contrib import admin
 from rest_framework import routers
 from restapi import views
 router = routers.DefaultRouter()
+router.register(r'spacers', views.SpacerViewSet)
 router.register(r'repeats', views.RepeatViewSet)
 router.register(r'organisms', views.OrganismViewSet)
+router.register(r'osrpairs', views.OSRPairViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
