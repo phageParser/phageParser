@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'dynamic_rest',
     'restapi.apps.RestapiConfig'
 ]
 
@@ -123,7 +124,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Settings for restapi app
-REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-    'PAGE_SIZE': 10
+# REST_FRAMEWORK = {
+#     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+#     'PAGE_SIZE': 10
+# }
+DYNAMIC_REST = {
+    'ENABLE_LINKS':True,
+    'PAGE_SIZE': 500,
+    'ENABLE_HOST_RELATIVE_LINKS': True
 }

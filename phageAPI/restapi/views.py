@@ -2,9 +2,9 @@ from django.shortcuts import render
 from rest_framework import viewsets
 from restapi.serializers import SpacerSerializer, RepeatSerializer, OrganismSerializer, OSRPairSerializer
 from restapi.models import Spacer, Repeat, Organism, OrganismSpacerRepeatPair
+from dynamic_rest.viewsets import DynamicModelViewSet
 
-
-class SpacerViewSet(viewsets.ModelViewSet):
+class SpacerViewSet(DynamicModelViewSet):
     """
     API endpoint that allows spacers to be viewed or edited.
     """
@@ -12,7 +12,7 @@ class SpacerViewSet(viewsets.ModelViewSet):
     serializer_class = SpacerSerializer
 
 
-class RepeatViewSet(viewsets.ModelViewSet):
+class RepeatViewSet(DynamicModelViewSet):
     """
     API endpoint that allows repeats to be viewed or edited.
     """
@@ -20,29 +20,16 @@ class RepeatViewSet(viewsets.ModelViewSet):
     serializer_class = RepeatSerializer
 
 
-class OrganismViewSet(viewsets.ModelViewSet):
+class OrganismViewSet(DynamicModelViewSet):
     """
     API endpoint that allows organisms to be viewed or edited.
     """
     queryset = Organism.objects.all()
     serializer_class = OrganismSerializer
 
-    def get_queryset(self):
-        """
-        Optionally restricts the returned organisms to a given accession,
-        by filtering against a `accession` query parameter in the URL.
-        """
-        queryset = Organism.objects.all()
-        accession = self.request.query_params.get('accession', None)
-        name = self.request.query_params.get('name', None)
-        if accession is not None:
-            queryset = queryset.filter(accession=accession)
-        if name is not None:
-            queryset = queryset.filter(name=name)
-        return queryset
 
 
-class OSRPairViewSet(viewsets.ModelViewSet):
+class OSRPairViewSet(DynamicModelViewSet):
     """
     API endpoint that allows repeats to be viewed or edited.
     """
