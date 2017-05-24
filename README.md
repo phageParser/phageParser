@@ -39,7 +39,7 @@ When a virus enters a human body, specialized immune cells are often quick to re
 
 Bacteria store their acquired spacers in their own DNA. The spacers are flanked by short pieces of bacterial DNA called *repeats* (see figure below).
 
-![alt text](https://github.com/goyalsid/phageParser/blob/master/CRISPR_locus_diagram.png?raw=true "CRISPR Locus")
+![CRISPR Locus Diagram](/documentation/CRISPR_locus_diagram.png?raw=true "CRISPR Locus")
 
 Amazingly, CRISPR-Cas immunity is both *adaptive* and *hereditary*! After acquiring a spacer, bacteria are both protected against future virus attacks and they can pass on their spacer libraries to their descendants.  
 
