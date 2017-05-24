@@ -1,42 +1,48 @@
 from restapi.models import Spacer, Repeat, Organism, OrganismSpacerRepeatPair
 from rest_framework import serializers
+from dynamic_rest.serializers import DynamicModelSerializer, DynamicRelationField
+from dynamic_rest.fields import DynamicComputedField
 
 
-class SpacerSerializer(serializers.HyperlinkedModelSerializer):
-    length = serializers.SerializerMethodField()
+class GetSequenceLength(DynamicComputedField):
+    def __init__(self, **kwargs):
+        kwargs['field_type'] = int
+        super(GetSequenceLength, self).__init__(**kwargs)
 
-    def get_length(self, obj):
-        return len(obj.sequence)
+    def get_attribute(self, instance):
+        return len(instance.sequence)
 
+    def to_representation(self, value):
+        return int(value)
+
+
+class SequenceSerializer(DynamicModelSerializer):
+    length = GetSequenceLength()
+
+
+class SpacerSerializer(SequenceSerializer):
     class Meta:
         model = Spacer
-        fields = ('url', 'sequence', 'length')
+        fields = ('id', 'sequence', 'length', 'sequence')
 
 
-class RepeatSerializer(serializers.HyperlinkedModelSerializer):
-    length = serializers.SerializerMethodField()
-
-    def get_length(self, obj):
-        return len(obj.sequence)
+class RepeatSerializer(SequenceSerializer):
 
     class Meta:
         model = Repeat
-        fields = ('url', 'sequence', 'length')
+        fields = ('id', 'length', 'sequence')
 
 
-class OrganismSerializer(serializers.HyperlinkedModelSerializer):
+class OrganismSerializer(DynamicModelSerializer):
     class Meta:
         model = Organism
-        fields = ('url', 'name', 'accession')
+        fields = ('id', 'name', 'accession')
 
 
-class OSRPairSerializer(serializers.HyperlinkedModelSerializer):
-    spacer = serializers.HyperlinkedRelatedField(
-        many=False, read_only=True, view_name='spacer-detail')
-    repeat = serializers.HyperlinkedRelatedField(
-        many=False, read_only=True, view_name='repeat-detail')
-    organism = serializers.HyperlinkedRelatedField(
-        many=False, read_only=True, view_name='organism-detail')
+class OSRPairSerializer(DynamicModelSerializer):
+    spacer = DynamicRelationField('SpacerSerializer')
+    repeat = DynamicRelationField('RepeatSerializer')
+    organism = DynamicRelationField('OrganismSerializer')
 
     class Meta:
         model = OrganismSpacerRepeatPair
