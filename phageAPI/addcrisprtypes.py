@@ -8,7 +8,6 @@ import subprocess
 import glob
 from tqdm import tqdm
 from fetch import fetch
-from IPython import embed
 
 
 def fetchgenbankfiles(fpath='gbfiles'):
@@ -47,17 +46,20 @@ def convertgenbanktofasta(fpath):
     cds = extractCDS()
     translations = extractTranslations()
 
-    fastatext = ''.join([">{}\n{}\n".format(a,b) for a,b in zip(cds,translations)])
+    fastatext = ''.join([">{}\n{}\n".format(a, b)
+                         for a, b in zip(cds, translations)])
     return fastatext
+
 
 def hmmscangenbankfiles(fpath='gbfiles', hmmdbpath='hmmdb/testdb'):
     hmmoutpath = os.path.join(fpath, 'hmmeroutput')
     os.makedirs(hmmoutpath, exist_ok=True)
-    for f in glob.glob(fpath+'/*.gb'):
+    for f in glob.glob(fpath + '/*.gb'):
         accession = os.path.splitext(os.path.split(f)[1])[0]
         fastainput = convertgenbanktofasta(f).encode('utf-8')
         table_path = os.path.join(hmmoutpath, '{}.txt'.format(accession))
-        commandargs = ['hmmscan', '--noali','--tblout', table_path, hmmdbpath, '-']
+        commandargs = ['hmmscan', '--noali',
+                       '--tblout', table_path, hmmdbpath, '-']
         result = subprocess.run(commandargs, input=fastainput)
 if __name__ == '__main__':
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'phageAPI.settings')
@@ -66,4 +68,3 @@ if __name__ == '__main__':
     from restapi.models import Organism
     fetchgenbankfiles()
     hmmscangenbankfiles()
-    embed()
