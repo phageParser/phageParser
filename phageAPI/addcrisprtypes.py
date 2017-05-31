@@ -1,3 +1,7 @@
+"""Running this script requires HMMER tool for sequence analysis
+HMMER can be downloaded via www.hmmer.org
+A compressed database of profiles is also needed where its path
+can be specified as the hmmdbpath argument in hmmscangenbankfiles function."""
 import re
 import os
 import subprocess
@@ -11,7 +15,7 @@ def fetchgenbankfiles(fpath='gbfiles'):
     os.makedirs(fpath, exist_ok=True)
     for org in Organism.objects.all():
         print('\nFetching {} with accession {}'.format(org.name, org.accession))
-        fetch(os.path.join(fpath, org.accession))
+        fetch(os.path.join(fpath, '{}.gb'.format(org.accession)))
 
 
 def convertgenbanktofasta(fpath):
