@@ -60,6 +60,8 @@ This package depends on Biopython, which can be installed as follows:
 sudo make install-deps
 ```
 
+For viewing the database, we recommend the [Firefox SQLite Manager plugin](https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/). Once installed, launch it from the 'Tools' menu in Firefox. 
+
 ## Usage
 
 There are several usage options depending on what data outcome is desired.
