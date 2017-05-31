@@ -87,6 +87,8 @@ containing [`requirements.txt`](requirements.txt), activate the project environm
 
 
 
+For viewing the database, we recommend the [Firefox SQLite Manager plugin](https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/). Once installed, launch it from the 'Tools' menu in Firefox. 
+
 ## Usage
 
 There are several usage options depending on what data outcome is desired.
