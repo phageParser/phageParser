@@ -103,7 +103,7 @@ def fetch(path, url=None):
         not exist or its dates are different from url version.
         """
         print('Trying to fetch from Entrez')
-        regex = r'([A-Z]{1,2}_\w+) '
+        regex = r'([A-Z]{1,2}_\w+)'
         filename = os.path.basename(path)
         matches = re.search(regex, filename)
         if not matches:
@@ -142,7 +142,7 @@ def fetch(path, url=None):
                 fchunk = r.raw.read(chunk_size)
                 r.close()
                 gzip_decomp = zlib.decompressobj(16 + zlib.MAX_WBITS)
-                decomp_chunk = gzip_decomp.decompress(fchunk)
+                decomp_chunk = gzip_decomp.decompress(fchunk).decode()
                 urldate = re.search(regex, decomp_chunk).groups()[0]
                 if gbdate != urldate:
                     print(
