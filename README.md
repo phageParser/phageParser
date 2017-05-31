@@ -55,7 +55,7 @@ More research is needed to better understand how bacteria use their CRISPR syste
 ## Installation
 
 You can download the source code of the project by git:
-`git clone git@github.com:phageParser/phageParser.git`
+`https://github.com/phageParser/phageParser.git`
 
 After getting the local copy of the project, it is generally a good idea
 to create an isolated environment that belongs to the project and its specific
