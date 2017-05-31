@@ -3,6 +3,9 @@ phageParser
 
 phageParser is a project to extract and organize CRISPR information from open genetic data.
 
+Come chat with us!    
+[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/phageParser/Lobby)
+
 ## What is this tool?
 
 Many bacterial and archaeal genomes have been sequenced, and [a large fraction of them have CRISPR systems](http://crispr.u-psud.fr/crispr/), ranging from deadly human pathogens to archaea living in the harshest environments on earth. Some CRISPR systems have been studied very well, and more is being discovered about CRISPR every day. phageParser is a tool to collect this growing pool of information and generate versatile and useful annotations. These are some of the annotations we include:
