@@ -53,7 +53,7 @@ def main():
             handle = Entrez.efetch(db=args.db, rettype=args.rettype, retmode="text", id=acc)
             # print output to stdout
             sys.stdout.write(handle.read())
-        except:
+        except Exception:
             sys.stderr.write("Error! Cannot fetch: %s        \n" % acc)
 
 
