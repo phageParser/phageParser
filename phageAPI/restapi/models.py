@@ -60,3 +60,16 @@ class PhageSpacerPair(models.Model):
     spacer = models.ForeignKey(Spacer, on_delete=models.CASCADE, null=True)
     genomic_start = models.PositiveIntegerField(default=0)
     genomic_end = models.PositiveIntegerField(default=0)
+
+
+class OrganismCas(models.Model):
+    # Has 1 organism and a spacerrepeatpair list with start and end values for
+    # locus
+    organism_id = models.ForeignKey(Organism, on_delete=models.CASCADE, null=True)
+    accession = models.CharField(max_length=50, blank=True, default='')
+    gene_id = models.ForeignKey(Repeat, on_delete=models.CASCADE, null=True)
+    genomic_start = models.PositiveIntegerField(default=0)
+    genomic_end = models.PositiveIntegerField(default=0)
+    evalue = models.PositiveIntegerField(default=0)
+
+

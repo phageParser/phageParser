@@ -1,4 +1,4 @@
-from restapi.models import Spacer, Repeat, Organism, OrganismSpacerRepeatPair
+from restapi.models import Spacer, Repeat, Organism, OrganismSpacerRepeatPair, OrganismCas
 from rest_framework import serializers
 from dynamic_rest.serializers import DynamicModelSerializer, DynamicRelationField
 from dynamic_rest.fields import DynamicComputedField
@@ -27,7 +27,6 @@ class SpacerSerializer(SequenceSerializer):
 
 
 class RepeatSerializer(SequenceSerializer):
-
     class Meta:
         model = Repeat
         fields = ('id', 'length', 'sequence')
@@ -37,6 +36,12 @@ class OrganismSerializer(DynamicModelSerializer):
     class Meta:
         model = Organism
         fields = ('id', 'name', 'accession')
+
+
+class OrganismCasSerializer(DynamicModelSerializer):
+    class Meta:
+        model = OrganismCas
+        fields = ('organism_id', 'accession')
 
 
 class OSRPairSerializer(DynamicModelSerializer):
