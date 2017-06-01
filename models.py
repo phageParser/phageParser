@@ -3,13 +3,13 @@ import re
 class Phage:
   supported_databases = {
     # European Nucleotide Archive phage database
-    "ENA": "^gi\|[0-9]+\|ref\|([^\|]+)\|\ ([^,]+)[^$]*$",
+    "ENA": r"^gi\|[0-9]+\|ref\|([^\|]+)\|\ ([^,]+)[^$]*$",
 
     # National Center for Biotechnology Information phage database
-    "NCBI": "^ENA\|([^\|]+)\|[^\ ]+\ ([^,]+)[^$]*$",
+    "NCBI": r"^ENA\|([^\|]+)\|[^\ ]+\ ([^,]+)[^$]*$",
 
     # Actinobacteriophage Database
-    "AD": "^([^\ ]+)\ [^,]*,[^,]*,\ Cluster\ ([^$]+)$"
+    "AD": r"^([^\ ]+)\ [^,]*,[^,]*,\ Cluster\ ([^$]+)$"
   }
   
 
