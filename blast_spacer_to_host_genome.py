@@ -8,7 +8,7 @@ import sys
 
 def fetch(accession_id):
     '''Fetch Spacer File'''
-    print "Downloading spacers for accession id -- {0}".format(accession_id)
+    print("Downloading spacers for accession id -- {0}".format(accession_id))
 
 
 def spacers(accession_id, months=None, blast=None, dir_path='./data/spacers/'):
@@ -22,7 +22,7 @@ def spacers(accession_id, months=None, blast=None, dir_path='./data/spacers/'):
     accession_file_path = os.path.join(dir_path, accession_file)
     with open(accession_file_path, 'rb') as reader:
         for line in reader:
-            print line
+            print(line)
             break
 
 def main():
