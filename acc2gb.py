@@ -17,7 +17,9 @@ def main():
     parser = argparse.ArgumentParser(
         usage='cat INPUT | python acc2gb.py EMAIL DB RETTYPE > OUTPUT',
         description=textwrap.dedent("""\
-            The input file should contain accession IDs to download, one per line.
+            The input file should contain accession IDs to download, one per
+            line.  "Comments" beginning with '#' will be skipped -- this can be
+            useful to include the source of the accession numbers.
 
             EXAMPLE:
 
@@ -43,7 +45,7 @@ def main():
     Entrez.email = args.email
 
     # get accession numbers out of stdin
-    accs = [l.strip() for l in sys.stdin if l.strip()]
+    accs = [l for l in (l.strip() for l in sys.stdin) if l and not l.startswith('#')]
 
     # fetch
     sys.stderr.write("Fetching %s entries from GenBank: %s\n" % (len(accs), ", ".join(accs[:10])))
