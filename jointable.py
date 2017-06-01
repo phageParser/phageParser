@@ -8,7 +8,7 @@ def printDict(d):
 def SQL_add(elem, name, columns, dbName):
 	conn = sqlite3.connect(dbName)
 	c = conn.cursor()
-	if(type(elem) is list):
+	if isinstance(elem, list):
 		# It is assumed that the length of list and of columns will always match
 		q = "INSERT INTO " + str(name) + " (" + ",".join(columns) + ") VALUES ('"+ "','".join(elem) + "')"
 	else:
@@ -26,7 +26,7 @@ def SQL_add(elem, name, columns, dbName):
 def SQL_search(elem, name, column, dbName):
 	conn = sqlite3.connect(dbName)
 	c = conn.cursor()
-	if(type(elem) is list):
+	if isinstance(elem, list):
 		# It is assumed that the length of list and of columns will always match
 		q = "SELECT * FROM " + name + " " + " WHERE "
 		for i in range(0, len(elem)):
