@@ -19,7 +19,7 @@ def readInputFile(filename):
 
 def printDict(d):
 	for i in d:
-		print i,d[i]
+		print(i, d[i])
 
 def getLargestID(c, name, idName):
 	# NOT USED
@@ -37,7 +37,7 @@ def SQL_add(elem, name, dbName):
 		c.execute(q)
 		conn.commit()
 	except sqlite3.IntegrityError:
-		print "Already In Database", elem
+		print("Already In Database", elem)
 	c.close()
 	conn.close()
 
@@ -59,7 +59,7 @@ def populateDB(dbName, tableName, fileName):
 
 
 repeatFile = 'data/DRdatabase.txt'
-spacerFile = 'data/Spacerdatabase.txt'
+spacerFile = 'data/spacerdatabase.txt'
 dbName = 'crispr.sqlite'
 
 populateDB(dbName, 'Repeat', repeatFile)

@@ -1,14 +1,15 @@
 #!/usr/bin/python
+from __future__ import print_function
 import sqlite3
 
 def printDict(d):
 	for i in d:
-		print i,d[i]
+		print(i, d[i])
 
 def SQL_add(elem, name, columns, dbName):
 	conn = sqlite3.connect(dbName)
 	c = conn.cursor()
-	if(type(elem) is list):
+	if isinstance(elem, list):
 		# It is assumed that the length of list and of columns will always match
 		q = "INSERT INTO " + str(name) + " (" + ",".join(columns) + ") VALUES ('"+ "','".join(elem) + "')"
 	else:
@@ -18,7 +19,7 @@ def SQL_add(elem, name, columns, dbName):
 		c.execute(q)
 		conn.commit()
 	except sqlite3.IntegrityError:
-		print "Already In Database", elem
+		print("Already In Database", elem)
 	c.close()
 	conn.close()
 
@@ -26,7 +27,7 @@ def SQL_add(elem, name, columns, dbName):
 def SQL_search(elem, name, column, dbName):
 	conn = sqlite3.connect(dbName)
 	c = conn.cursor()
-	if(type(elem) is list):
+	if isinstance(elem, list):
 		# It is assumed that the length of list and of columns will always match
 		q = "SELECT * FROM " + name + " " + " WHERE "
 		for i in range(0, len(elem)):
@@ -77,11 +78,11 @@ def match_repeat_to_spacer(repeat_data, spacer_file_name, dbName):
 				match = repeat_data[acc_match]
 				acc
 			except KeyError:
-				print "Error: Wrong Accession code"	
+				print("Error: Wrong Accession code")
 			getIdAndAdd([str(spacer_id),str(repeat_id)], 'SpacerRepeatPair', ['SpacerID', 'RepeatID'], dbName)
 
 
-spacerFile = 'data/Spacerdatabase.txt'
+spacerFile = 'data/spacerdatabase.txt'
 repeatFile = 'data/DRdatabase.txt'
 dbName = 'crispr.sqlite'
 repeat_dict = readRepeatFile(repeatFile)

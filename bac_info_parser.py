@@ -19,11 +19,11 @@ for x in records:
     try:
         org = x.annotations['organism']
     except:
-        print "no organism name"
+        print("no organism name")
     try:
         tax = x.annotations['taxonomy']
     except:
-        print "no taxonomy"
+        print("no taxonomy")
     accs = x.annotations['accessions']
     
     outdict[acc] = [org,tax]
