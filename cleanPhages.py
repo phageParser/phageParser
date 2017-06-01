@@ -1,12 +1,12 @@
 import time, os, operator, csv
-from models import Phage
+from phage import Phage
 from parsers.find_accession import PhageFinder
 
 def csv_to_list(csv_file, delimiter=","):
     with open (csv_file, 'r') as csv_con:
         reader = csv.reader(csv_con, delimiter=delimiter)
         return list(reader)
-    
+
 def convert_cells_to_floats(csv_cont):
     for row in range(len(csv_cont)):
         for cell in range(len(csv_cont[row])):
@@ -43,7 +43,7 @@ def split_name(csv_list, phage_finder):
 
 def compare_phages(csv_sorted):
     csv_new = []
-    datas = [] 
+    datas = []
     for i in range(len(csv_sorted)):
         if csv_sorted[i][3:] in datas:
             continue
@@ -65,7 +65,7 @@ def write_csv(dest, csv_cont):
         for row in csv_cont:
             writer.writerow(row)
 
-# -------------------------------------------------------------------           
+# -------------------------------------------------------------------
 directory = "output"
 phage_finder = PhageFinder('data/PhagesDB_Data.txt')
 
@@ -83,4 +83,4 @@ for fn in os.listdir("%s/" %directory):
     csv_new = compare_phages(csv_sorted)
     write_csv("%s/sorted/sorted.%s" %(directory,fn), csv_new)
     #print_csv(csv_sorted)
-    
+
