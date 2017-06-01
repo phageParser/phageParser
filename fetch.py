@@ -83,7 +83,7 @@ def fetch(path, url=None):
         '''Check last modified dates of file and url, download if url is newer.'''
         filemodtime = datetime.datetime.fromtimestamp(os.path.getmtime(path))
         r = requests.get(url, stream=True)
-        if 'Last-Modified' not in r.headers.keys():
+        if 'Last-Modified' not in r.headers:
             print('Last modified header not found in url, downloading...')
             # no last-modified header in url, downloading file
             return download(path, url)

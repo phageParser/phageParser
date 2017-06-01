@@ -65,7 +65,7 @@ def get_positions(sequence,loc_id):
     params['checked[]'] = crispr_id
     r = requests.post("http://crispr.u-psud.fr/crispr/crispr.php", data=params)
     source = web.Element(r.text)
-    print "Crispr id: " + crispr_id
+    print("Crispr id: " + crispr_id)
     table = source('table[class="crispr"]')[0]
     tr = table('tr')[3]
     td = tr('td')
@@ -76,11 +76,11 @@ def get_positions(sequence,loc_id):
     return [begin,end]
 
 def get_results():
-    print "Getting taxon ids..."
+    print("Getting taxon ids...")
     taxon_ids =  get_taxons_from_CRISPRdb()
     n = len(taxon_ids)
     i = 0.
-    print "Getting positions..."
+    print("Getting positions...")
     restart = False
     var = False
     if os.path.exists('last'):
@@ -89,8 +89,8 @@ def get_results():
         [last_taxon_id,last_refseq,last_loc_id] = last.split(',')
         restart = True
     for taxon_id in taxon_ids:
-        print "{:.2%}".format(i/n)
-        print "Taxon id: " + taxon_id
+        print("{:.2%}".format(i/n))
+        print("Taxon id: " + taxon_id)
         if(restart == True and last_taxon_id == taxon_id):
             var = True
             continue

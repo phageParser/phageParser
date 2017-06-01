@@ -15,4 +15,4 @@ if __name__ == '__main__':
 
     gext = GenomeExtractor(file_name)
 
-    print gext.findNeighbours(181,240,60, 60)
+    print(gext.findNeighbours(181, 240, 60, 60))
