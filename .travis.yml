@@ -5,8 +5,6 @@ python:
     - 3.6
 
 
-install: true
-
 script: python phageAPI/manage.py test restapi
 
 sudo: false
