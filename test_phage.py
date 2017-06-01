@@ -1,9 +1,9 @@
 import unittest
-from models import Phage
+from phage import Phage
 from parsers.find_accession import PhageFinder
 
 class TestPhage(unittest.TestCase):
-    
+
   phage_finder = PhageFinder('data/PhagesDB_Data.txt')
 
   def test_ena(self):
