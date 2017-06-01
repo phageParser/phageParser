@@ -16,7 +16,6 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
-from rest_framework import routers
 from dynamic_rest.routers import DynamicRouter
 from restapi import views
 router = DynamicRouter()
@@ -24,6 +23,8 @@ router.register(r'spacers', views.SpacerViewSet)
 router.register(r'repeats', views.RepeatViewSet)
 router.register(r'organisms', views.OrganismViewSet)
 router.register(r'osrpairs', views.OSRPairViewSet)
+router.register(r'casproteins', views.CasProteinViewSet)
+router.register(r'ocpairs', views.OCPairViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
