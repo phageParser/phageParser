@@ -20,11 +20,6 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-def teardown():
-	pass
-
-class Test_Filter_By_Expect(object):
-
-	def test_filter(self):
-		# TODO: add tests
-		pass
+def test_filter():
+    # TODO: add tests
+    pass
