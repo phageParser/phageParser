@@ -1,6 +1,5 @@
 import re
 import csv
-from csv_file import CSVWriter, CSVReader
 
 ''' 
 @author:         Nigesh Shakya(neaGaze)
@@ -13,7 +12,7 @@ class GenomeExtractor:
 
     def __init__(self, infile, **kwargs):
         blast_file = open(infile, 'r')
-        self.reader = CSVReader(blast_file, dialect=csv.excel_tab)
+        self.reader = csv.reader(blast_file, dialect=csv.excel_tab)
         pass
 
     '''  Genome Extractor '''
