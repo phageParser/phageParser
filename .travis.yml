@@ -7,7 +7,7 @@ python:
 
 install: true
 
-script: python phageAPI/manage.py test
+script: python phageAPI/manage.py test restapi
 
 sudo: false
 
