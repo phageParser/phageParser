@@ -1,7 +1,7 @@
 from django.test import TestCase
 
 # Create your tests here.
-from models import Organism,  Repeat, Spacer
+from restapi.models import Organism,  Repeat, Spacer
 
 class OrganismTestCase(TestCase):
     """This class contains a test suite for the Organism model."""
