@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from restapi.serializers import SpacerSerializer, RepeatSerializer, OrganismSerializer, OSRPairSerializer
-from restapi.models import Spacer, Repeat, Organism, OrganismSpacerRepeatPair
+from restapi.serializers import SpacerSerializer, RepeatSerializer, OrganismSerializer, OSRPairSerializer, OrganismCasSerializer
+from restapi.models import Spacer, Repeat, Organism, OrganismSpacerRepeatPair, OrganismCas
 from dynamic_rest.viewsets import DynamicModelViewSet
 
 class SpacerViewSet(DynamicModelViewSet):
@@ -27,6 +27,13 @@ class OrganismViewSet(DynamicModelViewSet):
     queryset = Organism.objects.all()
     serializer_class = OrganismSerializer
 
+
+class OrganismCasViewSet(DynamicModelViewSet):
+    """
+    API endpoint that allows spacers to be viewed or edited.
+    """
+    queryset = OrganismCas.objects.all()
+    serializer_class = OrganismCasSerializer
 
 
 class OSRPairViewSet(DynamicModelViewSet):
