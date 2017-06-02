@@ -1,7 +1,7 @@
 import pytest
 
 # Create your tests here.
-from restapi.models import Organism,  Repeat, Spacer
+from restapi.models import Organism, Repeat
 
 
 @pytest.fixture

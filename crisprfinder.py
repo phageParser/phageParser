@@ -8,7 +8,6 @@ Note: accessing the CRISPRfinder tool online for many files back to back may blo
 '''
 
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 import os
 import sys
 

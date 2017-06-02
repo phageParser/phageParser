@@ -1,4 +1,3 @@
-import time
 from parsers.genome_extractor import GenomeExtractor
 import sys
 

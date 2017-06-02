@@ -1,6 +1,10 @@
 ## Making interactions.txt file from sorted BLAST outputs
 
-import json,os,csv
+import csv
+import json
+import operator
+import os
+
 
 def csv_to_list(csv_file, delimiter=","):
     with open (csv_file, 'r') as csv_con:

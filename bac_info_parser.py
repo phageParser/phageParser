@@ -1,6 +1,5 @@
 #parse_Genbank.py
 
-import pickle
 from Bio.SeqIO import parse
 
 genbank_file = 'data/Genbank_example.txt'
@@ -27,5 +26,3 @@ for x in records:
     accs = x.annotations['accessions']
     
     outdict[acc] = [org,tax]
-
-#pickle.dump(outdict,open("dict_bac_info.p","wb"))
