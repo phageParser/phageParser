@@ -29,12 +29,6 @@ from restapi.models import (
 DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data'))
 
 
-def status(count, done=False):
-    sys.stdout.write("\rCount: %9i" % count);
-    if done:
-        sys.stdout.write("\n")
-
-
 def populate_organism():
     def add_organism(name, accession):
         # get the object, this also checks for duplicates
@@ -44,29 +38,23 @@ def populate_organism():
     def merge_acc_names(accession_list):
         acc_name_dict = {}
         db = "nuccore"
-        count = 0
         # Doing batches of 200 to make sure requests to NCBI are not too big
         for i in range(0, len(accession_list), 200):
             j = i + 200
-            if (j >= len(accession_list)):
-                j = len(accession_list)
 
             result_handle = Entrez.efetch(db=db, rettype="gb", id=accession_list[i:j])
 
             # Populate result per organism name
             records = SeqIO.parse(result_handle, 'genbank')
-            for record in records:
-                status(count)
+            for record in tqdm(records):
                 # Using NCBI name, which should match accession number passed
                 acc_name_dict[record.name] = record.annotations['organism']
-                count += 1
-        status(count, True)
         return acc_name_dict
 
     with open(os.path.join(DATA_DIR, 'bac_accession_list.txt')) as f:
         accession_list = list(read_accession_file(f))
     acc_name_dict = merge_acc_names(accession_list)
-    for acc in acc_name_dict.keys():
+    for acc in acc_name_dict:
         add_organism(name=acc_name_dict[acc], accession=acc)
 
 
@@ -112,8 +100,7 @@ def addspacerstodict(gendict, sfile):
 
 def addpositionstodict(gendict):
     print("Downloading position information from web...")
-    accidswithloc = gendict.keys()
-    for accidwithloc in tqdm(accidswithloc):
+    for accidwithloc in tqdm(gendict):
         if 'Start' in gendict[accidwithloc]:
             continue
         accid = '_'.join(accidwithloc.split('_')[:-1])
@@ -175,12 +162,8 @@ def populate_osrpair():
 
     print('Created dictionary and dumped data to genedict.pickle')
     print("Populating Spacer, Repeat, SpacerRepeatPair, OrganismSpacerRepeatPair tables")
-    count = 0
     for locid in tqdm(gendict):
-        status(count)
         populate_fromlocus(locid, gendict[locid])
-        count += 1
-    status(count, True)
 
 
 def populate_anticrispr():
@@ -188,15 +171,11 @@ def populate_anticrispr():
         accession_list = list(read_accession_file(f))
     print("Fetching AntiCRISPR entries")
     result_handle = Entrez.efetch(db='protein', rettype="fasta", id=accession_list)
-    count = 0
-    for record in SeqIO.parse(result_handle, 'fasta'):
-        status(count)
+    for record in tqdm(SeqIO.parse(result_handle, 'fasta')):
         spacer, _ = AntiCRISPR.objects.get_or_create(
             accession=record.name,
             sequence=str(record.seq))
         spacer.save()
-        count += 1
-    status(count, True)
 
 
 def main():
