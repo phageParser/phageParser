@@ -5,7 +5,6 @@ python:
 
 
 script:
-  - python phageAPI/manage.py test restapi
   - pytest
 
 sudo: false
