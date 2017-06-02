@@ -64,9 +64,12 @@ else:
     print('Please specify either a db name or an input .fasta file.')
 
 # optional parameters
-cline.extend(['-num_alignments', str(args.num_alignments)])
-cline.extend(['-reward', str(args.reward)])
-cline.extend(['-penalty', str(args.penalty)])
+if args.num_alignments is not None:
+    cline.extend(['-num_alignments', str(args.num_alignments)])
+if args.reward is not None:
+    cline.extend(['-reward', str(args.reward)])
+if args.penalty is not None:
+    cline.extend(['-penalty', str(args.penalty)])
 
 print('Command line BLAST+')
 print('Options entered:\n')
