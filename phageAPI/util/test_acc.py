@@ -1,15 +1,15 @@
 from unittest import TestCase
-import StringIO
+import io
 
 from util.acc import read_accession_file
 
 
 def test_read_accession_file_empty():
-    assert list(read_accession_file(StringIO.StringIO(""))) == []
+    assert list(read_accession_file(io.StringIO(""))) == []
 
 
 def test_read_accession_file_check_formatting():
-    f = StringIO.StringIO("""
+    f = io.StringIO("""
 # comment on left
 123left
                         345right
