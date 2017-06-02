@@ -1,4 +1,6 @@
-import time, os, operator, csv
+import csv
+import operator
+import os
 
 
 def csv_to_list(csv_file, delimiter=","):

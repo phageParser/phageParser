@@ -6,7 +6,6 @@ import re
 import os
 import subprocess
 import glob
-from tqdm import tqdm
 from util.fetch import fetch
 
 

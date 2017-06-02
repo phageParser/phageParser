@@ -1,8 +1,5 @@
 ''' Script to BLAST spacers against host genome '''
-from datetime import datetime
-from datetime import timedelta
 import os
-import time
 import sys
 
 

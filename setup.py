@@ -25,7 +25,7 @@ from setuptools import setup, find_packages
 setup(
     name = "phageParser",
     version = "0.1",
-    packages = ['filter'],
+    packages=find_packages(),
     install_requires = ['Biopython'],
     extras_require = {
         'tests': ['pytest >= 2.9.2']

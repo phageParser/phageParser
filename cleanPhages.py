@@ -1,4 +1,7 @@
-import time, os, operator, csv
+import csv
+import operator
+import os
+
 from phage import Phage
 from parsers.find_accession import PhageFinder
 

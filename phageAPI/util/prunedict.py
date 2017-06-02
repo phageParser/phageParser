@@ -1,6 +1,4 @@
 import pickle
-import collections
-from IPython import embed
 
 
 def findincompleterecords(gendict):
@@ -45,7 +43,6 @@ def prunedict(gendict):
 if __name__ == '__main__':
     with open('gendict.pickle', 'rb') as f:
         gendict = pickle.load(f)
-    # counter = collections.Counter(zip(*offsetlist)[0])
     gendict = prunedict(gendict)
     with open('gendictpruned.pickle', 'wb') as f:
         pickle.dump(gendict, f, protocol=pickle.HIGHEST_PROTOCOL)
