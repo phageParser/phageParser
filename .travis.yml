@@ -6,7 +6,7 @@ python:
 
 script:
   - python phageAPI/manage.py test restapi
-  - nosetests
+  - pytest
 
 sudo: false
 
