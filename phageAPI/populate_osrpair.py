@@ -1,12 +1,12 @@
 import os
-import fetch
+from util import fetch
 from IPython import embed
 from Bio import SeqIO
 from lxml import html, etree
 import requests
 import pandas
 import pickle
-from prunedict import prunedict
+from util.prunedict import prunedict
 from tqdm import tqdm
 
 

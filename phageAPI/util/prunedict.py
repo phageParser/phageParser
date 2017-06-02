@@ -1,6 +1,8 @@
 import pickle
 import collections
 from IPython import embed
+
+
 def findincompleterecords(gendict):
     incomplist = []
     for locid in gendict:
@@ -8,6 +10,8 @@ def findincompleterecords(gendict):
         if not set(locus.keys()) == {'Spacers', 'Start', 'RepeatSeq', 'Stop'}:
             incomplist.append(locid)
     return incomplist
+
+
 def findsizeoffsets(gendict):
     offsetlist = []
     for locid in gendict:
@@ -19,6 +23,7 @@ def findsizeoffsets(gendict):
         offsetlist.append((sizediff, locid))
     return offsetlist
 
+
 def delkeys(dictionary, keylist):
     for key in keylist:
         if key in dictionary:
@@ -26,16 +31,17 @@ def delkeys(dictionary, keylist):
     return dictionary
 
 
-
 def prunedict(gendict):
-    #remove loci with incomplete fields
+    # remove loci with incomplete fields
     incomplist = findincompleterecords(gendict)
     gendict = delkeys(gendict, incomplist)
-    #remove loci with offsets greater than 0
+    # remove loci with offsets greater than 0
     offsetlist = findsizeoffsets(gendict)
     locitodel = [x[1] for x in offsetlist if x[0] > 0]
     gendict = delkeys(gendict, locitodel)
     return gendict
+
+
 if __name__ == '__main__':
     with open('gendict.pickle', 'rb') as f:
         gendict = pickle.load(f)

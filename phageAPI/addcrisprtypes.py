@@ -7,7 +7,7 @@ import os
 import subprocess
 import glob
 from tqdm import tqdm
-from fetch import fetch
+from util.fetch import fetch
 
 
 def fetchgenbankfiles(fpath='gbfiles'):
