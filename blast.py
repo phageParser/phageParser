@@ -45,9 +45,8 @@ args = parser.parse_args()
 task = args.task
 outfmt = '-outfmt 5'
 
-# initialize command line + add task
-cline = []
-cline.extend([task, outfmt])
+# initialize command line
+cline = [task, outfmt]
 
 cline.extend(['-query', args.query])
 cline.extend(['-evalue', str(args.evalue)])
