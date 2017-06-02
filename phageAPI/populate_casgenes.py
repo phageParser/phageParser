@@ -55,6 +55,7 @@ def populate_organismcaspair():
         
         if not organismset:
             print('Organism with accid %s not found in db' % accid)
+            continue
         organism = organismset[0] # this is the organism FK for the field organism
         
         querylist = []
@@ -66,16 +67,14 @@ def populate_organismcaspair():
             
             if not casproteinset:
                 print('Cas protein with profileID %s not found in db' % target_match)
+                continue
             casprotein = casproteinset[0]  # this is the cas protein FK for the field casprotein
 
             if query not in querylist: # we only keep 1 match if there are multiple
                 querylist.append(query)
                 
-                try: # check if sequence is complemented - if yes, start will be > end 
-                    query.index('complement(')
+                if query[:10] == 'complement': # check if sequence is complemented - if yes, start will be > end 
                     query = query[11:-1]
-                except:
-                    pass
                 
                 start, dot, end = query.rsplit('.')
                 start = int(start)
