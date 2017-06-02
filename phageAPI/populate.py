@@ -1,19 +1,67 @@
+#!/usr/bin/env python
+
 import os
-import fetch
-from IPython import embed
-from Bio import SeqIO
-from lxml import html, etree
+import sys
+import argparse
 import requests
 import pandas
 import pickle
-from prunedict import prunedict
+from lxml import html, etree
+from Bio import Entrez
+from Bio import SeqIO
 from tqdm import tqdm
 
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'phageAPI.settings')
+import django
+django.setup()
 
-def get_spacerrepeatfiles(datapath):
-    spath = os.path.join(datapath, "spacerdatabase.txt")
+from util.acc import read_accession_file
+from util.prunedict import prunedict
+from util import fetch
+from restapi.models import (
+    Organism,
+    Spacer,
+    Repeat,
+    OrganismSpacerRepeatPair,
+    AntiCRISPR
+)
+
+DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data'))
+
+
+def populate_organism():
+    def add_organism(name, accession):
+        # get the object, this also checks for duplicates
+        o, created = Organism.objects.get_or_create(name=name, accession=accession)
+        return o
+
+    def merge_acc_names(accession_list):
+        acc_name_dict = {}
+        db = "nuccore"
+        # Doing batches of 200 to make sure requests to NCBI are not too big
+        for i in range(0, len(accession_list), 200):
+            j = i + 200
+
+            result_handle = Entrez.efetch(db=db, rettype="gb", id=accession_list[i:j])
+
+            # Populate result per organism name
+            records = SeqIO.parse(result_handle, 'genbank')
+            for record in tqdm(records):
+                # Using NCBI name, which should match accession number passed
+                acc_name_dict[record.name] = record.annotations['organism']
+        return acc_name_dict
+
+    with open(os.path.join(DATA_DIR, 'bac_accession_list.txt')) as f:
+        accession_list = list(read_accession_file(f))
+    acc_name_dict = merge_acc_names(accession_list)
+    for acc in acc_name_dict:
+        add_organism(name=acc_name_dict[acc], accession=acc)
+
+
+def get_spacerrepeatfiles():
+    spath = os.path.join(DATA_DIR, "spacerdatabase.txt")
     surl = 'http://crispr.i2bc.paris-saclay.fr/crispr/BLAST/Spacer/Spacerdatabase'
-    rpath = os.path.join(datapath, "repeatdatabase.txt")
+    rpath = os.path.join(DATA_DIR, "repeatdatabase.txt")
     rurl = 'http://crispr.i2bc.paris-saclay.fr/crispr/BLAST/DR/DRdatabase'
     fetch.fetch(spath, surl)
     fetch.fetch(rpath, rurl)
@@ -52,8 +100,7 @@ def addspacerstodict(gendict, sfile):
 
 def addpositionstodict(gendict):
     print("Downloading position information from web...")
-    accidswithloc = gendict.keys()
-    for accidwithloc in tqdm(accidswithloc):
+    for accidwithloc in tqdm(gendict):
         if 'Start' in gendict[accidwithloc]:
             continue
         accid = '_'.join(accidwithloc.split('_')[:-1])
@@ -63,7 +110,6 @@ def addpositionstodict(gendict):
         htmltable = html.fromstring(page.content).xpath(
             "//table[normalize-space(@class)='primary_table']")[1]
         strtable = etree.tostring(htmltable)
-        # embed()
         # converts to pandas df and then to numpy array then drop titles
         arrtable = pandas.read_html(strtable)[0].as_matrix()[2:]
         for row in arrtable:
@@ -103,14 +149,10 @@ def populate_fromlocus(locid, locus):
         osrpair.save()
     repeat.save()
     organism.save()
-if __name__ == '__main__':
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'phageAPI.settings')
-    import django
-    django.setup()
-    from restapi.models import Organism, Spacer, Repeat, OrganismSpacerRepeatPair
-    datapath = "../data"
+
+def populate_osrpair():
     print('Downloading files and gathering online data.')
-    sfile, rfile = get_spacerrepeatfiles(datapath)
+    sfile, rfile = get_spacerrepeatfiles()
     gendict = prunedict(
         addpositionstodict(
             addspacerstodict(
@@ -122,4 +164,36 @@ if __name__ == '__main__':
     print("Populating Spacer, Repeat, SpacerRepeatPair, OrganismSpacerRepeatPair tables")
     for locid in tqdm(gendict):
         populate_fromlocus(locid, gendict[locid])
-    embed()
+
+
+def populate_anticrispr():
+    with open(os.path.join(DATA_DIR, 'antiCRISPR_accessions.txt')) as f:
+        accession_list = list(read_accession_file(f))
+    print("Fetching AntiCRISPR entries")
+    result_handle = Entrez.efetch(db='protein', rettype="fasta", id=accession_list)
+    for record in tqdm(SeqIO.parse(result_handle, 'fasta')):
+        spacer, _ = AntiCRISPR.objects.get_or_create(
+            accession=record.name,
+            sequence=str(record.seq))
+        spacer.save()
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description='Populate the phageParser database with data from NCBI')
+    parser.add_argument('email', nargs=1,
+                        help='your email address (does not need to be registered, just used to identify you)')
+    args = parser.parse_args()
+
+    Entrez.email = args.email
+
+    print("Starting organism population")
+    populate_organism()
+    print("Starting OSR population")
+    populate_osrpair()
+    print("Starting AntiCRISPR population")
+    populate_anticrispr()
+
+
+if __name__ == '__main__':
+    main()

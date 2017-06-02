@@ -160,15 +160,3 @@ def fetch(path, url=None):
     else:
         '''Try to fetch the file as an accession id, if it fails return False.'''
         return gbsync()
-
-
-def reqfile(func=None, path=None, url=None):
-    """Decorator for downloading or updating files required for a function."""
-    if not func:
-        return functools.partial(fetch_factory, path=path, url=url)
-
-    @functools.wraps(test_func)
-    def wrapper(*args, **kwargs):
-        fetch(path, url)
-        return func(*args, **kwargs)
-    return wrapper
