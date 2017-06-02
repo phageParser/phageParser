@@ -24,6 +24,18 @@ class Organism(models.Model):
         return self.name
 
 
+class Phage(models.Model):
+    accession = models.CharField(max_length=50, blank=True, default='')
+
+
+class CasProtein(models.Model):
+    profileID = models.CharField(max_length=50, blank=True, default='')
+    function = models.CharField(max_length=50, blank=True, default='')
+    gene = models.CharField(max_length=50, blank=True, default='')
+    group = models.CharField(max_length=50, blank=True, default='')
+    type_specificity = models.CharField(max_length=50, blank=True, default='')
+
+
 class OrganismSpacerRepeatPair(models.Model):
     # Has 1 organism and a spacerrepeatpair list with start and end values for
     # locus
@@ -43,10 +55,6 @@ class OrganismAntiCRISPRPair(models.Model):
     genomic_end = models.PositiveIntegerField(default=0)
 
 
-class Phage(models.Model):
-    accession = models.CharField(max_length=50, blank=True, default='')
-
-
 class PhageAntiCRISPRPair(models.Model):
     phage = models.ForeignKey(Phage, on_delete=models.CASCADE, null=True)
     antiCRISPR = models.ForeignKey(
@@ -62,14 +70,11 @@ class PhageSpacerPair(models.Model):
     genomic_end = models.PositiveIntegerField(default=0)
 
 
-class OrganismCas(models.Model):
-    # Has 1 organism and a spacerrepeatpair list with start and end values for
-    # locus
-    organism_id = models.ForeignKey(Organism, on_delete=models.CASCADE, null=True)
-    accession = models.CharField(max_length=50, blank=True, default='')
-    gene_id = models.ForeignKey(Repeat, on_delete=models.CASCADE, null=True)
+class OrganismCasPair(models.Model):
+    organism = models.ForeignKey(
+        Organism, on_delete=models.CASCADE, null=True)
+    casprotein = models.ForeignKey(
+        CasProtein, on_delete=models.CASCADE, null=True)
     genomic_start = models.PositiveIntegerField(default=0)
     genomic_end = models.PositiveIntegerField(default=0)
     evalue = models.PositiveIntegerField(default=0)
-
-

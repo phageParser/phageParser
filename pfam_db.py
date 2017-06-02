@@ -1,9 +1,9 @@
 '''
-PFAM_db.py extracts and submits the translations from a GenBank input file (such as data/Genbank_example.txt) 
+pfam_db.py extracts and submits the translations from a GenBank input file (such as data/Genbank_example.txt) 
 to PFAM, before writing results to a CSV file in the same directory.
 
 Usage:
-python PFAM_db.py <infile> 
+python pfam_db.py <infile> 
 
 Ref - PR #73
 '''

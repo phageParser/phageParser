@@ -3,7 +3,7 @@ This script BLASTs all the files in /spacers against a downloaded copy of the ph
 
 USAGE:
 Change directory to one folder above the /spacers directory
-python BLAST_loop.py
+python blast_loop.py
 
 where:
 /spacers is a directory containing files with a list of CRISPR spacers
@@ -17,7 +17,7 @@ from Bio.Blast.Applications import NcbiblastnCommandline
 #help(NcbiblastnCommandline)
 import os
 import sys
-directory = sys.argv[-1]	#first argument input after 'python BLAST_loop.py' in command line will be stored in variable 'directory'
+directory = sys.argv[-1]	#first argument input after 'python blast_loop.py' in command line will be stored in variable 'directory'
 
 #change this directory as needed. Note that local blast may experience issues if you're not working in the blast directory (here NCBI/blast-2.2.30+)
 #directory = "C:/Users/madeleine/Documents/NCBI/phageParser/data"

@@ -1,5 +1,4 @@
-from restapi.models import Spacer, Repeat, Organism, OrganismSpacerRepeatPair, OrganismCas
-from rest_framework import serializers
+from restapi.models import Spacer, Repeat, Organism, OrganismSpacerRepeatPair, CasProtein, OrganismCasPair
 from dynamic_rest.serializers import DynamicModelSerializer, DynamicRelationField
 from dynamic_rest.fields import DynamicComputedField
 
@@ -38,10 +37,17 @@ class OrganismSerializer(DynamicModelSerializer):
         fields = ('id', 'name', 'accession')
 
 
-class OrganismCasSerializer(DynamicModelSerializer):
+class OCPairSerializer(DynamicModelSerializer):
     class Meta:
-        model = OrganismCas
-        fields = ('organism_id', 'accession')
+        model = OrganismCasPair
+        fields = ('organism', 'casprotein',
+                  'genomic_start', 'genomic_end', 'evalue')
+
+
+class CasProteinSerializer(DynamicModelSerializer):
+    class Meta:
+        model = CasProtein
+        fields = ('profileID', 'function', 'gene', 'group', 'type_specificity')
 
 
 class OSRPairSerializer(DynamicModelSerializer):

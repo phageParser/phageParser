@@ -3,44 +3,61 @@
 
 Adapted from https://www.biostars.org/p/66921/
 
-USAGE:
-cat <file> | python acc2gb.py <email> <db> <rettype> > <output>
-
-where:
-<file> is the name of a file containing accession numbers to download
-<email> is the email address associated with your NCBI account
-<db> is the NCBI database ID, which must be a valid Entrez database name
-<rettype> is the type of file to retrieve
-<output> is the name of the file you'd like to write the results to
-
-EXAMPLE:
-cat data/antiCRISPR_accessions.txt | python acc2gb.py your@email.com protein fasta > outfile.txt
-
-Case 1: rettype = gbwithparts, db = nuccore - downloads genbank file with metadata and fasta DNA sequence (i.e. for downloading bacterial genomes with metadata)
-Case 2: rettype = fasta, db = protein - downloads fasta file with protein sequence (i.e. for downloading antiCRISPR protein sequences for BLAST)
-
 DEPENDENCIES:
 Biopython
 """
 
 import sys
+import textwrap
+import argparse
 from Bio import Entrez
 
-#define parameters
-Entrez.email = sys.argv[1]
-db           = sys.argv[2]
-rettype      = sys.argv[3]
 
-#get accession numbers out of stdin
-accs = [ l.strip() for l in sys.stdin if l.strip() ]
+def main():
+    parser = argparse.ArgumentParser(
+        usage='cat INPUT | python acc2gb.py EMAIL DB RETTYPE > OUTPUT',
+        description=textwrap.dedent("""\
+            The input file should contain accession IDs to download, one per
+            line.  "Comments" beginning with '#' will be skipped -- this can be
+            useful to include the source of the accession numbers.
 
-#fetch
-sys.stderr.write( "Fetching %s entries from GenBank: %s\n" % (len(accs), ", ".join(accs[:10])))
-for i,acc in enumerate(accs):
-  try:
-    sys.stderr.write( " %9i %s          \r" % (i+1,acc))  
-    handle = Entrez.efetch(db=db, rettype=rettype, retmode="text", id=acc)
-    #print output to stdout
-    sys.stdout.write(handle.read())
-  except:
-    sys.stderr.write( "Error! Cannot fetch: %s        \n" % acc) 
+            EXAMPLE:
+
+            cat data/antiCRISPR_accessions.txt | python acc2gb.py your@email.com protein fasta > outfile.txt
+
+            Case 1: rettype = gbwithparts, db = nuccore - downloads genbank
+                file with metadata and fasta DNA sequence (i.e. for downloading
+                bacterial genomes with metadata)
+
+            Case 2: rettype = fasta, db = protein - downloads fasta file with
+                protein sequence (i.e. for downloading antiCRISPR protein sequences
+                for BLAST)
+            """),
+        formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument('email', nargs=1,
+                        help='your email address (does not need to be registered, just used to identify you)')
+    parser.add_argument('db', nargs=1,
+                        help='the NCBI database ID, which must be a valid Entrez database name')
+    parser.add_argument('rettype', nargs=1,
+                        help='the type of file to retrieve')
+    args = parser.parse_args()
+
+    Entrez.email = args.email
+
+    # get accession numbers out of stdin
+    accs = [l for l in (l.strip() for l in sys.stdin) if l and not l.startswith('#')]
+
+    # fetch
+    sys.stderr.write("Fetching %s entries from GenBank: %s\n" % (len(accs), ", ".join(accs[:10])))
+    for i, acc in enumerate(accs):
+        try:
+            sys.stderr.write(" %9i %s          \r" % (i + 1, acc))
+            handle = Entrez.efetch(db=args.db, rettype=args.rettype, retmode="text", id=acc)
+            # print output to stdout
+            sys.stdout.write(handle.read())
+        except Exception:
+            sys.stderr.write("Error! Cannot fetch: %s        \n" % acc)
+
+
+if __name__ == "__main__":
+    main()

@@ -4,7 +4,9 @@ python:
     - 3.6
 
 
-script: python phageAPI/manage.py test restapi
+script:
+  - python phageAPI/manage.py test restapi
+  - nosetests
 
 sudo: false
 
