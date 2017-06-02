@@ -1,0 +1,9 @@
+[run]
+source =
+    .
+    filters
+    parsers
+    phageAPI
+
+omit =
+    setup.py

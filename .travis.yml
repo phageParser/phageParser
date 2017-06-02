@@ -3,10 +3,16 @@ python:
     - 3.5
     - 3.6
 
+before_script:
+  # Don't override install because we prefer Travis' default steps, but we
+  # don't want to add this to everyone's environment.
+  - pip install codecov
 
 script:
-  - python phageAPI/manage.py test restapi
-  - pytest
+  - pytest --cov
+
+after_success:
+  - codecov
 
 sudo: false
 
