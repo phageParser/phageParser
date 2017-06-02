@@ -25,15 +25,15 @@ parser = argparse.ArgumentParser(description = 'General purpose BLAST function.'
 
 # required args
 parser.add_argument('-q', '--query', required = True, type = str, 
-		    help = 'Query sequence.')
+            help = 'Query sequence.')
 parser.add_argument('-s', '--subject', required = True, type = str, 
-		    help = 'Reference database name or .fasta file to blast against.')
+            help = 'Reference database name or .fasta file to blast against.')
 parser.add_argument('-t', '--task', required = True, type = str, 
-		    help = 'Flavor of BLAST to be used.')
+            help = 'Flavor of BLAST to be used.')
 parser.add_argument('-e', '--evalue', required = True, type = float, 
-		    help = 'Expect value. Default is 10')
+            help = 'Expect value. Default is 10')
 parser.add_argument('-o', '--output', required = True, type = str, 
-		    help = 'Name of output file to write to.')
+            help = 'Name of output file to write to.')
 
 # optional args
 parser.add_argument('-a', '--num_alignments', type = int, help = 'Number of alignments. Optional.')
@@ -55,16 +55,15 @@ cline.extend(['-out', str(args.output)])
 # subject/db parameter
 subject = os.path.splitext(args.subject)
 if subject[1] == '': # db name provided
-	cline.extend(['-db', subject[0]])
+    cline.extend(['-db', subject[0]])
 elif subject[1] == '.fasta' or subject[1] == '.fa':
-	cline.extend(['-subject', ''.join(subject)])
+    cline.extend(['-subject', ''.join(subject)])
 else:
-	sys.exit() 
-	print('Error in db/subject specified.')
-	print('Please specify either a db name or an input .fasta file.')
+    sys.exit() 
+    print('Error in db/subject specified.')
+    print('Please specify either a db name or an input .fasta file.')
 
-### optional parameters
-
+# optional parameters
 cline.extend(['-num_alignments', str(args.num_alignments)])
 cline.extend(['-reward', str(args.reward)])
 cline.extend(['-penalty', str(args.penalty)])
@@ -73,5 +72,4 @@ print('Command line BLAST+')
 print('Options entered:\n')
 print(' '.join(cline), '\n')
 subprocess.call(cline)
-
 
