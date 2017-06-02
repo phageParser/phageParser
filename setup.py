@@ -28,6 +28,6 @@ setup(
     packages = ['filter'],
     install_requires = ['Biopython'],
     extras_require = {
-        'tests': ['nose >= 1.0']
+        'tests': ['pytest >= 2.9.2']
     }
 )
