@@ -86,7 +86,7 @@ def populate_fromlocus(locid, locus):
     repeat, _ = Repeat.objects.get_or_create(sequence=locus['RepeatSeq'])
     posindex = int(locus['Start'])
     spacers = locus['Spacers']
-    for order in spacers:
+    for order in sorted(spacers):
         spacer, _ = Spacer.objects.get_or_create(sequence=spacers[order])
         pairstart = posindex
         pairend = pairstart + len(spacer.sequence) + len(repeat.sequence)
