@@ -18,9 +18,21 @@ django.setup()
 from util.acc import read_accession_file
 from util.prunedict import prunedict
 from util import fetch
-from restapi.models import Organism, Spacer, Repeat, OrganismSpacerRepeatPair
+from restapi.models import (
+    Organism,
+    Spacer,
+    Repeat,
+    OrganismSpacerRepeatPair,
+    AntiCRISPR
+)
 
 DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data'))
+
+
+def status(count, done=False):
+    sys.stdout.write("\rCount: %9i" % count);
+    if done:
+        sys.stdout.write("\n")
 
 
 def populate_organism():
@@ -32,23 +44,23 @@ def populate_organism():
     def merge_acc_names(accession_list):
         acc_name_dict = {}
         db = "nuccore"
+        count = 0
         # Doing batches of 200 to make sure requests to NCBI are not too big
         for i in range(0, len(accession_list), 200):
             j = i + 200
             if (j >= len(accession_list)):
                 j = len(accession_list)
 
-            print("Fetching organism entries from %s to %s from GenBank\n" % (i, j))
             result_handle = Entrez.efetch(db=db, rettype="gb", id=accession_list[i:j])
 
             # Populate result per organism name
             records = SeqIO.parse(result_handle, 'genbank')
-            count = 0
             for record in records:
+                status(count)
                 # Using NCBI name, which should match accession number passed
                 acc_name_dict[record.name] = record.annotations['organism']
                 count += 1
-            print(count)
+        status(count, True)
         return acc_name_dict
 
     with open(os.path.join(DATA_DIR, 'bac_accession_list.txt')) as f:
@@ -58,10 +70,10 @@ def populate_organism():
         add_organism(name=acc_name_dict[acc], accession=acc)
 
 
-def get_spacerrepeatfiles(datapath):
-    spath = os.path.join(datapath, "spacerdatabase.txt")
+def get_spacerrepeatfiles():
+    spath = os.path.join(DATA_DIR, "spacerdatabase.txt")
     surl = 'http://crispr.i2bc.paris-saclay.fr/crispr/BLAST/Spacer/Spacerdatabase'
-    rpath = os.path.join(datapath, "repeatdatabase.txt")
+    rpath = os.path.join(DATA_DIR, "repeatdatabase.txt")
     rurl = 'http://crispr.i2bc.paris-saclay.fr/crispr/BLAST/DR/DRdatabase'
     fetch.fetch(spath, surl)
     fetch.fetch(rpath, rurl)
@@ -163,9 +175,29 @@ def populate_osrpair():
 
     print('Created dictionary and dumped data to genedict.pickle')
     print("Populating Spacer, Repeat, SpacerRepeatPair, OrganismSpacerRepeatPair tables")
+    count = 0
     for locid in tqdm(gendict):
+        status(count)
         populate_fromlocus(locid, gendict[locid])
-    embed()
+        count += 1
+    status(count, True)
+
+
+def populate_anticrispr():
+    with open(os.path.join(DATA_DIR, 'antiCRISPR_accessions.txt')) as f:
+        accession_list = list(read_accession_file(f))
+    print("Fetching AntiCRISPR entries")
+    result_handle = Entrez.efetch(db='protein', rettype="fasta", id=accession_list)
+    count = 0
+    for record in SeqIO.parse(result_handle, 'fasta'):
+        status(count)
+        spacer, _ = AntiCRISPR.objects.get_or_create(
+            accession=record.name,
+            sequence=str(record.seq))
+        spacer.save()
+        count += 1
+    status(count, True)
+
 
 def main():
     parser = argparse.ArgumentParser(
@@ -180,6 +212,8 @@ def main():
     populate_organism()
     print("Starting OSR population")
     populate_osrpair()
+    print("Starting AntiCRISPR population")
+    populate_anticrispr()
 
 
 if __name__ == '__main__':
