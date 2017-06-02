@@ -57,8 +57,8 @@ cline.extend(['-out', str(args.output)])
 subject = os.path.splitext(args.subject)
 if subject[1] == '':  # db name provided
     cline.extend(['-db', subject[0]])
-elif subject[1] == '.fasta' or subject[1] == '.fa':
-    cline.extend(['-subject', ''.join(subject)])
+elif subject[1] in ('.fasta', '.fa'):
+    cline.extend(['-subject', args.subject])
 else:
     sys.exit()
     print('Error in db/subject specified.')
