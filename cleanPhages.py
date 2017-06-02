@@ -41,7 +41,7 @@ def split_name(csv_list, phage_finder):
         row.insert(1,'')
         name, refseq = get_phagename_and_refseq(row[1], phage_finder)
         if name is not None and refseq is not None:
-            row[1], row[2] = name, ref_seq
+            row[1], row[2] = name, refseq
     return csv_list
 
 def compare_phages(csv_sorted):

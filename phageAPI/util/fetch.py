@@ -1,6 +1,5 @@
 import os
 import datetime
-import functools
 import zlib
 import requests
 import re
