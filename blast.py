@@ -59,9 +59,9 @@ if subject[1] == '':  # db name provided
 elif subject[1] in ('.fasta', '.fa'):
     cline.extend(['-subject', args.subject])
 else:
-    sys.exit()
-    print('Error in db/subject specified.')
-    print('Please specify either a db name or an input .fasta file.')
+  print('Error in db/subject specified.')
+  print('Please specify either a db name or an input .fasta file.')
+  sys.exit()
 
 # optional parameters
 if args.num_alignments is not None:
