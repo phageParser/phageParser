@@ -19,19 +19,10 @@ Populates CasProtein and OrganismCasPair tables
 import os
 import numpy as np
 
-casprofiles = "../data/crispr_type.csv" # table of cas proteins from Makarova et al 2015
+casprofiles = "data/crispr_type.csv" # table of cas proteins from Makarova et al 2015
 
 with open(casprofiles, 'r', encoding='utf8') as f:
     profiles = np.loadtxt(f, dtype='S', delimiter='\t')
-
-def make_profile_dict(profiles):
-    """ 
-    make dictionary of profile accessions to gene name and crispr types
-    """
-    profile_dict = {}
-    for row in profiles:
-        profile_dict[row[0].decode('utf8')] = [row[3].decode('utf8'),row[5].decode('utf8')]
-    return profile_dict  
     
 def populate_cas():
     print("Populating CasProtein table...")
