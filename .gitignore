@@ -115,3 +115,5 @@ visualization/components/
 # django build specific files
 **.sqlite3
 phageAPI/restapi/migrations/
+#Hmmer files
+hmmercasdb/
