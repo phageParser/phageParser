@@ -1,1 +1,0 @@
-requires "File::Slurp::Tiny";
