@@ -6,14 +6,15 @@ python:
     - 3.6
 env:
   global:
-    - DATABASE_URL=postgres://postgres@localhost:5432/travis_ci_test
-    - SECRET_KEY=testingsecretkeyblabla
+
   matrix:
     - DEBUG=TRUE
     - DEBUG=FALSE
 before_script:
+  # copy sample env to .env
+  - cp .env.example .env
   # create a database
-  - psql -c 'create database travis_ci_test;' -U postgres
+  - psql -c 'create database testdb;' -U postgres
   # Don't override install because we prefer Travis' default steps, but we
   # don't want to add this to everyone's environment.
   - pip install codecov
