@@ -12,7 +12,7 @@ class Repeat(models.Model):
 
 
 class AntiCRISPR(models.Model):
-    sequence = models.CharField(max_length=255, blank=True, default='')
+    sequence = models.CharField(max_length=512, blank=True, default='')
     accession = models.CharField(max_length=32, blank=True, default='')
 
 
