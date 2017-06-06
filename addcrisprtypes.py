@@ -17,7 +17,6 @@ def fetchgenbankfiles(fpath='gbfiles'):
 
 
 def convertgenbanktofasta(fpath):
-    print(fpath)
     with open(fpath, 'r') as f:
         fileText = f.read()
     def extractCDS():
