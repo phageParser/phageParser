@@ -15,6 +15,33 @@ class GetSequenceLength(DynamicComputedField):
         return int(value)
 
 
+class GetCasProteins(DynamicComputedField):
+    def __init__(self, **kwargs):
+        kwargs['field_type'] = int
+        super(GetCasProteins, self).__init__(**kwargs)
+
+    def get_attribute(self, instance):
+        pairlist = OrganismCasPair.objects.filter(
+            organism=instance).values('casprotein')
+        return list(CasProtein.objects.filter(id__in=pairlist))
+
+    def to_representation(self, value):
+        return [a.id for a in value]
+
+
+class GetCRISPRType(DynamicComputedField):
+    def __init__(self, **kwargs):
+        kwargs['field_type'] = str
+        super(GetCRISPRType, self).__init__(**kwargs)
+
+    def get_attribute(self, instance):
+        pairlist = OrganismCasPair.objects.filter(
+            organism=instance).values('casprotein')
+        proteinlist = CasProtein.objects.filter(id__in=pairlist).values('type_specificity')
+        return list(proteinlist)
+
+    def to_representation(self, value):
+        return set([b for a in value for b in a['type_specificity'].split(',') ])
 class SequenceSerializer(DynamicModelSerializer):
     length = GetSequenceLength()
 
@@ -32,9 +59,12 @@ class RepeatSerializer(SequenceSerializer):
 
 
 class OrganismSerializer(DynamicModelSerializer):
+    casproteins = GetCasProteins()
+    crisprtypes = GetCRISPRType()
+
     class Meta:
         model = Organism
-        fields = ('id', 'name', 'accession')
+        fields = ('id', 'name', 'accession', 'casproteins', 'crisprtypes')
 
 
 class OCPairSerializer(DynamicModelSerializer):
