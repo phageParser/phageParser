@@ -5,8 +5,8 @@ python:
     - 3.5
     - 3.6
 env:
-  - DB=postgres
   - DATABASE_URL=postgres://postgres@elocalhost:5432/travis_ci_test
+  - SECRET_KEY=testingsecretkeyblabla
 before_script:
   # create a database
   - psql -c 'create database travis_ci_test;' -U postgres
