@@ -1,5 +1,5 @@
-from restapi.serializers import SpacerSerializer, RepeatSerializer, OrganismSerializer, OSRPairSerializer, OCPairSerializer, CasProteinSerializer
-from restapi.models import Spacer, Repeat, Organism, OrganismSpacerRepeatPair, OrganismCasPair, CasProtein
+from restapi.serializers import SpacerSerializer, RepeatSerializer, OrganismSerializer, OSRPairSerializer, OCPairSerializer, CasProteinSerializer, LocusSerializer
+from restapi.models import Spacer, Repeat, Organism, OrganismSpacerRepeatPair, OrganismCasPair, CasProtein, Locus
 from dynamic_rest.viewsets import DynamicModelViewSet
 
 
@@ -25,6 +25,14 @@ class OrganismViewSet(DynamicModelViewSet):
     """
     queryset = Organism.objects.all()
     serializer_class = OrganismSerializer
+
+
+class LocusViewSet(DynamicModelViewSet):
+    """
+    API endpoint that allows loci to be viewed or edited.
+    """
+    queryset = Locus.objects.all()
+    serializer_class = LocusSerializer
 
 
 class CasProteinViewSet(DynamicModelViewSet):

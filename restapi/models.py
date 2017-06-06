@@ -24,6 +24,12 @@ class Organism(models.Model):
         return self.name
 
 
+class Locus(models.Model):
+    organism = models.ForeignKey(Organism, on_delete=models.CASCADE, null=True)
+    genomic_start = models.PositiveIntegerField(default=0)
+    genomic_end = models.PositiveIntegerField(default=0)
+
+
 class Phage(models.Model):
     accession = models.CharField(max_length=32, blank=True, default='')
 
@@ -37,14 +43,10 @@ class CasProtein(models.Model):
 
 
 class OrganismSpacerRepeatPair(models.Model):
-    # Has 1 organism and a spacerrepeatpair list with start and end values in
-    # locus
-    organism = models.ForeignKey(Organism, on_delete=models.CASCADE, null=True)
+    locus = models.ForeignKey(Locus, on_delete=models.CASCADE, null=True)
     spacer = models.ForeignKey(Spacer, on_delete=models.CASCADE, null=True)
     repeat = models.ForeignKey(Repeat, on_delete=models.CASCADE, null=True)
     order = models.PositiveIntegerField(default=0)
-    genomic_start = models.PositiveIntegerField(default=0)
-    genomic_end = models.PositiveIntegerField(default=0)
 
 
 class OrganismAntiCRISPRPair(models.Model):

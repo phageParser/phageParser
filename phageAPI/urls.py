@@ -25,7 +25,7 @@ router.register(r'organisms', views.OrganismViewSet)
 router.register(r'osrpairs', views.OSRPairViewSet)
 router.register(r'casproteins', views.CasProteinViewSet)
 router.register(r'ocpairs', views.OCPairViewSet)
-
+router.register(r'locus', views.LocusViewSet)
 urlpatterns = [
     url(r'^', include(router.urls)),
     url(r'^admin/', admin.site.urls),

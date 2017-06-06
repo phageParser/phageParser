@@ -23,7 +23,8 @@ from restapi.models import (
     Spacer,
     Repeat,
     OrganismSpacerRepeatPair,
-    AntiCRISPR
+    AntiCRISPR,
+    Locus
 )
 
 DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data'))
@@ -130,23 +131,21 @@ def populate_fromlocus(locid, locus):
         return
     organism = organismset[0]
     repeat, _ = Repeat.objects.get_or_create(sequence=locus['RepeatSeq'])
-    posindex = int(locus['Start'])
+    loc_start = int(locus['Start'])
+    loc_end = int(locus['End'])
+    loc_obj, _ = Locus.objects.get_or_create(organism=organism, genomic_start=loc_start, genomic_end=loc_end)
     spacers = locus['Spacers']
     for order in sorted(spacers):
         spacer, _ = Spacer.objects.get_or_create(sequence=spacers[order])
-        pairstart = posindex
-        pairend = pairstart + len(spacer.sequence) + len(repeat.sequence)
-        posindex = pairend
-        osrpair, _ = OrganismSpacerRepeatPair.objects.get_or_create(organism=organism,
+        osrpair, _ = OrganismSpacerRepeatPair.objects.get_or_create(locus=organism,
                                                                     spacer=spacer,
                                                                     repeat=repeat,
                                                                     order=int(
-                                                                        order),
-                                                                    genomic_start=int(
-                                                                        pairstart),
-                                                                    genomic_end=int(pairend))
+                                                                        order)
+                                                                    )
         spacer.save()
         osrpair.save()
+    loc_obj.save()
     repeat.save()
     organism.save()
 
