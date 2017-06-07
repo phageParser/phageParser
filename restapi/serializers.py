@@ -1,4 +1,4 @@
-from restapi.models import Spacer, Repeat, Organism, OrganismSpacerRepeatPair, CasProtein, OrganismCasPair
+from restapi.models import Spacer, Repeat, Organism, OrganismSpacerRepeatPair, CasProtein, OrganismCasPair, Locus
 from dynamic_rest.serializers import DynamicModelSerializer, DynamicRelationField
 from dynamic_rest.fields import DynamicComputedField
 
@@ -37,11 +37,14 @@ class GetCRISPRType(DynamicComputedField):
     def get_attribute(self, instance):
         pairlist = OrganismCasPair.objects.filter(
             organism=instance).values('casprotein')
-        proteinlist = CasProtein.objects.filter(id__in=pairlist).values('type_specificity')
+        proteinlist = CasProtein.objects.filter(
+            id__in=pairlist).values('type_specificity')
         return list(proteinlist)
 
     def to_representation(self, value):
-        return set([b for a in value for b in a['type_specificity'].split(',') ])
+        return set([b for a in value for b in a['type_specificity'].split(',')])
+
+
 class SequenceSerializer(DynamicModelSerializer):
     length = GetSequenceLength()
 
@@ -74,6 +77,12 @@ class OCPairSerializer(DynamicModelSerializer):
                   'genomic_start', 'genomic_end', 'evalue')
 
 
+class LocusSerializer(DynamicModelSerializer):
+    class Meta:
+        model = Locus
+        fields = ('organism', 'genomic_start', 'genomic_end')
+
+
 class CasProteinSerializer(DynamicModelSerializer):
     class Meta:
         model = CasProtein
@@ -83,9 +92,9 @@ class CasProteinSerializer(DynamicModelSerializer):
 class OSRPairSerializer(DynamicModelSerializer):
     spacer = DynamicRelationField('SpacerSerializer')
     repeat = DynamicRelationField('RepeatSerializer')
-    organism = DynamicRelationField('OrganismSerializer')
+    locus = DynamicRelationField('LocusSerializer')
 
     class Meta:
         model = OrganismSpacerRepeatPair
-        fields = ('id', 'organism', 'spacer', 'repeat',
-                  'order', 'genomic_start', 'genomic_end')
+        fields = ('id', 'locus', 'spacer', 'repeat',
+                  'order')
