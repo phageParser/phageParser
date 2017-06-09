@@ -22,18 +22,19 @@ from restapi.models import (
     Organism,
     Spacer,
     Repeat,
-    OrganismSpacerRepeatPair,
+    LocusSpacerRepeat,
     AntiCRISPR,
     Locus
 )
 
-DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data'))
+DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data'))
 
 
 def populate_organism():
     def add_organism(name, accession):
         # get the object, this also checks for duplicates
-        o, created = Organism.objects.get_or_create(name=name, accession=accession)
+        o, created = Organism.objects.get_or_create(
+            name=name, accession=accession)
         return o
 
     def merge_acc_names(accession_list):
@@ -43,7 +44,8 @@ def populate_organism():
         for i in range(0, len(accession_list), 200):
             j = i + 200
 
-            result_handle = Entrez.efetch(db=db, rettype="gb", id=accession_list[i:j])
+            result_handle = Entrez.efetch(
+                db=db, rettype="gb", id=accession_list[i:j])
 
             # Populate result per organism name
             records = SeqIO.parse(result_handle, 'genbank')
@@ -53,8 +55,9 @@ def populate_organism():
         return acc_name_dict
 
     with open(os.path.join(DATA_DIR, 'bac_accession_list.txt')) as f:
-        accession_list = list(read_accession_file(f))
-    acc_name_dict = merge_acc_names(accession_list)
+        acc_name_dict = list(read_accession_file(f))
+
+    # acc_name_dict = merge_acc_names(accession_list)
     for acc in acc_name_dict:
         add_organism(name=acc_name_dict[acc], accession=acc)
 
@@ -123,40 +126,42 @@ def addpositionstodict(gendict):
     return gendict
 
 
-def populate_fromlocus(locid, locus):
+def populate_fromlocus(locid, locdict):
     accid = '_'.join(locid.split('_')[:-1])
     organismset = Organism.objects.filter(accession=accid)
-    if not organismset:
+    if not organismset.exists():
         print('Organism with accid %s not found in db' % accid)
         return
     organism = organismset[0]
-    repeat, _ = Repeat.objects.get_or_create(sequence=locus['RepeatSeq'])
-    loc_start = int(locus['Start'])
-    loc_end = int(locus['End'])
-    loc_obj, _ = Locus.objects.get_or_create(organism=organism, genomic_start=loc_start, genomic_end=loc_end)
-    spacers = locus['Spacers']
+    repeat, _ = Repeat.objects.get_or_create(sequence=locdict['RepeatSeq'])
+    loc_start = int(locdict['Start'])
+    loc_end = int(locdict['Stop'])
+    locus, _ = Locus.objects.get_or_create(
+        organism=organism, genomic_start=loc_start, genomic_end=loc_end)
+    spacers = locdict['Spacers']
     for order in sorted(spacers):
         spacer, _ = Spacer.objects.get_or_create(sequence=spacers[order])
-        osrpair, _ = OrganismSpacerRepeatPair.objects.get_or_create(locus=organism,
-                                                                    spacer=spacer,
-                                                                    repeat=repeat,
-                                                                    order=int(
-                                                                        order)
-                                                                    )
+        order = int(order)
+        lsr, _ = LocusSpacerRepeat.objects.get_or_create(locus=locus,
+                                                         spacer=spacer,
+                                                         repeat=repeat,
+                                                         order=order
+                                                         )
         spacer.save()
-        osrpair.save()
-    loc_obj.save()
+        lsr.save()
+    locus.save()
     repeat.save()
     organism.save()
 
-def populate_osrpair():
+
+def populate_lsrpair():
     print('Downloading files and gathering online data.')
     sfile, rfile = get_spacerrepeatfiles()
     gendict = prunedict(
         addpositionstodict(
             addspacerstodict(
                 repeatfiletodict(rfile), sfile)))
-    with open('genedict.pickle', 'wb') as f:
+    with open('dbbackups/genedict.pickle', 'rb') as f:
         pickle.dump(gendict, f, protocol=pickle.HIGHEST_PROTOCOL)
 
     print('Created dictionary and dumped data to genedict.pickle')
@@ -169,7 +174,8 @@ def populate_anticrispr():
     with open(os.path.join(DATA_DIR, 'antiCRISPR_accessions.txt')) as f:
         accession_list = list(read_accession_file(f))
     print("Fetching AntiCRISPR entries")
-    result_handle = Entrez.efetch(db='protein', rettype="fasta", id=accession_list)
+    result_handle = Entrez.efetch(
+        db='protein', rettype="fasta", id=accession_list)
     for record in tqdm(SeqIO.parse(result_handle, 'fasta')):
         spacer, _ = AntiCRISPR.objects.get_or_create(
             accession=record.name,
@@ -188,8 +194,8 @@ def main():
 
     print("Starting organism population")
     populate_organism()
-    print("Starting OSR population")
-    populate_osrpair()
+    print("Starting LSR population")
+    populate_lsrpair()
     print("Starting AntiCRISPR population")
     populate_anticrispr()
 
