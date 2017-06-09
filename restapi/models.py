@@ -16,12 +16,22 @@ class AntiCRISPR(models.Model):
     accession = models.CharField(max_length=32, blank=True, default='')
 
 
+class CasProtein(models.Model):
+    profileID = models.CharField(max_length=32, blank=True, default='')
+    function = models.CharField(max_length=32, blank=True, default='')
+    gene = models.CharField(max_length=32, blank=True, default='')
+    group = models.CharField(max_length=32, blank=True, default='')
+    type_specificity = models.CharField(max_length=255, blank=True, default='')
+
+
 class Organism(models.Model):
     name = models.CharField(max_length=512, blank=True, default='')
     accession = models.CharField(max_length=32, blank=True, default='')
+    cas_proteins = models.ManyToManyField(
+        CasProtein, through='OrganismCasProtein')
 
     def __str__(self):
-        return self.name
+        return '{} with accession {}'.format(self.name, self.accession)
 
 
 class Locus(models.Model):
@@ -34,22 +44,14 @@ class Phage(models.Model):
     accession = models.CharField(max_length=32, blank=True, default='')
 
 
-class CasProtein(models.Model):
-    profileID = models.CharField(max_length=32, blank=True, default='')
-    function = models.CharField(max_length=32, blank=True, default='')
-    gene = models.CharField(max_length=32, blank=True, default='')
-    group = models.CharField(max_length=32, blank=True, default='')
-    type_specificity = models.CharField(max_length=255, blank=True, default='')
-
-
-class OrganismSpacerRepeatPair(models.Model):
+class OrganismSpacerRepeat(models.Model):
     locus = models.ForeignKey(Locus, on_delete=models.CASCADE, null=True)
     spacer = models.ForeignKey(Spacer, on_delete=models.CASCADE, null=True)
     repeat = models.ForeignKey(Repeat, on_delete=models.CASCADE, null=True)
     order = models.PositiveIntegerField(default=0)
 
 
-class OrganismAntiCRISPRPair(models.Model):
+class OrganismAntiCRISPR(models.Model):
     organism = models.ForeignKey(Organism, on_delete=models.CASCADE, null=True)
     antiCRISPR = models.ForeignKey(
         AntiCRISPR, on_delete=models.CASCADE, null=True)
@@ -57,7 +59,7 @@ class OrganismAntiCRISPRPair(models.Model):
     genomic_end = models.PositiveIntegerField(default=0)
 
 
-class PhageAntiCRISPRPair(models.Model):
+class PhageAntiCRISPR(models.Model):
     phage = models.ForeignKey(Phage, on_delete=models.CASCADE, null=True)
     antiCRISPR = models.ForeignKey(
         AntiCRISPR, on_delete=models.CASCADE, null=True)
@@ -65,14 +67,14 @@ class PhageAntiCRISPRPair(models.Model):
     genomic_end = models.PositiveIntegerField(default=0)
 
 
-class PhageSpacerPair(models.Model):
+class PhageSpacer(models.Model):
     phage = models.ForeignKey(Phage, on_delete=models.CASCADE, null=True)
     spacer = models.ForeignKey(Spacer, on_delete=models.CASCADE, null=True)
     genomic_start = models.PositiveIntegerField(default=0)
     genomic_end = models.PositiveIntegerField(default=0)
 
 
-class OrganismCasPair(models.Model):
+class OrganismCasProtein(models.Model):
     organism = models.ForeignKey(
         Organism, on_delete=models.CASCADE, null=True)
     casprotein = models.ForeignKey(
