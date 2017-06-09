@@ -1,4 +1,4 @@
-from restapi.models import Spacer, Repeat, Organism, OrganismSpacerRepeat, CasProtein, OrganismCasProtein, Locus
+from restapi.models import Spacer, Repeat, Organism, LocusSpacerRepeat, CasProtein, OrganismCasProtein, Locus
 from dynamic_rest.serializers import DynamicModelSerializer, DynamicRelationField
 from dynamic_rest.fields import DynamicComputedField
 
@@ -52,11 +52,22 @@ class OrganismSerializer(DynamicModelSerializer):
     cas_proteins = DynamicRelationField('CasProteinSerializer', many=True)
 
 
+class LSRSerializer(DynamicModelSerializer):
+    class Meta:
+        model = LocusSpacerRepeat
+        fields = ('id', 'locus', 'spacer', 'repeat',
+                  'order')
+    spacer = DynamicRelationField('SpacerSerializer')
+    repeat = DynamicRelationField('RepeatSerializer')
+    locus = DynamicRelationField('LocusSerializer')
+
+
 class LocusSerializer(DynamicModelSerializer):
 
     class Meta:
         model = Locus
-        fields = ('organism', 'genomic_start', 'genomic_end')
+        fields = ('organism', 'genomic_start', 'genomic_end', 'spacerrepeats')
+        deferred_fields = ('spacerrepeats',)
     organism = DynamicRelationField('OrganismSerializer')
 
 
@@ -74,13 +85,3 @@ class OCSerializer(DynamicModelSerializer):
 
     casprotein = DynamicRelationField('CasProteinSerializer')
     organism = DynamicRelationField('OrganismSerializer')
-
-
-class OSRSerializer(DynamicModelSerializer):
-    class Meta:
-        model = OrganismSpacerRepeat
-        fields = ('id', 'locus', 'spacer', 'repeat',
-                  'order')
-    spacer = DynamicRelationField('SpacerSerializer')
-    repeat = DynamicRelationField('RepeatSerializer')
-    locus = DynamicRelationField('LocusSerializer')

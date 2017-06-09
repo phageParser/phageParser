@@ -44,8 +44,8 @@ class Phage(models.Model):
     accession = models.CharField(max_length=32, blank=True, default='')
 
 
-class OrganismSpacerRepeat(models.Model):
-    locus = models.ForeignKey(Locus, on_delete=models.CASCADE, null=True)
+class LocusSpacerRepeat(models.Model):
+    locus = models.ForeignKey(Locus, on_delete=models.CASCADE, null=True, related_name='spacerrepeats')
     spacer = models.ForeignKey(Spacer, on_delete=models.CASCADE, null=True)
     repeat = models.ForeignKey(Repeat, on_delete=models.CASCADE, null=True)
     order = models.PositiveIntegerField(default=0)

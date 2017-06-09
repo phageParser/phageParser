@@ -22,10 +22,10 @@ router = DynamicRouter()
 router.register(r'spacers', views.SpacerViewSet)
 router.register(r'repeats', views.RepeatViewSet)
 router.register(r'organisms', views.OrganismViewSet)
-router.register(r'organismspacerrepeat', views.OSRViewSet)
+router.register(r'locuspacerrepeats', views.LSRViewSet)
 router.register(r'casproteins', views.CasProteinViewSet)
 router.register(r'organismcas', views.OCViewSet)
-router.register(r'locus', views.LocusViewSet)
+router.register(r'loci', views.LocusViewSet)
 urlpatterns = [
     url(r'^', include(router.urls)),
     url(r'^admin/', admin.site.urls),

@@ -1,5 +1,5 @@
-from restapi.serializers import SpacerSerializer, RepeatSerializer, OrganismSerializer, OSRSerializer, OCSerializer, CasProteinSerializer, LocusSerializer
-from restapi.models import Spacer, Repeat, Organism, OrganismSpacerRepeat, OrganismCasProtein, CasProtein, Locus
+from restapi.serializers import SpacerSerializer, RepeatSerializer, OrganismSerializer, LSRSerializer, OCSerializer, CasProteinSerializer, LocusSerializer
+from restapi.models import Spacer, Repeat, Organism, LocusSpacerRepeat, OrganismCasProtein, CasProtein, Locus
 from dynamic_rest.viewsets import DynamicModelViewSet
 
 
@@ -51,9 +51,9 @@ class OCViewSet(DynamicModelViewSet):
     serializer_class = OCSerializer
 
 
-class OSRViewSet(DynamicModelViewSet):
+class LSRViewSet(DynamicModelViewSet):
     """
-    API endpoint that allows organism spacer repeat pairs to be viewed or edited.
+    API endpoint that allows locus spacer repeat pairs to be viewed or edited.
     """
-    queryset = OrganismSpacerRepeat.objects.all()
-    serializer_class = OSRSerializer
+    queryset = LocusSpacerRepeat.objects.all()
+    serializer_class = LSRSerializer
