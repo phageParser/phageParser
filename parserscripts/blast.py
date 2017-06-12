@@ -1,6 +1,8 @@
 """
 usage - python blast.py [options]
 
+Example usage - python blast.py -t blastn -q data/spacers/NC_000853.fasta -s data/NC_000853.fasta -e 10 -o blast_test.xml
+
 Performs input blast and writes results in xml format.
 
 Options for -t: blastn, blastp, tblastn, blastx, tblastx, psiblast
