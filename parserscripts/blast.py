@@ -43,7 +43,7 @@ parser.add_argument('-p', '--penalty', type=int,
 
 args = parser.parse_args()
 task = args.task
-outfmt = '-outfmt 5'
+outfmt = '-outfmt=5'
 
 # initialize command line
 cline = [task, outfmt]
