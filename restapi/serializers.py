@@ -15,17 +15,7 @@ class GetSequenceLength(DynamicComputedField):
         return int(value)
 
 
-class GetCRISPRType(DynamicComputedField):
-    def __init__(self, **kwargs):
-        kwargs['field_type'] = str
-        super(GetCRISPRType, self).__init__(**kwargs)
 
-    def get_attribute(self, instance):
-        proteinlist = instance.cas_proteins.values('type_specificity')
-        return list(proteinlist)
-
-    def to_representation(self, value):
-        return set([b for a in value for b in a['type_specificity'].split(',')])
 
 
 class SequenceSerializer(DynamicModelSerializer):
@@ -35,20 +25,30 @@ class SequenceSerializer(DynamicModelSerializer):
 class SpacerSerializer(SequenceSerializer):
     class Meta:
         model = Spacer
-        fields = ('id', 'sequence', 'length', 'sequence')
+        fields = ('id', 'sequence', 'length', 'sequence', 'loci', 'repeats')
+        deferred_fields = ('loci', 'repeats')
+    loci = DynamicRelationField('LocusSerializer', many=True, embed=True)
+    repeats = DynamicRelationField('RepeatSerializer', many=True)
 
 
 class RepeatSerializer(SequenceSerializer):
     class Meta:
         model = Repeat
-        fields = ('id', 'length', 'sequence')
+        fields = ('id', 'length', 'sequence', 'loci', 'spacers')
+        deferred_fields = ('loci', 'spacers')
+    loci = DynamicRelationField('LocusSerializer', many=True)
+    spacers = DynamicRelationField('SpacerSerializer', many=True)
 
 
 class OrganismSerializer(DynamicModelSerializer):
     class Meta:
         model = Organism
-        fields = ('id', 'name', 'accession', 'cas_proteins', 'crisprtypes')
-    crisprtypes = GetCRISPRType()
+        fields = ('id', 'name', 'accession', 'cas_proteins',
+                  'crisprtypes', 'loci')
+        deferred_fields = ('crisprtypes', 'cas_proteins',
+                           'loci')
+    loci = DynamicRelationField(
+        'LocusSerializer', source='locus_set', embed=True, many=True)
     cas_proteins = DynamicRelationField('CasProteinSerializer', many=True)
 
 
@@ -66,21 +66,24 @@ class LocusSerializer(DynamicModelSerializer):
 
     class Meta:
         model = Locus
-        fields = ('organism', 'genomic_start', 'genomic_end', 'spacerrepeats')
-        deferred_fields = ('spacerrepeats',)
+        fields = ('id', 'organism', 'genomic_start', 'genomic_end',
+                  'spacerrepeats', 'spacers', 'repeats')
+        deferred_fields = ('spacerrepeats', 'spacers', 'repeats')
     organism = DynamicRelationField('OrganismSerializer')
+    spacers = DynamicRelationField('SpacerSerializer', embed=True, many=True)
+    repeats = DynamicRelationField('RepeatSerializer', embed=True, many=True)
 
 
 class CasProteinSerializer(DynamicModelSerializer):
     class Meta:
         model = CasProtein
-        fields = ('profileID', 'function', 'gene', 'group', 'type_specificity')
+        fields = ('id', 'profileID', 'function', 'gene', 'group', 'type_specificity')
 
 
 class OCSerializer(DynamicModelSerializer):
     class Meta:
         model = OrganismCasProtein
-        fields = ('organism', 'casprotein',
+        fields = ('id','organism', 'casprotein',
                   'genomic_start', 'genomic_end', 'evalue')
 
     casprotein = DynamicRelationField('CasProteinSerializer')

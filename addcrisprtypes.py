@@ -7,11 +7,15 @@ import os
 import subprocess
 import glob
 from util.fetch import fetch
+from tqdm import tqdm
 
 
-def fetchgenbankfiles(fpath='gbfiles'):
-    os.makedirs(fpath, exist_ok=True)
-    for org in Organism.objects.all():
+def fetchgenbankfiles(gbdir='gbfiles'):
+    os.makedirs(gbdir, exist_ok=True)
+    for org in tqdm(Organism.objects.all()):
+        fpath = os.path.join(gbdir, '{}.gb'.format(org.accession))
+        if os.path.isfile(fpath):
+            continue
         print('\nFetching {} with accession {}'.format(org.name, org.accession))
         fetch(os.path.join(fpath, '{}.gb'.format(org.accession)))
 
@@ -19,6 +23,7 @@ def fetchgenbankfiles(fpath='gbfiles'):
 def convertgenbanktofasta(fpath):
     with open(fpath, 'r') as f:
         fileText = f.read()
+
     def extractCDS():
         cds = []
         m = re.finditer('CDS\s{13}(?P<CDS>\S*)', fileText)
@@ -29,6 +34,7 @@ def convertgenbanktofasta(fpath):
                 cds.append(element)
 
         return cds
+
     def extractTranslations():
         translations = []
         m = re.finditer(
@@ -49,16 +55,19 @@ def convertgenbanktofasta(fpath):
     return fastatext
 
 
-def hmmscangenbankfiles(fpath='gbfiles', hmmdbpath='hmmdb/testdb'):
-    hmmoutpath = os.path.join(fpath, 'hmmeroutput')
+def hmmscangenbankfiles(gbdir='gbfiles', hmmdbpath='util/hmmercasdb/casdb'):
+    hmmoutpath = os.path.join(gbdir, 'hmmeroutput')
     os.makedirs(hmmoutpath, exist_ok=True)
-    for f in glob.glob(fpath + '/*.gb'):
+    print('Running hmmerscan on files in directory {}'.format(gbdir))
+    for f in glob.glob(gbdir + '/*.gb'):
         accession = os.path.splitext(os.path.split(f)[1])[0]
         fastainput = convertgenbanktofasta(f).encode('utf-8')
         table_path = os.path.join(hmmoutpath, '{}.txt'.format(accession))
         commandargs = ['hmmscan', '--noali',
                        '--tblout', table_path, hmmdbpath, '-']
-        result = subprocess.run(commandargs, input=fastainput)
+        subprocess.run(
+            commandargs, input=fastainput, stdout=subprocess.DEVNULL)
+
 if __name__ == '__main__':
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'phageAPI.settings')
     import django
