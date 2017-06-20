@@ -59,15 +59,18 @@ def populate_organismcaspair():
 
         querylist = []
         for row in data:  # iterate over HMMER matches to cas protein profiles
-            query = row[2].decode('utf8')  # cds start and end
-            evalue = row[4].decode('utf8')
-            target_match = row[0].decode('utf8')
+            try:
+                query = row[2].decode('utf8')  # cds start and end
+                evalue = row[4].decode('utf8')
+                target_match = row[0].decode('utf8')
+
+            except Exception as e:
+                print('Decoding error accession {} with row {}'.format(organism.accession, row))
             # retrieve cas protein entry from database
             casproteinset = CasProtein.objects.filter(profileID=target_match)
 
             if not casproteinset:
-                print('Cas protein with profileID %s not found in db' %
-                      target_match)
+                print('Cas protein with profileID {} not found in db'.format(target_match))
                 continue
             # this is the cas protein FK for the field casprotein
             casprotein = casproteinset[0]
@@ -84,12 +87,12 @@ def populate_organismcaspair():
                     start = int(start)
                     end = int(end)
                 except Exception as e:
-                    print('Skipping accession {} with query {}'.format(organism, query))
+                    print('Error accession {} with query {} with profile {} for error {}'.format(organism.accession, query, target_match, e))
                     continue
 
                 evalue = float(evalue)
 
-                osrpair, created = OrganismCasPair.objects.get_or_create(organism=organism,
+                osrpair, created = OrganismCasProtein.objects.get_or_create(organism=organism,
                                                                          casprotein=casprotein,
                                                                          genomic_start=start,
                                                                          genomic_end=end,
@@ -102,6 +105,6 @@ if __name__ == '__main__':
     import django
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "phageAPI.settings")
     django.setup()
-    from restapi.models import Organism, CasProtein, OrganismCasPair
+    from restapi.models import Organism, CasProtein, OrganismCasProtein
     populate_cas()
     populate_organismcaspair()
