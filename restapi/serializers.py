@@ -15,9 +15,6 @@ class GetSequenceLength(DynamicComputedField):
         return int(value)
 
 
-
-
-
 class SequenceSerializer(DynamicModelSerializer):
     length = GetSequenceLength()
 
@@ -44,8 +41,8 @@ class OrganismSerializer(DynamicModelSerializer):
     class Meta:
         model = Organism
         fields = ('id', 'name', 'accession', 'cas_proteins',
-                  'crisprtypes', 'loci')
-        deferred_fields = ('crisprtypes', 'cas_proteins',
+                  'loci')
+        deferred_fields = ('cas_proteins',
                            'loci')
     loci = DynamicRelationField(
         'LocusSerializer', source='locus_set', embed=True, many=True)
@@ -77,13 +74,14 @@ class LocusSerializer(DynamicModelSerializer):
 class CasProteinSerializer(DynamicModelSerializer):
     class Meta:
         model = CasProtein
-        fields = ('id', 'profileID', 'function', 'gene', 'group', 'type_specificity')
+        fields = ('id', 'profileID', 'function',
+                  'gene', 'group', 'type_specificity')
 
 
 class OCSerializer(DynamicModelSerializer):
     class Meta:
         model = OrganismCasProtein
-        fields = ('id','organism', 'casprotein',
+        fields = ('id', 'organism', 'casprotein',
                   'genomic_start', 'genomic_end', 'evalue')
 
     casprotein = DynamicRelationField('CasProteinSerializer')
