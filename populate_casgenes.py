@@ -1,5 +1,6 @@
 import os
 import numpy as np
+from IPython import embed
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
@@ -42,11 +43,12 @@ def populate_cas():
 
 def populate_organismcaspair():
     print("Populating OrganismCasPair table...")
+    error_dict=[]
     # these are files split by organism accession
     for fn in os.listdir("gbfiles/hmmeroutput"):
         data = np.loadtxt("gbfiles/hmmeroutput/%s" %
                           fn, dtype='S')  # HMMER output results
-        accid = fn.rsplit('.')[0]  # organism accession numberr
+        accid = fn.rsplit('.')[0]  # organism accession number
 
         organismset = Organism.objects.filter(
             accession=accid)  # retrieve organism from database
@@ -59,17 +61,15 @@ def populate_organismcaspair():
 
         querylist = []
         for row in data:  # iterate over HMMER matches to cas protein profiles
-            try:
-                query = row[2].decode('utf8')  # cds start and end
-                evalue = row[4].decode('utf8')
-                target_match = row[0].decode('utf8')
-
-            except Exception as e:
-                print('Decoding error accession {} with row {}'.format(organism.accession, row))
+            if not data[0].shape:
+                row = data
+            query = row[2].decode('utf8')  # cds start and end
+            evalue = row[4].decode('utf8')
+            target_match = row[0].decode('utf8')
             # retrieve cas protein entry from database
             casproteinset = CasProtein.objects.filter(profileID=target_match)
 
-            if not casproteinset:
+            if not casproteinset.exists():
                 print('Cas protein with profileID {} not found in db'.format(target_match))
                 continue
             # this is the cas protein FK for the field casprotein
@@ -84,20 +84,21 @@ def populate_organismcaspair():
                     query = query[11:-1]
                 try:
                     start, dot, end = query.rsplit('.')
+                    start = start.strip('<>')
+                    end = end.strip('<>')
                     start = int(start)
                     end = int(end)
                 except Exception as e:
                     print('Error accession {} with query {} with profile {} for error {}'.format(organism.accession, query, target_match, e))
                     continue
-
                 evalue = float(evalue)
-
                 osrpair, created = OrganismCasProtein.objects.get_or_create(organism=organism,
                                                                          casprotein=casprotein,
                                                                          genomic_start=start,
                                                                          genomic_end=end,
                                                                          evalue=evalue)
     print("Done.")
+    embed()
     return
 
 
