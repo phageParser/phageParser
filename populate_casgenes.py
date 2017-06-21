@@ -1,6 +1,5 @@
 import os
 import numpy as np
-from IPython import embed
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
@@ -43,7 +42,6 @@ def populate_cas():
 
 def populate_organismcaspair():
     print("Populating OrganismCasPair table...")
-    error_dict=[]
     # these are files split by organism accession
     for fn in os.listdir("gbfiles/hmmeroutput"):
         data = np.loadtxt("gbfiles/hmmeroutput/%s" %
@@ -70,7 +68,8 @@ def populate_organismcaspair():
             casproteinset = CasProtein.objects.filter(profileID=target_match)
 
             if not casproteinset.exists():
-                print('Cas protein with profileID {} not found in db'.format(target_match))
+                print('Cas protein with profileID {} not found in db'.format(
+                    target_match))
                 continue
             # this is the cas protein FK for the field casprotein
             casprotein = casproteinset[0]
@@ -89,16 +88,16 @@ def populate_organismcaspair():
                     start = int(start)
                     end = int(end)
                 except Exception as e:
-                    print('Error accession {} with query {} with profile {} for error {}'.format(organism.accession, query, target_match, e))
+                    print('Error accession {} with query {} with profile {} for error {}'.format(
+                        organism.accession, query, target_match, e))
                     continue
                 evalue = float(evalue)
                 osrpair, created = OrganismCasProtein.objects.get_or_create(organism=organism,
-                                                                         casprotein=casprotein,
-                                                                         genomic_start=start,
-                                                                         genomic_end=end,
-                                                                         evalue=evalue)
+                                                                            casprotein=casprotein,
+                                                                            genomic_start=start,
+                                                                            genomic_end=end,
+                                                                            evalue=evalue)
     print("Done.")
-    embed()
     return
 
 
