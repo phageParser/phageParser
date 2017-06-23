@@ -1,4 +1,4 @@
-from restapi.models import Spacer, Repeat, Organism, LocusSpacerRepeat, CasProtein, OrganismCasProtein, Locus
+from restapi.models import Spacer, Repeat, Organism, LocusSpacerRepeat, CasProtein, OrganismCasProtein, Locus, OrganismSelfSpacer
 from dynamic_rest.serializers import DynamicModelSerializer, DynamicRelationField
 from dynamic_rest.fields import DynamicComputedField
 
@@ -76,6 +76,16 @@ class CasProteinSerializer(DynamicModelSerializer):
         model = CasProtein
         fields = ('id', 'profileID', 'function',
                   'gene', 'group', 'type_specificity')
+
+
+class OSSSerializer(DynamicModelSerializer):
+    class Meta:
+        model = OrganismSelfSpacer
+        fields = ('id', 'organism', 'spacer',
+                  'genomic_start', 'genomic_end', 'evalue')
+
+    spacer = DynamicRelationField('SpacerSerializer')
+    organism = DynamicRelationField('OrganismSerializer')
 
 
 class OCSerializer(DynamicModelSerializer):

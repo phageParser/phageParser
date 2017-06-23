@@ -33,7 +33,7 @@ class Organism(models.Model):
     accession = models.CharField(max_length=32, blank=True, default='')
     cas_proteins = models.ManyToManyField(
         CasProtein, through='OrganismCasProtein')
-
+    self_spacers = models.ManyToManyField(Spacer, through='OrganismSelfSpacer')
     def __str__(self):
         return '{} with accession {}'.format(self.name, self.accession)
 
@@ -80,7 +80,14 @@ class PhageSpacer(models.Model):
     genomic_start = models.PositiveIntegerField(default=0)
     genomic_end = models.PositiveIntegerField(default=0)
 
-
+class OrganismSelfSpacer(models.Model):
+    organism = models.ForeignKey(
+        'Organism', on_delete=models.CASCADE, null=True)
+    spacer = models.ForeignKey(
+        'Spacer', on_delete=models.CASCADE, null=True)
+    genomic_start = models.PositiveIntegerField(default=0)
+    genomic_end = models.PositiveIntegerField(default=0)
+    evalue = models.FloatField(default=0)
 class OrganismCasProtein(models.Model):
     organism = models.ForeignKey(
         'Organism', on_delete=models.CASCADE, null=True)

@@ -26,6 +26,7 @@ router.register(r'locuspacerrepeats', views.LSRViewSet)
 router.register(r'casproteins', views.CasProteinViewSet)
 router.register(r'organismcas', views.OCViewSet)
 router.register(r'loci', views.LocusViewSet)
+router.register(r'organismselfspacers', views.OSSViewSet)
 urlpatterns = [
     url(r'^', include(router.urls)),
     url(r'^admin/', admin.site.urls),
