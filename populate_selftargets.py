@@ -12,7 +12,6 @@ def main(blastdir):
     for fn in glob.glob(blastdir + '/*.json'):
         # get loci intervals of organism
         accession = os.path.splitext(os.path.split(fn)[1])[0]
-        print(accession)
         q_org = Organism.objects.filter(accession=accession)
         if not q_org.exists():
             print('Organism with accession {} is not in db but blast report exists'.format(
@@ -22,7 +21,11 @@ def main(blastdir):
         interval_loci = [(entry['genomic_start'], entry['genomic_end'])
                          for entry in org.locus_set.all().values('genomic_start', 'genomic_end')]
         with open(fn, 'r') as f:
-            blastrec = json.loads(f.read())
+            try:
+                blastrec = json.loads(f.read())
+            except Exception as e:
+                print('Error on accession {}\n{}'.format(accession, e))
+                continue
         for res in blastrec['BlastOutput2']:
             query = res['report']['results']['bl2seq'][0]
             spacerid=query['query_title']
