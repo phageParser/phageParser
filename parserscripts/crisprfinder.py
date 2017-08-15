@@ -16,7 +16,7 @@ CrisprResults_output = sys.argv[2] #textfile with CRISPR results
 #path of input/output files is relative to python script location
 
 driver = webdriver.Firefox()
-driver.get("http://crispr.u-psud.fr/Server/")
+driver.get("http://crispr.i2bc.paris-saclay.fr/Server/")
 assert "CRISPR" in driver.title
 driver.find_element_by_name("fname").send_keys(os.getcwd()+'/'+genome_input)
 driver.find_element_by_name("submit").click()
