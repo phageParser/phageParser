@@ -1,32 +1,27 @@
 # -*- coding: utf-8 -*-
-"""
+'''
 Created on Tue Aug 15 11:26:23 2017
+This script processes NCBI data exports (from ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/IDS/)
+to extract lists of organism accession IDs, later used for downloading complete genome sequences.
 
-@author: madeleine
-"""
+@author: mbonsma / thisisjaid
+'''
 
 import os
-import numpy as np
+import pandas as pd
+import argparse
 
-accessions = []
+parser = argparse.ArgumentParser(add_help=True, description='''phageParser - collect_accessions.py - 
+                                 This script processes NCBI data exports 
+                                 (from ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/IDS/)
+                                 to generate lists of organism accession IDs, later used for downloading 
+                                 complete genome sequences''')
+parser.add_argument('-o', metavar='output_file', action='store', type=str, default='accessions.csv', 
+                    help='Full path to results output file (default: accessions.csv)')
+parser.add_argument('file', action='store', help='Full path to NCBI data export file')
 
-with open("genomes_euks.txt", "rb") as f:
-    header = f.readline()
-    data = f.readlines()
+args = parser.parse_args()
 
-for line in data:
-    line = line.rsplit('\t')
-    accessionlist = line[9]
-    try:
-        count = accessionlist.count(':')
-    except:
-        continue
-    for i in range(count):
-        i = accessionlist.index(':')
-        j = accessionlist[i:].index('.')
-        acc = accessionlist[i+1:i+j]
-        accessions.append(acc)
-        accessionlist = accessionlist[i+j+1:]
-    
-accessions = np.array(accessions,dtype='object')
-np.savetxt("eukaryote_accessions.txt",accessions,fmt='%5s')
+records = pd.read_csv(args.file,sep='\t', header=None)
+records.to_csv(args.o,header=False,sep=',',columns=[1],index=False)
+print('Accession file succesfully written out at:',args.o)
