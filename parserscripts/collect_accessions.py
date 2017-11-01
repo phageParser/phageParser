@@ -24,4 +24,4 @@ args = parser.parse_args()
 
 records = pd.read_csv(args.file,sep='\t', header=None)
 records.to_csv(args.o,header=False,sep=',',columns=[1],index=False)
-print('Accession file succesfully written out at:',args.o)
+print('Accession file successfully written out at:',args.o)
