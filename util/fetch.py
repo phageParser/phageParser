@@ -1,8 +1,9 @@
-import os
 import datetime
-import zlib
-import requests
+import os
 import re
+import zlib
+
+import requests
 from tqdm import tqdm
 
 
@@ -17,15 +18,17 @@ def download(path, url, chunk_size=64 * 1024):
         Args:
         path (str): Path to file to be downloaded.
         url (str): Url to download the file from.
-        chunk_size (int, optional): Chunk size to download by. Defaults to 64*1024.
+        chunk_size (int, optional): Chunk size to download by.
+            Defaults to 64*1024.
         Notes:
-        chunk_size should be a multiple of 2 for faster downloads.
+            chunk_size should be a multiple of 2 for faster downloads.
         Returns:
-            bool: True if the file is successfully downloaded. False otherwise.
+            bool: True if the file is successfully downloaded.
+                False otherwise.
         Examples
-            >>>download('DRDatabase.txt', 'http://crispr.i2bc.paris-saclay.fr/crispr/BLAST/DR/DRdatabase')
+            >>> download('DRDatabase.txt', 'http://crispr.i2bc.paris-saclay.fr/crispr/BLAST/DR/DRdatabase')
             True
-            >>>download('DRDatabase.txt', 'faulty url')
+            >>> download('DRDatabase.txt', 'faulty url')
             False
     """
     try:
@@ -45,17 +48,20 @@ def download(path, url, chunk_size=64 * 1024):
 
 
 def fetch(path, url=None):
-    """Fetches a file from either url or accession id in filename, updates file if local version is older.
+    """Fetches a file from either url or accession id in filename,
+    updates file if local version is older.
 
-    Checks a given path for file and downloads if a url is given or file name
-    is an accession id. Also downloads the file if the remote location has a
-    more recent version. Can be used in other functions to download
-    required files from url or accession gb files.
+    Checks a given path for file and downloads if a url is given or
+    file name is an accession id. Also downloads the file if the remote
+    location has a more recent version. Can be used in other functions
+    to download required files from url or accession gb files.
         Args:
         path (str): Path to the file to be fetched
-        url (str, optional): Url to update the local file from. Defaults to None.
+        url (str, optional): Url to update the local file from.
+            Defaults to None.
         Returns:
-            bool: True if the file is updated or downloaded. False otherwise.
+            bool: True if the file is updated or downloaded.
+                False otherwise.
         Examples:
             >>>import os
             >>>os.remove('NC_000853.txt')
@@ -66,19 +72,21 @@ def fetch(path, url=None):
             >>>fetch('DRDatabase.txt', 'http://crispr.i2bc.paris-saclay.fr/crispr/BLAST/DR/DRdatabase')
             True
         Result:
-        NC_000853.txt file would be created in the running folder, if it existed before,
-        it would be updated to a newer version if available in Entrez database. DRDatabase
-        would also be created in the running folder, if the url has a more recent version
-        the local file would be updated.
+        NC_000853.txt file would be created in the running folder, if
+        it existed before, it would be updated to a newer version if
+        available in Entrez database. DRDatabase would also be created
+        in the running folder, if the url has a more recent version the
+        local file would be updated.
     """
+
     def sync():
         """
-        Checks and downloads a url if last modified date does not exist for
-        the url or is more recent than local file.
+        Checks and downloads a url if last modified date does not exist
+        for the url or is more recent than local file.
         """
         if not path_exists:
             return download(path, url)
-        '''Check last modified dates of file and url, download if url is newer.'''
+        # Check last modified dates of file and url, download if url is newer
         filemodtime = datetime.datetime.fromtimestamp(os.path.getmtime(path))
         r = requests.get(url, stream=True)
         if 'Last-Modified' not in r.headers:
@@ -97,8 +105,8 @@ def fetch(path, url=None):
 
     def gbsync():
         """
-        Checks and downloads an accession file from nuccore database if file does
-        not exist or its dates are different from url version.
+        Checks and downloads an accession file from nuccore database if
+        file does not exist or its dates are different from url version
         """
         print('Trying to fetch from Entrez')
         regex = r'([A-Z]{1,2}_\w+)'
@@ -109,8 +117,9 @@ def fetch(path, url=None):
             return False
         else:
             acc = matches.groups()[0]
-            url = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?rettype=gbwithparts&tool=biopython&db=nuccore&id={}&email=example%40example.com'.format(
-                acc)
+            url = ('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?'
+                   'rettype=gbwithparts&tool=biopython&db=nuccore'
+                   '&id={}&email=example%40example.com'.format(acc))
             r = requests.get(url, stream=True)
             if r.status_code != requests.codes.ok:
                 print('Bad Status code returned from Entrez')
@@ -121,21 +130,21 @@ def fetch(path, url=None):
                 r.close()
                 return download(path, url)
             else:
-                '''Path exists, try to get date to compare with Entrez version, download if different.'''
+                # Path exists, try to get date to compare with Entrez
+                # version, download if different
                 regex = r'(\d{2}-\w{3}-\d{4})'
                 with open(path, 'r') as f:
                     print('Checking accession file for date')
                     fline = f.readline()
                     matches = re.search(regex, fline)
                     if not matches:
-                        print(
-                            'No date found in accession file {}, overwriting with Entrez entry'.format(filename))
+                        print('No date found in accession file {}, '
+                              'overwriting with Entrez entry'.format(filename))
                         return download(path, url)
                     gbdate = matches.groups()[0]
-                '''
-                Date found in file, download the first chunk of url and
-                decompress with gzip to get url date.
-                '''
+
+                # Date found in file, download the first chunk of url
+                # and decompress with gzip to get url date.
                 chunk_size = 256
                 fchunk = r.raw.read(chunk_size)
                 r.close()
@@ -143,12 +152,12 @@ def fetch(path, url=None):
                 decomp_chunk = gzip_decomp.decompress(fchunk).decode()
                 urldate = re.search(regex, decomp_chunk).groups()[0]
                 if gbdate != urldate:
-                    print(
-                        "Dates don't match for accession file {}, downloading".format(filename))
+                    print("Dates don't match for accession file {}, "
+                          "downloading".format(filename))
                     return download(path, url)
                 else:
-                    print(
-                        'Dates are matching for accession file {} returning'.format(filename))
+                    print('Dates are matching for accession file {} '
+                          'returning'.format(filename))
                     return False
 
     filename = os.path.basename(path)
@@ -156,5 +165,5 @@ def fetch(path, url=None):
     if url:
         return sync()
     else:
-        '''Try to fetch the file as an accession id, if it fails return False.'''
+        # Try to fetch the file as an accession id, if it fails return False
         return gbsync()

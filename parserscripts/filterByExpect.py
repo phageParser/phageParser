@@ -3,17 +3,19 @@
 # for each xml output file, use NCBIXML to extract the important things
 # Note: this requires blast output in xml format (set 'outfmt = 5')
 
-'''
+"""
 USAGE:
 python filterByExpect.py <indir> <outdir>
-'''
+"""
 
 import os
-import csv
 import sys
+
 import pandas as pd
 
-def parse_blast(resultfile):  # takes in the BLAST result, outputs list that can be made into csv
+
+def parse_blast(resultfile):
+    """takes in the BLAST result, outputs list that can be made into csv"""
     from Bio.Blast import NCBIXML
     result_handle = open(resultfile)
     blast_records = NCBIXML.parse(result_handle)
@@ -28,18 +30,18 @@ def parse_blast(resultfile):  # takes in the BLAST result, outputs list that can
     # csv_list.append(header)
     count = 0
     for blast_record in blast_records:
-        '''help(blast_record.alignments[0].hsps[0])'''  # these give help info for the parts
+        # these give help info for the parts
+        '''help(blast_record.alignments[0].hsps[0])'''
         '''help(blast_record.alignments[0])        '''
         count += 1
 
         query = blast_record.query
         for alignment in blast_record.alignments:
-
             name = alignment.title
             length = alignment.length
 
-            # I don't know if we will ever have more than one, so might as well
-            # take the first one.
+            # I don't know if we will ever have more than one, so might
+            # as well take the first one.
             hsp = alignment.hsps[0]
             score = hsp.score
             expect = hsp.expect
@@ -55,7 +57,8 @@ def parse_blast(resultfile):  # takes in the BLAST result, outputs list that can
     return pd.DataFrame(csv_list, columns=header)
 
 
-def write_csv(dest, df):  # takes a list of lists object with each csv row as a list
+def write_csv(dest, df):
+    """takes a list of lists object with each csv row as a list"""
     df.to_csv(dest)
 
 
@@ -64,11 +67,11 @@ def main():
     outdir = str(sys.argv[2])
 
     for fn in os.listdir("%s/" % indir):
-        ID = fn[:fn.index('.')]
+        id_ = fn[:fn.index('.')]
         if fn == 'sorted':
             continue
         csv_list = parse_blast(fn)
-        write_csv("%s/%s.csv" % (outdir, ID), csv_list)
+        write_csv("%s/%s.csv" % (outdir, id_), csv_list)
 
 
 if __name__ == '__main__':

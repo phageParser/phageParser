@@ -5,9 +5,8 @@ def read_accession_file(f):
 
     This automatically skips blank lines and comments.
     """
-    for l in f:
-        l = l.strip()
-        if not l or l.startswith('#'):
+    for line in f:
+        line = line.strip()
+        if not line or line.startswith('#'):
             continue
-        yield l
-
+        yield line

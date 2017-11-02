@@ -1,4 +1,4 @@
-#parse_Genbank.py
+# parse_Genbank.py
 
 from Bio.SeqIO import parse
 
@@ -8,7 +8,7 @@ outdict = {}
 
 result_handle = open(genbank_file)
 
-records = parse(result_handle,'genbank')
+records = parse(result_handle, 'genbank')
 
 for x in records:
     try:
@@ -24,5 +24,5 @@ for x in records:
     except:
         print("no taxonomy")
     accs = x.annotations['accessions']
-    
-    outdict[acc] = [org,tax]
+
+    outdict[acc] = [org, tax]
