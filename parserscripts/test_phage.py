@@ -10,7 +10,7 @@ def phage_finder():
 
 
 @pytest.mark.parametrize(
-    'input, refseq, name',
+    'phage_input, refseq, name',
     [
         ("ENA|AP013478|AP013478.1 Uncultured Mediterranean phage uvMED "
          "DNA, complete",
