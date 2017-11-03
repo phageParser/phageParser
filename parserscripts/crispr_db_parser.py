@@ -16,7 +16,7 @@ import os
 # MB Mar 07 2015
 
 filename = "data/spacerdatabase.txt"  # File from CRISPRdb to sort
-spacer_db = open("%s" % filename, "r")
+spacer_db = open(filename, "r")
 
 # check if directory for saving exists
 directory = "data/spacers"
