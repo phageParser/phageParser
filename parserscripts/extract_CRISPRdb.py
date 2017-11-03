@@ -61,10 +61,10 @@ def get_loc_ids(sequence):
         crispr_id_value = (cell('font')[0]
                            .content
                            .encode('ascii', 'ignore')
-                           .replace('<br/n/>', ''))
-        crispr_id_value = crispr_id_value.replace('\n', '')
-        crispr_id_value = crispr_id_value.replace('\t', '')
-        crispr_id_value = crispr_id_value.replace('<br />', '')
+                           .replace('<br/n/>', '')
+                           .replace('\n', '')
+                           .replace('\t', '')
+                           .replace('<br />', ''))
         loc_ids.append(crispr_id_value.split('_')[-1])
     return loc_ids
 
