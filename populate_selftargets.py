@@ -1,10 +1,9 @@
+# !/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import glob
 import json
 import os
-
-
-# !/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 
 def main(blastdir):
