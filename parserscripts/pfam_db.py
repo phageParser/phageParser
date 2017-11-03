@@ -108,8 +108,8 @@ def main():
     cds = extract_cds(file_path)
 
     for i, translation in enumerate(translations):
-        print("Getting translation " + str(i + 1) + "/" + str(
-            len(translations)) + "...")
+        print("Getting translation " + str(i + 1) + "/"
+              + str(len(translations)) + "...")
         url = get_translation_url(translation)
         result = get_values(url)
 
