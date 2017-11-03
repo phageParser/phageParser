@@ -1,24 +1,22 @@
+# !/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import os
 
 import numpy as np
 
-# !/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
+""""
 Created on Thu Jun  1 12:44:58 2017
 
 @author: madeleine
-"""
 
-'''
 Issue #160
 
 Author: Madeleine
 Usage:python3 populate_casgenes.py
 
 Populates CasProtein and OrganismCasPair tables
-
-'''
+"""
 
 # table of cas proteins from Makarova et al 2015
 casprofiles = "data/crispr_type.csv"
