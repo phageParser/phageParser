@@ -26,7 +26,7 @@ def main():
             EXAMPLE:
 
             cat data/antiCRISPR_accessions.txt | \
-            python acc2gb.py your@email.com protein fasta > outfile.txt
+                python acc2gb.py your@email.com protein fasta > outfile.txt
 
             Case 1: rettype = gbwithparts, db = nuccore - downloads
                 genbank file with metadata and fasta DNA sequence
