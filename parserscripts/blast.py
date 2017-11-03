@@ -15,10 +15,10 @@ Biopython
 blast+
 """
 
-import os
-import sys
 import argparse
+import os
 import subprocess
+import sys
 
 parser = argparse.ArgumentParser(description='General purpose BLAST function.',
                                  usage='blast.py [options]')

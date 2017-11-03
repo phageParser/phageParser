@@ -1,30 +1,33 @@
-'''
-pfam_db.py extracts and submits the translations from a GenBank input file (such as data/Genbank_example.txt) 
-to PFAM, before writing results to a CSV file in the same directory.
+"""
+pfam_db.py extracts and submits the translations from a GenBank input
+file (such as data/Genbank_example.txt) to PFAM, before writing results
+to a CSV file in the same directory.
 
 Usage:
-python pfam_db.py <infile> 
+python pfam_db.py <infile>
 
 Ref - PR #73
-'''
+"""
 
-import re
-import requests
-from xml.etree import ElementTree
-import time
 import csv
 import os
+import re
 import sys
+import time
+from xml.etree import ElementTree
 
-filePath = str(sys.argv[1])
-filePathWithoutExt = os.path.splitext(filePath)[0]
+import requests
 
-def extractCDS(file):
+file_path = str(sys.argv[1])
+file_path_without_ext = os.path.splitext(file_path)[0]
+
+
+def extract_cds(file):
     cds = []
 
-    f = open(file, 'r')
-    fileText = f.read()
-    m = re.finditer('CDS\s{13}(?P<CDS>\S*)', fileText)
+    with open(file, 'r') as f:
+        file_text = f.read()
+    m = re.finditer('CDS\s{13}(?P<CDS>\S*)', file_text)
 
     for reg in m:
         element = reg.group('CDS')
@@ -33,12 +36,17 @@ def extractCDS(file):
 
     return cds
 
-def extractTranslations(file):
+
+def extract_translations(file):
     translations = []
 
-    f = open(file, 'r')
-    fileText = f.read()
-    m = re.finditer('/translation="(?P<translation>[\w\n ]+)"', fileText, re.MULTILINE)
+    with open(file, 'r') as f:
+        file_text = f.read()
+    m = re.finditer(
+        '/translation="(?P<translation>[\w\n ]+)"',
+        file_text,
+        re.MULTILINE
+    )
 
     for reg in m:
         translation = reg.group('translation')
@@ -48,17 +56,19 @@ def extractTranslations(file):
 
     return translations
 
-def getTranslationURL(translation):
+
+def get_translation_url(translation):
     url = "http://pfam.xfam.org/search/sequence"
     data = {'seq': translation, 'output': 'xml'}
 
-    response = requests.get(url, data = data)
+    response = requests.get(url, data=data)
 
     tree = ElementTree.fromstring(response.content)
 
     return tree[0][1].text
 
-def getValues(url):
+
+def get_values(url):
     sleep_time = 1
     tries = 60
     xml = ""
@@ -82,7 +92,6 @@ def getValues(url):
         print("Reached max tries without response.")
         return
 
-
     try:
         tree = ElementTree.fromstring(xml)
 
@@ -93,26 +102,29 @@ def getValues(url):
 
     return result
 
+
 def main():
-    translations = extractTranslations(filePath)
-    cds = extractCDS(filePath)
+    translations = extract_translations(file_path)
+    cds = extract_cds(file_path)
 
     for i, translation in enumerate(translations):
-        print("Getting translation " + str(i + 1) + "/" + str(len(translations)) + "...")
-        url = getTranslationURL(translation)
-        result = getValues(url)
+        print("Getting translation " + str(i + 1) + "/"
+              + str(len(translations)) + "...")
+        url = get_translation_url(translation)
+        result = get_values(url)
 
-        for indexRow, row in enumerate(result):
+        for index_row, row in enumerate(result):
             row["translation_number"] = i + 1
             row["cds"] = cds[i]
-            if i == 0 and indexRow == 0:
-                with open(filePathWithoutExt + '.csv', 'w') as f:
+            if i == 0 and index_row == 0:
+                with open(file_path_without_ext + '.csv', 'w') as f:
                     w = csv.DictWriter(f, row.keys())
                     w.writeheader()
 
-            with open(filePathWithoutExt + '.csv', 'a') as f:
+            with open(file_path_without_ext + '.csv', 'a') as f:
                 w = csv.DictWriter(f, row.keys())
                 w.writerow(row)
+
 
 if __name__ == "__main__":
     main()

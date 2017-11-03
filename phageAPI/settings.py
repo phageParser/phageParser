@@ -132,9 +132,9 @@ STATICFILES_DIRS = [
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-#Dynamic rest addon for drf
+# Dynamic rest addon for drf
 DYNAMIC_REST = {
-    'ENABLE_LINKS':True,
+    'ENABLE_LINKS': True,
     'PAGE_SIZE': 500,
     'ENABLE_HOST_RELATIVE_LINKS': True
 }
