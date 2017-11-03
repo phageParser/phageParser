@@ -50,9 +50,9 @@ def sql_search(elem, name, column, db_name):
 
 
 def read_repeat_file(filename):
-    fin = open(filename, 'r')
     out_dict = {}
-    flines = fin.readlines()
+    with open(filename, 'r') as fin:
+        flines = fin.readlines()
     it = iter(flines)
     tuple_list = zip(it, it)
     for entry in tuple_list:
