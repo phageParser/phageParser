@@ -1,5 +1,3 @@
-# parse_Genbank.py
-
 from Bio.SeqIO import parse
 
 genbank_file = 'data/Genbank_example.txt'
