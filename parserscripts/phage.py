@@ -2,7 +2,7 @@ import re
 
 
 class Phage:
-    supported_databases = {
+    SUPPORTED_DATABASES = {
         # European Nucleotide Archive phage database
         "ENA": r"^gi\|[0-9]+\|ref\|([^\|]+)\|\ ([^,]+)[^$]*$",
 
@@ -21,7 +21,7 @@ class Phage:
         self._parse_phage(raw_text, phage_finder)
 
     def _parse_phage(self, raw_text, phage_finder):
-        for db, regex in Phage.supported_databases.items():
+        for db, regex in Phage.SUPPORTED_DATABASES.items():
             match = re.search(regex, raw_text)
             if match is not None:
                 if db is not "AD":
