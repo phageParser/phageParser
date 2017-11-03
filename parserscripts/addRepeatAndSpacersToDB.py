@@ -36,8 +36,8 @@ def sql_add(elem, name, db_name):
     conn = sqlite3.connect(db_name)
     c = conn.cursor()
     col_name = name + 'Sequence'
-    q = "INSERT INTO " + str(name) + " (" + str(
-        col_name) + ") VALUES ('" + elem + "')"
+    q = ("INSERT INTO " + str(name) + " (" + str(col_name)
+         + ") VALUES ('" + elem + "')")
     try:
         c.execute(q)
         conn.commit()
