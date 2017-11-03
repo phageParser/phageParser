@@ -5,7 +5,7 @@ def find_incomplete_records(gen_dict):
     incomp_list = []
     for loc_id in gen_dict:
         locus = gen_dict[loc_id]
-        if not set(locus.keys()) == {'Spacers', 'Start', 'RepeatSeq', 'Stop'}:
+        if set(locus.keys()) != {'Spacers', 'Start', 'RepeatSeq', 'Stop'}:
             incomp_list.append(loc_id)
     return incomp_list
 
