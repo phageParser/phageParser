@@ -1,6 +1,19 @@
-from restapi.models import Spacer, Repeat, Organism, LocusSpacerRepeat, CasProtein, OrganismCasProtein, Locus, OrganismSelfSpacer
-from dynamic_rest.serializers import DynamicModelSerializer, DynamicRelationField
 from dynamic_rest.fields import DynamicComputedField
+from dynamic_rest.serializers import (
+    DynamicModelSerializer,
+    DynamicRelationField
+)
+
+from restapi.models import (
+    CasProtein,
+    Locus,
+    LocusSpacerRepeat,
+    Organism,
+    OrganismCasProtein,
+    OrganismSelfSpacer,
+    Spacer,
+    Repeat
+)
 
 
 class GetSequenceLength(DynamicComputedField):
@@ -24,6 +37,7 @@ class SpacerSerializer(SequenceSerializer):
         model = Spacer
         fields = ('id', 'sequence', 'length', 'sequence', 'loci', 'repeats')
         deferred_fields = ('loci', 'repeats')
+
     loci = DynamicRelationField('LocusSerializer', many=True, embed=True)
     repeats = DynamicRelationField('RepeatSerializer', many=True)
 
@@ -33,6 +47,7 @@ class RepeatSerializer(SequenceSerializer):
         model = Repeat
         fields = ('id', 'length', 'sequence', 'loci', 'spacers')
         deferred_fields = ('loci', 'spacers')
+
     loci = DynamicRelationField('LocusSerializer', many=True)
     spacers = DynamicRelationField('SpacerSerializer', many=True)
 
@@ -44,6 +59,7 @@ class OrganismSerializer(DynamicModelSerializer):
                   'loci')
         deferred_fields = ('cas_proteins',
                            'loci')
+
     loci = DynamicRelationField(
         'LocusSerializer', source='locus_set', embed=True, many=True)
     cas_proteins = DynamicRelationField('CasProteinSerializer', many=True)
@@ -54,18 +70,19 @@ class LSRSerializer(DynamicModelSerializer):
         model = LocusSpacerRepeat
         fields = ('id', 'locus', 'spacer', 'repeat',
                   'order')
+
     spacer = DynamicRelationField('SpacerSerializer')
     repeat = DynamicRelationField('RepeatSerializer')
     locus = DynamicRelationField('LocusSerializer')
 
 
 class LocusSerializer(DynamicModelSerializer):
-
     class Meta:
         model = Locus
         fields = ('id', 'organism', 'genomic_start', 'genomic_end',
                   'spacerrepeats', 'spacers', 'repeats')
         deferred_fields = ('spacerrepeats', 'spacers', 'repeats')
+
     organism = DynamicRelationField('OrganismSerializer')
     spacers = DynamicRelationField('SpacerSerializer', embed=True, many=True)
     repeats = DynamicRelationField('RepeatSerializer', embed=True, many=True)

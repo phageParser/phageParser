@@ -34,6 +34,7 @@ class Organism(models.Model):
     cas_proteins = models.ManyToManyField(
         CasProtein, through='OrganismCasProtein')
     self_spacers = models.ManyToManyField(Spacer, through='OrganismSelfSpacer')
+
     def __str__(self):
         return '{} with accession {}'.format(self.name, self.accession)
 
@@ -52,14 +53,22 @@ class Phage(models.Model):
 
 class LocusSpacerRepeat(models.Model):
     locus = models.ForeignKey(
-        Locus, on_delete=models.CASCADE, null=True, related_name='spacerrepeats')
+        Locus,
+        on_delete=models.CASCADE,
+        null=True,
+        related_name='spacerrepeats'
+    )
     spacer = models.ForeignKey('Spacer', on_delete=models.CASCADE, null=True)
     repeat = models.ForeignKey('Repeat', on_delete=models.CASCADE, null=True)
     order = models.PositiveIntegerField(default=0)
 
 
 class OrganismAntiCRISPR(models.Model):
-    organism = models.ForeignKey('Organism', on_delete=models.CASCADE, null=True)
+    organism = models.ForeignKey(
+        'Organism',
+        on_delete=models.CASCADE,
+        null=True
+    )
     antiCRISPR = models.ForeignKey(
         'AntiCRISPR', on_delete=models.CASCADE, null=True)
     genomic_start = models.PositiveIntegerField(default=0)
@@ -80,6 +89,7 @@ class PhageSpacer(models.Model):
     genomic_start = models.PositiveIntegerField(default=0)
     genomic_end = models.PositiveIntegerField(default=0)
 
+
 class OrganismSelfSpacer(models.Model):
     organism = models.ForeignKey(
         'Organism', on_delete=models.CASCADE, null=True)
@@ -88,6 +98,8 @@ class OrganismSelfSpacer(models.Model):
     genomic_start = models.PositiveIntegerField(default=0)
     genomic_end = models.PositiveIntegerField(default=0)
     evalue = models.FloatField(default=0)
+
+
 class OrganismCasProtein(models.Model):
     organism = models.ForeignKey(
         'Organism', on_delete=models.CASCADE, null=True)

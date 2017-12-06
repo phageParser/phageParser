@@ -1,22 +1,22 @@
 #!/usr/bin/env python
 
-import os
-import sys
 import argparse
-import requests
-import pandas
+import os
 import pickle
+
+import pandas
+import requests
+from Bio import Entrez, SeqIO
 from lxml import html, etree
-from Bio import Entrez
-from Bio import SeqIO
 from tqdm import tqdm
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'phageAPI.settings')
 import django
+
 django.setup()
 
 from util.acc import read_accession_file
-from util.prunedict import prunedict
+from util.prunedict import prune_dict
 from util import fetch
 from restapi.models import (
     Organism,
@@ -62,9 +62,10 @@ def populate_organism():
         add_organism(name=acc_name_dict[acc], accession=acc)
 
 
-def get_spacerrepeatfiles():
+def get_spacer_repeat_files():
     spath = os.path.join(DATA_DIR, "spacerdatabase.txt")
-    surl = 'http://crispr.i2bc.paris-saclay.fr/crispr/BLAST/Spacer/Spacerdatabase'
+    surl = ('http://crispr.i2bc.paris-saclay.fr/'
+            'crispr/BLAST/Spacer/Spacerdatabase')
     rpath = os.path.join(DATA_DIR, "repeatdatabase.txt")
     rurl = 'http://crispr.i2bc.paris-saclay.fr/crispr/BLAST/DR/DRdatabase'
     fetch.fetch(spath, surl)
@@ -108,8 +109,8 @@ def addpositionstodict(gendict):
         if 'Start' in gendict[accidwithloc]:
             continue
         accid = '_'.join(accidwithloc.split('_')[:-1])
-        url = 'http://crispr.i2bc.paris-saclay.fr/crispr/crispr_db.php?checked%5B%5D={}'.format(
-            accid)
+        url = ('http://crispr.i2bc.paris-saclay.fr/crispr/crispr_db.php?'
+               'checked%5B%5D={}'.format(accid))
         page = requests.get(url)
         htmltable = html.fromstring(page.content).xpath(
             "//table[normalize-space(@class)='primary_table']")[1]
@@ -137,16 +138,20 @@ def populate_fromlocus(locid, locdict):
     loc_start = int(locdict['Start'])
     loc_end = int(locdict['Stop'])
     locus, _ = Locus.objects.get_or_create(
-        organism=organism, genomic_start=loc_start, genomic_end=loc_end)
+        organism=organism,
+        genomic_start=loc_start,
+        genomic_end=loc_end
+    )
     spacers = locdict['Spacers']
     for order in sorted(spacers):
         spacer, _ = Spacer.objects.get_or_create(sequence=spacers[order])
         order = int(order)
-        lsr, _ = LocusSpacerRepeat.objects.get_or_create(locus=locus,
-                                                         spacer=spacer,
-                                                         repeat=repeat,
-                                                         order=order
-                                                         )
+        lsr, _ = LocusSpacerRepeat.objects.get_or_create(
+            locus=locus,
+            spacer=spacer,
+            repeat=repeat,
+            order=order
+        )
         spacer.save()
         lsr.save()
     locus.save()
@@ -156,8 +161,8 @@ def populate_fromlocus(locid, locdict):
 
 def populate_lsrpair():
     print('Downloading files and gathering online data.')
-    sfile, rfile = get_spacerrepeatfiles()
-    gendict = prunedict(
+    sfile, rfile = get_spacer_repeat_files()
+    gendict = prune_dict(
         addpositionstodict(
             addspacerstodict(
                 repeatfiletodict(rfile), sfile)))
@@ -165,7 +170,8 @@ def populate_lsrpair():
         pickle.dump(gendict, f, protocol=pickle.HIGHEST_PROTOCOL)
 
     print('Created dictionary and dumped data to genedict.pickle')
-    print("Populating Spacer, Repeat, SpacerRepeatPair, OrganismSpacerRepeatPair tables")
+    print("Populating Spacer, Repeat, SpacerRepeatPair, "
+          "OrganismSpacerRepeatPair tables")
     for locid in tqdm(gendict):
         populate_fromlocus(locid, gendict[locid])
 
@@ -185,9 +191,14 @@ def populate_anticrispr():
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Populate the phageParser database with data from NCBI')
-    parser.add_argument('email', nargs=1,
-                        help='your email address (does not need to be registered, just used to identify you)')
+        description='Populate the phageParser database with data from NCBI'
+    )
+    parser.add_argument(
+        'email',
+        nargs=1,
+        help=('your email address (does not need to be registered, '
+              'just used to identify you)')
+    )
     args = parser.parse_args()
 
     Entrez.email = args.email
