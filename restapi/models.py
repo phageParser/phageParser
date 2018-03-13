@@ -45,7 +45,8 @@ class Locus(models.Model):
     genomic_end = models.PositiveIntegerField(default=0)
     spacers = models.ManyToManyField(Spacer, through='LocusSpacerRepeat')
     repeats = models.ManyToManyField(Repeat, through='LocusSpacerRepeat')
-
+    orientation = models.NullBooleanField()
+    consensus = models.CharField(max_length=255, blank=True, default='')
 
 class Phage(models.Model):
     accession = models.CharField(max_length=32, blank=True, default='')
