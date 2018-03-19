@@ -6,6 +6,7 @@ import pickle
 import subprocess
 import json
 from pprint import pprint
+from Bio import Entrez
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'phageAPI.settings')
 import django
@@ -21,7 +22,7 @@ from restapi.models import (
 )
 
 ### Constants ###
-Entrez_email = 'wenxinchen11@hotmail.com'
+Entrez_email = None
 CRISPRFinder_output_folder = 'output_files'
 
 def pickle_item(item, filename):
@@ -38,21 +39,21 @@ def get_pickle(filename):
             f = pickle.load(handle)
     return f
 
-def add_sequence_to_db(accession, name):
+def add_sequence_to_db(accession):
 
-    o, created = Organism.objects.get_or_create(
-        name=name, accession=accession)
-    
-    print(o)
     # Avoid Duplicate Entries (Comment out for testing)
-    if not created:
-        return created
+    if Organism.objects.filter(accession=accession).exists():
+        return False
 
-    # == for testing only ==
-    seq = get_pickle(accession)
+    # # == for testing only ==
+    # seq = get_pickle(accession)
+    # if not seq:
+    # # == for testing only ==
+    seq = get_ncbi_seq(Entrez_email, 'nuccore', 'fasta', accession)
+
     if not seq:
-    # == for testing only ==
-        seq = get_ncbi_seq(Entrez_email, 'nuccore', 'fasta', accession)
+        print('Error fetching sequence from ncbi')
+        return False
 
     with open('seq.fasta', 'w') as file:
         file.write(seq)
@@ -66,6 +67,8 @@ def add_sequence_to_db(accession, name):
     results = json.load(open(CRISPRFinder_output_folder + '/result.json'))
 
     for seq in results['Sequences']:
+        o, created = Organism.objects.get_or_create(
+name=seq['Description'].split(',')[0], accession=seq['Id'])
         for cspr in seq['Crisprs']:
             loc_start = int(cspr['Start'])
             loc_end = int(cspr['End'])
@@ -131,11 +134,17 @@ def get_ncbi_seq(email, db, rettype, accession):
         res = handle.read()
 
         # for testing only
-        pickle_item(res, accession)
+        # pickle_item(res, accession)
         return res
 
     except Exception:
         sys.stderr.write("Error! Cannot fetch: %s        \n" % accession)
 
 if __name__ == '__main__':
-    add_sequence_to_db(accession='NC_000853', name='Thermotoga maritima MSB8')
+    
+    if len(sys.argv) == 3:
+        accession = sys.argv[1]
+        Entrez_email = sys.argv[2]
+        add_sequence_to_db(accession=accession)
+    else:
+        print("Usage: python add_organism.py [accession number] [entrez email]")
