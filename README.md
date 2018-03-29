@@ -25,7 +25,7 @@ phageParser is for anyone interested in exploring what we know about CRISPR syst
 ## Where can I get involved?
 
 We need many different skills and areas of expertise to build this tool, and you can help!
-* Check out the [open canvas](https://github.com/goyalsid/phageParser/blob/master/Open_canvas.png) - this is a short outline of the project goals and plans.
+* Check out the [open canvas](https://github.com/phageParser/phageParser/blob/master/documentation/Open_canvas.png) - this is a short outline of the project goals and plans.
 * Check out the [Roadmap](https://github.com/goyalsid/phageParser/issues/112) for an overview of where we're going and when.
 * [Good first bugs](https://github.com/goyalsid/phageParser/labels/good%20first%20bug) include documentation and coding tasks that are doable by a newcomer. Mentoring is available for these tasks.
 * Do you know about CRISPR biology? Issues labeled [science](https://github.com/goyalsid/phageParser/issues?q=is%3Aissue+is%3Aopen+label%3Ascience) are things we need people with science background to work on.
