@@ -22,7 +22,6 @@ from restapi.models import (
 )
 
 ### Constants ###
-Entrez_email = None
 CRISPRFinder_output_folder = 'output_files'
 
 def pickle_item(item, filename):
@@ -39,7 +38,7 @@ def get_pickle(filename):
             f = pickle.load(handle)
     return f
 
-def add_sequence_to_db(accession):
+def add_sequence_to_db(accession, Entrez_email):
 
     # Avoid Duplicate Entries (Comment out for testing)
     if Organism.objects.filter(accession=accession).exists():
@@ -74,6 +73,8 @@ name=seq['Description'].split(',')[0], accession=seq['Id'])
             loc_end = int(cspr['End'])
             dr_consensus = cspr['DR_Consensus']
             orientation = cspr['Potential_Orientation'] == '+'
+            if cspr['Potential_Orientation'] == 'ND':
+                orientation=None
             locus, _ = Locus.objects.get_or_create(
                 organism=o,
                 genomic_start=loc_start,
@@ -145,6 +146,6 @@ if __name__ == '__main__':
     if len(sys.argv) == 3:
         accession = sys.argv[1]
         Entrez_email = sys.argv[2]
-        add_sequence_to_db(accession=accession)
+        add_sequence_to_db(accession=accession, Entrez_email=Entrez_email)
     else:
         print("Usage: python add_organism.py [accession number] [entrez email]")
