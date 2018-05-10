@@ -8,7 +8,7 @@ Come chat with us!
 
 ## What is this tool?
 
-Many bacterial and archaeal genomes have been sequenced, and [a large fraction of them have CRISPR systems](http://crispr.u-psud.fr/crispr/), ranging from deadly human pathogens to archaea living in the harshest environments on earth. Some CRISPR systems have been studied very well, and more is being discovered about CRISPR every day. phageParser is a tool to collect this growing pool of information and generate versatile and useful annotations. These are some of the annotations we include:
+Many bacterial and archaeal genomes have been sequenced, and [a large fraction of them have CRISPR systems](http://crispr.i2bc.paris-saclay.fr/), ranging from deadly human pathogens to archaea living in the harshest environments on earth. Some CRISPR systems have been studied very well, and more is being discovered about CRISPR every day. phageParser is a tool to collect this growing pool of information and generate versatile and useful annotations. These are some of the annotations we include:
 * Spacer matches to known phages and prophages
 * Phage genome content near spacer matches
 * Spacer self-matches to host genome
@@ -27,7 +27,7 @@ phageParser is for anyone interested in exploring what we know about CRISPR syst
 We need many different skills and areas of expertise to build this tool, and you can help!
 * Check out the [open canvas](https://github.com/phageParser/phageParser/blob/master/documentation/Open_canvas.png) - this is a short outline of the project goals and plans.
 * Check out the [Roadmap](https://github.com/goyalsid/phageParser/issues/112) for an overview of where we're going and when.
-* [Good first bugs](https://github.com/goyalsid/phageParser/labels/good%20first%20bug) include documentation and coding tasks that are doable by a newcomer. Mentoring is available for these tasks.
+* [Good first bugs](https://github.com/goyalsid/phageParser/labels/good%20first%20issue) include documentation and coding tasks that are doable by a newcomer. Mentoring is available for these tasks.
 * Do you know about CRISPR biology? Issues labeled [science](https://github.com/goyalsid/phageParser/issues?q=is%3Aissue+is%3Aopen+label%3Ascience) are things we need people with science background to work on.
 * Are you interested in contributing to project documentation? Any issues labeled [documentation](https://github.com/goyalsid/phageParser/issues?q=is%3Aissue+is%3Aopen+label%3Adocumentation) are ways to create or improve our docs.
 * Do you know about databases? We're just starting to think about how to structure our data - join the discussion in issue #64.
