@@ -1,6 +1,6 @@
 numpy==1.12.1
 biopython==1.69
-Django==1.11
+django>=1.11.15
 djangorestframework==3.6.2
 dynamic-rest==1.6.6
 lxml==3.7.3
