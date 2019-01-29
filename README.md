@@ -56,6 +56,55 @@ More research is needed to better understand how bacteria use their CRISPR syste
 [CRISPR-Cas Systems: Prokaryotes Upgrade to Adaptive Immunity](http://www.cell.com/molecular-cell/abstract/S1097-2765%2814%2900216-0): a very good review paper on the CRISPR-cas system, the biological backdrop of this project.
 
 ## Installation
+### To use the demo Jupyter Notebooks
+
+#### Fork and clone phageParser
+1. Create a GitHub account if you don't already have one.
+2. Go to https://github.com/phageParser/phageParser and click 'Fork' in the top right corner.
+3. In the terminal, type `git clone https://github.com/YourUserName/phageParser.git` (with your GitHub username)
+4. In the terminal type `cd phageParser` to enter the phageParser directory
+5. Add reference to upstream repository: `git remote add upstream https://github.com/phageParser/phageParser.git`
+
+Now you have a fork and a local clone of phageParser that you can use and modify however you like!
+You can stay synced with the upstream repo by periodically pulling any changes like this:
+
+```
+cd phageParser
+git checkout master
+git pull upstream master
+```
+
+#### Create conda environment
+1. Install Python 3 via Anaconda.
+2. `cd phageParser`
+3. `conda env create -f environment.yml`. If any packages don't install, try installing them in the environment with `conda install -c conda-forge package-name` after running `source activate phageParser`. Not all the packages are necessary to run the demo notebooks, but some are necessary for running the database-building and analysis scripts.
+4. **Important:** in order for the conda environments to show up automatically in Jupyter, run this command *without activating the phageParser environment* (i.e. in your base environment): `conda install nb_conda_kernels`
+5. To start up the phageParser environment: `source activate phageParser`. Now your terminal session is running the phageParser conda environment.
+
+#### Run Jupyter Notebooks
+
+To run the Jupyter notebooks in the [demos](https://github.com/phageParser/phageParser/tree/master/demos) folder, follow these steps.
+
+1. `cd phageParser/demos`
+2. `source activate phageParser`
+3. `jupyter notebook` or `jupyter lab` - this launches Jupyter Notebook or Jupyter Lab in your browser.
+You should see a list of all the available demo files; double-click to open one.
+
+#### Debugging the notebooks
+
+1. `ModuleNotFoundError`
+
+If you see `ModuleNotFoundError: No module named 'Bio'` or some other package name in place of `Bio`,
+this probably means that the Jupyter notebook is not running the `phageParser` environment or that a 
+python package is missing. The environment might not be running for 
+two common reasons: either you forgot to `source activate phageParser`
+before running `jupyter notebook`, or Jupyter can't find the right kernel because
+`conda install nb_conda_kernels` hasn't been run. You can also try changing the kernel by going to
+the Kernels menu, clicking 'Change kernel', and looking for `phageParser`.
+If a python package is missing, run `conda install package-name` in the `phageParser`
+environment.
+
+### For developers
 
 You can download the source code of the project by git:
 `git clone https://github.com/phageParser/phageParser.git`
